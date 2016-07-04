@@ -1,0 +1,36 @@
+\chapter{Results}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/noise.pdf} 
+		\caption{noise}
+	\end{center}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/feed_switch.pdf} 
+		\caption{feed switch}
+	\end{center}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/feed_add.pdf} 
+		\caption{feed add}
+	\end{center}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/switch_cap.pdf} 
+		\caption{switch cap}
+	\end{center}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/switch_nocap.pdf} 
+		\caption{switch no cap}
+	\end{center}
+\end{figure}

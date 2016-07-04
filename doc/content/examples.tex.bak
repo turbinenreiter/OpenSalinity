@@ -1,0 +1,10 @@
+\chapter{Examples}
+
+% Examples for tables. 
+%   Note that second-level includes need to be done via \input{..},
+%   since \include can not be nested
+\input{content/example.table}
+
+\input{content/example.graph}
+
+\input{content/example.images}

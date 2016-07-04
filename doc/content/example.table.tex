@@ -1,0 +1,54 @@
+\section{Tables}
+
+Tabelle \ref{tab:example} zeigt beispielhaft das Aussehen einer Tabelle in wissenschaftlichen Arbeiten. Überhalb der Tabelle ist eine horizontale Linie mittels \verb+\toprule+, unterhalb \verb+\bottomrule+. Mitten in der Tabelle können Abtrennungen mit \verb+midrule+ eingefügt werden, sollten zusätzliche Abtrennungen nötig sein. \\[\baselineskip]
+Die Tabellenüberschrift ist im Gegensatz zu Bildern oberhalb der Tabelle zu finden. Fußnoten, welche in der Tabelle genutzt werden, können unterhalb der Überschrift oder unterhalb der Tabelle detailliert werden, sollten aber mit der Tabelle verknüpft sein und nicht erst am Ende der Seite zu finden.
+
+\begin{table}[H]%
+    \centering
+
+    \caption[Beispieltabelle]{Beispieltabelle für den Aufbau
+                von Tabellen in wissenschaftlichen Arbeiten.}
+    \label{tab:example}
+    \begin{tabular}{lcr}
+        \toprule
+        & Versuch 1 & Versuch 2 \tabularnewline
+        \midrule
+        Reaktor & \multicolumn{2}{c}{Photobioreaktor} \tabularnewline
+        Algen & \textit{N. salina} & \textit{S. quadricauda} \tabularnewline
+        \midrule
+        $\mu_{max}$ & 0.3 & 0.25 \tabularnewline
+        $K_m$ & 0.002 & 0.003 \tabularnewline
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Im folgenden ist der zur Tabelle gehörige Latex Code dargestellt:
+
+\begin{Verbatim}[fontsize=\small,gobble=4]
+    \begin{table}[H]%
+        \centering
+
+        \caption[Beispieltabelle]{Beispieltabelle für den Aufbau 
+                    von Tabellen in wissenschaftlichen Arbeiten.}
+        \label{tab:example}
+        \begin{tabular}{lcr}
+            \toprule
+                & Versuch 1 & Versuch 2 \tabularnewline
+            \midrule
+            Reaktor & \multicolumn{2}{c}{Photobioreaktor} \tabularnewline
+            Algen & \textit{N. salina} & \textit{S. quadricauda} \tabularnewline
+            \midrule
+            $\mu_{max}$, \unitfrac{1}{h} & 0.3 & 0.25 \tabularnewline
+            $K_m$, \unitfrac{g}{l} & 0.002 & 0.003 \tabularnewline
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{Verbatim}
+
+Das \verb+[H]+ hinter der \verb+table+ Umgebung sorgt hierbei für die Platzierung der Tabelle an exakt dieser Stelle. Es kann weggelassen werden, hierbei verschieben sich die Tabellen aber teilweise beträchtlich. Weitere Infos findet man über die Internetsuche nach der Positionierung von "`Floating environments"'.
+
+Die \verb+caption+ ist wie beschrieben vor der Tabelle und beinhaltet zwei Elemente, wovon das erste, optionale, (hier \verb+[Beispieltabelle]+) der Text ist, welcher in der Tabellenübersicht (\verb+\listoftables+) auftaucht. Damit kann und sollte man lange Tabellentitel für diese Übersicht kürzen. Für kurze Titel ist diese zusätzliche Angabe nicht erforderlich.
+
+Das \verb+\label+ ermöglicht das Referenzieren (\verb+\ref+) der Tabelle, der hier hinterlegte Eintrag beginnt im Normalfall bei Tabellen mit \verb+tab:+ gefolgt von einem eindeutigen Namen. Mit diesem Namen kann die Tabelle im Text angesprochen werden (siehe Tabelle \ref{tab:example}).
+
+Der Aufbau der Tabelle selber ist vergleichsweise komplex. Eine gute Übersicht bietet \url{http://en.wikibooks.org/wiki/LaTeX/Tables}. Für viele Anwendungen ist hier die Standardtabelle \verb+tabular+ ausreichend, besonders lange Tabellen können mittels \verb+longtable+ realisiert werden. Das empfohlene \verb+tabu+-Paket ist leider derzeit noch recht schlecht beschrieben, weswegen ich es (persönliche Meinung) leider nicht empfehlen kann.

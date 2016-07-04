@@ -1,0 +1,14 @@
+\chapter{Abbreviations}
+
+{
+% Force full \textwidth
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+
+\begin{longtable}{p{3cm}l@{\extracolsep{\fill}}}
+    CFD   & Computational Fluid Dynamics \tabularnewline
+    MC    & Monte Carlo \tabularnewline
+    PBR   & Photobioreactor \tabularnewline
+    RANS  & Reynolds--Averaged Navier--Stokes (Gleichungen) \tabularnewline
+\end{longtable}
+}

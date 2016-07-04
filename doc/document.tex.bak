@@ -1,0 +1,80 @@
+\documentclass[%
+  paper=a4,
+  twoside=false,				% two sided layout (=true) or one sided
+  fontsize=13pt,
+  DIV=12,
+  BCOR=2mm,						% set binding correction width, i.e. width that is obscured by binding 
+								%   method and has to be added on the inner side
+  bibliography=totocnumbered,
+  toc=listofnumbered,
+  draft=false,
+  captions=tableheading,
+  abstract=on
+]
+{scrreprt}
+
+\input{elements/preamble.header}
+\input{elements/preamble.options}
+\input{elements/preamble.tweaks}
+
+\begin{document}
+
+% Keine Kopf-/Fusszeilen auf den ersten Seiten.
+\pagestyle{empty} 
+
+% Title page
+\include{elements/title}
+
+\include{elements/declaration-of-authorship}
+
+% Page design (Header, Footer)
+\setheadwidth{\textwidth}
+\ohead{\pagemark}
+\chead{} \cfoot{} \ofoot{} \ifoot{}
+\ihead{\sffamily \leftmark}
+\pagestyle{scrheadings}
+
+%% Tikz Testarea BEGIN
+%\begin{figure}[H]%
+  %\centering
+  %%\caption{}%
+  %%\label{}%
+%\end{figure}
+%% Tikz Testarea END
+
+\input{content/abstract}
+
+\tableofcontents
+
+\include{content/introduction}
+\include{content/motivation}
+
+\include{content/theory}
+
+\include{content/material-and-methods}
+\include{content/results}
+
+\include{content/summary-and-outlook}
+
+%\include{content/examples}
+
+%% Appendix
+\appendix
+\chapter*{Appendix}                         % Appendix headline
+\addcontentsline{toc}{chapter}{Appendix}    %   and entry in Table of Contents
+
+% Abbreviations chapter
+\include{elements/abbreviations}
+
+% Have list of figurs and tables on the same page, uncomment weird stuff to have them seperate again
+\listoffigures
+\begingroup
+\let\clearpage\relax
+\listoftables
+\endgroup
+
+% Bibliography
+\nocite{*}
+\printbibliography
+
+\end{document}

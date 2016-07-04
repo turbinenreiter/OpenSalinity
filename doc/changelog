@@ -1,0 +1,9 @@
+font set to Source Serif Pro in header line 20
+font size set to 13 in document line 4
+\newcommand*\diff{\mathop{}\!\mathrm{d}} header line 25
+\usepackage[pdf]{pstricks} header line 26
+\usepackage{tabulars} header line 27
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}} header line 28
+\usepackage[europeanresistors,americaninductors]{circuitikz} header line 29
+backend=bibtex, header line 76
+

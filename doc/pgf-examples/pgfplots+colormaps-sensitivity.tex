@@ -1,0 +1,28 @@
+% Colormap changing from blue over
+%	white to red for positive and negative
+%	sensitivities
+\pgfplotsset{
+  /pgfplots/colormap={neg to pos}{
+    rgb255(0pt)=(0, 0, 255);
+    rgb255(500pt)=(255, 255, 255)
+    rgb255(1000pt)=(255, 0, 0);
+    }
+}
+
+% Colormap changing from white to red,
+%	for positive sensitivities only
+\pgfplotsset{
+  /pgfplots/colormap={positive only bright}{
+    rgb255(0pt)=(255, 255, 255);
+    rgb255(1000pt)=(255, 0, 0);
+    }
+}
+
+% Colormap changing from black to red,
+%	for positive sensitivities only
+\pgfplotsset{
+  /pgfplots/colormap={positive only dark}{
+    rgb255(0pt)=(0, 0, 0);
+    rgb255(1000pt)=(255, 0, 0);
+    }
+}

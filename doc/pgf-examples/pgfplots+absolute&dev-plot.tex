@@ -1,0 +1,102 @@
+\tikzexternaldisable
+\begin{tikzpicture}
+  \pgfplotsset{ignore legend/.style={every axis legend/.code={\renewcommand\addlegendentry[2][]{}}}}
+  
+	\begin{groupplot}[
+      group style={
+          group size=1 by 2,
+          vertical sep=0.5cm,
+        },
+      filter discard warning=false,
+      footnotesize,
+      max space between ticks=1000pt,
+      enlarge x limits={abs=1},
+      ]
+      
+      \def\rOriginal{data/FB1/rates-original.csv}
+      \def\rDiff{data/FB1/rates-diffRel.csv}
+      \def\rMean{data/FB1/rates-mean.csv}
+    
+    % absolute plots
+    \nextgroupplot[
+          ymin=0, 
+          height=6cm, width=.7\textwidth, 
+          xtick=\empty, ylabel={$\left[ \frac{kg_i}{kg_{reactor}\,h} \right]$},
+          ignore legend,
+          %legend pos=outer north east, legend style={draw=black},
+          legend style={at={(0.5, 1.03)}, anchor=south, draw=none}, legend columns=-1
+          ]
+    
+    \addplot [red] table [
+          y={r_{X}},
+          each nth point=10,
+          x=Time,
+          col sep=semicolon,
+          ] {\rOriginal};
+    \addlegendentry{$r_{X}$}
+
+    \addplot [blue] table [
+          each nth point=10,
+          x=Time,
+          col sep=semicolon,
+          y={r_{S}},
+          ] {\rOriginal};
+    \addlegendentry{$r_{S}$}
+          
+    \addplot [green] table [
+          x=Time, 
+          y={r_{PenV}},
+          each nth point=10,
+          col sep=semicolon,
+          ] {\rOriginal};
+    \addlegendentry{$r_{PenV}$}
+          
+    \addplot [red, dashed] table [
+          x=Time,
+          y={r_{X}},
+          col sep=semicolon,
+          ] {\rMean};
+    \addplot [blue, dashed] table [
+          x=Time,
+          y={r_{S}},
+          col sep=semicolon,
+          ] {\rMean};
+    \addplot [green, dashed] table [
+          x=Time,
+          y={r_{PenV}},
+          col sep=semicolon,
+          ] {\rMean};
+
+    % Difference plots
+    \nextgroupplot[
+          xlabel=Time, ylabel={$\Delta_{rel}$},
+          height=4cm, width=.7\textwidth, 
+          %legend style={at={(0.5, -0.3)}, anchor=north, draw=none}, legend columns=-1
+          ignore legend
+          ]
+    % Draw vertical line at y=0
+    \draw [black, very thin] ({rel axis cs:0,0}|-{axis cs:0,0}) -- ({rel axis cs:1,0}|-{axis cs:0,0}); 
+
+    \addplot [red] table [
+          x=Time, 
+          y={r_{X}},
+          each nth point=10,
+          col sep=semicolon,
+          ] {\rDiff};
+    \addlegendentry{$r_{X}$}
+    \addplot [blue] table [
+          x=Time, 
+          y={r_{S}},
+          each nth point=10,
+          col sep=semicolon,
+          ] {\rDiff};
+    \addlegendentry{$r_{S}$}
+    \addplot [green] table [
+          x=Time, 
+          y={r_{PenV}},
+          each nth point=10,
+          col sep=semicolon,
+          ] {\rDiff};
+    \addlegendentry{$r_{PenV}$}
+  \end{groupplot}	
+\end{tikzpicture}

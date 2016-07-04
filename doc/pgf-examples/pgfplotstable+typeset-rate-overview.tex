@@ -1,0 +1,38 @@
+  \pgfplotstableset{
+      create on use/percentage/.style={
+        create col/expr={\thisrow{std} / \thisrow{mean} * 100},
+        },
+  }
+
+  \pgfplotstabletypeset
+      [ % local config, applies only for this table
+      columns={rate,mean,std,percentage},
+      columns/rate/.style={
+        column type=l, string type,
+        column name=\textbf{Rate},
+        assume math mode,
+        column type/.add={>{$}}{<{$}},
+        },
+      columns/mean/.style={
+        std, precision=3, use period,
+        column type=r,
+        dec sep align,
+        column name={\textbf{Average}},
+        },
+      columns/std/.style={
+        std, precision=3, use period,
+        column type=r,
+        dec sep align,
+        column name={$\boldsymbol{\sigma}$},
+        },
+      columns/percentage/.style={
+        std, precision=1, 
+        column type=r,
+        column name={{$\boldsymbol{\sigma_{rel}}$}},
+        postproc cell content/.append style={
+            /pgfplots/table/@cell content/.add={}{\,\%},
+          },
+        },
+      1000 sep={\,},
+      col sep=semicolon,
+      ]{data/163/rates-overview.csv}

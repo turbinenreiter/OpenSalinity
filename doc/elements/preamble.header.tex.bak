@@ -1,0 +1,93 @@
+%% Sprachanpassungen
+%\usepackage[ngerman]{babel}
+\usepackage[british]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[gen]{eurosym}
+
+%% Textausgabe/-darstellung
+\usepackage{lmodern} 				% Type1-Schriftart für nicht-englische Texte
+\usepackage[tight,nice]{units}		% Einheitenformatierung
+\usepackage{multirow}				% Mehrzeilige Tabellenzellen
+\usepackage[onehalfspacing]{setspace}	% 1.5-facher Zeilenabstand
+\usepackage{booktabs}				% Tabellen
+\usepackage{enumerate}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage[hyphens]{url}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{Source Serif Pro}
+\setmonofont{Source Serif Pro}
+
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\usepackage[pdf]{pstricks}
+\usepackage{tabularx}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+
+%% Mathemodus
+\usepackage{amsmath,amssymb}
+\usepackage{icomma}
+
+%% Packages für Grafiken & Abbildungen
+% Importing of graphics into the pdf
+\usepackage{graphicx}
+% creating of graphics / plots / extended color mixing possibilities
+\usepackage{tikz,pgfplots,xxcolor} 
+% reading and scripting tables automatically
+\usepackage{pgfplotstable}
+\usepackage{float,subcaption} 		% Teilabbildungen in einer Abbildung
+\usepackage{floatflt}			% Bilder/Tabellen von Text umflossen
+\usepackage[section]{placeins} 	% Haelt floats davon ab ueber Sections zu springen.
+\usepackage[
+		font=footnotesize,
+		format=hang,
+		indention=0.0cm,
+		justification=justified,
+		labelfont=bf,
+	]{caption}					% Darstellung von Titeln
+%\captionsetup{singlelinecheck=off}
+\captionsetup[subfigure]{font=footnotesize}
+
+%% Seitengestaltung
+\usepackage{fancyvrb}
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\usepackage[
+	bookmarks=true,
+	hypertexnames=false,
+    hyperfootnotes=true
+	]{hyperref}
+\usepackage{bookmark}
+\usepackage[nodayofweek]{datetime}
+
+
+%% Sonstiges
+\usepackage{remreset}			% Kein Reset von Countern
+	\makeatletter
+		\@removefromreset{footnote}{chapter}
+	\makeatother
+\usepackage{scrhack}
+
+%% Bibliographie
+\usepackage[german=quotes]{csquotes}
+\usepackage[
+	backend=biber,
+	style=authoryear,
+	bibstyle=authoryear,
+	dashed=false,
+	mergedate=false,
+	maxbibnames=99,
+	maxcitenames=1,
+	hyperref=true,
+	doi=false,
+	url=false,
+	isbn=false,
+	eprint=false
+	]{biblatex}
+\usepackage{array}
+
+% Code logic
+\usepackage{xargs}
+\usepackage{ifthen}

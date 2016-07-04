@@ -1,0 +1,106 @@
+\tikzexternaldisable
+  
+% Uses colormaps, in this case import from
+%	colormaps example
+\input{pgfplots+colormaps-sensitivity}
+
+% filenname of the input matrix and label descriptions
+%   requires three files:
+%	<name>.csv containts the matrix, including colormap data and values
+%	<name>.xNames contains the labels for the x-axis and its numer of
+%			rows defines the length of the x-axis
+%	<name>.yNames contains the labels for the y-axis and the length
+%			of it
+\def\matrixname{data/pgfplots+sensitivity-matrix}
+
+\begin{tikzpicture}
+  % define backgroundcolor
+  \colorlet{background-color}{black!0!white}
+
+  % Read data
+  \pgfplotstableread[col sep=semicolon]{\matrixname.xNames}\xnametable
+  \pgfplotstablegetrowsof{\xnametable}
+  \let\numOfCols\pgfplotsretval
+  
+  \pgfplotstableread[col sep=semicolon]{\matrixname.yNames}\ynametable
+  \pgfplotstablegetrowsof{\ynametable}
+  \let\numOfRows\pgfplotsretval
+  
+  \pgfplotstableread[col sep=semicolon]{\matrixname.csv}\matrixtable
+  
+  % get minimum and maximum value in matrix
+  \pgfplotstablesort[sort key={value}, sort cmp={float <}]{\sortedmatrixtable}{\matrixtable}
+  \pgfplotstablegetelem{0}{value}\of\sortedmatrixtable
+  \let\minValue\pgfplotsretval
+  
+  \pgfplotstablegetrowsof{\sortedmatrixtable}
+  \pgfmathsetmacro{\lastrow}{\pgfplotsretval-1}
+  \pgfplotstablegetelem{\lastrow}{value}\of\sortedmatrixtable
+  \let\maxValue\pgfplotsretval
+  
+  % Get actual borders of min and max Values
+  \pgfmathsetmacro{\minValue}{-max(abs(\minValue),abs(\maxValue))}
+  \pgfmathsetmacro{\maxValue}{max(abs(\minValue),abs(\maxValue))}
+  
+  % Must define range of colorvalues, regardless of what the csv file contains,
+  %  thus can not be calculated
+  \def\minColor{0}
+  \def\maxColor{100}
+  
+  \pgfmathsetmacro{\diagHeight}{0.55*\numOfRows}
+  \pgfmathsetmacro{\diagWidth}{0.55*\numOfCols}
+
+	% And draw
+	\begin{axis}[
+      ymin=1, ymax=\numOfRows,
+      xmin=1, xmax=\numOfCols,
+      height={\diagHeight cm},
+      width={\diagWidth cm},
+      enlargelimits={abs=1},
+      scale=1.2,
+      unit vector ratio*=1 1 1,
+      y dir=reverse,
+      colorbar, 
+      colormap name=neg to pos,
+      colorbar style={
+        yticklabel={
+          \tiny
+          \pgfmathparse{(\tick-\minColor)/(\maxColor-\minColor)*(\maxValue-\minValue)+\minValue}
+          $\pgfmathprintnumber{\pgfmathresult}$
+          },
+        ylabel=Sensitivity Index,
+        font=\footnotesize
+        },
+      mark options={draw=none},
+      axis background/.style={fill=background-color},
+      xtick={1, ..., \numOfCols},
+      ytick={1, ..., \numOfRows},
+      xticklabel={$\pgfplotstablegetelem{\ticknum}{xNames}\of\xnametable\pgfplotsretval$},
+      yticklabel={$\pgfplotstablegetelem{\ticknum}{yNames}\of\ynametable\pgfplotsretval$},
+      x tick label style={font=\tiny, rotate=50, anchor=north east, yshift=0.1cm, xshift=0.1cm},
+      y tick label style={font=\tiny, rotate=40, anchor=east, xshift=0.1cm, yshift=0.1cm},
+      xlabel=x-axis,
+      ylabel=y-axis,
+    ]
+    
+    \addplot+[
+        scatter,
+        scatter src=explicit,
+        faceted color=blue,
+        only marks, 
+        scatter/use mapped color={draw=background-color, fill=mapped color},
+        mark options={mark=square*, scale=2.7, draw opacity=1},
+	  %% Descide which line to use
+	  % Uses the value column in the sensitivity matrix for the colormap
+	  %		and calculates a logarithmic matrix
+      %] table [x=x, y=y, meta expr={ln(\thisrow{value})/ln(10)}, col sep=semicolon] 
+	  
+	  % Uses value column in a non-logarithmic visualisation
+	  %] table [x=x, y=y, scatter src= explicit meta=value, col sep=semicolon] 
+	  
+	  % Uses the color-column for the colormap. Matrix has to be prepared
+	  %		to contain the correct data
+      ] table [x=x, y=y, scatter src=explicit, meta=color, col sep=semicolon, point meta min=\minColor, point meta max=\maxColor] 
+        {\matrixtable};
+  \end{axis}
+\end{tikzpicture}

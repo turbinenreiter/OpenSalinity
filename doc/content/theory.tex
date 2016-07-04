@@ -1,0 +1,93 @@
+\chapter{Background}
+
+\section{Market Research}
+
+Conductivity meters can be readily bought and range from prices of \euro{500} for lab equipment to \euro{10} for simple field water quality monitors. All available solutions are standalone devices using a single sensor and a display to report measurements. They also are designed to perform singular, high quality reads.
+
+All of these traits are detrimental to the requirements of this project. A device is needed, which can perform fast measurements on multiple points in the stream, with the data exposed in a machine-readable format for further processing. Precision of the measurement can be compromised on, as long as a minimal standard is met. A custom design is necessary.
+
+---
+[stub. detailed description of electronics]
+As base for this design, two solutions were found.
+[mini-eC Interface]
+Open Hardware implementation of simple signal generator and signal reader for a two electrode sensor providing raw voltage drop output.
+[AD5933]
+A simple signal generator and signal reader for a two electrode sensor, providing impedance with real and imaginary part. [this is the circuitry from the mini-eC-Interface on a single chip! awesome! base for version 2!]
+---
+
+\section{Theoretical Background}
+
+[subsections?]
+
+The conductivity $ \kappa $  is the ability of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to length. To better understand conductivity, an equivalent circuit diagram \ref{fig:ecd} of the experiment design \ref{fig:elec} can be used. In this experiment, the resistance of a substance is determined by measuring the potential drop. [update figures with voltage divider]
+
+The resistance is
+\begin{equation}
+	R = \dfrac{U}{I}
+\label{eq:R}
+\end{equation}
+
+The inverse of $ R $ is the conductance
+\begin{equation}
+	G = \dfrac{I}{U}
+\label{eq:G}
+\end{equation}
+
+Considering the cell constant $ C $ yields the conductivity
+\begin{equation}
+	\kappa = G \cdot \kappa
+\label{eq:kappa} 
+\end{equation}
+
+The cell constant depends on the geometry of the sensor
+\begin{equation}
+	C = \dfrac{d}{A}
+\label{eq:C}
+\end{equation}
+
+where $ d $ is the distance between and $ A $ the size of  the electrodes. [add figure of sensor geometry]
+
+\begin{figure}
+	\begin{center}
+		\begin{circuitikz}[european voltages]
+			\draw
+  			(0,0) to [short, *-] (2,0)
+  			to [R, l_=$R$] (2,4)
+  			(0,0) to [open, v^<=$U$] (0,4)
+  			to [short, *- ,i=$I$] (2,4);
+		\end{circuitikz}
+		\caption{equivalent circuit diagram}
+		\label{fig:ecd}
+	\end{center}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+    	\tikzset{external/export next=false}
+		\begin{tikzpicture}
+  		    % Draw electrode
+ 	   		\fill [black!25] (0.5,2) rectangle (1.5,-1);
+	    		% draw voltmeter
+ 	   		\draw[join = round, thick] (1,2) -- (1,2.5) -- (2.4,2.5);
+ 	   		\draw[join = round, thick] (3.1,2.5) -- (4.5,2.5) -- (4.5,2);
+ 	   		\draw (2.75,2.5) node [circle, draw] {V};
+  	  		%Draw electrode
+  	  		\fill [black!25] (4,2) rectangle (5,-1);
+    		%Draw water
+    		\fill [blue!75, opacity=0.3] (-0.5,1) rectangle (6,-2);
+		\end{tikzpicture}
+		\caption{electrode configuration}
+		\label{fig:elec}
+	\end{center}
+\end{figure}
+
+[paragraphs with line inbetween?]
+The principle of determining conductivity of a substance by measuring it's resistance in a defined geometry is called conductometry. In electrolytes, the electrical conduction happening is a result of mass transfer, where ions are carrying the charges. If the measurement is conducted with direct current, this mass transfer leads to changes in the measured solution and the electrode surface, negatively impacting the measurement. Furthermore, polarization effects create additional resistance, leading to lower than actual results. To avoid this, alternating current is used. The fast, periodical swap of polarity eliminates the net mass flow and it's effects. Polarization is a result of the current through the electrode, thereby it's effects can be minimized by minimizing this current.
+
+The electrolytes temperature has a big influence on the conductivity and has to be taken in account when comparing two measurements. If the temperature is known, the conductivity can be normalized to a reference temperature.
+
+The system described above is called a two-electrode-cell. In order to minimize current through the electrode, it is possible to separate the current flow from the potential measurement by using four electrodes. One pair is used to apply the current, a separate pair is used to measure the potential drop. This system is called a four-electrode-cell.
+
+[everything up to here is translated and paraphrased from]
+\cite{trankler2015sensortechnik}
+[how do I make that clear?]

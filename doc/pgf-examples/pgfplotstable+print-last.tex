@@ -1,0 +1,24 @@
+%% The interesting bit starts
+\pgfkeys{
+    /pgfplots/table/print last/.style={
+        row predicate/.code={
+            % Calculate where to start printing, use `truncatemacro` to get an integer without .0
+            \pgfmathtruncatemacro\firstprintedrownumber{\pgfplotstablerows-#1} 
+            \ifnum##1<\firstprintedrownumber\relax
+                \pgfplotstableuserowfalse
+            \fi
+        }
+    },
+    /pgfplots/table/print last/.default=1
+}
+
+\pgfplotstabletypeset[
+    print last=4,
+    columns/0/.style={
+        column type=r,
+        date type={\monthname\ \year} % Nice date printing
+    },
+    columns/2/.style={
+        dec sep align % Nice number alignment
+    }
+]{testdata.dat}

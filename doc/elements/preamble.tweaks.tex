@@ -1,0 +1,454 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Math hacks to simplify output           %
+%                                                   %
+%  Careful: Some hacks will ensure math mode        %
+%      automatically, and thus can fail normal      %
+%      expectations!                                %
+%  Require package amsmath                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \bunderline
+%%    An improved version of the underline command
+%%
+%%    Has one optional argument which defines how much
+%%    the underline line is shortened. 
+%%
+%%    Example \underline[4]{<text>}
+%%
+%%    Source:
+%%      http://tex.stackexchange.com/questions/49324/decrease-length-of-underline-in-math
+\newcommand{\bunderline}[2][4]{\underline{#2\mkern-#1mu}\mkern#1mu}
+
+%% \boverline
+%%    An improved version of the overline command
+%%
+%%    Has one optional argument which defines how much
+%%    the overline line is shortened
+%%
+%%    Source:
+%%      http://tex.stackexchange.com/questions/22100/the-bar-and-overline-commands/22134#22134
+\newcommand{\boverline}[2][1.5]{\mkern #1mu\overline{\mkern-#1mu#2\mkern-#1mu}\mkern #1mu}
+
+%% \vect(or)
+%%   Displays a variable as vector, can also be used
+%%   in text environment. Three alternatives exist:
+%%     - arrow vector notation
+%%     - bold
+%%     - underline
+%%   Uncomment only the specific line to change format
+%%   
+%%   Careful: This command ensures math mode!
+%%
+%\newcommand{\vect}[1]{\ensuremath{\vec{#1}}}          % arrow
+\newcommand{\vect}[1]{\ensuremath{\boldsymbol{#1}}}    % bold
+%\newcommand{\vect}[1]{\ensuremath{\bunderline{#1}}}    % underline
+
+%% \tensor
+%%   Displays a variable as a tensor
+%%   
+%%   Careful: This command ensures math mode!
+%%
+%\newcommand{\tensor}[1]{\ensuremath{\boldsymbol{#1}}}            % bold
+\newcommand{\tensor}[1]{\ensuremath{\bunderline{\boldsymbol{#1}}}} % bold underlined
+
+%% \div, \Div
+%%   Displays the mathematical operator of divergence.
+%%   Faciliates brackets in capital version.
+%%   Optional arguments
+%%    #1 Type of parentheses
+%%      Has no influence in \div version
+%%      [square || <else>=round ]
+%%
+%%   Example: \Div[square]{\rho \vec{u}}
+%%            \div{\vec{u}}
+%%
+%%   Careful: Overwrites the original div command!
+%%
+\renewcommand{\div}[2][1=round]{\nabla \cdot #2}
+\newcommandx{\Div}[2][1=round]{%
+  \ifthenelse{\equal{#1}{square}}{%
+    % use square brackets
+    \nabla \cdot \left[ #2 \right]
+  }{%
+    % use round braces
+    \nabla \cdot \left( #2 \right)
+  }
+}
+
+%% \grad, \Grad
+%%    Displays the mathimatical operator of a gradient
+%%    Faciliates brackets in captial version
+\newcommand{\grad}[2][1=irrelevant]{\nabla #2}
+\newcommandx{\Grad}[2][1=round]{%
+  \ifthenelse{\equal{#1}{square}}{%
+    % use square brackets
+    \nabla \left[ #2 \right]
+  }{%
+    % use round braces
+    \nabla \left( #2 \right)
+  }
+}
+
+%% \mt
+%%   Shortcut to insert text in math mode that is
+%%   printed italic to mimic math font, but more 
+%%   dense than normal math output.
+\newcommand{\mt}[1]{\ensuremath{\text{\textit{#1}}}}
+
+%% \parder, \Parder
+%%    Displays a partial derivative
+%%    Arguments:
+%%      #2 Numerator
+%%      #3 Demunerator
+%%    Optional arguments:
+%%      #1 Type of parantheses. Has no influence
+%%        lower case version \parder
+%%        'square' version will move the numerator
+%%        after the fraction
+%%        [square || <else>=round ]
+%%
+%%    Example: \parder{\vec{u}}{t}
+%%             \Parder{\rho \vec{u}}{t}
+%%             \Parder[square]{\rho \left( e + \frac{\vec{v}^2}{2}\right)}{t}
+%%
+\newcommand{\parder}[3][1=irrelevant]{\frac{\partial #2}{\partial #3}}
+\newcommand{\Parder}[3][1=square]{
+  \ifthenelse{\equal{#1}{square}}{
+    \frac{\partial}{\partial #3} \left[ #2 \right]
+  }{
+    \frac{\partial \left(#2\right)}{\partial #3}
+  }
+}
+
+%% \der, \Der
+%%    Simple derivative
+%%    Same options as \parder, \Parder
+%%    but uses 'd' as derivative term instead of '\partial' (=delta)
+\newcommand{\der}[3][1=irrelevant]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\Der}[3][1=square]{
+  \ifthenelse{\equal{#1}{square}}{
+    \frac{\mathrm{d}}{\mathrm{d} #3} \left[ #2 \right]
+  }{
+    \frac{\mathrm{d} \left(#2\right)}{\mathrm{d} #3}
+  }
+}
+
+%% \e
+%%    Shortcut for printing 10^x coefficients
+%%
+%%    Example:  5\e{-3} -> 5*10^(-3)
+%%
+\newcommand{\e}[1]{\ensuremath{\cdot 10^{#1}}}
+
+%% \exp
+%%    Shortcut for the e^x notations
+%%
+%%  Example:    \exp{3} -> e^3
+%%
+\renewcommand{\exp}[1]{\mathrm{e}^{#1}}
+
+%% \OD
+%%    Shortcut for printing an OD
+\newcommand{\OD}[2][1=750]{%
+    \ensuremath{%
+        % if #2 is empty just print OD_#1
+        %   otherwise add the value
+        \ifthenelse{\equal{#2}{}}{%
+            \mathrm{OD}_{#1}%
+        }{%
+            \mathrm{OD}_{#1} = #2%
+        }%
+    }%
+}
+
+\DeclareMathOperator{\Var}{Var}
+
+%% \transpose, \Transpose
+%%    Shortcut to mark a matrix/tensor as transposed
+%%    Uses the below defined \transposeSymbol
+%%
+%%    The uppercase variant checks for an optional first 
+%%    parameter, which can either be "round" or "square"
+%%    and will print parentheses or brackets around the 
+%%    text.
+%%
+%%  Example:    \transpose{\tensor{\tau}}
+%%              \Transpose[square]{\tensor{\tau}}
+%%
+\def\transposeSymbol{\intercal}
+\newcommand{\transpose}[2][1=irrelevant]{\ensuremath{#2^\transposeSymbol}}
+\newcommandx{\Transpose}[2][1=round]{%
+  \ifthenelse{\equal{#1}{square}}{
+    \ensuremath{\left[#2\right]^\transposeSymbol}
+  }{%
+    \ensuremath{\left(#2\right)^\transposeSymbol}
+  }
+}
+
+\newcommand{\registered}{\textsuperscript{\textregistered}}
+
+% the starred version of \ref will not create a link,
+% but this fails anyway for all externalised images
+\newcommand{\plotref}[1]{\tikzexternaldisable\ref*{#1}\tikzexternalenable}
+
+\newcommand{\inlinetikz}[2][baseline=0]{%
+  \tikzset{external/export next=false}%
+  \tikz[#1]{#2}%
+}
+
+\newcommand{\imagelegend}[2][1=style]{%
+  \ifthenelse{\equal{#1}{line}}{
+    % #1 = line
+    \inlinetikz{\draw [#2] (0, .25\baselineskip) -- (0.6, .25\baselineskip);}%
+  }{
+    % #1 = style
+    \inlinetikz{\node [minimum size=0.5\baselineskip, #2, inner sep=0.1] at (0, 0.25\baselineskip) {};}%
+  }
+}
+
+%% new the command for externalised tikz filenames
+\newcommandx{\tikzsetnextfilenamecoloured}[2][1=colour]{%
+  \ifthenelse{\equal{#1}{colour}}{
+    % add a suffix tu determine wheter the graphic is colored or black and white
+    \tikzsetnextfilename{#2\tikzExternalSuffix}
+  }{
+    \tikzsetnextfilename{#2}
+  }
+}
+
+\pgfplotsset{ignore legend/.style={every axis legend/.code={
+    \renewcommand\addlegendentry[2][]{} 
+    \renewcommand\addlegendentryexpanded[2][]{}
+    }}}
+
+% \tablefootnote
+%   This command can be used to manually create footnotes in a table
+%   where it defines required extra spaces.
+%   ! No automation at all
+%
+%   Use this command the following way:
+%       Add "\textsuperscript{(2)}" in the table to reference footnote (2)
+%           of the table below
+%       Put the following code below the table to explain the footnotes 
+%           you added
+%
+%           \tablefootnote{
+%               \raggedright
+%               \begin{tabular}{ll}
+%               \multirow{3}{0.5cm}{} & \textsuperscript{(1)}Footnotetext 1 \tabularnewline
+%                                     & \textsuperscript{(2)}Footnotetext 2 \tabularnewline
+%                                     & \textsuperscript{(3)}Footnotetext 3
+%               \end{tabular}
+%           }
+%       Adjust the number of multiple rows to the number of footnotes you 
+%           have inserted. Furthermore you can manually adjust the space 
+%           the first column takes up to center the footnotes
+\newcommand{\tablefootnote}[1]{
+    \vskip+\abovecaptionskip 
+    \vskip-\belowcaptionskip
+    \caption*{#1}
+    \vskip-\abovecaptionskip
+    \vskip+\belowcaptionskip
+  }
+  
+\newcommand{\pictureheadnote}[1]{
+    \vskip-\abovecaptionskip 
+    \vskip+\belowcaptionskip
+    \caption*{#1}
+    %\vskip+\abovecaptionskip
+    \vskip-\belowcaptionskip
+  }
+  
+\let\originalparagraph\paragraph
+\renewcommand{\paragraph}[2][.]{\originalparagraph{#2#1}}
+
+% style to only print last n rows
+\pgfkeys{
+    /pgfplots/table/print last/.style={
+        row predicate/.code={
+            % Calculate where to start printing, use `truncatemacro` to get an integer without .0
+            \pgfmathtruncatemacro\firstprintedrownumber{\pgfplotstablerows-#1} 
+            \ifnum##1<\firstprintedrownumber\relax
+                \pgfplotstableuserowfalse
+            \fi
+        }
+    },
+    /pgfplots/table/print last/.default=1
+}
+
+\pgfplotsset{
+    simulation-plot/.style = {
+        each nth point=10, filter discard warning=false,
+        mark=none,
+        x=Time,
+        thick,
+    },
+    measurements-plot/.style = {
+        mark=*, only marks, mark size=2pt, mark options={},
+        x=Time,
+        forget plot,
+        error bars/y dir=both, error bars/y fixed relative=0.05,
+    },
+}
+
+% pgfplots / pgfplotstable styles to filter tabledata,
+% both copied from
+% tex.stackexchange.com/questions/98003/filter-rows-from-a-table
+
+\makeatletter
+\pgfplotstableset{
+    discard if not/.style 2 args={
+        row predicate/.code={
+            \def\pgfplotstable@loc@TMPd{\pgfplotstablegetelem{##1}{#1}\of}
+            \expandafter\pgfplotstable@loc@TMPd\pgfplotstablename
+            \edef\tempa{\pgfplotsretval}
+            \edef\tempb{#2}
+            \ifx\tempa\tempb
+            \else
+                \pgfplotstableuserowfalse
+            \fi
+        }
+    }
+}
+\makeatother
+    
+\pgfplotsset{
+    discard if not/.style 2 args={
+    	x filter/.code={
+    	    \edef\tempa{\thisrow{#1}}
+    	    \edef\tempb{#2}
+    	    \ifx\tempa\tempb
+    	    \else
+    	    \def\pgfmathresult{inf}
+    	    \fi
+    	}
+    }
+}
+
+\usepackage[novbox]{pdfsync}
+
+% arguments:
+%   1: [order] (l, r, p, p!)
+%   2: text
+%   3: [width] ... of textbox
+%   4: [spacing] ... between boxes
+%   5: picture
+\newlength{\picboxwidth}
+\newcommandx{\besidespic}[5][1=p, 3=0.65\textwidth, 4=0.05\textwidth]{%
+  {
+  % need to put this in a local environment, otherwise values will be assigned globally
+  \setlength{\picboxwidth}{\textwidth}
+  \addtolength{\picboxwidth}{-#3}
+  \addtolength{\picboxwidth}{-#4}
+  \captionsetup{format=plain}
+  
+  % evaluate special cases position=p or p!
+  %   set \pic to contain picture position
+  \ifthenelse{\equal{#1}{p}}{
+    % option p
+    % notcomascript-documents
+    %\ifthenelse{\isodd{\thepage}}{
+    % Koma Script based documents
+    \ifthispageodd{
+      % odd
+      \def\pic{r}
+    }{
+      % even
+      \def\pic{l}
+    }
+  }{
+    \ifthenelse{\equal{#1}{p!}}{
+      % option p!
+      % notcomascript-documents
+      %\ifthenelse{\isodd{\thepage}}{
+      % Koma Script based documents
+      \ifthispageodd{
+        % odd
+        \def\pic{l}
+      }{
+        % even
+        \def\pic{r}
+      }
+    }{
+      \def\pic{#1}
+    }
+  }
+  
+  %% Output text and picture
+  \ifthenelse{\equal{\pic}{l}}{
+    \begin{minipage}[c]{\picboxwidth}
+      #5
+    \end{minipage}\hspace{#4}
+    \begin{minipage}[c]{#3}
+      #2
+    \end{minipage}
+  }{
+    \begin{minipage}[c]{#3}
+      #2
+    \end{minipage}\hspace{#4}
+    \begin{minipage}[c]{\picboxwidth}
+      #5
+    \end{minipage}
+  }
+  
+  % end of seperate environment
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography use brackets [] instead of braces () %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+
+\newrobustcmd*{\parentexttrack}[1]{%
+  \begingroup
+  \blx@blxinit
+  \blx@setsfcodes
+  \blx@bibopenparen#1\blx@bibcloseparen
+  \endgroup}
+
+\AtEveryCite{%
+  \let\parentext=\parentexttrack%
+  \let\bibopenparen=\bibopenbracket%
+  \let\bibcloseparen=\bibclosebracket}
+
+\makeatother
+
+\DeclareCiteCommand{\citetitlelink}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}%
+   \usebibmacro{prenote}}
+  {\ifciteindex
+     {\indexfield{indextitle}}
+     {}%
+   \printtext[bibhyperref]{\printfield[citetitle]{labeltitle}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Shortcuts for company names with registered char  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% print ANSYS Fluent name with registered trademark symbol
+\newcommand{\fluent}{ANSYS\textsuperscript{\textregistered} Fluent\textsuperscript{\textregistered}}
+% print ANSYS ICEM name with registered trademark
+\newcommand{\icem}{ANSYS\textsuperscript{\textregistered} ICEM\textsuperscript{\textregistered}}
+% print OpenFOAM with registered trademark symbol
+\newcommand{\openfoam}{OpenFOAM\textsuperscript{\textregistered}}
+% print ansys without a specific product
+\newcommand{\ansys}{ANSYS\textsuperscript{\textregistered}}
+% print Matlab with registered trademark symbol
+\newcommand{\matlab}{MATLAB\textsuperscript{\textregistered}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Have abbreviation shortcuts to avoid end of    %
+%             sentence spacing problems             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand{\etc}{etc\@ifnextchar.{}{.\@}}      % etc.
+\newcommand{\eg}{e.g\@ifnextchar.{}{.\@}}       % e.g.
+\newcommand{\ie}{i.e\@ifnextchar.{}{.\@}}       % i.e.
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        Declare special unicode characters         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\DeclareUnicodeCharacter{010C}{\v{C}}  % Č

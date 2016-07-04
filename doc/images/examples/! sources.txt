@@ -1,0 +1,5 @@
+axes-xkcd.png: 
+	http://xkcd.com/833/
+	
+axes-fluffware.png
+	http://fluffware.tumblr.com/post/4580822773/axes

@@ -1,0 +1,57 @@
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.15\textwidth]{images/title/logo-TUM-empty}
+    \hspace{.65\textwidth}
+    \includegraphics[width=0.15\textwidth]{images/title/logo-MW}
+	\end{center}
+\end{figure}
+%\vspace{5mm}
+
+\begin{center}
+	{\Huge Technische Universit\"at M\"unchen}
+	\\[5mm]
+	{\Large Lehrstuhl f\"ur Bioverfahrenstechnik}
+\end{center}
+
+\vspace{15mm}
+
+\begin{center}
+    \begin{minipage}{.7\textwidth}
+        \begin{center}
+            \doublespacing
+            {
+                {
+                    \Large Semesterarbeit
+                    %\Large Masterarbeit
+                }
+                \\[1cm]
+                \textbf{\LARGE Development of a Low-Cost Electrical Conductivity Meter for Liquids}
+            }
+            \\[3.5cm]
+            {\Large Sebastian Plamauer}
+            \\
+            {\normalsize Matrikelnummer: 3609702}
+            \\[0.5cm]
+            \today
+        \end{center}
+    \end{minipage}
+\end{center}
+
+\vspace{\fill}
+  
+\begin{center}
+    \begin{tabular}{p{3cm}l}
+        Betreuer: & M.Sc. Timm Severin \\
+        & Prof.~Dr.-Ing.~Dirk~Weuster-Botz
+    \end{tabular}	 
+\end{center}
+
+% Empty page after title
+\clearpage\mbox{}\clearpage
+
+%% Sentence for fun
+%\newpage
+%\null \vfill
+%\textit{So Long, and Thanks for All the Fish}
+%
+%\hspace{1cm} [Douglas Adams, 1984]
