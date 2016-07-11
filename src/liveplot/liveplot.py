@@ -61,9 +61,9 @@ class LivePlot(Gtk.Window):
 
         data = str(self.raw.readline()).split(' ')
 
-        if data.pop(0) != "b'#":
-            return
-        data.pop(-1)
+        #if data.pop(0) != "b'#":
+        #    return
+        #data.pop(-1)
 
         values = []
         for i, val in enumerate(data):

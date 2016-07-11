@@ -3,8 +3,18 @@
 import sys, getopt
 
 import matplotlib.pyplot as plt
+#import mpld3
 import numpy as np
+import scipy as sp
 import scipy.signal as sps
+import scipy.fftpack as spfft
+
+def low_pass(cutoff, sample_rate, vector):
+    try:
+        b, a = sps.butter(3, cutoff/(0.5*sample_rate), 'low', analog=False)
+    except ValueError:
+        raise ValueError(cutoff, sample_rate, cutoff/(0.5*sample_rate))
+    return sps.lfilter(b, a, vector)
 
 def main(argv):
 
@@ -12,47 +22,78 @@ def main(argv):
 
     fname = argv[1]
 
-    te1, e1, te2, e2, te3, e3, te4, e4, te5, e5, te6, e6, te7, e7, te8, e8 = np.genfromtxt(fname, delimiter=' ', unpack=True)
+    te1, e1, te2, e2, te3, e3, te4, e4, te5, e5, te6, e6, te7, e7, te8, e8 = np.genfromtxt(fname, delimiter=' ', skip_header=100, unpack=True)
+
+    print('data read')
 
     # time
 
     t = [0]*8
 
     for i, vector in enumerate([te1, te2, te3, te4, te5, te6, te7, te8]):
-        t[i] = vector - te1[0]
+        t[i] = (vector - te1[0])*10**-6
+
+    sample_rate = 1/((t[0][-1]-t[0][0])/len(t[0]))
+
+    print('time conditioned')
 
     # values
 
     e = [0]*8
+    e_raw = [0]*8
+    freqs = [0]*8
+    diff = [0]*8
 
     for i, vector in enumerate([e1, e2, e3, e4, e5, e6, e7, e8]):
-        e[i] = (vector - np.average(vector[0:100])) / 4096
-        e[i] = sps.savgol_filter(e[i], 99, 3)
+        e[i] = (vector - np.average(vector[1:1000])) / 4096
+        e_raw[i] = e[i]
+        e[i] = low_pass(0.1, sample_rate, e[i])
+        freqs[i] = spfft.fftfreq(e_raw[i].size, t[i][1]-t[i][0])
+        diff[i] = np.diff((e[i], t[i]), 2)
+        #e[i] = sps.savgol_filter(e[i], 99, 3)
         #e[i] = e[i]/(max(e[i])-min(e[i]))
+
+    print('values conditioned')
 
     del te1, e1, te2, e2, te3, e3, te4, e4, te5, e5, te6, e6, te7, e7, te8, e8
 
     # plot
 
-    plt.title(fname.split('/')[-1])
+    c = ['b','g','w','c','m','y','b','r']
+
+    fig, ax = plt.subplots(nrows=2, ncols=1, sharex=True)
+
+    fig.suptitle(fname.split('/')[-1])
     plt.style.use('bmh')
 
-    for i, (vt, ve) in enumerate(zip(t, e)):
-#        if i < 2: c = 'b'
-#        else: c = 'r'
-        if i < 4:
-            plt.plot(vt, ve, alpha=0.6, label='line'+str(i))
+    for i, (vt, ve, ve_raw, vfreq, vd) in enumerate(zip(t, e, e_raw, freqs, diff)):
+        if i in [0, 7]:
 
-    plt.xlabel('t[s]')
-    plt.ylabel('U[V]')
+            # sal
+            #plt.subplot(211)
+            ax[0].plot(vt[2:], ve[2:], alpha=0.5, label='#'+str(i+1), color=c[i])
+            ax[0].plot(vt[2:], ve_raw[2:], alpha=0.1, label='#'+str(i+1)+'r', color=c[i])
+            ax[0].set_xlabel('t[s]')
+            ax[0].set_ylabel('U[V]')
+            ax[0].legend(loc='best')
 
-    plt.legend(loc='best')
+            # diff
+            #plt.subplot(212)
+            ax[1].plot(vt[2:], vd[0], alpha=0.5, label='d#'+str(i+1), color=c[i])
+
+            print('plot', i+1, 'from 8')
+
+            # freq
+            #plt.subplot(212)
+            #plt.plot(vfreq, 20*sp.log10(abs(sp.fft(ve_raw))),
+            #         '.', alpha=0.6, color=c[i])
 
     try:
         if argv[2] == '-s':
             plt.savefig(fname.split('.')[0]+'.svg', dpi=300)
     except:
         plt.show()
+        #mpld3.save_html(fig, 'plot.html')
 
 if __name__ == "__main__":
     main(sys.argv)
