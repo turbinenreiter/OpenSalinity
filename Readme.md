@@ -10,5 +10,5 @@ cd ~\..\src\vis
 python3 vis.py <log-file> -s
 ```
 
-log-file is the path to the log file.  
+log-file is the path to the log file. The lof files are in the data directory within vis.  
 -s saves the plot as svg. If -s is not called, an interactive plot is done instead.
