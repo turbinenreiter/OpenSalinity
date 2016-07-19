@@ -1,60 +1,23 @@
 \chapter{Background}
 
-\section{Market Research}
-
-Conductivity meters can be readily bought and range from prices of \euro{500} for lab equipment to \euro{10} for simple field water quality monitors. All available solutions are standalone devices using a single sensor and a display to report measurements. They also are designed to perform singular, high quality reads.
-
-All of these traits are detrimental to the requirements of this project. A device is needed, which can perform fast measurements on multiple points in the stream, with the data exposed in a machine-readable format for further processing. Precision of the measurement can be compromised on, as long as a minimal standard is met. A custom design is necessary.
-
----
-[stub. detailed description of electronics]
-As base for this design, two solutions were found.
-[mini-eC Interface]
-Open Hardware implementation of simple signal generator and signal reader for a two electrode sensor providing raw voltage drop output.
-[AD5933]
-A simple signal generator and signal reader for a two electrode sensor, providing impedance with real and imaginary part. [this is the circuitry from the mini-eC-Interface on a single chip! awesome! base for version 2!]
----
+In this chapter a theoretical background of electrical conductivity measurement will be established. After that, a market research takes a look at the commercially available solutions of sensor systems and parts that could be used to develop one.
 
 \section{Theoretical Background}
 
-[subsections?]
+The following section is translated and summarized from the books \cite{trankler2015sensortechnik} and \cite{gevatter2000automatisierungstechnik}.\\
 
-The conductivity $ \kappa $  is the ability of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to length. To better understand conductivity, an equivalent circuit diagram \ref{fig:ecd} of the experiment design \ref{fig:elec} can be used. In this experiment, the resistance of a substance is determined by measuring the potential drop. [update figures with voltage divider]
-
-The resistance is
-\begin{equation}
-	R = \dfrac{U}{I}
-\label{eq:R}
-\end{equation}
-
-The inverse of $ R $ is the conductance
-\begin{equation}
-	G = \dfrac{I}{U}
-\label{eq:G}
-\end{equation}
-
-Considering the cell constant $ C $ yields the conductivity
-\begin{equation}
-	\kappa = G \cdot \kappa
-\label{eq:kappa} 
-\end{equation}
-
-The cell constant depends on the geometry of the sensor
-\begin{equation}
-	C = \dfrac{d}{A}
-\label{eq:C}
-\end{equation}
-
-where $ d $ is the distance between and $ A $ the size of  the electrodes. [add figure of sensor geometry]
+The conductivity $ \kappa $  is the ability of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to length. To better understand conductivity, an equivalent circuit diagram, shown in figure \ref{fig:ecd}, of an electrode system, shown in figure \ref{fig:elec}, can be used. In this measurement configuration, two electrodes are submerged in the liquid to be measured and a voltage is applied. The resistance $ R $ of the substance is determined by measuring the potential drop $U_R$ given a constant voltage $ U $, current $ I $ and internal resistance $ R_i$. \\
 
 \begin{figure}
 	\begin{center}
 		\begin{circuitikz}[european voltages]
 			\draw
   			(0,0) to [short, *-] (2,0)
-  			to [R, l_=$R$] (2,4)
+  			to [R, l=$R$] (2,2)
   			(0,0) to [open, v^<=$U$] (0,4)
-  			to [short, *- ,i=$I$] (2,4);
+  			to [short, *- ,i=$I$] (2,4)
+  			to [R, l_=$R_i$] (2,2)
+  			(2.25,0) to [open, v<=$U_R$] (2.25,2);
 		\end{circuitikz}
 		\caption{equivalent circuit diagram}
 		\label{fig:ecd}
@@ -66,13 +29,15 @@ where $ d $ is the distance between and $ A $ the size of  the electrodes. [add 
     	\tikzset{external/export next=false}
 		\begin{tikzpicture}
   		    % Draw electrode
- 	   		\fill [black!25] (0.5,2) rectangle (1.5,-1);
+ 	   		\fill [black!25] (0.5,2) node[left, black] {$A$} rectangle (1.5,-1);
 	    		% draw voltmeter
  	   		\draw[join = round, thick] (1,2) -- (1,2.5) -- (2.4,2.5);
  	   		\draw[join = round, thick] (3.1,2.5) -- (4.5,2.5) -- (4.5,2);
  	   		\draw (2.75,2.5) node [circle, draw] {V};
   	  		%Draw electrode
-  	  		\fill [black!25] (4,2) rectangle (5,-1);
+  	  		\fill [black!25] (4,2) node[left, black] {$A$}  rectangle (5,-1);
+  	  		
+		\draw [darrow] (1.5,-0.5) -- (4,-0.5) node[above, pos=0.5] {$d$};
     		%Draw water
     		\fill [blue!75, opacity=0.3] (-0.5,1) rectangle (6,-2);
 		\end{tikzpicture}
@@ -81,13 +46,60 @@ where $ d $ is the distance between and $ A $ the size of  the electrodes. [add 
 	\end{center}
 \end{figure}
 
-[paragraphs with line inbetween?]
-The principle of determining conductivity of a substance by measuring it's resistance in a defined geometry is called conductometry. In electrolytes, the electrical conduction happening is a result of mass transfer, where ions are carrying the charges. If the measurement is conducted with direct current, this mass transfer leads to changes in the measured solution and the electrode surface, negatively impacting the measurement. Furthermore, polarization effects create additional resistance, leading to lower than actual results. To avoid this, alternating current is used. The fast, periodical swap of polarity eliminates the net mass flow and it's effects. Polarization is a result of the current through the electrode, thereby it's effects can be minimized by minimizing this current.
+The resistance $ R $ is
+\begin{equation}
+	R = \dfrac{U_R}{I}
+\label{eq:R}
+\end{equation}
+
+The inverse of the resistance $ R $ is the conductance $ G $
+\begin{equation}
+	G = \dfrac{I}{U_R}
+\label{eq:G}
+\end{equation}
+
+Considering the cell constant $ C $ yields the conductivity
+\begin{equation}
+	\kappa = G \cdot C
+\label{eq:kappa} 
+\end{equation}
+
+The cell constant $ C $ depends on the geometry of the sensor
+\begin{equation}
+	C = \dfrac{d}{A}
+\label{eq:C}
+\end{equation}
+
+where $ d $ is the distance between and $ A $ the surface area of  the electrodes. \\
+
+This principle of determining conductivity of a substance by measuring its resistance in a defined geometry is called conductometry. In electrolytes, the electrical conduction is a result of mass transfer, where ions are carrying the charges. If the measurement is conducted with direct current, this mass transfer leads to changes in the measured solution and the electrode surface, negatively impacting the measurement. Furthermore, polarization effects create additional resistance, leading to lower than actual results. To avoid this, alternating current is used. The fast, periodical swap of polarity eliminates the net mass flow and it's effects. Polarization is a result of the current flowing through the electrode, thereby its effects can be minimized by minimizing this current.
 
 The electrolytes temperature has a big influence on the conductivity and has to be taken in account when comparing two measurements. If the temperature is known, the conductivity can be normalized to a reference temperature.
 
 The system described above is called a two-electrode-cell. In order to minimize current through the electrode, it is possible to separate the current flow from the potential measurement by using four electrodes. One pair is used to apply the current, a separate pair is used to measure the potential drop. This system is called a four-electrode-cell.
 
-[everything up to here is translated and paraphrased from]
-\cite{trankler2015sensortechnik}
-[how do I make that clear?]
+\section{Market Research}
+
+Conductivity meters can be readily bought and range from prices of over \euro{1000} for lab equipment \cite{expcm} to \euro{100} for simple field water quality monitors \cite{cheapcm}. Even cheaper water quality testers from no-name manufacturers can be found for as little as \euro{10} from online vendors.
+
+\begin{figure}
+	\begin{center}
+    	\tikzset{external/export next=false}
+		\includegraphics[scale=0.5]{images/ccm.jpg}
+		\caption{Fisher Scientific™ Traceable™ Salinity Meter Pen \cite{cheapcm}}
+		\label{fig:ccm}
+	\end{center}
+\end{figure}
+
+Figure \ref{fig:ccm} shows a field conductivity meter from a quality manufacturer as example for the typical traits most available solutions share:
+\begin{itemize}
+	\item a single electrode pair
+	\item a display to report measurements
+	\item designed to perform singular reads with high quality
+\end{itemize}
+
+While field conductivity meters have the electrodes integrated to form one compact device, the more expensive lab equipment often has the electrodes attached to the device with a cable, allowing for a more flexible use. \\
+
+A different option was found in the MinieC I2C eC interface from Sparky's Widgets \cite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons. This license means that the schematics, CAD files and software are available, granting the user the right to modify and build custom versions of the board, as long as the original creator is attributed and the modified material itself is also released under the same license \cite{cc}. Ready-made boards can be purchased for about \euro{25}.
+
+The design approach is also more modular than that of the more professional equipment. The MinieC offers an interface to connect external electrodes and can be controlled and read by a microcontroller.

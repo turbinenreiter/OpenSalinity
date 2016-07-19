@@ -32,6 +32,13 @@ def main(argv):
 
     for i, vector in enumerate([te1, te2, te3, te4, te5, te6, te7, te8]):
         t[i] = (vector - te1[0])*10**-6
+        try:
+            index_of = np.where(t[i]<0)[0][0]
+            dt = t[i][index_of-1] - t[i][index_of]
+            for j, val in enumerate(t[i][index_of:]):
+                t[i][j+index_of] = val + dt
+        except IndexError:
+            pass
 
     sample_rate = 1/((t[0][-1]-t[0][0])/len(t[0]))
 
@@ -48,9 +55,9 @@ def main(argv):
         e[i] = (vector - np.average(vector[1:1000])) / 4096
         e_raw[i] = e[i]
         e[i] = low_pass(0.1, sample_rate, e[i])
+        #e[i] = sps.savgol_filter(e[i], 99, 3)
         freqs[i] = spfft.fftfreq(e_raw[i].size, t[i][1]-t[i][0])
         diff[i] = np.diff((e[i], t[i]), 2)
-        #e[i] = sps.savgol_filter(e[i], 99, 3)
         #e[i] = e[i]/(max(e[i])-min(e[i]))
 
     print('values conditioned')

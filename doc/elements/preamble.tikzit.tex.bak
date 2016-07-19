@@ -1,0 +1,22 @@
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{shapes.geometric}
+\pagestyle{empty}
+
+\pgfdeclarelayer{edgelayer}
+\pgfdeclarelayer{nodelayer}
+\pgfsetlayers{edgelayer,nodelayer,main}
+
+\tikzstyle{none}=[inner sep=0pt]
+
+\tikzstyle{rect}=[rectangle,fill=White,draw=Black]
+\tikzstyle{vol}=[rectangle,fill=DeepSkyBlue,draw=DeepSkyBlue]
+
+\tikzstyle{simple}=[-,draw=Black]
+\tikzstyle{tick}=[-,draw=Black,postaction={decorate},decoration={markings,mark=at position .5 with {\draw (0,-0.1) -- (0,0.1);}},line width=2.000]
+\tikzstyle{darrow}=[latex-latex,draw=Black]
+\tikzstyle{arrow}=[-latex,draw=Black]
+
+\newlength{\imagewidth}
+\newlength{\imagescale}

@@ -1,0 +1,14 @@
+\chapter*{Selbstständigkeitserklärung}
+
+%% Two different possibilities
+% long text
+%Hiermit versichere ich, dass ich die vorliegende Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe, dass alle Stellen der Arbeit, die wörtlich oder sinngemäß aus anderen Quellen übernommen wurden, als solche kenntlich gemacht sind und dass die Arbeit in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde vorgelegt wurde.
+% short version, suggestion in document for reports
+Hiermit erkläre ich, dass ich die vorliegende Arbeit selbstständig verfasst und keine anderen als die angegebenen Hilfsmittel verwendet habe.
+
+\vspace{5\baselineskip}
+
+\begin{tabular}{lp{2em}l}
+\hspace{4cm} && \hspace{4cm} \\\cline{1-1}\cline{3-3}
+Ort, Datum && Unterschrift
+\end{tabular}

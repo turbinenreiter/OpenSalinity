@@ -4,62 +4,62 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Objectives}{8}{chapter.5}
+\contentsline {chapter}{\numberline {2}Objectives}{9}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Requirements}{9}{section.6}
+\contentsline {section}{\numberline {2.1}Spacial and Time Resolution}{9}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Spacial and Time Resolution}{9}{subsection.7}
+\contentsline {section}{\numberline {2.2}Electrical Conductivity Resolution}{11}{section.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Electrical Conductivity Resolution}{10}{subsection.13}
+\contentsline {section}{\numberline {2.3}Cost}{11}{section.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Cost}{10}{subsection.14}
+\contentsline {section}{\numberline {2.4}Usability}{11}{section.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}Usability}{11}{subsection.15}
+\contentsline {chapter}{\numberline {3}Background}{13}{chapter.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Background}{12}{chapter.17}
+\contentsline {section}{\numberline {3.1}Theoretical Background}{13}{section.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Market Research}{12}{section.18}
+\contentsline {section}{\numberline {3.2}Market Research}{15}{section.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Theoretical Background}{12}{section.19}
+\contentsline {chapter}{\numberline {4}Design}{17}{chapter.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Design}{15}{chapter.26}
+\contentsline {section}{\numberline {4.1}System Design}{17}{section.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}System Design}{15}{section.27}
+\contentsline {section}{\numberline {4.2}Sensors}{18}{section.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Sensors}{15}{subsection.29}
+\contentsline {section}{\numberline {4.3}Matrix Switch}{21}{section.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Sensor Node}{18}{subsection.32}
+\contentsline {section}{\numberline {4.4}MinieC Interface}{21}{section.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Data Processing Unit}{19}{section*.33}
+\contentsline {section}{\numberline {4.5}Microcontroller}{21}{section.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}User-Interface}{19}{subsection.34}
+\contentsline {section}{\numberline {4.6}User-Interface}{22}{section.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}Sensor System}{19}{subsection.35}
+\contentsline {chapter}{\numberline {5}Results}{23}{chapter.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{20}{chapter.36}
+\contentsline {section}{\numberline {5.1}Verification}{23}{section.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Verification}{20}{section.37}
+\contentsline {subsection}{\numberline {5.1.1}Time Resolution}{23}{subsection.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Time Resolution}{20}{subsection.38}
+\contentsline {subsection}{\numberline {5.1.2}Spacial Resolution}{23}{subsection.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Spacial Resolution}{20}{subsection.39}
+\contentsline {subsection}{\numberline {5.1.3}Electrical Conductivity Resolution}{23}{subsection.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Electrical Conductivity Resolution}{20}{subsection.40}
+\contentsline {subsection}{\numberline {5.1.4}Cost}{23}{subsection.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Cost}{20}{subsection.41}
+\contentsline {subsection}{\numberline {5.1.5}Deployment}{23}{subsection.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Deployment}{20}{subsection.42}
+\contentsline {subsection}{\numberline {5.1.6}Usability}{24}{subsection.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.6}Usability}{21}{subsection.43}
+\contentsline {section}{\numberline {5.2}Validation}{24}{section.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Validation}{21}{section.44}
+\contentsline {chapter}{\numberline {6}Conclusion}{30}{chapter.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{27}{chapter.50}
+\contentsline {chapter}{Appendix}{31}{chapter*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix}{28}{chapter*.51}
+\contentsline {chapter}{\numberline {A}Abbreviations}{32}{appendix.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbreviations}{29}{appendix.52}
+\contentsline {chapter}{\numberline {B}List of Figures}{33}{appendix.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}List of Figures}{30}{appendix.54}
+\contentsline {chapter}{\numberline {C}List of Tables}{33}{appendix.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Tables}{30}{appendix.55}
+\contentsline {chapter}{\numberline {D}Bibliography}{34}{appendix.57}

@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [minimum height=32pt, minimum width=32pt, style=rect] (0) at (0, 1.5) {};
+		\node [minimum height=30pt, minimum width=32pt, style=vol] (1) at (-0.25, 1.5) {};
+		\node [minimum height=32pt, minimum width=32pt, style=rect] (2) at (0, -1.5) {};
+		\node [minimum height=30pt, minimum width=32pt, style=vol] (3) at (0.25, -1.5) {};
+		\node [minimum height=32pt, minimum width=32pt, style=rect] (4) at (0, -4) {};
+		\node [minimum height=30pt, minimum width=32pt, style=vol] (5) at (2.25, -4) {};
+		\node [minimum height=32pt, minimum width=32pt, style=rect] (6) at (0, 4) {};
+		\node [minimum height=30pt, minimum width=32pt, style=vol] (7) at (-2.25, 4) {};
+	\end{pgfonlayer}
+\end{tikzpicture}

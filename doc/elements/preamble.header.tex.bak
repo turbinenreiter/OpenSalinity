@@ -73,8 +73,8 @@
 %% Bibliographie
 \usepackage[german=quotes]{csquotes}
 \usepackage[
-	backend=biber,
-	style=authoryear,
+	backend=bibtex,
+	%style=authoryear,
 	bibstyle=authoryear,
 	dashed=false,
 	mergedate=false,
@@ -91,3 +91,5 @@
 % Code logic
 \usepackage{xargs}
 \usepackage{ifthen}
+
+

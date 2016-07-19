@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: document.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: elements/title.aux
+A level-1 auxiliary file: elements/declaration-of-authorship.aux
+A level-1 auxiliary file: content/introduction.aux
+A level-1 auxiliary file: content/motivation.aux
+A level-1 auxiliary file: content/theory.aux
+A level-1 auxiliary file: content/material-and-methods.aux
+A level-1 auxiliary file: content/results.aux
+A level-1 auxiliary file: content/summary-and-outlook.aux
+A level-1 auxiliary file: elements/abbreviations.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: document-blx.bib
+Database file #2: salinity.bib
+Warning--I didn't find a database entry for "ccm"
+Biblatex version: 3.3
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+You've used 7 entries,
+            6047 wiz_defined-function locations,
+            1167 strings with 9190 characters,
+and the built_in function-call counts, 18155 in all, are:
+= -- 696
+> -- 570
+< -- 174
++ -- 162
+- -- 187
+* -- 1141
+:= -- 1230
+add.period$ -- 0
+call.type$ -- 7
+change.case$ -- 85
+chr.to.int$ -- 34
+cite$ -- 12
+duplicate$ -- 2005
+empty$ -- 2023
+format.name$ -- 308
+if$ -- 4198
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 0
+newline$ -- 147
+num.names$ -- 281
+pop$ -- 2008
+preamble$ -- 1
+purify$ -- 92
+quote$ -- 0
+skip$ -- 1071
+stack$ -- 0
+substring$ -- 362
+swap$ -- 621
+text.length$ -- 167
+text.prefix$ -- 6
+top$ -- 1
+type$ -- 254
+warning$ -- 0
+while$ -- 156
+width$ -- 0
+write$ -- 139
+(There was 1 warning)

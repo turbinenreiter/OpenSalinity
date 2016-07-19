@@ -1,14 +1,11 @@
 \chapter{Introduction}
 
-65\% of the worlds energy is produced using fossil fuels []. Those fuels have to main problems: they are not renewable, meaning that the resources might be depleted one day, and they have a negative CO2-balance [], resulting in a green house effect that changes the climate of the world[].
+Fossil fuels play a large role in the worlds energy production and as energy source for transportation vehicles. Especially for vehicles, their high energy density and liquid form at room temperature enabled the construction and operation of cars and airplanes otherwise not possible.
+At the same time, there are fundamental problems in using fossil fuels as energy source. Be it oil, coal or gas, the formation of these resources is a natural process spanning millions of years. This means that once the current reserves are depleted, they will not be refilled. And even without depleting all the reserves, the depletion of the easily reachable reserves means that ever greater effort has to be taken to find and use less accessible fields, using methods with severe impact on the environment.
+In addition to that, burning fossil fuels for energy also releases a slew of gases in the atmosphere, of which CO2 is the most prominent. CO2 is a greenhouse gas and as such influences the worlds climate tremendously.
 
-Due to this problems, alternatives are needed. Renewable production of energy using wind or solar combined with energy storage in batteries
+In light of those problems, renewable energy sources are needed. For electricity production there are a some attractive technologies already in use that directly or indirectly generate power using the sun. For vehicles, using electrical power can be problematic. The electricity has to be stored in batteries, and even with the higher efficiency of electrical motors, the lowered energy density reduces range drastically. Batteries also have to be charged, as opposed to be refilled like tanks, which takes substantially more time. While for some vehicles, like cars, this technology still can be made feasible, it is much less suitable for airplanes.
 
-[stub]
+For these application a more direct replacement for fossil fuels has to be found. A possible solution are bio-fuels. Bio-fuels are generated from bio-mass, for example plants. An important requirement for the growing of bio-mass to process to bio-fuel is to avoid competition over land and resources with food production. A low price is also important to make the process economically viable.
 
-Given the depletion of fossil fuels, renewable energy sources are growing in importance.
-
-This photobioreactor is used to grow algae that produce lipids from carbon dioxide via photosynthesis. These lipids can be processed to biofuel and other oil-derivatives, replacing crude oil as precursor. In order to be economical viable, the reactor has to feature minimal investment and operating cost.
-
-To better develop, compare and optimize different reactor concepts, a computational fluid dynamics model is being developed. In order to validate this model, and to generate data to feed into it, the real flow conditions in an actual reactor have to be studied.
-The scope of this work is the development and test of a sensor system to make that possible. 
+One technology to potentially fit these needs are open photobioreactor growing algae. The algae produces lipids, which can be processed to fuel. To improve and optimize these reactors experiments and models are needed, among those is a computer fluid dynamics (CFD) simulation. In order to validate the simulation, experiments have to be conducted where the flow conditions in the reactor have to be measured.
