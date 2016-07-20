@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  19 JUL 2016 11:00
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  20 JUL 2016 14:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2041,34 +2041,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-
-LaTeX Warning: Reference `eq:resv' on page 8 undefined on input line 15.
-
-
-LaTeX Warning: Reference `fig:cv' on page 9 undefined on input line 22.
-
-\openout6 = `tikz-cache/document-figure0.dpth'.
-
-[9
-
-
-
-
-
-]
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 9.8299pt on input line 53.
+(Font)              scaled to size 9.8299pt on input line 32.
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/bx/n' will be
-(Font)              scaled to size 9.8299pt on input line 53.
-
-LaTeX Warning: Reference `eq:resn' on page 9 undefined on input line 58.
-
-
-LaTeX Warning: Reference `eq:resk' on page 9 undefined on input line 58.
-
-
-LaTeX Warning: Reference `eq:resv' on page 9 undefined on input line 70.
-
+(Font)              scaled to size 9.8299pt on input line 32.
 ) (./content/theory.tex
 chapter 3.
 
@@ -2077,10 +2053,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 
-LaTeX Warning: Reference `fig:ecd' on page 12 undefined on input line 9.
+LaTeX Warning: Reference `fig:ecd' on page 11 undefined on input line 9.
 
 
-LaTeX Warning: Reference `fig:elec' on page 12 undefined on input line 9.
+LaTeX Warning: Reference `fig:elec' on page 11 undefined on input line 9.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -2090,7 +2066,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+The command '\includegraphics [scale=0.5]{images/ccm.jpg}' has been optimized a
+way. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: Reference `fig:ccm' on page 13 undefined on input line 94.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
@@ -2102,27 +2088,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
  []
 
 
-Overfull \hbox (0.58224pt too wide) in paragraph at lines 11--12
-[][][]\EU1/SourceSerifPro(0)/m/sl/13 sensor node - a signal generator, reader a
-nd a number of ports to connect sensors 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-(./images/system_design.tikz
+\openout6 = `tikz-cache/document-figure0.dpth'.
+
+[16
+
+
+
+
+
+]
+
+LaTeX Warning: Reference `eq:resv' on page 16 undefined on input line 53.
+
+
+LaTeX Warning: Reference `fig:cv' on page 16 undefined on input line 60.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-)
 
-LaTeX Warning: Reference `fig:v2' on page 17 undefined on input line 44.
+LaTeX Warning: Reference `eq:resn' on page 16 undefined on input line 96.
+
+
+LaTeX Warning: Reference `eq:resk' on page 16 undefined on input line 96.
+
+
+LaTeX Warning: Reference `eq:resv' on page 17 undefined on input line 108.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+LaTeX Warning: Reference `fig:v2' on page 17 undefined on input line 126.
 
 The command '\includegraphics [width=\textwidth ]{images/v2.jpg}' has been opti
 mized away. Use '/tikz/external/optimize=false' to disable this.
@@ -2181,12 +2188,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 65030 strings out of 493638
- 1464548 string characters out of 6146797
- 2042601 words of memory out of 5000000
- 67428 multiletter control sequences out of 15000+600000
+ 65067 strings out of 493638
+ 1464998 string characters out of 6146797
+ 2043601 words of memory out of 5000000
+ 67470 multiletter control sequences out of 15000+600000
  17629 words of font info for 56 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 74i,32n,106p,10478b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,32n,106p,10478b,1886s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on tikz-cache/document-figure0.pdf (1 page).

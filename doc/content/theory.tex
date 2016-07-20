@@ -6,7 +6,9 @@ In this chapter a theoretical background of electrical conductivity measurement 
 
 The following section is translated and summarized from the books \cite{trankler2015sensortechnik} and \cite{gevatter2000automatisierungstechnik}.\\
 
-The conductivity $ \kappa $  is the ability of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to length. To better understand conductivity, an equivalent circuit diagram, shown in figure \ref{fig:ecd}, of an electrode system, shown in figure \ref{fig:elec}, can be used. In this measurement configuration, two electrodes are submerged in the liquid to be measured and a voltage is applied. The resistance $ R $ of the substance is determined by measuring the potential drop $U_R$ given a constant voltage $ U $, current $ I $ and internal resistance $ R_i$. \\
+The conductivity $ \kappa $  is the ability of a certain volume of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to the length and cross section of the volume. Conductivity in a liquid is depended on ions as charge carrier and can therefore be used to measure concentration of such. Temperature plays a large role in the mobility of the ions and thus influences the conductivity.
+
+To better understand conductivity, an equivalent circuit diagram, shown in figure \ref{fig:ecd}, of an electrode system, shown in figure \ref{fig:elec}, can be used. This method is called conductometry. In this measurement configuration, two electrodes are submerged in the liquid to be measured and a voltage is applied. The resistance $ R $ of the substance is determined by measuring the potential drop $U_R$ given a constant voltage $ U $, current $ I $ and internal resistance $ R_i$. \\
 
 \begin{figure}
 	\begin{center}
@@ -72,11 +74,22 @@ The cell constant $ C $ depends on the geometry of the sensor
 
 where $ d $ is the distance between and $ A $ the surface area of  the electrodes. \\
 
-This principle of determining conductivity of a substance by measuring its resistance in a defined geometry is called conductometry. In electrolytes, the electrical conduction is a result of mass transfer, where ions are carrying the charges. If the measurement is conducted with direct current, this mass transfer leads to changes in the measured solution and the electrode surface, negatively impacting the measurement. Furthermore, polarization effects create additional resistance, leading to lower than actual results. To avoid this, alternating current is used. The fast, periodical swap of polarity eliminates the net mass flow and it's effects. Polarization is a result of the current flowing through the electrode, thereby its effects can be minimized by minimizing this current.
+In electrolytes, the electrical conduction is a result of mass transfer, where ions are carrying the charges. If the measurement is conducted with direct current, this mass transfer leads to changes in the measured solution and the electrode surface, negatively impacting the measurement. Furthermore, polarization effects create additional resistance, leading to lower than actual results. To avoid this, alternating current is used. The fast, periodical swap of polarity eliminates the net mass flow and it's effects. Polarization is a result of the current flowing through the electrode, thereby its effects can be minimized by minimizing this current. One method to do this is replacing the two-electrode-cell with a four-electrode-cell.
+This separates the current flow from the potential measurement by using one electrode pair to apply the current, and a separate pair to measure the potential drop. \\
 
-The electrolytes temperature has a big influence on the conductivity and has to be taken in account when comparing two measurements. If the temperature is known, the conductivity can be normalized to a reference temperature.
+The electrolytes temperature has a big influence on the conductivity and has to be taken in account when comparing two measurements. If the temperature $ T $ is known, the conductivity at that temperature $ \kappa_{T} $ can be normalized to a reference temperature $ T_{ref} $ using equation \eqref{eq:kref}, resulting in the reference conductivity $ \kappa_{ref} $.
 
-The system described above is called a two-electrode-cell. In order to minimize current through the electrode, it is possible to separate the current flow from the potential measurement by using four electrodes. One pair is used to apply the current, a separate pair is used to measure the potential drop. This system is called a four-electrode-cell.
+\begin{equation}
+	\kappa_{ref} = \kappa_{T} \frac{1}{1 + C \cdot (T - T_{ref})}
+\label{eq:kref}
+\end{equation}
+
+The temperature coefficient $ C $ assumes a linear correlation and is only valid in a narrow temperature range. For bigger ranges the denominator can be replaced with a polynomial using higher order coefficients, resulting in equation \eqref{eq:kref+}.
+
+\begin{equation}
+	\kappa_{ref} = \kappa_{T} \frac{1}{\sum\limits_{i=0}^n C_i \cdot (T - T_{ref})^{i}}
+\label{eq:kref+}
+\end{equation}
 
 \section{Market Research}
 
