@@ -50,6 +50,8 @@ The microcontroller can control multiple MinieC interfaces at once.
 
 \section{Electrodes}
 
+And the C is d / A and is 1 and results in range x.
+
 The velocity $ v $ of the stream flowing over the sensor is approximately \unitfrac[1]{m}{s}. This allows us to create a relation \eqref{eq:resv} between the spacial resolution $ \diff s $ and the time resolution $ \diff t $.
 
 \begin{equation}

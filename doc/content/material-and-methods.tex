@@ -12,12 +12,10 @@ Using the matrix switches, 8 electrodes can be used with just one MinieC interfa
 
 \begin{itemize}
     \item by chaining up multiple stages of matrix switches, the number of electrodes can be increased eightfold with each stage
-    \item by connecting another MinieC Interface with it's own set of matrix switches, 8 more electrodes can be added with each of these subsystems
+    \item by connecting another MinieC Interface with it's own set of matrix switches to the microcontroller, 8 more electrodes can be added with each of these subsystems
 \end{itemize}
 
 The first option results in lower cost per added electrode, as the MinieC interface is reused. However, with a system like that, all electrodes have to be read in serial, while with the second option each MinieC interface can read in parallel, resulting in higher sample rate. Practically the second option is also easier to achieve. For the first option, a board with 18 matrix switches and 80 connections is needed, while the second option only uses 2 switches per board resulting in 16 connections. The simpler board greatly reduces complexity and can also be made smaller.
-
-The microcontroller can control multiple MinieC interfaces at once.
 
 \begin{figure}
 	\begin{center}

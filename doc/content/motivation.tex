@@ -17,7 +17,27 @@ The spacial resolution $ \diff s $ and the time resolution $ \diff t $ decide th
 \label{eq:resv} 
 \end{equation}
 
-The time resolution needed depends on the spacial resolution that needs to be achieved.
+With both resolutions connected, only one of them has to be defined. \\
+
+The information gathered by the sensor has to be granular enough to enable the verification of the simulation. As it is not possible to derive a hard number from that, the following list shows different deliberations to establish a first estimate. \\
+
+\begin{itemize}
+\item The granularity of the simulation is determined by the mesh size and is in the order of about  \unit[1]{mm} to \unit[5]{mm}. A resolution better than that would be unnecessary, making this the lower limit.
+
+\item The data collected by the sensor system shows salinity of the liquid passing a certain position over time. By extracting the same data from the simulation, a graph can be compiled comparing the measured to the simulated values. The flow becomes visible when comparing data from different positions. The first sensor to show a spike in salinity is further up the stream then sensors spiking later. The distance between two sensors has to be big enough for a given velocity of the stream so that the time delay can be clearly seen. At a flow speed of $ v $ in the order of \unitfrac[1]{m}{s}, a resolution in the order of centimeters would yield time differences of hundredths of a second. Whether or not this is sufficient depends on noise and delay in the sensor system, however hundredths of a second is a conservative estimate likely to be achieved.
+
+\item The geometry of the forebay as shown in figure \ref{fig:elb} also influences the needed resolution. It has to be an order of magnitude smaller as the basins characteristic length, in this case the width of \unit[850]{mm}, to enable gathering data about the flow conditions within.
+\end{itemize}
+
+Derived from all that, a spacial resolution in the order of centimeters is chosen as requirement.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/Einlaufbecken.pdf} 
+		\caption{Forebay}
+		\label{fig:elb}
+	\end{center}
+\end{figure}
 
 \section{Electrical Conductivity Resolution}
 
@@ -26,6 +46,8 @@ To measure the arrival of the new water stream after switching the water feed, t
 \section{Cost}
 
 The more sensors used, the more points in the stream can be measured and the better the image of the stream gets. Therefore, the cost per sensor has to be low enough to not be prohibitive of adding more sensors.
+The cost of a high quality lab conductivity meter is in the range of \euro{1000} and was set as the goal of maximum cost for the sensor system. The number of sensors needed to cover all interesting regions of the bioreactors is about 40.
+A cost per sensor of \euro{25} results from those figures.
 
 \section{Usability}
 
@@ -42,9 +64,9 @@ The system also has to be easy to use, so it can be helpful to the researchers w
         	\toprule
         	Nr. & Requirement & Verification \tabularnewline
         	\midrule
-		1 & The system shall have a spacial resolution of \unit[1]{cm}. & Inspection \tabularnewline
+		1 & The system shall have a spacial resolution in the order of \unit[1]{cm}. & Inspection \tabularnewline
 		2 & The system shall have a sensitivity of  \unit[0.1]{\%} salinity.  & Test \tabularnewline
-		3 & The cost of adding a sensor to the system shall be less than \euro{10}.  & Analysis \tabularnewline
+		3 & The cost per sensor shall be less than \euro{25}.  & Analysis \tabularnewline
 		4 & The system shall be deployable in the algae reactor. & Demonstr. \tabularnewline
 		5 & The system shall be usable with a minimal set of written instructions. & Test, Review \tabularnewline
         \bottomrule

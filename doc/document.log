@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  20 JUL 2016 15:22
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  24 JUL 2016 15:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2236,17 +2236,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 
 ]
-Overfull \hbox (18.41565pt too wide) in paragraph at lines 20--21
-[][][]\EU1/SourceSerifPro(0)/m/sl/13 The time resolution needed depends on the 
-spacial resolution that needs to be achieved. 
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
  []
 
 [10]
+File: images/Einlaufbecken.pdf Graphic file (type QTm)
+ <use  "images/Einlaufbecken.pdf" >
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 9.8299pt on input line 39.
+(Font)              scaled to size 9.8299pt on input line 37.
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/bx/n' will be
-(Font)              scaled to size 9.8299pt on input line 39.
-) [11]
+(Font)              scaled to size 9.8299pt on input line 37.
+ [11]) [12]
 \openout2 = `content/theory.aux'.
 
  (./content/theory.tex
@@ -2261,11 +2267,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[12
+[13
 
 
 
-] [13]
+] [14]
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
@@ -2275,14 +2281,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
-[14]
+[15]
 File: images/ccm.jpg Graphic file (type QTm)
  <use  "images/ccm.jpg" >
 Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-) [15] [16]
+) [16] [17]
 \openout2 = `content/material-and-methods.aux'.
 
  (./content/material-and-methods.tex
@@ -2302,7 +2308,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[17
+[18
 
 
 
@@ -2311,24 +2317,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 no macro to compute MD5. Falling back to 'up to date check=diff'.
 ===== Image 'tikz-cache/document-figure0' is up-to-date. ======
 File: tikz-cache/document-figure0.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure0.pdf" > [18]
+<use  "tikz-cache/document-figure0.pdf" > [19]
 ===== Image 'tikz-cache/document-figure1' is up-to-date. ======
 File: tikz-cache/document-figure1.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure1.pdf" > [19]
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+<use  "tikz-cache/document-figure1.pdf" > [20]
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 File: images/v2.jpg Graphic file (type QTm)
-<use  "images/v2.jpg" > [20] [21]
+<use  "images/v2.jpg" > [21] [22]
 File: images/fpcbd.pdf Graphic file (type QTm)
- <use  "images/fpcbd.pdf" > [22]) [23]
-[24]
+ <use  "images/fpcbd.pdf" > [23]) [24]
+[25]
 \openout2 = `content/results.aux'.
 
  (./content/results.tex
 chapter 5.
-[25
+[26
 
 
 
@@ -2344,17 +2350,17 @@ File: images/switch_cap.pdf Graphic file (type QTm)
  <use  "images/switch_cap.pdf" >
 File: images/switch_nocap.pdf Graphic file (type QTm)
 
-<use  "images/switch_nocap.pdf" >) [26] [27] [28] [29] [30] [31]
+<use  "images/switch_nocap.pdf" >) [27] [28] [29] [30] [31] [32]
 \openout2 = `content/summary-and-outlook.aux'.
 
 
 (./content/summary-and-outlook.tex
 chapter 6.
-) [32
+) [33
 
 
 
-] [33
+] [34
 
 
 ]
@@ -2367,7 +2373,7 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [34
+) [35
 
 
 ]
@@ -2382,7 +2388,7 @@ chapter C.
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [35
+ [36
 
 
 ]
@@ -2419,7 +2425,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[36
+[37
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
@@ -2442,10 +2448,6 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
@@ -2453,12 +2455,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 65290 strings out of 493638
- 1468879 string characters out of 6146797
+ 65293 strings out of 493638
+ 1468929 string characters out of 6146797
  2043568 words of memory out of 5000000
- 67625 multiletter control sequences out of 15000+600000
+ 67627 multiletter control sequences out of 15000+600000
  17637 words of font info for 57 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,32n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (36 pages).
+Output written on document.pdf (37 pages).
