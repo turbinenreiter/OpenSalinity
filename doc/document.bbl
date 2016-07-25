@@ -35,6 +35,22 @@
   \field{year}{2016}
 \endentry
 
+\entry{ms}{manual}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Devices}{D.}%
+     {Analog}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DA1}
+  \strng{fullhash}{DA1}
+  \field{labelyear}{2016}
+  \field{sortinit}{D}
+  \field{title}{ADG738/ADG739 Data Sheet}
+  \field{year}{2016}
+\endentry
+
 \entry{uec}{online}{}
   \name{author}{1}{}{%
     {{}%

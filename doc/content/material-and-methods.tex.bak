@@ -1,12 +1,10 @@
 \chapter{Design}
 
-This chapter describes the design of the sensor system and all components involved. \\
+This chapter describes the design of the sensor system and all components involved. The system consists of several parts playing different roles. The System Design gives an overview of these parts, their purpose and their communication with each other. Afterwards, these subsystem are described in detail.\\
 
 \section{System Design}
 
-The system consists of several parts playing different roles. This section gives an overview of these parts, their purpose and their communication with each other. Afterwards, these subsystem are described in detail. \\
-
-On the user-facing side there is a PC. This PC runs software that visualizes a live data stream and provides a control interface for the sensor system. It is connected via USB to a microcontroller. This microcontroller controls the MinieeC interface via I2C, reads the measurement data from it and sends it to the PC. It also controls the matrix switches. The MinieC Interface provides the signal and ground between which the resistance is measured. Both lines are connected to one matrix switch each. These matrix switches are able to connect one input to 8 different outputs. On each of those outputs, one electrode is connected. The matrix switches can thereby connect the MinieC interface to one of 8 electrodes pairs. \\
+On the user-facing side there is a personal computer (PC). This PC runs software that visualizes a live data stream and provides a control interface for the sensor system. It is connected via USB to a microcontroller. This microcontroller controls the MinieeC interface via I2C, reads the measurement data from it and sends it to the PC. It also controls the matrix switches. The MinieC Interface provides the signal and ground between which the resistance is measured. Both lines are connected to one matrix switch each. These matrix switches are able to connect one input to 8 different outputs. On each of those outputs, one electrode is connected. The matrix switches can thereby connect the MinieC interface to one of 8 electrode pairs. \\
 
 Using the matrix switches, 8 electrodes can be used with just one MinieC interface. Increasing the number of electrodes can be done in two ways:
 
@@ -43,89 +41,45 @@ The first option results in lower cost per added electrode, as the MinieC interf
 		%\input{images/system_design.tikz}
 		%\includegraphics[width=\textwidth]{images/systemdesign.pdf} 
 		\caption{System Design}
+		\label{fig:sys}
 	\end{center}
 \end{figure}
 
 \section{Electrodes}
 
-And the C is d / A and is 1 and results in range x.
+The electrode pairs are the actual sensors in contact with the fluid to be measured. Their material and geometry influence the measuring range of the system. According to information in the book \cite{trankler2015sensortechnik} a cell constant $ C $ of $1$ enables a range from \unitfrac[$2 \cdot 10^3$]{$\mu S$}{cm} to \unitfrac[$10 \cdot 10^3$]{$\mu S$}{cm}. For a water temperature of \unit[$18^\circ$]{C} this corresponds to salinities of \unit[0.66]{\%} and \unit[0.12]{\%}. While this theoretical range is not sufficient for our purpose, first tests showed that the achievable range is much bigger than described in the book. The book doesn't specify the materials influence on the range and it also doesn't qualify how the usable range is defined. As our application has much lower demands on accuracy as the usual ones, this might be an explanation for the discrepancy. \\
 
-The velocity $ v $ of the stream flowing over the sensor is approximately \unitfrac[1]{m}{s}. This allows us to create a relation \eqref{eq:resv} between the spacial resolution $ \diff s $ and the time resolution $ \diff t $.
-
-\begin{equation}
-	v = \dfrac{\diff s}{\diff t}
-\label{eq:resv} 
-\end{equation}
-
-For example, a spacial resolution of \unit[1]{cm} would require a time resolution of \unit[0.01]{s}. However, this assumes the size $ l $ of the sensor and the time $ \tau $ a measurement takes to be infinitesimal small, while in reality it is not. While the sensors measures, the flow continuous and instead of measuring the conductivity of a certain volume at a certain time, an average is measured. Figure \ref{fig:cv} visualizes this issue.
+Figure \ref{fig:sensor} shows the geometry of the sensor. To achieve a cell constant $C$ of $1$, a width $w$ of \unit[1]{mm}, height $h$ of \unit[10]{mm} and distance $d$ of \unit[10]{mm} were chosen.\\
 
 \begin{figure}
 	\begin{center}
 		\begin{tikzpicture}
-		\node [minimum height=32pt, minimum width=32pt, style=rect] (0) at (0, 0) {};
-		\draw (-0.55,0) -- (-0.55,-1.5);
-		\draw (0.55,0) -- (0.55,-1.5);
-		\draw [darrow] (-0.55,-1.3) -- (0.55,-1.3) node[above, pos=0.5] {$l$};
+			\draw [line width=0.5mm] (-1,-1) -- (-1,1) -- (-1.3,1) -- (-1.3,-1) -- (-1,-1);
+			\draw [dash dot] (-1.15,-1.5) -- (-1.15,1.2);
+			\draw [line width=0.5mm] (1,-1) -- (1,1) -- (1.3,1) -- (1.3,-1) -- (1,-1);
+			\draw [dash dot] (1.15,-1.5) -- (1.15,1.2);
 
-		\node [minimum height=32pt, minimum width=32pt, style=vol] (0) at (-1.5, 0) {};
-		\draw [arrow] (-2.05,1) -- (-1,1) node[above, pos=0.5] {$v$};
+			\draw (-1,1.6) -- (-1,1);
+			\draw (-1.3,1.6) -- (-1.3,1);
+			\draw (-1,1.4) -- (-1.3,1.4) node[above, pos=-0.75] {$w$};
+			\draw [arrow]  (-1.7,1.4) -- (-1.3,1.4);
+			\draw [arrow] (-0.6,1.4) -- (-1,1.4);
+			
+			\draw (-1.9,1) -- (-1.3,1);
+			\draw (-1.9,-1) -- (-1.3,-1);
+			\draw [darrow] (-1.7,1) -- (-1.7,-1) node[left, pos=0.5] {$h$};
 
-		\node [] at (4,0) {$t<0$};
+			\draw [darrow] (-1.15,-1.3) -- (1.15,-1.3) node[above, pos=0.5] {$d$};
 
-		\node [minimum height=32pt, minimum width=32pt, style=rect] (0) at (0, -2.5) {};
-		\node [minimum height=32pt, minimum width=32pt, style=vol] (0) at (-0.25, -2.5) {};
-
-		\node [] at (4,-2.5) {$t=0$};
-
-		\node [minimum height=32pt, minimum width=32pt, style=rect] (0) at (0, -4) {};
-		\node [minimum height=32pt, minimum width=32pt, style=vol] (0) at (0.25, -4) {};
-
-		\node [] at (4,-4) {$t=\tau$};		
-		
-		\node [minimum height=32pt, minimum width=32pt, style=rect] (0) at (0, -6) {};
-		\node [minimum height=32pt, minimum width=32pt, style=vol] (0) at (1.5, -6) {};
-		
-		\node [] at (4,-6) {$t>\tau$};
 		\end{tikzpicture}
-		%\includegraphics[width=0.45\textwidth]{images/resolution.pdf} 
-		\caption{control volume moving over sensor}
-		\label{fig:cv}
+		\caption{Electrode pair forming a sensor}
+		\label{fig:sensor}
 	\end{center}
 \end{figure}
 
-To accommodate for that, factors $ n $ \eqref{eq:resn} and $ k $ \eqref{eq:resk} are introduced, describing the ratio of the resolutions to the actual sizes.
+As a first proof-of-concept a the sensor was built as a sensor array, containing multiple electrode pairs on a strip \ref{fig:v2}. A \unit[5]{cm} wide and \unit[25]{cm} long band of Kapton adhesive tape served as the base. 4 electrode pairs made from \unit[0.2]{mm} platinum wire were arranged equidistant on the strip. \unit[0.4]{mm} enameled copper wire runs along the tape to connect each electrode pair to the left end of the strip, from which insulated cables run to the sensor node. After soldering the joints, two smaller strips of tape were used to cover the wiring, exposing only the electrodes to fluid.
 
-\begin{equation}
-	n = \dfrac{l}{\diff s}
-\label{eq:resn} 
-\end{equation}
-
-\begin{equation}
-	k = \dfrac{ \tau}{\diff t}
-\label{eq:resk}
-\end{equation}
-
-Inserting $ k $ and $ n $ in formula \eqref{eq:resv} yields
-
-\begin{equation}
-	v = \dfrac{\diff s}{\diff t} = \dfrac{k \cdot l}{n \cdot \tau}
-\label{eq:resv1} 
-\end{equation}
-
-The ratio $ r $
-\begin{equation}
-	r = \frac{k}{n}
-\label{eq:resr} 
-\end{equation}
-is the ratio of the time it takes a control volume to enter and leave the sensor area  to the time a measurement takes. To avoid a smearing of the measurement over multiple control volumes, $ r $ should be 10. This can be achieved with a sensor that has a size $ l $ of \unit[1]{cm}, and a measurement time $ \tau $ of \unit[1]{ms}.
-
-The electrode pair is submerged in the fluid to measured and has to be connected to the MinieC interface with waterproof wires. \\
-
-The first version of the sensor was made from two platinum electrodes that were wired to the sensor node via jumper cables. It was used to verify the function of the circuitry, implement the software needed to read and capture the data and test the sensitivity of the sensor.
-
-The second version of the sensor was built as a sensor array containing of multiple sensors on a sensor strip \ref{fig:v2}. A \unit[5]{cm} wide and \unit[25]{cm} long strip of Kapton adhesive tape served as the base. 4 electrode pairs made from \unit[0.2]{mm} platinum wire were arranged equidistant on the strip. \unit[0.4]{mm} enameled copper wire runs along the tape to connect each electrode pair to the left end of the strip, from which insulated cables run to the sensor node. After soldering the joints, two smaller strips of tape were used to cover the wiring, exposing only the electrodes to fluid.
-
-First tests with this sensor array showed the viability of the concept, however a simple look at it shows the inherit problems. Instead of a uniformly flat strip with minimal influence on the flow, it provides several irregularities. Soldering \unit[0.2]{mm} platinum wire to \unit[0.4]{mm} enameled copper wire on a piece of adhesive tape per hand also did not result in clean solder joints. And while with the experience of the first array, the second array turned out a bit cleaner, the fundamental problem remains: it is a tedious manufacturing process resulting in a low quality product.
+First tests with this sensor array showed the viability of the concept, however a simple look at it shows the inherit problems. Instead of a uniformly flat strip with minimal influence on the flow, the assembly forms several irregularities. Soldering \unit[0.2]{mm} platinum wire to \unit[0.4]{mm} enameled copper wire on a piece of adhesive tape per hand also did not result in clean solder joints. And while with the experience of the first array, the second array turned out a bit cleaner, the fundamental problem remains: it is a tedious manufacturing process resulting in a low quality product.
 
 \begin{figure}
 	\begin{center}
@@ -135,11 +89,11 @@ First tests with this sensor array showed the viability of the concept, however 
 	\end{center}
 \end{figure}
 
-As an alternative to these handmade strips, industrially produced Flex-PCBs were identified. Flex-PCBs are flexible printed circuit boards that are very close to our handmade arrays. They also use Kapton as base, on which a copper coating gets applied and partially removed to form the conducting paths. On top, another layer of Kapton is applied, with cutouts in the places where the copper is supposed to be exposed. The exposed copper is then plated with ENIG (Electroless nickel immersion gold) to protect the copper from oxidation and provide the landing pads for electrical components to be solder on.
+As an alternative to these handmade strips, industrially produced Flex-PCBs were identified. Flex-PCBs are flexible printed circuit boards that are very close to the handmade arrays described above. They also use Kapton as base, on which a copper coating gets applied and partially removed by etching to form the conducting paths. On top, another layer of Kapton is applied, with cutouts in the places where the copper is supposed to be exposed. The exposed copper is then plated with ENIG (Electroless nickel immersion gold) to protect the copper from oxidation and provide the landing pads for electrical components to be soldered on.
 
-For our purpose those exposed and plated landing pads can be used as electrodes, being nicely embedded in a FlexPCB that also runs the wiring up to an interface from where cables ban be run. Using the FlexPCB itself as cable is not viable due to the high cost per area.
+For our purpose those exposed and plated landing pads can be used as electrodes, being nicely embedded in a FlexPCB that also runs the wiring up to an interface from where cables can be run. Using the FlexPCB itself as cable is not viable due to the high cost per area.
 
-The cables are soldered directly to the PCB and silicone is used to seal the connection off.
+The cables are soldered directly to the PCB and silicone is used to create a waterproof seal around the connection.
 
 \begin{figure}
 	\begin{center}
@@ -149,11 +103,37 @@ The cables are soldered directly to the PCB and silicone is used to seal the con
 	\end{center}
 \end{figure}
 
-\section{Matrix Switch}
+\section{Matrix Switches}
 
-[name of matrix switch]
+The matrix switches are an essential part of the system, enabling it use multiple sensors with a single MinieC Interface, thus lowering the cost per sensor.\\
 
-This allows us to use one mini-eC-Interface to drive 8 sensors.
+The part used is an ADG738 from Analog Devices. It is an 8-channel CMOS analog matrix switch controlled via a 3-wire serial interface. The following information is taken from the data sheet \cite{ms}.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.3\textwidth]{images/ms.pdf} 
+		\caption{Functional block diagram of ADG738}
+		\label{fig:ms}
+	\end{center}
+\end{figure}
+
+Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain pin (D) and 8 source pins (S1 .. S8). Despite the naming of drain and source, the internals provide simple switches between the drain and each source pin. The switches work in both directions without any restriction on the signal beyond a maximum current of \unit[120]{mA} that far exceeds our needs. By sending control commands via the 3-wire interface, each of the 8 internal switches can be turned on and off individually. The example timing diagram \ref{fig:msc} describes the data transmission process.
+
+\begin{figure}
+	\begin{center}
+	\tikzexternaldisable
+		\begin{tikztimingtable}
+  			SYNC   & L 32{H} L \\
+  			SCLK   & C 16{2C} N(A1) C \\
+  			DIN  	& 2{L} {2H} N(B1) 15{2L} \\
+  			Data	& 2D{} 2D{1} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{}\\
+		\end{tikztimingtable}
+		\caption{Timing diagram}
+		\label{fig:msc}
+	\end{center}
+\end{figure}
+
+The microcontroller sends one byte of data to the matrix switch. Each of the 8 bits of this byte controls one switch. The first bit controls the first switch and so on. If the bit is 1, the switch is closed, if 0, the switch is open. To send the byte, first the synchronization pin (SYNC) has to be pulled low from it's usual high level. A clock signal is provided to the clock pin (SCLK). At each falling edge of the clock signal, the data input (DIN) is read - where high leads to a 1-bit and low to a zero-bit. After 8 cycles, SYNC is pulled high again marking the end of data transmission with a full byte transferred. After that, the switches immediately take their instructed states with switching times in the order of \unit[100]{ns}.
 
 \section{MinieC Interface}
 

@@ -26,40 +26,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Electrodes}{19}{section.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Matrix Switch}{23}{section.37}
+\contentsline {section}{\numberline {4.3}Matrix Switches}{22}{section.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}MinieC Interface}{23}{section.38}
+\contentsline {section}{\numberline {4.4}MinieC Interface}{24}{section.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Microcontroller}{24}{section.39}
+\contentsline {section}{\numberline {4.5}Microcontroller}{24}{section.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}User-Interface}{25}{section.40}
+\contentsline {section}{\numberline {4.6}User-Interface}{25}{section.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{26}{chapter.41}
+\contentsline {chapter}{\numberline {5}Results}{26}{chapter.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Verification}{26}{section.42}
+\contentsline {section}{\numberline {5.1}Verification}{27}{section.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Time Resolution}{26}{subsection.43}
+\contentsline {subsection}{\numberline {5.1.1}Time Resolution}{27}{subsection.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Spacial Resolution}{26}{subsection.44}
+\contentsline {subsection}{\numberline {5.1.2}Spacial Resolution}{27}{subsection.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Electrical Conductivity Resolution}{26}{subsection.45}
+\contentsline {subsection}{\numberline {5.1.3}Electrical Conductivity Resolution}{27}{subsection.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Cost}{26}{subsection.46}
+\contentsline {subsection}{\numberline {5.1.4}Cost}{28}{subsection.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Deployment}{26}{subsection.47}
+\contentsline {subsection}{\numberline {5.1.5}Deployment}{28}{subsection.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.6}Usability}{27}{subsection.48}
+\contentsline {subsection}{\numberline {5.1.6}Usability}{28}{subsection.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Validation}{27}{section.49}
+\contentsline {section}{\numberline {5.2}Validation}{28}{section.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{33}{chapter.55}
+\contentsline {chapter}{\numberline {6}Conclusion}{34}{chapter.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix}{34}{chapter*.56}
+\contentsline {chapter}{Appendix}{35}{chapter*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbreviations}{35}{appendix.57}
+\contentsline {chapter}{\numberline {A}Abbreviations}{36}{appendix.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}List of Figures}{36}{appendix.59}
+\contentsline {chapter}{\numberline {B}List of Figures}{37}{appendix.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Tables}{36}{appendix.60}
+\contentsline {chapter}{\numberline {C}List of Tables}{37}{appendix.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Bibliography}{37}{appendix.61}
+\contentsline {chapter}{\numberline {D}Bibliography}{38}{appendix.64}
