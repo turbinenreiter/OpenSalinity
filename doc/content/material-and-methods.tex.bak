@@ -105,9 +105,9 @@ The cables are soldered directly to the PCB and silicone is used to create a wat
 
 \section{Matrix Switches}
 
-The matrix switches are an essential part of the system, enabling it use multiple sensors with a single MinieC Interface, thus lowering the cost per sensor.\\
+The matrix switches are an essential part of the system, enabling it use multiple sensors with a single MinieC Interface, thus lowering the cost per sensor. The part used is an ADG738 from Analog Devices. It is an 8-channel CMOS analog matrix switch controlled via a 3-wire serial interface. The following information is taken from the data sheet \cite{ms}.\\
 
-The part used is an ADG738 from Analog Devices. It is an 8-channel CMOS analog matrix switch controlled via a 3-wire serial interface. The following information is taken from the data sheet \cite{ms}.
+Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain pin (D) and 8 source pins (S1..S8). Despite the naming of drain and source, the internals provide simple switches between the drain and each source pin. The switches work in both directions without any restriction on the signal beyond a maximum current of \unit[120]{mA} that far exceeds our needs. By sending control commands via the 3-wire interface, each of the 8 internal switches can be turned on and off individually.\\
 
 \begin{figure}
 	\begin{center}
@@ -117,13 +117,13 @@ The part used is an ADG738 from Analog Devices. It is an 8-channel CMOS analog m
 	\end{center}
 \end{figure}
 
-Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain pin (D) and 8 source pins (S1 .. S8). Despite the naming of drain and source, the internals provide simple switches between the drain and each source pin. The switches work in both directions without any restriction on the signal beyond a maximum current of \unit[120]{mA} that far exceeds our needs. By sending control commands via the 3-wire interface, each of the 8 internal switches can be turned on and off individually. The example timing diagram \ref{fig:msc} describes the data transmission process.
+The example timing diagram \ref{fig:msc} describes the data transmission process. The microcontroller sends one byte of data to the matrix switch. Each of the 8 bits of this byte controls one switch. The first bit controls the first switch and so on. If the bit is 1, the switch is closed, if 0, the switch is open. To send the byte, first the synchronization pin (SYNC) has to be pulled low from it's usual high level. A clock signal is provided to the clock pin (SCLK). At each falling edge of the clock signal, the data input (DIN) is read - where high leads to a 1-bit and low to a zero-bit. After 8 cycles, SYNC is pulled high again marking the end of data transmission with a full byte transferred. After that, the switches immediately take their instructed states with switching times in the order of \unit[100]{ns}. In the example shown, the first switch is on, while all others are off.\\
 
 \begin{figure}
 	\begin{center}
 	\tikzexternaldisable
 		\begin{tikztimingtable}
-  			SYNC   & L 32{H} L \\
+  			SYNC   & H 32{L} H \\
   			SCLK   & C 16{2C} N(A1) C \\
   			DIN  	& 2{L} {2H} N(B1) 15{2L} \\
   			Data	& 2D{} 2D{1} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{}\\
@@ -133,17 +133,38 @@ Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain
 	\end{center}
 \end{figure}
 
-The microcontroller sends one byte of data to the matrix switch. Each of the 8 bits of this byte controls one switch. The first bit controls the first switch and so on. If the bit is 1, the switch is closed, if 0, the switch is open. To send the byte, first the synchronization pin (SYNC) has to be pulled low from it's usual high level. A clock signal is provided to the clock pin (SCLK). At each falling edge of the clock signal, the data input (DIN) is read - where high leads to a 1-bit and low to a zero-bit. After 8 cycles, SYNC is pulled high again marking the end of data transmission with a full byte transferred. After that, the switches immediately take their instructed states with switching times in the order of \unit[100]{ns}.
+Multiple matrix switches can be controlled at once by daisy-chaining the data output pin (DOUT) of the first device to DIN of the second one, and on so forth. Both SYNC and SCLK are connected to the same bus. This assures that all matrix switches are set in the same state and at the same time.
 
 \section{MinieC Interface}
 
-The sensor node logically consists of the signal generator and the signal reader, practically both parts are tightly integrated.
+The MinieC Interface contains the electronics to perform the resistance measurement. It contains sever parts used to generate an electrical signal, run it through a circuit in which the liquid to be measured serves as a resistor and measure the voltage drop over it.\\
 
-[Describe mini-eC-Interface]
-[also where i.e. the change with the filter cap and the tests that surfaced the issue is described]
+The first part is a TPS6040 charge pump voltage inverter. It's purpose is to generate a negative output voltage from a positive input. This negative voltage and the positive voltage are needed to drive a Wien bridge oscillator. This oscillator outputs a sine wave voltage oscillating between the positive and negative input voltage. This whole first stages purpose is to generate an alternating current to be used in the measurement, avoiding polarization effects describe in the background chapter.
 
-The mini-eC-Interface provides two channels to connect to the electrodes, but  multiple sensors should be driven by one interface. The method to this is called demultiplexing and the component able to this is the Matrix-Switch.
-A Matrix-Switch is an electrical component containing a multitude of switches, where the switches can be electronically closed and opened from a controller. The Matrix-Switch chosen consists of 8 switches, where all switches have the same input, but separate outputs. Thus, they allow applying an input signal to different outputs. The input in our case is the signal and reference from the minie-eC-Interface, applied to 8 different electrode pairs making up the sensors. A separate Matrix-Switch is need for signal and reference.
+The AC signal provided by the first stage is then fed into an OpAmp. An OpAmp is a part that has two input signals and one output, where the output is proportional to the difference of the input signals. In our use case, the OpAmp's output is pulled to ground via a voltage divider. The first resistor $R_i$ in the divider is fixed, while the second one $R$ is the liquid to be measured. The output voltage of this divider is depended on the liquids resistance. This voltage is then fed back into the second input of the OpAmp. Via this feedback, the output (OUT) of the OpAmp is now the input signal (SIG) modulated in amplitude by the resistance of the liquid.
+
+\begin{figure}
+	\begin{center}
+		\begin{circuitikz}
+			\draw
+				(0,0) node[op amp, yscale=-1](oa1) {}
+				(oa1.+) node[left] {SIG}
+				(oa1.out) to[R=$R_i$] +(0,-2) coordinate (fb)
+			    to[vR=$R$] +(0,-2)
+			    to +(0,0) node[ground] {}
+			   (fb) to[short, o-] +(-3,2) coordinate (i1)
+			   (oa1.-) to[short] +(0,1.5) coordinate (i2)
+			   (i1) to (i2)
+			   (oa1.out) to[short, o-] +(1,0) coordinate (out)
+			   (out) node[right] {OUT}
+				;
+		\end{circuitikz}
+		\caption{OpAmp}
+		\label{fig:opamp}
+	\end{center}
+\end{figure}
+
+In the last step, the modulated output is amplified in two stages, and the measured by an analog-digital-converter (ADC). The ADC measures the voltage and provides the measurement to the microcontroller via I2C.
 
 \section{Microcontroller}
 

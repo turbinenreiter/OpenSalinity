@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  25 JUL 2016 21:38
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  26 JUL 2016 21:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2374,18 +2374,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-[23] [24]) [25]
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+(Font)              scaled to size 7.86388pt on input line 151.
+LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 151
+.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8.66673> on input line 151.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.06668> on input line 151.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4.33336> on input line 151.
+[24]) [25] [26]
 \openout2 = `content/results.aux'.
 
  (./content/results.tex
 chapter 5.
 ===== Image 'tikz-cache/document-figure2' is up-to-date. ======
 File: tikz-cache/document-figure2.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure2.pdf" > [26
+<use  "tikz-cache/document-figure2.pdf" > [27
 
 
 
-] [27]
+] [28]
 File: images/noise.pdf Graphic file (type QTm)
  <use  "images/noise.pdf" >
 File: images/feed_switch.pdf Graphic file (type QTm)
@@ -2397,17 +2412,17 @@ File: images/switch_cap.pdf Graphic file (type QTm)
 
 <use  "images/switch_cap.pdf" >
 File: images/switch_nocap.pdf Graphic file (type QTm)
- <use  "images/switch_nocap.pdf" >) [28]
-[29] [30] [31] [32] [33]
+ <use  "images/switch_nocap.pdf" >) [29]
+[30] [31] [32] [33] [34]
 \openout2 = `content/summary-and-outlook.aux'.
 
  (./content/summary-and-outlook.tex
 chapter 6.
-) [34
+) [35
 
 
 
-] [35
+] [36
 
 
 ]
@@ -2420,7 +2435,7 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [36
+) [37
 
 
 ]
@@ -2435,10 +2450,10 @@ chapter C.
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [37
+ [38
 
 
-]
+] [39]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2472,7 +2487,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[38
+[40
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
@@ -2502,12 +2517,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66460 strings out of 493638
- 1495228 string characters out of 6146797
- 2110676 words of memory out of 5000000
- 68776 multiletter control sequences out of 15000+600000
- 25646 words of font info for 67 fonts, out of 8000000 for 9000
+ 66648 strings out of 493638
+ 1499201 string characters out of 6146797
+ 2112676 words of memory out of 5000000
+ 68963 multiletter control sequences out of 15000+600000
+ 37677 words of font info for 83 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,32n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (38 pages).
+Output written on document.pdf (40 pages).
