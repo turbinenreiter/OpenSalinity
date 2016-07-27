@@ -16,23 +16,77 @@ class LivePlot(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="LivePlot")
 
-        self.raw = serial.Serial("/dev/ttyACM0", 9600)
-        self.conds = [deque(10*[0], 10) for _ in range(8)]
+        # Serial port
+        self.raw = serial.Serial(port="/dev/ttyACM0", baudrate=9600, timeout=1)
+        self.conds = [deque(10*[0], 10) for _ in range(8)] # conditioned data
+        self.raw.write(b'\x03') # cancel
 
+        # filename
+        self.filename = None
+
+        # Window
         self.connect('destroy', lambda w: Gtk.main_quit())
         self.set_default_size(1920, 1080)
 
+        # HeaderBar
+        self.header = Gtk.HeaderBar()
+        self.header.set_show_close_button(True)
+        self.header.props.title = 'OpenSalinity GUI'
+        self.set_titlebar(self.header)
+
+        # Start/Stop Button
+        self.control_btn = Gtk.ToggleButton('Start')
+        self.header.pack_start(self.control_btn)
+        self.control_btn.connect('toggled', self.control, 'control')
+
+        # Save Button
+        self.save_btn = Gtk.Button("Save")
+        self.header.pack_end(self.save_btn)
+        self.save_btn.connect('clicked', self.save)
+
+        # DrawingArea
         self.drawingarea = Gtk.DrawingArea()
         self.add(self.drawingarea)
         self.drawingarea.connect('draw', self.draw)
 
         self.show_all()
 
-        GLib.timeout_add(1, self.queue)
+        #GLib.timeout_add(1, self.queue)
 
     def queue(self):
         self.drawingarea.queue_draw_area(0, 0, 1920, 1080)
-        return True
+        return self.queue_return
+
+    def control(self, btn, name):
+        if self.filename is None:
+            return
+
+        if btn.get_active():
+            self.raw.write(b'\x04') # reset
+            self.control_btn.set_label('Stop')
+            GLib.timeout_add(1, self.queue)
+            self.queue_return = True
+        else:
+            self.raw.write(b'\x03') # cancel
+            self.control_btn.set_label('Start')
+            self.queue_return = False
+
+    def save(self, uk):
+        dialog = Gtk.FileChooserDialog("Save file", self,
+                               Gtk.FileChooserAction.SAVE,
+                               (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+                               Gtk.STOCK_OPEN, Gtk.ResponseType.OK))
+
+        timestr = time.strftime('%d%m%Y%H%M', time.localtime())
+        dialog.set_current_name('log-'+timestr+'.csv')
+
+        response = dialog.run()
+        if response == Gtk.ResponseType.OK:
+            self.filename = dialog.get_filename()
+        elif response == Gtk.ResponseType.CANCEL:
+            pass
+        self.set_title('OpenSalinity GUI - ' + self.filename)
+        dialog.destroy()
 
     def draw(self, widget, context):
 
@@ -59,7 +113,14 @@ class LivePlot(Gtk.Window):
         context.set_line_width(50)
         context.set_source_rgb(1, 0.341, 0.133)
 
-        data = str(self.raw.readline()).split(' ')
+        line = str(self.raw.readline(), 'utf-8')
+        data = line.split(' ')
+
+        if len(data) == 17:
+            with open(self.filename, 'a') as log:
+                log.write(line)
+        else:
+            data = [0]*17
 
         #if data.pop(0) != "b'#":
         #    return

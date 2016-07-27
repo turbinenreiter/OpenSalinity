@@ -139,7 +139,7 @@ Multiple matrix switches can be controlled at once by daisy-chaining the data ou
 
 The MinieC Interface contains the electronics to perform the resistance measurement. It contains sever parts used to generate an electrical signal, run it through a circuit in which the liquid to be measured serves as a resistor and measure the voltage drop over it.\\
 
-The first part is a TPS6040 charge pump voltage inverter. It's purpose is to generate a negative output voltage from a positive input. This negative voltage and the positive voltage are needed to drive a Wien bridge oscillator. This oscillator outputs a sine wave voltage oscillating between the positive and negative input voltage. This whole first stages purpose is to generate an alternating current to be used in the measurement, avoiding polarization effects describe in the background chapter.
+The first part is a TPS6040 charge pump voltage inverter. It's purpose is to generate a negative output voltage from a positive input. This negative voltage and the positive voltage are needed to drive a Wien bridge oscillator. This oscillator outputs a sine wave voltage oscillating between the positive and negative input voltage. This whole first stages purpose is to generate an alternating current to be used in the measurement, avoiding the polarization effects described in the background chapter.
 
 The AC signal provided by the first stage is then fed into an OpAmp. An OpAmp is a part that has two input signals and one output, where the output is proportional to the difference of the input signals. In our use case, the OpAmp's output is pulled to ground via a voltage divider. The first resistor $R_i$ in the divider is fixed, while the second one $R$ is the liquid to be measured. The output voltage of this divider is depended on the liquids resistance. This voltage is then fed back into the second input of the OpAmp. Via this feedback, the output (OUT) of the OpAmp is now the input signal (SIG) modulated in amplitude by the resistance of the liquid.
 
@@ -173,3 +173,4 @@ It does however limit our choice of Hardware to supported platforms and it requi
 For prototyping, a development board named "Espruino Pico" was chosen. It is a very small and simple board that provides the electrical boilerplate to use a micro-controller without needing to deal with the lowest level of electronics, like cleaning power supply, etc.
 
 \section{User-Interface}
+
