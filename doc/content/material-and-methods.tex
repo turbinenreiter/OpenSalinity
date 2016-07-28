@@ -172,5 +172,28 @@ The Data Processing Unit has to be able to control the functions of the sensor n
 It does however limit our choice of Hardware to supported platforms and it requires more powerful and thereby expensive micro-controllers. But as the system only requires one Data Processing unit to drive a very large amount of sensors, the added cost is relative and outweighed by the benefits of the better usability. While the factor of the expensive controllers to cheaper ones is about 10, the cost in the end is still only about \euro{7}.
 For prototyping, a development board named "Espruino Pico" was chosen. It is a very small and simple board that provides the electrical boilerplate to use a micro-controller without needing to deal with the lowest level of electronics, like cleaning power supply, etc.
 
-\section{User-Interface}
+\section{OpenSalinity GUI}
 
+The OpenSalinity GUI is a program designed to simplify and aid the usage of the sensor system. It provides following functionality:
+
+\begin{itemize}
+	\item Storing all sensor data to a file.
+	\item Choosing a file to which the data is stored.
+	\item Starting and Stopping the data capture.
+	\item Visualize the data.
+\end{itemize}
+
+The data capturing can not be started before a file to save to is chosen, to avoid the unintentional loss of data. The Save button allows to create the file to be written to and offers a default file name containing the date and time of the creation, helping to keep the data logs in order.
+The live visualization is a bar graph showing each sensors current measurement, allowing to monitor the ongoing experiment. In addition to size, the bars are also color coded, shifting from red to blue with increasing salinity.\\
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/UI.png}
+		\caption{OpenSalinity GUI}
+		\label{fig:opamp}
+	\end{center}
+\end{figure}
+
+The software again is written in Python, using GTK+ as GUI toolkit and pyserial to communicate with the microcontroller. It was developed and testes on a Linux based operating system, however due the nature of the used programming language and toolkits it is cross-platform and can be run on Windows and OSX also.\\
+
+In addition to or as replacement of the GUI, a set of command line tools can be used. These tools allow for a redundant capturing of the sensor data and for an alternate visualization.

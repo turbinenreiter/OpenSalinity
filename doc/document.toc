@@ -32,34 +32,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}Microcontroller}{25}{section.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}User-Interface}{26}{section.38}
+\contentsline {section}{\numberline {4.6}OpenSalinity GUI}{26}{section.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{27}{chapter.39}
+\contentsline {chapter}{\numberline {5}Results}{28}{chapter.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Verification}{28}{section.46}
+\contentsline {section}{\numberline {5.1}Verification}{29}{section.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Time Resolution}{28}{subsection.47}
+\contentsline {subsection}{\numberline {5.1.1}Time Resolution}{29}{subsection.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Spacial Resolution}{28}{subsection.48}
+\contentsline {subsection}{\numberline {5.1.2}Spacial Resolution}{29}{subsection.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Electrical Conductivity Resolution}{28}{subsection.49}
+\contentsline {subsection}{\numberline {5.1.3}Electrical Conductivity Resolution}{29}{subsection.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Cost}{29}{subsection.50}
+\contentsline {subsection}{\numberline {5.1.4}Cost}{30}{subsection.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Deployment}{29}{subsection.51}
+\contentsline {subsection}{\numberline {5.1.5}Deployment}{30}{subsection.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.6}Usability}{29}{subsection.52}
+\contentsline {subsection}{\numberline {5.1.6}Usability}{30}{subsection.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Validation}{29}{section.53}
+\contentsline {section}{\numberline {5.2}Validation}{30}{section.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{35}{chapter.59}
+\contentsline {chapter}{\numberline {6}Conclusion}{36}{chapter.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix}{36}{chapter*.60}
+\contentsline {chapter}{Appendix}{37}{chapter*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbreviations}{37}{appendix.61}
+\contentsline {chapter}{\numberline {A}Abbreviations}{38}{appendix.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}List of Figures}{38}{appendix.63}
+\contentsline {chapter}{\numberline {B}List of Figures}{39}{appendix.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Tables}{38}{appendix.64}
+\contentsline {chapter}{\numberline {C}List of Tables}{39}{appendix.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Bibliography}{40}{appendix.65}
+\contentsline {chapter}{\numberline {D}Bibliography}{41}{appendix.66}

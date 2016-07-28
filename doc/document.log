@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  26 JUL 2016 21:57
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  28 JUL 2016 11:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2050,7 +2050,11 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 (./document.aux (./elements/title.aux)
 (./elements/declaration-of-authorship.aux) (./content/introduction.aux)
 (./content/motivation.aux) (./content/theory.aux)
-(./content/material-and-methods.aux) (./content/results.aux
+(./content/material-and-methods.aux
+
+LaTeX Warning: Label `fig:opamp' multiply defined.
+
+) (./content/results.aux
 
 LaTeX Warning: Label `eq:resv' multiply defined.
 
@@ -2389,18 +2393,29 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6.06668> on input line 151.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <4.33336> on input line 151.
-[24]) [25] [26]
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
+
+ []
+
+File: images/UI.png Graphic file (type QTm)
+<use  "images/UI.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+[26]) [27]
 \openout2 = `content/results.aux'.
 
  (./content/results.tex
 chapter 5.
 ===== Image 'tikz-cache/document-figure2' is up-to-date. ======
 File: tikz-cache/document-figure2.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure2.pdf" > [27
+<use  "tikz-cache/document-figure2.pdf" > [28
 
 
 
-] [28]
+] [29]
 File: images/noise.pdf Graphic file (type QTm)
  <use  "images/noise.pdf" >
 File: images/feed_switch.pdf Graphic file (type QTm)
@@ -2412,17 +2427,17 @@ File: images/switch_cap.pdf Graphic file (type QTm)
 
 <use  "images/switch_cap.pdf" >
 File: images/switch_nocap.pdf Graphic file (type QTm)
- <use  "images/switch_nocap.pdf" >) [29]
-[30] [31] [32] [33] [34]
+ <use  "images/switch_nocap.pdf" >) [30]
+[31] [32] [33] [34] [35]
 \openout2 = `content/summary-and-outlook.aux'.
 
  (./content/summary-and-outlook.tex
 chapter 6.
-) [35
+) [36
 
 
 
-] [36
+] [37
 
 
 ]
@@ -2435,7 +2450,7 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [37
+) [38
 
 
 ]
@@ -2450,10 +2465,10 @@ chapter C.
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [38
+ [39
 
 
-] [39]
+] [40]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2487,7 +2502,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[40
+[41
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
@@ -2517,12 +2532,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66648 strings out of 493638
- 1499201 string characters out of 6146797
+ 66651 strings out of 493638
+ 1499224 string characters out of 6146797
  2112676 words of memory out of 5000000
- 68963 multiletter control sequences out of 15000+600000
+ 68964 multiletter control sequences out of 15000+600000
  37677 words of font info for 83 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,32n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (40 pages).
+Output written on document.pdf (41 pages).
