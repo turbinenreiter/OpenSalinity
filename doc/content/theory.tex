@@ -6,9 +6,9 @@ In this chapter a theoretical background of electrical conductivity measurement 
 
 The following section is translated and summarized from the books \cite{trankler2015sensortechnik} and \cite{gevatter2000automatisierungstechnik}.\\
 
-The conductivity $ \kappa $  is the ability of a certain volume of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to the length and cross section of the volume. Conductivity in a liquid is depended on ions as charge carrier and can therefore be used to measure concentration of such. Temperature plays a large role in the mobility of the ions and thus influences the conductivity.
+The conductivity $ \kappa $  is the ability of a certain volume of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to the length and cross section of the volume. Conductivity in a liquid depends on ions as charge carrier and can therefore be used to measure its concentration.
 
-To better understand conductivity, an equivalent circuit diagram, shown in figure \ref{fig:ecd}, of an electrode system, shown in figure \ref{fig:elec}, can be used. This method is called conductometry. In this measurement configuration, two electrodes are submerged in the liquid to be measured and a voltage is applied. The resistance $ R $ of the substance is determined by measuring the potential drop $U_R$ given a constant voltage $ U $, current $ I $ and internal resistance $ R_i$. \\
+To better understand conductivity, an equivalent circuit diagram, shown in figure \ref{fig:ecd}, of an electrode system shown in figure \ref{fig:elec}, can be used. This method is called conductometry and in this form a two-electrode-cell is used. In this measurement configuration, two electrodes are submerged in the liquid to be measured and a voltage is applied. The resistance $ R $ of the substance is determined by measuring the potential drop $U_R$ given a constant voltage $ U $, current $ I $ and internal resistance $ R_i$. \\
 
 \begin{figure}
 	\begin{center}
@@ -60,34 +60,34 @@ The inverse of the resistance $ R $ is the conductance $ G $
 \label{eq:G}
 \end{equation}
 
-Considering the cell constant $ C $ yields the conductivity
-\begin{equation}
-	\kappa = G \cdot C
-\label{eq:kappa} 
-\end{equation}
-
-The cell constant $ C $ depends on the geometry of the sensor
+The cell constant $ C $ describes the geometry of the sensor
 \begin{equation}
 	C = \dfrac{d}{A}
 \label{eq:C}
 \end{equation}
+where $ d $ is the distance between and $ A $ the surface area of  the electrodes. 
 
-where $ d $ is the distance between and $ A $ the surface area of  the electrodes. \\
+Considering the cell constant $ C $ finally yields the conductivity
+\begin{equation}
+	\kappa = G \cdot C
+\label{eq:kappa} 
+\end{equation}
+\\
 
 In electrolytes, the electrical conduction is a result of mass transfer, where ions are carrying the charges. If the measurement is conducted with direct current, this mass transfer leads to changes in the measured solution and the electrode surface, negatively impacting the measurement. Furthermore, polarization effects create additional resistance, leading to lower than actual results. To avoid this, alternating current is used. The fast, periodical swap of polarity eliminates the net mass flow and it's effects. Polarization is a result of the current flowing through the electrode, thereby its effects can be minimized by minimizing this current. One method to do this is replacing the two-electrode-cell with a four-electrode-cell.
 This separates the current flow from the potential measurement by using one electrode pair to apply the current, and a separate pair to measure the potential drop. \\
 
-The electrolytes temperature has a big influence on the conductivity and has to be taken in account when comparing two measurements. If the temperature $ T $ is known, the conductivity at that temperature $ \kappa_{T} $ can be normalized to a reference temperature $ T_{ref} $ using equation \eqref{eq:kref}, resulting in the reference conductivity $ \kappa_{ref} $.
+The electrolytes temperature affects the mobility of the ions and thereby also has a big influence on the conductivity. It has to be taken in account when comparing two measurements. If the temperature $ T $ is known, the conductivity at that temperature $ \kappa_{T} $ can be normalized to a reference temperature $ T_{ref} $ using equation \eqref{eq:kref}, resulting in the reference conductivity $ \kappa_{ref} $.
 
 \begin{equation}
-	\kappa_{ref} = \kappa_{T} \frac{1}{1 + C \cdot (T - T_{ref})}
+	\kappa_{ref} = \kappa_{T} \frac{1}{1 + C_{T} \cdot (T - T_{ref})}
 \label{eq:kref}
 \end{equation}
 
-The temperature coefficient $ C $ assumes a linear correlation and is only valid in a narrow temperature range. For bigger ranges the denominator can be replaced with a polynomial using higher order coefficients, resulting in equation \eqref{eq:kref+}.
+The temperature coefficient $ C_{T} $ assumes a linear correlation and is only valid in a narrow temperature range. For bigger ranges the denominator can be replaced with a polynomial using higher order coefficients, resulting in equation \eqref{eq:kref+}.
 
 \begin{equation}
-	\kappa_{ref} = \kappa_{T} \frac{1}{\sum\limits_{i=0}^n C_i \cdot (T - T_{ref})^{i}}
+	\kappa_{ref} = \kappa_{T} \frac{1}{\sum\limits_{i=0}^n C_{Ti} \cdot (T - T_{ref})^{i}}
 \label{eq:kref+}
 \end{equation}
 
@@ -113,6 +113,6 @@ Figure \ref{fig:ccm} shows a field conductivity meter from a quality manufacture
 
 While field conductivity meters have the electrodes integrated to form one compact device, the more expensive lab equipment often has the electrodes attached to the device with a cable, allowing for a more flexible use. \\
 
-A different option was found in the MinieC I2C eC interface from Sparky's Widgets \cite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons. This license means that the schematics, CAD files and software are available, granting the user the right to modify and build custom versions of the board, as long as the original creator is attributed and the modified material itself is also released under the same license \cite{cc}. Ready-made boards can be purchased for about \euro{25}.
+A different option was found in the MinieC I2C eC interface from Sparky's Widgets \cite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons \cite{cc}. This license allows to study the original design files and build modified versions. Ready-made boards can be purchased for about \euro{25}.
 
-The design approach is also more modular than that of the more professional equipment. The MinieC offers an interface to connect external electrodes and can be controlled and read by a microcontroller.
+The design approach of this solution is also more modular than that of the more professional equipment. The MinieC offers an interface to connect external electrodes and can be controlled and read by a microcontroller.

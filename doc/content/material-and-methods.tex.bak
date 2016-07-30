@@ -4,16 +4,8 @@ This chapter describes the design of the sensor system and all components involv
 
 \section{System Design}
 
-On the user-facing side there is a personal computer (PC). This PC runs software that visualizes a live data stream and provides a control interface for the sensor system. It is connected via USB to a microcontroller. This microcontroller controls the MinieeC interface via I2C, reads the measurement data from it and sends it to the PC. It also controls the matrix switches. The MinieC Interface provides the signal and ground between which the resistance is measured. Both lines are connected to one matrix switch each. These matrix switches are able to connect one input to 8 different outputs. On each of those outputs, one electrode is connected. The matrix switches can thereby connect the MinieC interface to one of 8 electrode pairs. \\
-
-Using the matrix switches, 8 electrodes can be used with just one MinieC interface. Increasing the number of electrodes can be done in two ways:
-
-\begin{itemize}
-    \item by chaining up multiple stages of matrix switches, the number of electrodes can be increased eightfold with each stage
-    \item by connecting another MinieC Interface with it's own set of matrix switches to the microcontroller, 8 more electrodes can be added with each of these subsystems
-\end{itemize}
-
-The first option results in lower cost per added electrode, as the MinieC interface is reused. However, with a system like that, all electrodes have to be read in serial, while with the second option each MinieC interface can read in parallel, resulting in higher sample rate. Practically the second option is also easier to achieve. For the first option, a board with 18 matrix switches and 80 connections is needed, while the second option only uses 2 switches per board resulting in 16 connections. The simpler board greatly reduces complexity and can also be made smaller.
+The system as shown in figure \ref{fig:sys} is designed as follows:\\
+On the user-facing side there is a personal computer (PC). This PC runs software that visualizes a live data stream and provides a control interface for the sensor system. It is connected via USB to a microcontroller. This microcontroller controls the MinieeC interface via I2C, reads the measurement data from it and sends it to the PC. It also controls the matrix switches via SPI. The MinieC Interface provides the signal (SIG) and ground (GND) between which the resistance is measured. Both lines are connected to one matrix switch each. These matrix switches are able to connect one input to 8 different outputs. On each of those outputs, one electrode is connected. The matrix switches can thereby connect the MinieC interface to one of 8 electrode pairs at a time.\\
 
 \begin{figure}
 	\begin{center}
@@ -44,6 +36,15 @@ The first option results in lower cost per added electrode, as the MinieC interf
 		\label{fig:sys}
 	\end{center}
 \end{figure}
+
+Using the matrix switches, 8 electrode pairs can be polled with just one MinieC interface. Increasing the number of electrodes can be done in two ways:
+
+\begin{itemize}
+    \item by chaining up multiple stages of matrix switches, the number of electrodes can be increased eightfold with each stage
+    \item by connecting another MinieC Interface with it's own set of matrix switches to the microcontroller, 8 more electrodes can be added with each of these subsystems
+\end{itemize}
+
+The first option results in lower cost per added electrode, as the MinieC interface is reused. However, with a system like that, all electrodes have to be read in serial, while with the second option each MinieC interface can be read in parallel, resulting in a higher sample rate. Practically the second option is also easier to achieve. For the first option, a board with 18 matrix switches and 80 connections is needed, while the second option only uses 2 switches per board resulting in 16 connections. The simpler board greatly reduces complexity and can also be made smaller.
 
 \section{Electrodes}
 
@@ -77,7 +78,7 @@ Figure \ref{fig:sensor} shows the geometry of the sensor. To achieve a cell cons
 	\end{center}
 \end{figure}
 
-As a first proof-of-concept a sensor array was built, containing multiple electrode pairs on a strip, pictured in figure \ref{fig:v2}. A \unit[5]{cm} wide and \unit[25]{cm} long band of Kapton adhesive tape served as the base. 4 electrode pairs made from \unit[0.2]{mm} platinum wire were arranged equidistant on the strip. \unit[0.4]{mm} enameled copper wire runs along the tape to connect each electrode pair to the left end of the strip, from which insulated cables run to the sensor node. After soldering the joints, two smaller strips of tape were used to cover the wiring, exposing only the electrodes to fluid.
+As a first proof-of-concept a sensor array was built, containing multiple electrode pairs on a strip, pictured in figure \ref{fig:v2}. A \unit[50]{mm} wide and \unit[250]{mm} long band of Kapton adhesive tape served as the base. 4 electrode pairs made from \unit[0.2]{mm} platinum wire were arranged equidistant on the strip. \unit[0.4]{mm} enameled copper wire runs along the tape to connect each electrode pair to the left end of the strip, from which insulated cables run to the sensor node. After soldering the joints, two smaller strips of tape were used to cover the wiring, exposing only the electrodes to fluid.
 
 First tests with this sensor array showed the viability of the concept, however a simple look at it shows the inherit problems. Instead of a uniformly flat strip with minimal influence on the flow, the assembly forms several irregularities. Soldering \unit[0.2]{mm} platinum wire to \unit[0.4]{mm} enameled copper wire on a piece of adhesive tape per hand also did not result in clean solder joints. And while with the experience of the first array, the second array turned out a bit cleaner, the fundamental problem remains: it is a tedious manufacturing process resulting in a low quality product.
 
@@ -89,7 +90,7 @@ First tests with this sensor array showed the viability of the concept, however 
 	\end{center}
 \end{figure}
 
-As an alternative to these handmade strips, industrially produced Flex-PCBs were identified. Flex-PCBs are flexible printed circuit boards that are very close to the handmade arrays described above. They also use Kapton as base, on which a copper coating gets applied and partially removed by etching to form the conducting paths. On top, another layer of Kapton is applied, with cutouts in the places where the copper is supposed to be exposed. The exposed copper is then plated with ENIG (Electroless nickel immersion gold) to protect the copper from oxidation and provide the landing pads for electrical components to be soldered on.
+As an alternative to these handmade strips, industrially produced Flex-PCBs were identified. Flex-PCBs are flexible printed circuit boards that are very close to the handmade arrays described above. They also use Kapton as base, on which a copper coating gets applied and is partially removed by etching to form the conducting paths. On top, another layer of Kapton is applied, with cutouts in the places where the copper is supposed to be exposed. The exposed copper is then plated with ENIG (Electroless nickel immersion gold) to protect the copper from oxidation and provide the landing pads for electrical components to be soldered on.
 
 For our purpose those exposed and plated landing pads can be used as electrodes, being nicely embedded in a FlexPCB that also runs the wiring up to an interface from where cables can be run. Using the FlexPCB itself as cable is not viable due to the high cost per area. Instead, cables are soldered directly to the PCB and silicone is used to create a waterproof seal around the connection.\\
 
@@ -141,7 +142,9 @@ The example timing diagram \ref{fig:msc} describes the data transmission process
 	\end{center}
 \end{figure}
 
-Multiple matrix switches can be controlled at once by daisy-chaining the data output pin (DOUT) of the first device to DIN of the second one, and on so forth. Both SYNC and SCLK are connected to the same bus. This assures that all matrix switches are set in the same state and at the same time.
+Multiple matrix switches can be controlled at once by daisy-chaining the data output pin (DOUT) of the first device to DIN of the second one, and on so forth. Both SYNC and SCLK are connected to the same bus. This assures that all matrix switches are set in the same state and at the same time.\\
+
+Prices for the ADG738 start at \euro{3.89} for a single chip but drop below \euro{3} when the order exceeds 50 pieces. The parts used in the prototypes were free samples provided by the manufacturer Analog Devices.
 
 \section{MinieC Interface}
 
@@ -194,6 +197,8 @@ Figure \ref{fig:swnocap} shows the response to the same switching as before, but
 	\end{center}
 \end{figure}
 
+The MinieC-Interface costs about \euro{22} depending on exchange rates.
+
 \section{Microcontroller} \label{uc}
 
 The microcontroller has to be able to control the functions of the sensor nodes attached to it, read the data from them, log it and serve it to the user-interface. They usually are programmed in C or C++, however in recent years other options emerged. One of those is Micropython, which is an implementation of the Python 3 programming language designed to run on microcontrollers. Python is a vastly easier language to work with than C/C++, and this is especially true when the involved persons are not from a computer science or electrical engineering background, but i.e. mechanical engineering or other sciences. In those fields, Python is often familiar from usage for data processing and visualization. Using Micropython enables us to design a system where it is more likely that the people using it are able to understand the code, enabling them to improve it and adapt it to alternate use-cases.
@@ -225,8 +230,8 @@ The carrier boards were manufactured by dirtypcbs, a very cheap service for prot
 
 The embedded software is the program running on the microcontroller. As already described in section \ref{uc}, Micropython is used to implement this program.\\
 
-As soon as the system is powered up, it starts listening for the Start and Stop commands from the OpenSalinity GUI running on the host PC. Once it receives the Start command, it starts polling the sensors and delivers the data to PC, where it is captured.
-In order to poll the sensors, the program has to control the switches and the ADC. It first switches both matrix switches to a certain electrode pair and then reads the ADC value for it. After that it switches to next pair and thus circles through all connected sensors. Each ADC read is accompanied by a time stamp for the read.\\
+As soon as the system is powered up, it starts listening for the Start and Stop commands from the OpenSalinity GUI running on the host PC. Once it receives the Start command, it starts polling the sensors and delivers the data to the PC, where it is captured.
+In order to poll the sensors, the program has to control the switches and the ADC. It first switches both matrix switches to a certain electrode pair and then reads the ADC value for it. After that it switches to the next pair and thus circles through all connected sensors. Each ADC read is accompanied by a time stamp for the read.\\
 
 The data is sent in a simple format described in the listing \ref{format}. One line contains timestamps and values for all $n$ connected sensors separated by one whitespace. The line ends with the newline character.
 
@@ -292,38 +297,38 @@ The live visualization is a bar graph showing each sensors current measurement, 
 
 The software again is written in Python, using GTK+ as GUI toolkit and pyserial to communicate with the microcontroller. It was developed and testes on a Linux based operating system, however due the nature of the used programming language and toolkits it is cross-platform and can be run on Windows and OSX also.\\
 
-In addition to or as replacement of the GUI, a set of command line tools can be used. These tools allow for a redundant capturing of the sensor data and for an alternate visualization. A detailed manual on how to use those tools as wells as the GUI is provided in the Appendix.
+In addition to or as replacement of the GUI, a set of command line tools can be used. These tools allow for a redundant capturing of the sensor data and for an alternate visualization. A detailed manual on how to use those tools as well as the GUI is provided in the Appendix.
 
 \section{Data Conditioning}
 
-Before the data can be analyzed it has to be conditioned to deal with certain quirks of the embedded software. This is done in post processing rather than live to minimize overhead on the microcontroller to retain high sampling rates.\\
+Before the data can be analyzed it has to be conditioned to deal with certain peculiarities of the embedded software. This is done in post processing rather than during the data capturing to minimize overhead and retain high sampling rates.\\
 
-The microcontroller measures time since start up by counting clock cycles. These are converted to microseconds stored as an integer value. The microcontroller is a 32-bit architecture, however the Micropython implementation uses 2 bits for data type identification, leaving 30 bits for data. This means the counter can count from $-2147483647$ to $2147483647$, meaning that it wraps around roughly every $8.9$ minutes. In the data conditioning phase, these wrapping times are translated to a rolling time since start-up. This is done by scanning for the firs time value that is smaller than its predecessor and then adding the value of $2^{30}$ to all following values. This is repeated until all time values are corrected.\\
+The microcontroller measures time since start up by counting clock cycles. These are converted to microseconds stored as an integer value. The microcontroller is a 32-bit architecture, however the Micropython implementation uses 2 bits for data type identification, leaving 30 bits for data. This means the counter can count from $-2147483647$ to $2147483647$, meaning that it wraps around roughly every $8.9$ minutes. In the data conditioning phase, these wrapping times are translated to a rolling time since start-up. This is done by scanning for the firs time value that is smaller than its predecessor and then adding the value of $2^{30}$ to all following values. This is repeated until all time values are corrected. Figure \ref{fig:wrap} visualizes the algorithm.\\
 
 \begin{figure}
 	\begin{center}
 \begin{tikzpicture}[scale=1]
     \draw[darrow] (2.5,0) node(xline)[right] {$n$} -|
-     (0,2.5) node(yline)[above] {$t$};
+     (0,2.5) node(yline)[left] {$t$};
      
 	\draw (0,0) -- (0.75,1) -- (0.75,-1) -- (2.25,1) -- (2.25,-1) -- (2.5,-0.66);
 			
-	\draw [style=arrow, bend left] (1.5,3.5)to node[above]{first pass} (3.5,3.5);
+	\draw [style=arrow, bend left=60] (1.5,3.5)to node[above]{first pass} (3.5,3.5);
      
      \draw[darrow] (6,0) node(xline)[right] {$n$} -|
-     (3.5,2.5) node(yline)[above] {$t$};
+     (3.5,2.5) node(yline)[left] {$t$};
      
 	\draw (3.5,0) -- (4.25,1) -- (5.75,3) -- (5.75,1) -- (6,1.33);     
      
-	\draw [style=arrow, bend left] (6,3.5)to node[above]{second pass} (8.75,3.5);     
+	\draw [style=arrow, bend left=60] (6,3.5)to node[above]{second pass} (8,3.5);     
      
      \draw[darrow] (9.5,0) node(xline)[right] {$n$} -|
-     (7,2.5) node(yline)[above] {$t$};
+     (7,2.5) node(yline)[left] {$t$};
      
      \draw (7,0) -- (9.5,3.33);   
      
 \end{tikzpicture}
 		\caption{Fixing the integer wrap of the time variable.}
-		\label{fig:flow}
+		\label{fig:wrap}
 	\end{center}
 \end{figure}

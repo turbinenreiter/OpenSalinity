@@ -2,9 +2,9 @@
 
 The goal of this project is the development and test of a low-cost electrical conductivity meter for liquids to be used as an aid to measure and analyze the flow in a photobioreactor.
 
-The method chosen beforehand was to measure the fluids electrical conductivity, which can be changed easily by adding water with differing salt concentrations. Commercially available conductivity meters are built to measure with high accuracy in order to obtain information about a liquids absolute salinity and are relatively expensive. Our use case however does not need to create high accuracy absolute measurements, but measure a relative change allowing to distinguish two different liquids by their salinity. However, this needs to happen very fast and at a lot of different points in the stream. The more positions measured, the more complete the picture of the flow becomes. Therefore, the cost per sensor has to be low, to not put a restraint on the total number of points that can be measured.
+The method chosen beforehand was to measure the fluids electrical conductivity, which can be changed easily by adding water with differing salt concentrations. Commercially available conductivity meters are built to measure with high accuracy in order to obtain information about a liquids absolute salinity and are relatively expensive. Our use case however does not need to create high accuracy absolute measurements, but measure a relative change allowing to distinguish different liquids by their salinity. However, this needs to happen very fast and at a lot of different points in the stream. The more positions measured, the more complete the picture of the flow becomes. Therefore, the cost per sensor has to be low, to not put a restraint on the total number of points that can be measured.
 
-The actual flow analysis is not part of this work, but rather the creation of a tool to make it possible. As such, the system needs to be designed to be used by others, not the creator himself. This thesis therefore describes a product development process rather than a scientific study. \\
+The actual flow analysis is not part of this work, but rather the creation of a tool to make it possible. As such, the system needs to be designed to be easily usable by people without deep knowledge of the underlying technology.\\
 
 The following sections describe and detail the requirements the sensor system has to fulfill in order to meet the objectives. These requirements translate the objectives into discrete and verifiable units, serving as the base for development and benchmark for the later performance analysis. 
 
@@ -24,9 +24,9 @@ The information gathered by the sensor has to be granular enough to enable the v
 \begin{itemize}
 \item The granularity of the simulation is determined by the mesh size and is in the order of about  \unit[1]{mm} to \unit[5]{mm}. A resolution better than that would be unnecessary, making this the lower limit.
 
-\item The data collected by the sensor system shows salinity of the liquid passing a certain position over time. By extracting the same data from the simulation, a graph can be compiled comparing the measured to the simulated values. The flow becomes visible when comparing data from different positions. The first sensor to show a spike in salinity is further up the stream then sensors spiking later. The distance between two sensors has to be big enough for a given velocity of the stream so that the time delay can be clearly seen. At a flow speed of $ v $ in the order of \unitfrac[1]{m}{s}, a resolution in the order of centimeters would yield time differences of hundredths of a second. Whether or not this is sufficient depends on noise and delay in the sensor system, however hundredths of a second is a conservative estimate likely to be achieved.
+\item The data collected by the sensor system shows salinity of the liquid passing a certain position over time. By extracting the same data from the simulation, a graph can be compiled comparing the measured to the simulated values. The flow becomes visible when comparing data from different positions. The first sensor to show a spike in salinity is further up the stream than sensors spiking later. The distance between two sensors has to be big enough for a given velocity of the stream so that the time delay can be clearly seen. At a flow speed of $ v $ in the order of \unitfrac[1]{m}{s}, a resolution in the order of centimeters would yield time differences of centiseconds. Whether or not this is sufficient depends on noise and delay in the sensor system, however centiseconds is a conservative estimate likely to be achievable.
 
-\item The geometry of the forebay as shown in figure \ref{fig:elb} also influences the needed resolution. It has to be an order of magnitude smaller as the basins characteristic length, in this case the width of \unit[850]{mm}, to enable gathering data about the flow conditions within.
+\item The geometry of the inlet as shown in figure \ref{fig:elb} also influences the needed resolution. It has to be an order of magnitude smaller as the basins characteristic length, in this case the width of \unit[850]{mm}, to enable gathering data about the flow conditions within.
 \end{itemize}
 
 Derived from all that, a spacial resolution in the order of centimeters is chosen as requirement.
@@ -34,14 +34,14 @@ Derived from all that, a spacial resolution in the order of centimeters is chose
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/Einlaufbecken.pdf} 
-		\caption{Forebay}
+		\caption{The inlet through which the water is fed back from the bottom of the reactor to the top.}
 		\label{fig:elb}
 	\end{center}
 \end{figure}
 
 \section{Electrical Conductivity Resolution}
 
-To measure the arrival of the new water stream after switching the water feed, the system has to be able to distinguish between water with different salinity. The water used normally in the reactor is tap water with a salinity of about \unit[0.2]{\%}. The salinity of the added saltwater can be chosen freely. Water with a salinity of about \unit[5]{\%} is easily available in the facilities and offers a sensible choice. Assuming a reactor with \unit[65]{l} in circulation and an added saltwater impulse of \unit[5]{l}, the resulting salinity after perfect homogenization would be approximately \unit[0.5]{\%}. The system has to be able to clearly distinguish between all those salinities. The sensors sensitivity therefore shall be better than \unit[0.1]{\%} salinity with a range from 0 to \unit[5]{\%}.
+To measure the arrival of the new water stream after switching the water feed, the system has to be able to distinguish between water with different salinity. The water used normally in the reactor is tap water with a salinity of about \unit[0.2]{\%}. The salinity of the added saltwater can be chosen freely. Water with a salinity of about \unit[5]{\%} is easily available in the facilities and offers a sensible choice. Assuming a reactor with \unit[65]{l} in circulation and an added saltwater impulse of \unit[5]{l}, the resulting salinity after perfect homogenization would be approximately \unit[0.5]{\%}. The system has to be able to clearly distinguish between all those salinities. The sensors sensitivity therefore shall be better than a change of \unit[0.1]{\%} salinity with a range from 0 to \unit[5]{\%}.
 
 \section{Cost}
 
@@ -53,7 +53,11 @@ A maximum cost per sensor of \euro{25} results from those figures.
 
 The sensor system is meant to be used in the algae reactors of the algae cultivation center at the Ludwig Bölkow Campus. It has to be possible to easily mount and remove the system to and from the reactor without having to dismantle it.
 
-The system also has to be easy to use, so it can be helpful to the researchers working on the reactor. It has to work reliably and act according to expectations of the users. The chance of handling errors that lead to loss of data has to be minimized. All operations have to be documented in a minimal set of written instructions, so the system can still be used even if the designer isn't available anymore.
+The system also has to be easy to use, so it can be helpful to the researchers working on the reactor. It has to work reliably and act according to expectations of the users. The chance of handling errors that lead to loss of data has to be minimized. All operations have to be documented in a minimal set of written instructions, so the system can still be used even if the designer is not available anymore.
+
+\section{Requirements}
+
+The table \ref{tab:req} concludes and displays all requirements alongside the methods of verification to be used.
 
 \begin{table}[H]
     \centering
