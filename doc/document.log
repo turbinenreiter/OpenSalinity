@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  30 JUL 2016 16:59
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  30 JUL 2016 17:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2463,40 +2463,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 301--55
+
+Overfull \hbox (3.60336pt too wide) in paragraph at lines 301--302
+[][]\OMS/lmsy/m/n/13 ^^@\OT1/lmr/m/n/13 2147483647$ \EU1/SourceSerifPro(0)/m/sl
+/13 to $[][]\OT1/lmr/m/n/13 2147483647$\EU1/SourceSerifPro(0)/m/sl/13 , meaning
+ that it wraps around roughly every $[][]\OT1/lmr/m/n/13 8\OML/lmm/m/it/13 :\OT
+1/lmr/m/n/13 9$ \EU1/SourceSerifPro(0)/m/sl/13 minutes.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
-[32]
+===== Image 'tikz-cache/document-figure3' is up-to-date. ======
+File: tikz-cache/document-figure3.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure3.pdf" >) [32] [33]
 \openout2 = `content/results.aux'.
 
  (./content/results.tex
 chapter 5.
-===== Image 'tikz-cache/document-figure3' is up-to-date. ======
-File: tikz-cache/document-figure3.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure3.pdf" > [33
+===== Image 'tikz-cache/document-figure4' is up-to-date. ======
+File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure4.pdf" > [34
 
 
 
-] [34]
+] [35]
 File: images/noise.pdf Graphic file (type QTm)
  <use  "images/noise.pdf" >
 File: images/feed_switch.pdf Graphic file (type QTm)
 
 <use  "images/feed_switch.pdf" >
 File: images/feed_add.pdf Graphic file (type QTm)
- <use  "images/feed_add.pdf" >) [35] [36]
-[37] [38]
+ <use  "images/feed_add.pdf" >) [36] [37]
+[38] [39]
 \openout2 = `content/summary-and-outlook.aux'.
 
  (./content/summary-and-outlook.tex
 chapter 6.
-) [39
+) [40
 
 
 
-] [40
+] [41
 
 
 ]
@@ -2509,7 +2519,7 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [41
+) [42
 
 
 ]
@@ -2518,18 +2528,16 @@ chapter B.
 \tf@lof=\write8
 \openout8 = `document.lof'.
 
+ [43
 
+
+]
 chapter C.
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 24.4644pt on input line 74.
-[42
-
-
-] (./document.lot)
+(./document.lot)
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [43]
+ [44]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2563,7 +2571,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[44
+[45
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
@@ -2593,12 +2601,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66790 strings out of 493638
- 1500918 string characters out of 6146797
+ 66791 strings out of 493638
+ 1500865 string characters out of 6146797
  2107826 words of memory out of 5000000
- 69098 multiletter control sequences out of 15000+600000
- 37693 words of font info for 85 fonts, out of 8000000 for 9000
+ 69099 multiletter control sequences out of 15000+600000
+ 37685 words of font info for 84 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,32n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (44 pages).
+Output written on document.pdf (45 pages).

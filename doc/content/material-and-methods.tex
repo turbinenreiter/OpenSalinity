@@ -298,4 +298,32 @@ In addition to or as replacement of the GUI, a set of command line tools can be 
 
 Before the data can be analyzed it has to be conditioned to deal with certain quirks of the embedded software. This is done in post processing rather than live to minimize overhead on the microcontroller to retain high sampling rates.\\
 
-The data conditioning scans through the data and generates a rolling time from the wrapping times. The microcontroller measures time since start up by counting clock cycles. These are converted to microseconds stored as an integer value. The microcontroller is a 32-bit architecture, however the Micropython implementation uses 2 bits for data type identification, leaving 30 bits for data. This means the counter can count from $-2147483647$ to $2147483647$, meaning that it wraps around roughly every $8.9$ minutes.\\
+The microcontroller measures time since start up by counting clock cycles. These are converted to microseconds stored as an integer value. The microcontroller is a 32-bit architecture, however the Micropython implementation uses 2 bits for data type identification, leaving 30 bits for data. This means the counter can count from $-2147483647$ to $2147483647$, meaning that it wraps around roughly every $8.9$ minutes. In the data conditioning phase, these wrapping times are translated to a rolling time since start-up. This is done by scanning for the firs time value that is smaller than its predecessor and then adding the value of $2^{30}$ to all following values. This is repeated until all time values are corrected. Figure \ref{fig:wrap} visualizes the algorithm.\\
+
+\begin{figure}
+	\begin{center}
+\begin{tikzpicture}[scale=1]
+    \draw[darrow] (2.5,0) node(xline)[right] {$n$} -|
+     (0,2.5) node(yline)[left] {$t$};
+     
+	\draw (0,0) -- (0.75,1) -- (0.75,-1) -- (2.25,1) -- (2.25,-1) -- (2.5,-0.66);
+			
+	\draw [style=arrow, bend left=60] (1.5,3.5)to node[above]{first pass} (3.5,3.5);
+     
+     \draw[darrow] (6,0) node(xline)[right] {$n$} -|
+     (3.5,2.5) node(yline)[left] {$t$};
+     
+	\draw (3.5,0) -- (4.25,1) -- (5.75,3) -- (5.75,1) -- (6,1.33);     
+     
+	\draw [style=arrow, bend left=60] (6,3.5)to node[above]{second pass} (8,3.5);     
+     
+     \draw[darrow] (9.5,0) node(xline)[right] {$n$} -|
+     (7,2.5) node(yline)[left] {$t$};
+     
+     \draw (7,0) -- (9.5,3.33);   
+     
+\end{tikzpicture}
+		\caption{Fixing the integer wrap of the time variable.}
+		\label{fig:wrap}
+	\end{center}
+\end{figure}
