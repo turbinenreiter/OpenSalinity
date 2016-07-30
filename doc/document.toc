@@ -26,40 +26,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Electrodes}{19}{section.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Matrix Switches}{22}{section.32}
+\contentsline {section}{\numberline {4.3}Matrix Switches}{22}{section.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}MinieC Interface}{24}{section.35}
+\contentsline {section}{\numberline {4.4}MinieC Interface}{24}{section.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Microcontroller}{25}{section.37}
+\contentsline {section}{\numberline {4.5}Microcontroller}{27}{section.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}OpenSalinity GUI}{26}{section.38}
+\contentsline {section}{\numberline {4.6}Carrier Board}{27}{section.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{28}{chapter.40}
+\contentsline {section}{\numberline {4.7}Embedded Software}{28}{section.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Verification}{29}{section.47}
+\contentsline {section}{\numberline {4.8}OpenSalinity GUI}{31}{section.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Time Resolution}{29}{subsection.48}
+\contentsline {section}{\numberline {4.9}Data Conditioning}{32}{section.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Spacial Resolution}{29}{subsection.49}
+\contentsline {chapter}{\numberline {5}Results}{33}{chapter.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Electrical Conductivity Resolution}{29}{subsection.50}
+\contentsline {section}{\numberline {5.1}Verification}{34}{section.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Cost}{30}{subsection.51}
+\contentsline {subsection}{\numberline {5.1.1}Time Resolution}{34}{subsection.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Deployment}{30}{subsection.52}
+\contentsline {subsection}{\numberline {5.1.2}Spacial Resolution}{34}{subsection.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.6}Usability}{30}{subsection.53}
+\contentsline {subsection}{\numberline {5.1.3}Electrical Conductivity Resolution}{34}{subsection.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Validation}{30}{section.54}
+\contentsline {subsection}{\numberline {5.1.4}Cost}{35}{subsection.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{36}{chapter.60}
+\contentsline {subsection}{\numberline {5.1.5}Deployment}{35}{subsection.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix}{37}{chapter*.61}
+\contentsline {subsection}{\numberline {5.1.6}Usability}{35}{subsection.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbreviations}{38}{appendix.62}
+\contentsline {section}{\numberline {5.2}Validation}{35}{section.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}List of Figures}{39}{appendix.64}
+\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Tables}{39}{appendix.65}
+\contentsline {chapter}{Appendix}{40}{chapter*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Bibliography}{41}{appendix.66}
+\contentsline {chapter}{\numberline {A}Abbreviations}{41}{appendix.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}List of Figures}{42}{appendix.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}List of Tables}{43}{appendix.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}Bibliography}{44}{appendix.75}

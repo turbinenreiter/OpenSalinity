@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=circle] (0) at (0, 7) {Power On};
+		\node [style=newstyle] (1) at (0, 6) {Start Stop};
+		\node [style=rect] (2) at (0, 5) {switch};
+		\node [style=rect] (3) at (0, 4) {read};
+		\node [style=rect] (4) at (0, 3) {time};
+		\node [style=rect] (5) at (0, 2) {print};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=arrow] (0) to (1);
+		\draw [style=arrow] (1) to node{Start} (2);
+		\draw [style=arrow] (2) to (3);
+		\draw [style=arrow] (3) to (4);
+		\draw [style=arrow, bend right=90, looseness=1.00] (4) to node{8 times} (2);
+		\draw [style=simple, in=90, out=0, loop] (1) to node{Stop} ();
+		\draw [style=arrow] (4) to (5);
+		\draw [style=arrow, in=-165, out=-90, looseness=1.25] (5) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

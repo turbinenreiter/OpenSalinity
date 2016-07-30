@@ -122,16 +122,4 @@ Check, if Timm can use it to measure flow and compare with simulation. [?]
 	\end{center}
 \end{figure}
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=\textwidth]{images/switch_cap.pdf} 
-		\caption{switch cap}
-	\end{center}
-\end{figure}
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=\textwidth]{images/switch_nocap.pdf} 
-		\caption{switch no cap}
-	\end{center}
-\end{figure}

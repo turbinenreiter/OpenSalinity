@@ -20,33 +20,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces System Design\relax }}{19}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Electrode pair forming a sensor\relax }}{20}{figure.caption.29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces An electrode pair forming a sensor.\relax }}{20}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Handmade Sensor Strip\relax }}{21}{figure.caption.30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A handmade sensor strip.\relax }}{21}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Design of FlexPCB\relax }}{22}{figure.caption.31}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The sensor strip design to be implemented as flexible PCB.\relax }}{22}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Functional block diagram of ADG738\relax }}{23}{figure.caption.33}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A sensor strip manufactured by LEITON and assembled with cables and waterproofing.\relax }}{22}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Timing diagram\relax }}{24}{figure.caption.34}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Functional block diagram of ADG738\relax }}{23}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces OpAmp\relax }}{25}{figure.caption.36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Timing diagram\relax }}{23}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces OpenSalinity GUI\relax }}{26}{figure.caption.39}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces OpAmp\relax }}{24}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces After the switch, the capacitor discharges slowly.\relax }}{26}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The response immediately follows the switching event, but the AC signal is now unfiltered.\relax }}{26}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The assembled carrier boar with all parts mounted.\relax }}{28}{figure.caption.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Data Format\relax }}{29}{figure.caption.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Embedded Software Flow Diagram\relax }}{30}{figure.caption.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces OpenSalinity GUI\relax }}{31}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces control volume moving over sensor\relax }}{29}{figure.caption.42}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces control volume moving over sensor\relax }}{34}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces noise\relax }}{31}{figure.caption.55}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces noise\relax }}{36}{figure.caption.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces feed switch\relax }}{32}{figure.caption.56}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces feed switch\relax }}{37}{figure.caption.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces feed add\relax }}{33}{figure.caption.57}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces switch cap\relax }}{34}{figure.caption.58}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces switch no cap\relax }}{35}{figure.caption.59}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces feed add\relax }}{38}{figure.caption.68}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
