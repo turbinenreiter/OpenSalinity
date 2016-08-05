@@ -10,9 +10,9 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces equivalent circuit diagram\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The equivalent circuit diagram shows the voltage drop $U_R$ over the resistance of the fluid relative to the internal resistance $R_i$, driven by the applied voltage $U$.\relax }}{15}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces electrode configuration\relax }}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Two electrodes with the area $A$ are submerged in the solution with the distance $d$ between them. A voltmeter is used to measure the voltage drop.\relax }}{15}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Fisher Scientific™ Traceable™ Salinity Meter Pen \cite {cheapcm}\relax }}{18}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
@@ -20,15 +20,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces System Design: the yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue are marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.\relax }}{20}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces A handmade sensor strip.\relax }}{22}{figure.caption.31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Two rectangular electrodes form an electrode pair.\relax }}{22}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces An electrode pair forming a sensor.\relax }}{22}{figure.caption.30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A handmade sensor strip. The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.\relax }}{22}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The sensor strip design to be implemented as flexible PCB.\relax }}{23}{figure.caption.32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The sensor strip design to be implemented as flexible PCB. The red lines mark the copper layer, the green line is the outline of the board.\relax }}{23}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces A sensor strip manufactured by LEITON and assembled with cables and waterproofing.\relax }}{23}{figure.caption.33}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A finished sensor strip assembled with cables and waterproofing on the left.\relax }}{23}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Functional block diagram of ADG738\relax }}{24}{figure.caption.35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy chaining.\relax }}{24}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Timing diagram\relax }}{25}{figure.caption.36}
 \defcounter {refsection}{0}\relax 

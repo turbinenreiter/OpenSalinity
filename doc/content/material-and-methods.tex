@@ -76,7 +76,7 @@ Figure \ref{fig:sensor} shows the geometry of the sensor. To achieve a cell cons
 			\draw [darrow] (-1.15,-1.3) -- (1.15,-1.3) node[below, pos=0.5] {$d$};
 
 		\end{tikzpicture}
-		\caption{An electrode pair forming a sensor.}
+		\caption{Two rectangular electrodes form an electrode pair.}
 		\label{fig:sensor}
 	\end{center}
 \end{figure}
@@ -85,10 +85,10 @@ As a first proof-of-concept a sensor array was built, containing multiple electr
 
 First tests with this sensor array showed the viability of the concept, however a simple look at it shows the inherit problems. Instead of a uniformly flat strip with minimal influence on the flow, the assembly forms several irregularities. Soldering \unit[0.2]{mm} platinum wire to \unit[0.4]{mm} enameled copper wire on a piece of adhesive tape per hand also did not result in clean solder joints. And while with the experience of the first array, the second array turned out a bit cleaner, the fundamental problem remains: it is a tedious manufacturing process resulting in a low quality product.
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/v2.jpg} 
-		\caption{A handmade sensor strip.}
+		\caption{A handmade sensor strip. The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.}
 		\label{fig:v2}
 	\end{center}
 \end{figure}
@@ -102,7 +102,7 @@ The final design for the sensor strip, as shown in figure \ref{fig:fpcbd}, imple
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/fpcbd.pdf} 
-		\caption{The sensor strip design to be implemented as flexible PCB.}
+		\caption{The sensor strip design to be implemented as flexible PCB. The red lines mark the copper layer, the green line is the outline of the board.}
 		\label{fig:fpcbd}
 	\end{center}
 \end{figure}
@@ -110,7 +110,7 @@ The final design for the sensor strip, as shown in figure \ref{fig:fpcbd}, imple
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/fpcbp.jpg} 
-		\caption{A sensor strip manufactured by LEITON and assembled with cables and waterproofing.}
+		\caption{A finished sensor strip assembled with cables and waterproofing on the left.}
 		\label{fig:fpcbp}
 	\end{center}
 \end{figure}
@@ -124,7 +124,7 @@ Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=0.3\textwidth]{images/ms.pdf} 
-		\caption{Functional block diagram of ADG738}
+		\caption{The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining.}
 		\label{fig:ms}
 	\end{center}
 \end{figure}
@@ -140,7 +140,7 @@ The example timing diagram \ref{fig:msc} describes the data transmission process
   			DIN  	& 2{L} {2H} N(B1) 15{2L} \\
   			Data	& 2D{} 2D{1} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{}\\
 		\end{tikztimingtable}
-		\caption{Timing diagram}
+		\caption{Example Timing diagram: data input starts when (SYNC) is pulled low. On falling edges of (SCLK), (DIN) is read. If (DIN) is high at that moment, the bit is 1, if low it is 0. After eight bits are transferred, (SYNC) is pulled high again and the data transfer is finished.}
 		\label{fig:msc}
 	\end{center}
 \end{figure}
@@ -173,7 +173,7 @@ The AC signal provided by the first stage is then fed into an OpAmp. An OpAmp is
 			   (out) node[right] {OUT}
 				;
 		\end{circuitikz}
-		\caption{OpAmp}
+		\caption{The OpAmp modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).}
 		\label{fig:opamp}
 	\end{center}
 \end{figure}

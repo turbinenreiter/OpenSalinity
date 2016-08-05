@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 19:15
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 19:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2287,6 +2287,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
+LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 24
+.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.83347> on input line 24.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.58339> on input line 24.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.41673> on input line 24.
 [14
 
 
@@ -2329,16 +2337,7 @@ Overfull \hbox (3.11661pt too wide) in paragraph at lines 7--9
 no macro to compute MD5. Falling back to 'up to date check=diff'.
 ===== Image 'tikz-cache/document-figure0' is up-to-date. ======
 File: tikz-cache/document-figure0.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure0.pdf" >
-LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 38
-.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.83347> on input line 38.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.58339> on input line 38.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.41673> on input line 38.
- [19
+<use  "tikz-cache/document-figure0.pdf" > [19
 
 
 
@@ -2601,11 +2600,11 @@ chapter B.
 
 
 chapter C.
-(./document.lot)
+(./document.lot [50])
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [50]
+ [51]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2639,7 +2638,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[51
+[52
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2678,4 +2677,4 @@ Here is how much of TeX's memory you used:
  1328 hyphenation exceptions out of 8191
  73i,34n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (51 pages).
+Output written on document.pdf (52 pages).
