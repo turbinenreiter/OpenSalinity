@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 19:01
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 19:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2329,24 +2329,33 @@ Overfull \hbox (3.11661pt too wide) in paragraph at lines 7--9
 no macro to compute MD5. Falling back to 'up to date check=diff'.
 ===== Image 'tikz-cache/document-figure0' is up-to-date. ======
 File: tikz-cache/document-figure0.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure0.pdf" > [19
+<use  "tikz-cache/document-figure0.pdf" >
+LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 38
+.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.83347> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.58339> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.41673> on input line 38.
+ [19
 
 
 
 ] [20]
-LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 51.
+LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 54.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.36993> on input line 51.
+(Font)              <6.36993> on input line 54.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.54997> on input line 51.
+(Font)              <4.54997> on input line 54.
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
@@ -2355,7 +2364,7 @@ File: tikz-cache/document-figure1.pdf Graphic file (type QTm)
 <use  "tikz-cache/document-figure1.pdf" > [21]
 File: images/v2.jpg Graphic file (type QTm)
  <use  "images/v2.jpg" > [22]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
@@ -2363,60 +2372,60 @@ File: images/fpcbd.pdf Graphic file (type QTm)
 <use  "images/fpcbd.pdf" >
 File: images/fpcbp.jpg Graphic file (type QTm)
  <use  "images/fpcbp.jpg" >
-Overfull \hbox (4.07048pt too wide) in paragraph at lines 117--118
+Overfull \hbox (4.07048pt too wide) in paragraph at lines 120--121
 [][]\EU1/SourceSerifPro(0)/m/sl/13 The matrix switches are an essential part of
  the system, enabling it use multiple sensors
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 File: images/ms.pdf Graphic file (type QTm)
 <use  "images/ms.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 [25]
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 7.86388pt on input line 162.
-LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 162
+(Font)              scaled to size 7.86388pt on input line 165.
+LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 165
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.66673> on input line 162.
+(Font)              <8.66673> on input line 165.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.06668> on input line 162.
+(Font)              <6.06668> on input line 165.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.33336> on input line 162.
+(Font)              <4.33336> on input line 165.
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
@@ -2425,55 +2434,55 @@ File: images/switch_cap.pdf Graphic file (type QTm)
  <use  "images/switch_cap.pdf" > [27]
 File: images/switch_nocap.pdf Graphic file (type QTm)
  <use  "images/switch_nocap.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 [29]
 File: images/cb.jpg Graphic file (type QTm)
  <use  "images/cb.jpg" >
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
 
  []
 
 [30]
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 5.89786pt on input line 241.
+(Font)              scaled to size 5.89786pt on input line 244.
 
 ===== Image 'tikz-cache/document-figure2' is up-to-date. ======
 File: tikz-cache/document-figure2.pdf Graphic file (type QTm)
 <use  "tikz-cache/document-figure2.pdf" >
 
-LaTeX Warning: Float too large for page by 33.47905pt on input line 274.
+LaTeX Warning: Float too large for page by 33.47905pt on input line 277.
 
 [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
 File: images/UI.png Graphic file (type QTm)
 <use  "images/UI.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 
-Overfull \hbox (3.60336pt too wide) in paragraph at lines 306--307
+Overfull \hbox (3.60336pt too wide) in paragraph at lines 309--310
 [][]\OMS/lmsy/m/n/13 ^^@\OT1/lmr/m/n/13 2147483647$ \EU1/SourceSerifPro(0)/m/sl
 /13 to $[][]\OT1/lmr/m/n/13 2147483647$\EU1/SourceSerifPro(0)/m/sl/13 , meaning
  that it wraps around roughly every $[][]\OT1/lmr/m/n/13 8\OML/lmm/m/it/13 :\OT
@@ -2481,7 +2490,7 @@ Overfull \hbox (3.60336pt too wide) in paragraph at lines 306--307
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
@@ -2512,16 +2521,7 @@ File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
 ]
 ===== Image 'tikz-cache/document-figure5' is up-to-date. ======
 File: tikz-cache/document-figure5.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure5.pdf" >
-LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 11
-2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.83347> on input line 112.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.58339> on input line 112.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.41673> on input line 112.
- [38]
+<use  "tikz-cache/document-figure5.pdf" > [38]
 Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
  []
@@ -2676,6 +2676,6 @@ Here is how much of TeX's memory you used:
  69137 multiletter control sequences out of 15000+600000
  49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 73i,32n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,34n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on document.pdf (51 pages).

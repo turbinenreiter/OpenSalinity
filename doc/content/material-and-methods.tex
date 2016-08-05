@@ -10,6 +10,9 @@ On the user-facing side there is a personal computer (PC). This PC runs software
 \begin{figure}
 	\begin{center}
 \begin{tikzpicture}
+	\fill [fill=yellow, opacity=0.25] (-5.5,4) rectangle (5,7);
+	\fill [fill=green, opacity=0.25] (-5.5,-3.5) rectangle (5,4);
+	\fill [fill=blue, opacity=0.25] (5,-3.5) rectangle (10,2);
 	\begin{pgfonlayer}{nodelayer}
 		\node [rounded corners=8pt, inner sep=16pt, style=rect] (0) at (8, -1) {8 Electrodes};
 		\node [rounded corners=8pt, inner sep=16pt, style=rect] (1) at (0, 3) {Microcontroller};
@@ -32,7 +35,7 @@ On the user-facing side there is a personal computer (PC). This PC runs software
 \end{tikzpicture}
 		%\input{images/system_design.tikz}
 		%\includegraphics[width=\textwidth]{images/systemdesign.pdf} 
-		\caption{System Design}
+		\caption{System Design: the yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue are marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.}
 		\label{fig:sys}
 	\end{center}
 \end{figure}
