@@ -1,11 +1,11 @@
 \chapter{Design}
 
-This chapter describes the design of the sensor system and all components involved. The system consists of several parts playing different roles. The System Design gives an overview of these parts, their purpose and their communication with each other. Afterwards, these subsystem are described in detail.\\
+This chapter describes the design of the sensor system and all components involved. It system consists of several parts playing different roles. The Chapter \ref{sd} System Design gives an overview of these parts, their purpose and their communication with each other. Afterwards, these subsystem are described in detail.\\
 
-\section{System Design}
+\section{System Design} \label{sd}
 
-The system as shown in figure \ref{fig:sys} is designed as follows:\\
-On the user-facing side there is a personal computer (PC). This PC runs software that visualizes a live data stream and provides a control interface for the sensor system. It is connected via USB to a microcontroller. This microcontroller controls the MinieeC interface via I2C, reads the measurement data from it and sends it to the PC. It also controls the matrix switches via SPI. The MinieC Interface provides the signal (SIG) and ground (GND) between which the resistance is measured. Both lines are connected to one matrix switch each. These matrix switches are able to connect one input to 8 different outputs. On each of those outputs, one electrode is connected. The matrix switches can thereby connect the MinieC interface to one of 8 electrode pairs at a time.\\
+The system as shown in Figure \ref{fig:sys} is designed as follows:\\
+On the user-facing side there is a personal computer (PC). This PC runs software that visualizes a live data stream and provides a control interface for the sensor system. It is connected via USB to a microcontroller. This microcontroller controls the MinieeC interface via the Inter-Integrated Circuit (I2C) communication protocol, reads the measurement data from it and sends it to the PC. It also controls the matrix switches via the Serial Peripheral Interface Bus (SPI). The MinieC Interface provides the signal (SIG) and ground (GND) between which the resistance is measured. Both lines are connected to one matrix switch each. These matrix switches are able to connect one input to 8 different outputs. On each of those outputs, one electrode is connected. The matrix switches can thereby connect the MinieC interface to one of 8 electrode pairs at a time.
 
 \begin{figure}
 	\begin{center}
@@ -37,7 +37,7 @@ On the user-facing side there is a personal computer (PC). This PC runs software
 	\end{center}
 \end{figure}
 
-Using the matrix switches, 8 electrode pairs can be polled with just one MinieC interface. Increasing the number of electrodes can be done in two ways:
+To add further sensors to the system, two strategies are possible:
 
 \begin{itemize}
     \item by chaining up multiple stages of matrix switches, the number of electrodes can be increased eightfold with each stage
@@ -70,7 +70,7 @@ Figure \ref{fig:sensor} shows the geometry of the sensor. To achieve a cell cons
 			\draw (-1.9,-1) -- (-1.3,-1);
 			\draw [darrow] (-1.7,1) -- (-1.7,-1) node[left, pos=0.5] {$h$};
 
-			\draw [darrow] (-1.15,-1.3) -- (1.15,-1.3) node[above, pos=0.5] {$d$};
+			\draw [darrow] (-1.15,-1.3) -- (1.15,-1.3) node[below, pos=0.5] {$d$};
 
 		\end{tikzpicture}
 		\caption{An electrode pair forming a sensor.}

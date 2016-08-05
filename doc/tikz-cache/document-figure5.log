@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 15:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 14:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1908,7 +1908,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 ))
-No file tikz-cache/document-figure4.aux.
+No file tikz-cache/document-figure5.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
@@ -1973,7 +1973,7 @@ Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
 Configuring pdfsync
 \PDFSYNC@ut=\write7
-\openout7 = `tikz-cache/document-figure4.pdfsync'.
+\openout7 = `tikz-cache/document-figure5.pdfsync'.
 
 \PDFSYNCf@li@=\count469
 \PDFSYNC@rder=\count470
@@ -2343,19 +2343,8 @@ chapter 5.
 
 LaTeX Warning: Reference `obj' on page 28 undefined on input line 3.
 
-
-LaTeX Warning: Reference `fig:sensarray' on page 28 undefined on input line 12.
-
-
-\openout6 = `tikz-cache/document-figure4.dpth'.
-
-[28
-
-
-
-
-
-]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 The command '\includegraphics [width=\textwidth ]{images/noise.pdf}' has been o
 ptimized away. Use '/tikz/external/optimize=false' to disable this.
 The command '\includegraphics [width=\textwidth ]{images/feed_switch.pdf}' has 
@@ -2363,21 +2352,28 @@ been optimized away. Use '/tikz/external/optimize=false' to disable this.
 The command '\includegraphics [width=\textwidth ]{images/feed_add.pdf}' has bee
 n optimized away. Use '/tikz/external/optimize=false' to disable this.
 
-LaTeX Warning: Reference `eq:resv' on page 29 undefined on input line 114.
+LaTeX Warning: Reference `eq:resv' on page 29 undefined on input line 84.
 
 
-LaTeX Warning: Reference `fig:cv' on page 29 undefined on input line 121.
+LaTeX Warning: Reference `fig:cv' on page 29 undefined on input line 91.
 
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+\openout6 = `tikz-cache/document-figure5.dpth'.
 
-LaTeX Warning: Reference `eq:resn' on page 29 undefined on input line 157.
-
-
-LaTeX Warning: Reference `eq:resk' on page 29 undefined on input line 157.
+[29
 
 
-LaTeX Warning: Reference `eq:resv' on page 30 undefined on input line 169.
+
+
+
+]
+
+LaTeX Warning: Reference `eq:resn' on page 29 undefined on input line 127.
+
+
+LaTeX Warning: Reference `eq:resk' on page 29 undefined on input line 127.
+
+
+LaTeX Warning: Reference `eq:resv' on page 29 undefined on input line 139.
 
 ) (./content/summary-and-outlook.tex
 chapter 6.
@@ -2412,20 +2408,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package logreq Info: Writing requests to 'tikz-cache/document-figure4.run.xml'.
+Package logreq Info: Writing requests to 'tikz-cache/document-figure5.run.xml'.
 
-\openout1 = `tikz-cache/document-figure4.run.xml'.
+\openout1 = `tikz-cache/document-figure5.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66505 strings out of 493638
- 1496144 string characters out of 6146797
+ 66508 strings out of 493638
+ 1496159 string characters out of 6146797
  2110859 words of memory out of 5000000
- 68890 multiletter control sequences out of 15000+600000
+ 68893 multiletter control sequences out of 15000+600000
  37677 words of font info for 83 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  74i,32n,106p,10478b,1940s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tikz-cache/document-figure4.pdf (1 page).
+Output written on tikz-cache/document-figure5.pdf (1 page).

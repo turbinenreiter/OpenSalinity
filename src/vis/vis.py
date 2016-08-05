@@ -73,6 +73,8 @@ def main(argv):
     fig.suptitle(fname.split('/')[-1])
     plt.style.use('bmh')
 
+    tau = np.mean(t[0]-t[1])
+
     for i, (vt, ve, ve_raw, vfreq, vd) in enumerate(zip(t, e, e_raw, freqs, diff)):
         if i in [0, 7]:
 
