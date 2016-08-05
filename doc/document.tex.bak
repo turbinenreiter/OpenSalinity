@@ -62,6 +62,7 @@
 %% Appendix
 \appendix
 \chapter*{Appendix}                         % Appendix headline
+\include{content/appendix}
 \addcontentsline{toc}{chapter}{Appendix}    %   and entry in Table of Contents
 
 % Abbreviations chapter

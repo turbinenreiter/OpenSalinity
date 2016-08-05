@@ -332,3 +332,31 @@ The microcontroller measures time since start up by counting clock cycles. These
 		\label{fig:wrap}
 	\end{center}
 \end{figure}
+
+\section{Bill of Materials}
+
+The bill of materials collects all used components, their price and a possible source in the Table \ref{tab:bom}. Except for the MinieC Interface multiple sources are available for all parts. In case it becomes unavailable, the hardware design files are provided to have them manufactured by a different source. The Espruino Pico also comes from a small manufacturer and may not be available in the future. However, alternatives are plentiful and can be used either with simple jumper cables or by redesigning the carrier board.
+
+The carrier board and sensor strip are made to order by PCB makers. Generally, any manufacturer will be able to produce the boards with the provided design files, however the size limits and corresponding prices can vary. The prices also strongly depend on lot size. The prices in the table are the prices per piece for a lot of ten carrier boards and 16 sensor strips.
+
+\begin{table}[H]
+    \centering
+
+    \caption[BOM]{Bill of Materials}
+    \label{tab:bom}
+    \begin{tabular}{llllll}
+        	\toprule
+        	Nr. & Qt. & Name & Source & Price \tabularnewline
+        	\midrule
+		1 & 1 & Espruino Pico & watterott.com & \euro{26.95} \tabularnewline
+		2 & 1 & Sparky's Widgets MinieeC Interface & sparkyswidgets.com & \euro{21.66} \tabularnewline
+		3 & 2 & Analog Devices ADG738 & mouser.de & \euro{3.89} \tabularnewline
+		4 & 1 & Carrier Board & dirtypcbs.com & \euro{4.87} \tabularnewline
+		5 & 2 & Sensor Strip & leiton.de & \euro{23.53} \tabularnewline
+		6 & 1 & USB Extension Cable & amazon.de & \euro{5.49} \tabularnewline
+		7 & 1 &  Flat Ribbon Cable 40-pole & amazon.de & \euro{7.99} \tabularnewline
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Collection of Software}

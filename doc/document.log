@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 16:06
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 19:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2055,7 +2055,7 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 LaTeX Warning: Label `fig:opamp' multiply defined.
 
 ) (./content/results.aux) (./content/summary-and-outlook.aux)
-(./elements/abbreviations.aux))
+(./content/appendix.aux) (./elements/abbreviations.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -2074,7 +2074,8 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 21.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 21.
- (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 21.
@@ -2486,68 +2487,95 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
 ===== Image 'tikz-cache/document-figure3' is up-to-date. ======
 File: tikz-cache/document-figure3.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure3.pdf" >) [34] [35]
+<use  "tikz-cache/document-figure3.pdf" > [34] [35]) [36]
 \openout2 = `content/results.aux'.
 
- (./content/results.tex
+
+(./content/results.tex
 chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
 ===== Image 'tikz-cache/document-figure4' is up-to-date. ======
 File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure4.pdf" > [36
+<use  "tikz-cache/document-figure4.pdf" > [37
 
 
 
 ]
 ===== Image 'tikz-cache/document-figure5' is up-to-date. ======
 File: tikz-cache/document-figure5.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure5.pdf" > [37]
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+<use  "tikz-cache/document-figure5.pdf" >
+LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 11
+2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.83347> on input line 112.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.58339> on input line 112.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.41673> on input line 112.
+ [38]
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
  []
 
-
-Overfull \hbox (0.61436pt too wide) in paragraph at lines 141--142
+[39]
+Overfull \hbox (0.61436pt too wide) in paragraph at lines 144--145
 [][][]\EU1/SourceSerifPro(0)/m/sl/13 To test if the time resolution matches thi
 s, the measurement time itself can be timed.
  []
 
 
-Overfull \hbox (5.76755pt too wide) in paragraph at lines 141--142
-\EU1/SourceSerifPro(0)/m/sl/13 The difference between the first time (975209221
-ns) and the second time (975209961ns)
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
  []
 
-[38]
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+[40]
+File: images/stripsinreactor.jpg Graphic file (type QTm)
+ <use  "images/stripsinreactor.jpg" >
+File: images/pconreactor.jpg Graphic file (type QTm)
+ <use  "images/pconreactor.jpg" >
+[41]
 File: images/noise.pdf Graphic file (type QTm)
  <use  "images/noise.pdf" >
 File: images/feed_switch.pdf Graphic file (type QTm)
  <use  "images/feed_switch.pdf" >
 File: images/feed_add.pdf Graphic file (type QTm)
 
-<use  "images/feed_add.pdf" >) [39] [40] [41] [42]
+<use  "images/feed_add.pdf" >) [42] [43] [44] [45]
 \openout2 = `content/summary-and-outlook.aux'.
 
 
 (./content/summary-and-outlook.tex
 chapter 6.
-) [43
+) [46
 
 
 
-] [44
+] [47
 
 
 ]
+\openout2 = `content/appendix.aux'.
+
+ (./content/appendix.tex)
 \openout2 = `elements/abbreviations.aux'.
 
  (./elements/abbreviations.tex
@@ -2557,12 +2585,14 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [45
+) [48
+
+
 
 
 ]
 chapter B.
-(./document.lof [46
+(./document.lof [49
 
 
 ])
@@ -2575,32 +2605,32 @@ chapter C.
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [47]
+ [50]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
-(Font)              using `EU1/SourceSerifPro(0)/m/n' instead on input line 79.
+(Font)              using `EU1/SourceSerifPro(0)/m/n' instead on input line 80.
 
 
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(1)/m/n' will be
-(Font)              scaled to size 11.79573pt on input line 79.
+(Font)              scaled to size 11.79573pt on input line 80.
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/it' will be
-(Font)              scaled to size 11.79573pt on input line 79.
+(Font)              scaled to size 11.79573pt on input line 80.
 
-Overfull \hbox (9.22302pt too wide) in paragraph at lines 80--80
+Overfull \hbox (9.22302pt too wide) in paragraph at lines 81--81
 [][][][]\EU1/SourceSerifPro(0)/m/it/13 Edwards, Ryan (2016). MinieC I2C eC inte
 rface. 2016. URL: [][]$[][][][][][][] [] [] [] [][][] [] [][][][][][][][][][][]
 [][][] []
  []
 
 
-Overfull \hbox (4.70422pt too wide) in paragraph at lines 80--80
+Overfull \hbox (4.70422pt too wide) in paragraph at lines 81--81
 [][][][]\EU1/SourceSerifPro(0)/m/it/13 fisherci (2016a). Fisher Scientific™ Tra
 ceable™ Conductivity, Resistivity, and TDS Meter.
  []
 
 
-Overfull \hbox (8.43744pt too wide) in paragraph at lines 80--80
+Overfull \hbox (8.43744pt too wide) in paragraph at lines 81--81
 [][][][]\EU1/SourceSerifPro(0)/m/it/13 Tränkler, Hans-Rolf and Leonhard M Reind
 l (2015). Sensortechnik: Handbuch für Praxis
  []
@@ -2609,18 +2639,19 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[48
+[51
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (./document.aux (./elements/title.aux)
 (./elements/declaration-of-authorship.aux) (./content/introduction.aux)
 (./content/motivation.aux) (./content/theory.aux)
 (./content/material-and-methods.aux) (./content/results.aux)
-(./content/summary-and-outlook.aux) (./elements/abbreviations.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 81.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 81.
+(./content/summary-and-outlook.aux) (./content/appendix.aux)
+(./elements/abbreviations.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 82.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 82.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2635,16 +2666,16 @@ LaTeX Warning: There were multiply-defined labels.
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66798 strings out of 493638
- 1500960 string characters out of 6146797
- 2124826 words of memory out of 5000000
- 69105 multiletter control sequences out of 15000+600000
- 37685 words of font info for 84 fonts, out of 8000000 for 9000
+ 66843 strings out of 493638
+ 1501741 string characters out of 6146797
+ 2123896 words of memory out of 5000000
+ 69137 multiletter control sequences out of 15000+600000
+ 49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,32n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (48 pages).
+Output written on document.pdf (51 pages).

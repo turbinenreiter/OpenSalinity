@@ -42,30 +42,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.9}Data Conditioning}{34}{section.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{36}{chapter.53}
+\contentsline {section}{\numberline {4.10}Bill of Materials}{35}{section.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Verification}{36}{section.54}
+\contentsline {section}{\numberline {4.11}Collection of Software}{36}{section.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Spacial Resolution}{36}{subsection.55}
+\contentsline {chapter}{\numberline {5}Results}{37}{chapter.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Electrical Conductivity Resolution and Range}{39}{subsection.67}
+\contentsline {section}{\numberline {5.1}Verification}{37}{section.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Cost}{39}{subsection.68}
+\contentsline {subsection}{\numberline {5.1.1}Spacial Resolution}{37}{subsection.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Deployabitilty in the Bioreactor}{39}{subsection.69}
+\contentsline {subsection}{\numberline {5.1.2}Electrical Conductivity Resolution and Range}{40}{subsection.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Usability}{39}{subsection.70}
+\contentsline {subsection}{\numberline {5.1.3}Cost}{40}{subsection.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Validation}{39}{section.71}
+\contentsline {subsection}{\numberline {5.1.4}Deployability in the Bioreactor}{40}{subsection.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{43}{chapter.75}
+\contentsline {subsection}{\numberline {5.1.5}Usability}{42}{subsection.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix}{44}{chapter*.76}
+\contentsline {section}{\numberline {5.2}Validation}{42}{section.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbreviations}{45}{appendix.77}
+\contentsline {chapter}{\numberline {6}Conclusion}{46}{chapter.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}List of Figures}{46}{appendix.79}
+\contentsline {chapter}{\numberline {A}Abbreviations}{48}{appendix.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Tables}{47}{appendix.80}
+\contentsline {chapter}{Appendix}{48}{chapter*.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Bibliography}{48}{appendix.81}
+\contentsline {chapter}{\numberline {B}List of Figures}{49}{appendix.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}List of Tables}{50}{appendix.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}Bibliography}{51}{appendix.86}

@@ -12,6 +12,7 @@
 
 \tikzstyle{rect}=[rectangle,fill=White,draw=Black]
 \tikzstyle{vol}=[rectangle,fill=DeepSkyBlue,draw=DeepSkyBlue]
+\tikzstyle{volb}=[rectangle,fill=Blue,draw=Blue]
 \tikzstyle{scircle}=[circle,fill=White,draw=Black]
 \tikzstyle{diamond}=[shape=diamond,fill=White,draw=Black]
 
