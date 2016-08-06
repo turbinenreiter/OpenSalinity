@@ -140,7 +140,7 @@ The example timing diagram \ref{fig:msc} describes the data transmission process
   			DIN  	& 2{L} {2H} N(B1) 15{2L} \\
   			Data	& 2D{} 2D{1} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{}\\
 		\end{tikztimingtable}
-		\caption{Example Timing diagram: data input starts when (SYNC) is pulled low. On falling edges of (}
+		\caption{Example Timing diagram: data input starts when (SYNC) is pulled low. On falling edges of (SCLK), (DIN) is read. If (DIN) is high at that moment, the bit is 1, if low it is 0. After eight bits are transferred, (SYNC) is pulled high again and the data transfer is finished.}
 		\label{fig:msc}
 	\end{center}
 \end{figure}
@@ -173,7 +173,7 @@ The AC signal provided by the first stage is then fed into an OpAmp. An OpAmp is
 			   (out) node[right] {OUT}
 				;
 		\end{circuitikz}
-		\caption{OpAmp}
+		\caption{The OpAmp modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).}
 		\label{fig:opamp}
 	\end{center}
 \end{figure}
@@ -336,7 +336,7 @@ The microcontroller measures time since start up by counting clock cycles. These
 	\end{center}
 \end{figure}
 
-\section{Bill of Materials}
+\section{Bill of Materials} \label{BOM}
 
 The bill of materials collects all used components, their price and a possible source in the Table \ref{tab:bom}. Except for the MinieC Interface multiple sources are available for all parts. In case it becomes unavailable, the hardware design files are provided to have them manufactured by a different source. The Espruino Pico also comes from a small manufacturer and may not be available in the future. However, alternatives are plentiful and can be used either with simple jumper cables or by redesigning the carrier board.
 

@@ -8,7 +8,8 @@ class SalSens8:
     electrodes to 1 ueC Interface.
     '''
 
-    def __init__(self, i2c=pyb.I2C(1, pyb.I2C.MASTER), mec_addr=79):
+    def __init__(self, i2c=pyb.I2C(1, pyb.I2C.MASTER),
+                       mec_addr=pyb.I2C(1, pyb.I2C.MASTER).scan()[0]):
         '''
         initializes the ueC Interface and Matrix Switches
         i2c = I2C bus
@@ -68,26 +69,32 @@ class SalSens8:
         times = [0]*8
         values = [0]*8
         for i in range(1, 9):
-            times[i-1] = pyb.micros() -start
+            times[i-1] = pyb.micros() - start
             values[i-1] = self.read_sal_from(i)
         return times, values
 
-    def pretty_print(self):
+    def pretty_print(self, start):
         '''
         pretty print
         format:
         te1 e1 te2 e2 .. te8 e8
         '''
-        times, values = self.read_sal_from_all(pyb.micros())
+        times, values = self.read_sal_from_all(start)
+        #print('#', end=' ')
         for (time, value) in zip(times, values):
             print(time, value, end=' ')
         print()
 
 if __name__ == "__main__":
 
-    sal_sens = SalSens8(i2c=pyb.I2C(1, pyb.I2C.MASTER), mec_addr=79)
+    pyb.LED(2).on()
+
+    sal_sens = SalSens8(i2c=pyb.I2C(1, pyb.I2C.MASTER), mec_addr=77)
 
     def loop(delay=100):
+        start = pyb.micros()
         while True:
-            sal_sens.pretty_print()
+            sal_sens.pretty_print(start)
             pyb.delay(delay)
+
+    loop(delay=0)

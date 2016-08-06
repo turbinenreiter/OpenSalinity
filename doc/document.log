@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  5 AUG 2016 19:31
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  6 AUG 2016 18:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2536,45 +2536,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
 [40]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+[41]
 File: images/stripsinreactor.jpg Graphic file (type QTm)
  <use  "images/stripsinreactor.jpg" >
 File: images/pconreactor.jpg Graphic file (type QTm)
  <use  "images/pconreactor.jpg" >
-[41]
+[42]
 File: images/noise.pdf Graphic file (type QTm)
  <use  "images/noise.pdf" >
 File: images/feed_switch.pdf Graphic file (type QTm)
  <use  "images/feed_switch.pdf" >
 File: images/feed_add.pdf Graphic file (type QTm)
 
-<use  "images/feed_add.pdf" >) [42] [43] [44] [45]
+<use  "images/feed_add.pdf" >) [43] [44] [45] [46]
 \openout2 = `content/summary-and-outlook.aux'.
 
 
 (./content/summary-and-outlook.tex
 chapter 6.
-) [46
+) [47
 
 
 
-] [47
+] [48
 
 
 ]
 \openout2 = `content/appendix.aux'.
 
- (./content/appendix.tex)
+ (./content/appendix.tex) [49
+
+]
 \openout2 = `elements/abbreviations.aux'.
 
  (./elements/abbreviations.tex
@@ -2584,27 +2586,26 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [48
-
+) [50
 
 
 
 ]
 chapter B.
-(./document.lof [49
+(./document.lof [51
 
 
-])
+] [52])
 \tf@lof=\write8
 \openout8 = `document.lof'.
 
 
 chapter C.
-(./document.lot [50])
+(./document.lot)
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [51]
+ [53]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2638,7 +2639,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[52
+[54
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2669,12 +2670,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66843 strings out of 493638
- 1501741 string characters out of 6146797
- 2123896 words of memory out of 5000000
- 69137 multiletter control sequences out of 15000+600000
+ 66845 strings out of 493638
+ 1501755 string characters out of 6146797
+ 2125896 words of memory out of 5000000
+ 69139 multiletter control sequences out of 15000+600000
  49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 73i,34n,106p,10440b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,34n,106p,10440b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (52 pages).
+Output written on document.pdf (54 pages).

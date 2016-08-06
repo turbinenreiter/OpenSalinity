@@ -154,9 +154,43 @@ To test if the time resolution matches this, the measurement time itself can be 
 Requirement: The system shall have a sensitivity of  \unit[0.1]{\%} salinity.\\
 Requirement: The system shall have a range from 0 to \unit[5]{\%} salinity.\\
 
+Table \ref{tab:rns} shows the results of measurements of solutions with different salinities. A \unit[10]{\%} solution was created by adding \unit[5]{g} of salt to \unit[100]{ml} of demineralized water. The subsequent solutions resulted from diluting the original one by adding more water.
+
+The measurable change of the voltage was visible at the drop from a salinity of \unit[5]{\%} to \unit[2.5]{\%}. Between \unit[10]{\%} and \unit[5]{\%} no difference was measurable at all. The upper range limit can therefore be placed between \unit[5]{\%} and \unit[2.5]{\%}, above those values the sensor is saturated, providing only the information that the salinity is above the threshold.
+
+On the lower limit, a measurement without any water, resulted in a voltage of \unit[0.02]{V}. This has to be considered the level of noise in the system. Above that, a clear distinction between salinities of \unit[0.08]{\%} and \unit[0.16]{\%} can be seen.
+
+\begin{table}[H]
+    \centering
+
+    \caption[cal]{Range and Sensitivity}
+    \label{tab:rns}
+    \begin{tabular}{rr}
+        	\toprule
+        	Salinity in [\%] & Voltage in [V] \tabularnewline
+        	\midrule
+		10.00 & 0.95 \tabularnewline
+        	5.00 & 0.95 \tabularnewline
+		2.50 & 0.85 \tabularnewline
+		1.25 & 0.65 \tabularnewline
+		0.63 & 0.45 \tabularnewline
+		0.31 & 0.28 \tabularnewline
+		0.16 & 0.18 \tabularnewline
+		0.08 & 0.11 \tabularnewline
+		Air & 0.02 \tabularnewline
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+While the requirement for sensitivity is clearly met, the range is just barely acceptable.
+
 \subsection{Cost}
 
 Requirement: The cost per sensor shall be less than \euro{25}\\
+
+Using the bill of materials in Chapter \ref{BOM} a total price of \euro{121.8} for all materials for a sensor system with eight sensors can be calculated, resulting in a price per sensor of \euro{15.23}. Adding additional sensors after that would cost \euro{11.17} per sensor, as parts like the microcontroller do not have to be duplicated.
+
+This price does not include the host PC as the PCs already installed in the laboratory can be used, as well as personal laptops like it was done in the testing phase. The demands on the host PC are very low, so in the worst case even a single board computer like the Raspberry Pie or similar can be used.
 
 \subsection{Deployability in the Bioreactor}
 
@@ -183,6 +217,8 @@ The deployability was demonstrated during two test campaigns on the reactor. Fig
 \subsection{Usability}
 
 Requirement: The system shall be usable with a minimal set of written instructions.
+
+The instructions for taking a series of measurements can be found in the Appendix. First, an image describes the different parts of the system relevant to the user. After that a step-by-step description with images helps the user through the process. All in all, only 8 steps are necessary.
 
 \section{Validation}
 

@@ -28,11 +28,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.5}{\ignorespaces A finished sensor strip assembled with cables and waterproofing on the left.\relax }}{23}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy chaining.\relax }}{24}{figure.caption.35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining.\relax }}{24}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Timing diagram\relax }}{25}{figure.caption.36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Example Timing diagram: data input starts when (SYNC) is pulled low. On falling edges of (SCLK), (DIN) is read. If (DIN) is high at that moment, the bit is 1, if low it is 0. After eight bits are transferred, (SYNC) is pulled high again and the data transfer is finished.\relax }}{25}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces OpAmp\relax }}{26}{figure.caption.38}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The OpAmp modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).\relax }}{26}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.9}{\ignorespaces After the switch, the capacitor discharges slowly.\relax }}{27}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
@@ -54,15 +54,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau $ the control volumes have moved. The sensor is covered by a mix of the two volumes.\relax }}{39}{figure.caption.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit [1]{m} length run towards the carrier board which is not in the frame.\relax }}{41}{figure.caption.73}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit [1]{m} length run towards the carrier board which is not in the frame.\relax }}{42}{figure.caption.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.\relax }}{42}{figure.caption.74}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.\relax }}{43}{figure.caption.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces noise\relax }}{43}{figure.caption.77}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces noise\relax }}{44}{figure.caption.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces feed switch\relax }}{44}{figure.caption.78}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces feed switch\relax }}{45}{figure.caption.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces feed add\relax }}{45}{figure.caption.79}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces feed add\relax }}{46}{figure.caption.80}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

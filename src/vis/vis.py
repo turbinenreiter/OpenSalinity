@@ -16,13 +16,27 @@ def low_pass(cutoff, sample_rate, vector):
         raise ValueError(cutoff, sample_rate, cutoff/(0.5*sample_rate))
     return sps.lfilter(b, a, vector)
 
+def envelope(vector):
+    return vector
+
+def low_cut(vector):
+    zeros = np.where(vector<=0.1)[0]
+    for zero in zeros:
+        try:
+            vector[zero] = max(vector[zero-10:zero])
+        except:
+            pass
+    return vector
+
 def main(argv):
 
     # read data from file
 
     fname = argv[1]
 
-    te1, e1, te2, e2, te3, e3, te4, e4, te5, e5, te6, e6, te7, e7, te8, e8 = np.genfromtxt(fname, delimiter=' ', skip_header=100, unpack=True)
+    start = 0
+    length = None
+    te1, e1, te2, e2, te3, e3, te4, e4, te5, e5, te6, e6, te7, e7, te8, e8 = np.genfromtxt(fname, delimiter=' ', skip_header=start, max_rows=length, unpack=True)
 
     print('data read')
 
@@ -31,6 +45,7 @@ def main(argv):
     t = [0]*8
 
     for i, vector in enumerate([te1, te2, te3, te4, te5, te6, te7, te8]):
+        # fix time values that wrapped around
         t[i] = (vector - te1[0])*10**-6
         try:
             index_of = np.where(t[i]<0)[0][0]
@@ -39,6 +54,11 @@ def main(argv):
                 t[i][j+index_of] = val + dt
         except IndexError:
             pass
+        # fix broken time values that are too high because of extra chars
+        for err in np.where(t[i]>t[i][-1]):
+            t[i][err] = t[i][err-1] + 0.5*(t[i][err+1] - t[i][err-1])
+        # fix broken time values that are too low because of missing chars
+        #TODO
 
     sample_rate = 1/((t[0][-1]-t[0][0])/len(t[0]))
 
@@ -52,10 +72,11 @@ def main(argv):
     diff = [0]*8
 
     for i, vector in enumerate([e1, e2, e3, e4, e5, e6, e7, e8]):
-        e[i] = (vector - np.average(vector[1:1000])) / 4096
+        e[i] = vector / 4096
         e_raw[i] = e[i]
-        e[i] = low_pass(0.1, sample_rate, e[i])
+        #e[i] = low_pass(0.1, sample_rate, e[i])
         #e[i] = sps.savgol_filter(e[i], 99, 3)
+        e[i] = envelope(e[i])
         freqs[i] = spfft.fftfreq(e_raw[i].size, t[i][1]-t[i][0])
         diff[i] = np.diff((e[i], t[i]), 2)
         #e[i] = e[i]/(max(e[i])-min(e[i]))
@@ -68,7 +89,7 @@ def main(argv):
 
     c = ['b','g','w','c','m','y','b','r']
 
-    fig, ax = plt.subplots(nrows=2, ncols=1, sharex=True)
+    fig, ax = plt.subplots() #plt.subplots(nrows=2, ncols=1, sharex=True)
 
     fig.suptitle(fname.split('/')[-1])
     plt.style.use('bmh')
@@ -76,21 +97,21 @@ def main(argv):
     tau = np.mean(t[0]-t[1])
 
     for i, (vt, ve, ve_raw, vfreq, vd) in enumerate(zip(t, e, e_raw, freqs, diff)):
-        if i in [0, 7]:
+        if i in [7]:
 
             # sal
             #plt.subplot(211)
-            ax[0].plot(vt[2:], ve[2:], alpha=0.5, label='#'+str(i+1), color=c[i])
-            ax[0].plot(vt[2:], ve_raw[2:], alpha=0.1, label='#'+str(i+1)+'r', color=c[i])
-            ax[0].set_xlabel('t[s]')
-            ax[0].set_ylabel('U[V]')
-            ax[0].legend(loc='best')
+            ax.plot(vt[2:], ve[2:], alpha=0.5, label='#'+str(i+1), color=c[i])
+            ax.plot(vt[2:], ve_raw[2:], alpha=0.1, label='#'+str(i+1)+'r', color='b')#c[i])
+            ax.set_xlabel('t[s]')
+            ax.set_ylabel('U[V]')
+            ax.legend(loc='best')
 
             # diff
             #plt.subplot(212)
-            ax[1].plot(vt[2:], vd[0], alpha=0.5, label='d#'+str(i+1), color=c[i])
+            #ax[1].plot(vt[2:], vd[0], alpha=0.5, label='d#'+str(i+1), color=c[i])
 
-            print('plot', i+1, 'from 8')
+            #print('plot', i+1, 'from 8')
 
             # freq
             #plt.subplot(212)

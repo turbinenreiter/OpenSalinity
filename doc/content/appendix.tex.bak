@@ -1,0 +1,15 @@
+\section*{Instruction Manual}
+
+\subsection*{Minimal Instruction Set}
+
+\begin{itemize}
+	\item[1] Use electrical tape to mount the sensor strips at desired points of measurement.
+	\item[2] Connect the cables of the sensor strip to the carrier board as shown in the picture:
+	\item[3] Connect the carrier board to the host PC with the USB cable. Note the orientation in the picture:
+	Wrong orientation can cause no damage, but the system does not work
+	\item[4] Start the OpenSalinity GUI by clicking on the icon:
+	\item[5] Click "Save" on the top right to chose a file to log the data too. If you want to use the default filename, just click "Open" in the file menu.
+	\item[6] Start the measurement by clicking "Start".
+	\item[7] Stop the measurement by clicking "Stop".
+	\item[8] Repeat from step 5 for all subsequent measurements. If no new file is chosen before starting a new measurement, the data is added at the end of the previous file.
+\end{itemize}
