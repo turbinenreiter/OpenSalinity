@@ -10,6 +10,7 @@ A level-1 auxiliary file: content/theory.aux
 A level-1 auxiliary file: content/material-and-methods.aux
 A level-1 auxiliary file: content/results.aux
 A level-1 auxiliary file: content/summary-and-outlook.aux
+A level-1 auxiliary file: content/appendix.aux
 A level-1 auxiliary file: elements/abbreviations.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -29,42 +30,42 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 You've used 8 entries,
             6047 wiz_defined-function locations,
-            1169 strings with 9227 characters,
-and the built_in function-call counts, 20701 in all, are:
-= -- 782
-> -- 648
+            1169 strings with 9243 characters,
+and the built_in function-call counts, 20820 in all, are:
+= -- 790
+> -- 659
 < -- 199
-+ -- 177
-- -- 211
-* -- 1305
-:= -- 1372
++ -- 180
+- -- 213
+* -- 1306
+:= -- 1385
 add.period$ -- 0
 call.type$ -- 8
 change.case$ -- 95
 chr.to.int$ -- 34
 cite$ -- 14
-duplicate$ -- 2312
-empty$ -- 2323
-format.name$ -- 356
-if$ -- 4791
+duplicate$ -- 2321
+empty$ -- 2331
+format.name$ -- 362
+if$ -- 4821
 int.to.chr$ -- 0
-int.to.str$ -- 19
+int.to.str$ -- 22
 missing$ -- 0
-newline$ -- 163
-num.names$ -- 322
-pop$ -- 2337
+newline$ -- 164
+num.names$ -- 328
+pop$ -- 2341
 preamble$ -- 1
 purify$ -- 103
 quote$ -- 0
-skip$ -- 1224
+skip$ -- 1233
 stack$ -- 0
 substring$ -- 377
-swap$ -- 710
+swap$ -- 712
 text.length$ -- 192
 text.prefix$ -- 7
 top$ -- 1
 type$ -- 292
 warning$ -- 0
-while$ -- 172
+while$ -- 174
 width$ -- 0
-write$ -- 154
+write$ -- 155

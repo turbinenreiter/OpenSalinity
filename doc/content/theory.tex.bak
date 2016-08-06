@@ -4,7 +4,7 @@ In this chapter a theoretical background of electrical conductivity measurement 
 
 \section{Theoretical Background}
 
-The following section is translated and summarized from the books \cite{trankler2015sensortechnik} and \cite{gevatter2000automatisierungstechnik}.\\
+The following section is translated and summarized from \textcite{trankler2015sensortechnik} and \textcite{gevatter2000automatisierungstechnik}.\\
 
 The conductivity $ \kappa $  is the ability of a certain volume of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to the length and cross section of the volume. Conductivity in a liquid depends on ions as charge carrier and can therefore be used to measure its concentration.
 
@@ -93,13 +93,13 @@ The temperature coefficient $ C_{T} $ assumes a linear correlation and is only v
 
 \section{Market Research}
 
-Conductivity meters can be readily bought and range from prices of over \euro{1000} for lab equipment \cite{expcm} to \euro{100} for simple field water quality monitors \cite{cheapcm}. Even cheaper water quality testers from no-name manufacturers can be found for as little as \euro{10} from online vendors.
+Conductivity meters can be readily bought and range from prices of over \euro{1000} for lab equipment \parencite{expcm} to \euro{100} for simple field water quality monitors \parencite{cheapcm}. Even cheaper water quality testers from no-name manufacturers can be found for as little as \euro{10} from online vendors.
 
 \begin{figure}
 	\begin{center}
     	\tikzset{external/export next=false}
 		\includegraphics[scale=0.5]{images/ccm.jpg}
-		\caption{Fisher Scientific™ Traceable™ Salinity Meter Pen \cite{cheapcm}}
+		\caption{Fisher Scientific™ Traceable™ Salinity Meter Pen \parencite{cheapcm}}
 		\label{fig:ccm}
 	\end{center}
 \end{figure}
@@ -113,6 +113,6 @@ Figure \ref{fig:ccm} shows a field conductivity meter from a quality manufacture
 
 While field conductivity meters have the electrodes integrated to form one compact device, the more expensive lab equipment often has the electrodes attached to the device with a cable, allowing for a more flexible use. \\
 
-A different option was found in the MinieC I2C eC interface from Sparky's Widgets \cite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons \cite{cc}. This license allows to study the original design files and build modified versions. Ready-made boards can be purchased for about \euro{25}.
+A different option was found in the MinieC I2C eC interface from Sparky's Widgets \parencite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons \parencite{cc}. This license allows to study the original design files and build modified versions. Ready-made boards can be purchased for about \euro{25}.
 
 The design approach of this solution is also more modular than that of the more professional equipment. The MinieC offers an interface to connect external electrodes and can be controlled and read by a microcontroller.

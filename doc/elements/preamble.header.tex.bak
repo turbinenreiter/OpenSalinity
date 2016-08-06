@@ -74,7 +74,7 @@
 \usepackage[german=quotes]{csquotes}
 \usepackage[
 	backend=bibtex,
-	%style=authoryear,
+	style=authoryear,
 	bibstyle=authoryear,
 	dashed=false,
 	mergedate=false,

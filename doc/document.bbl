@@ -16,17 +16,34 @@
   {}
 \endgroup
 
-\entry{cc}{online}{}
+\entry{ms}{manual}{}
   \name{author}{1}{}{%
     {{}%
-     {Commons}{C.}%
-     {Creative}{C.}%
+     {{Analog Devices}}{A.}%
+     {}{}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{CC1}
-  \strng{fullhash}{CC1}
+  \strng{namehash}{A1}
+  \strng{fullhash}{A1}
   \field{labelyear}{2016}
+  \field{sortinit}{A}
+  \field{title}{ADG738/ADG739 Data Sheet}
+  \field{year}{2016}
+\endentry
+
+\entry{cc}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Creative Commons}}{C.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{C1}
+  \strng{fullhash}{C1}
+  \field{labelyear}{2016}
+  \field{extrayear}{1}
   \field{sortinit}{C}
   \field{title}{Creative Commons Attribution-ShareAlike 3.0 Unported}
   \verb{url}
@@ -35,19 +52,46 @@
   \field{year}{2016}
 \endentry
 
-\entry{ms}{manual}{}
+\entry{expcm}{online}{}
   \name{author}{1}{}{%
     {{}%
-     {Devices}{D.}%
-     {Analog}{A.}%
+     {{Creative Commons}}{C.}%
+     {}{}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{DA1}
-  \strng{fullhash}{DA1}
+  \strng{namehash}{C1}
+  \strng{fullhash}{C1}
   \field{labelyear}{2016}
-  \field{sortinit}{D}
-  \field{title}{ADG738/ADG739 Data Sheet}
+  \field{extrayear}{2}
+  \field{sortinit}{C}
+  \field{title}{Fisher Scientific™ Traceable™ Conductivity, Resistivity,
+  and TDS Meter}
+  \verb{url}
+  \verb https://www.fishersci.com/shop/products/fisher-scientific-traceable-con
+  \verb ductivity-resistivity-tds-meter/093262
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{cheapcm}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Creative Commons}}{C.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{C1}
+  \strng{fullhash}{C1}
+  \field{labelyear}{2016}
+  \field{extrayear}{3}
+  \field{sortinit}{C}
+  \field{title}{Fisher Scientific™ Traceable™ Salinity Meter Pen}
+  \verb{url}
+  \verb https://www.fishersci.com/shop/products/fisher-scientific-traceable-con
+  \verb ductivity-tds-salinity-meter-pens-2/15078202
+  \endverb
   \field{year}{2016}
 \endentry
 
@@ -66,49 +110,6 @@
   \field{title}{MinieC I2C eC interface}
   \verb{url}
   \verb https://www.sparkyswidgets.com/portfolio-item/miniec-i2c-ec-interface
-  \endverb
-  \field{year}{2016}
-\endentry
-
-\entry{expcm}{online}{}
-  \name{author}{1}{}{%
-    {{}%
-     {fisherci}{f.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{f1}
-  \strng{fullhash}{f1}
-  \field{labelyear}{2016}
-  \field{extrayear}{1}
-  \field{sortinit}{F}
-  \field{title}{Fisher Scientific™ Traceable™ Conductivity, Resistivity,
-  and TDS Meter}
-  \verb{url}
-  \verb https://www.fishersci.com/shop/products/fisher-scientific-traceable-con
-  \verb ductivity-resistivity-tds-meter/093262
-  \endverb
-  \field{year}{2016}
-\endentry
-
-\entry{cheapcm}{online}{}
-  \name{author}{1}{}{%
-    {{}%
-     {fisherci}{f.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{f1}
-  \strng{fullhash}{f1}
-  \field{labelyear}{2016}
-  \field{extrayear}{2}
-  \field{sortinit}{F}
-  \field{title}{Fisher Scientific™ Traceable™ Salinity Meter Pen}
-  \verb{url}
-  \verb https://www.fishersci.com/shop/products/fisher-scientific-traceable-con
-  \verb ductivity-tds-salinity-meter-pens-2/15078202
   \endverb
   \field{year}{2016}
 \endentry

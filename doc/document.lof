@@ -14,55 +14,55 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Two electrodes with the area $A$ are submerged in the solution with the distance $d$ between them. A voltmeter is used to measure the voltage drop.\relax }}{15}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Fisher Scientific™ Traceable™ Salinity Meter Pen \cite {cheapcm}\relax }}{18}{figure.caption.25}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Fisher Scientific™ Traceable™ Salinity Meter Pen \parencite {cheapcm}\relax }}{18}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces System Design: the yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue are marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.\relax }}{20}{figure.caption.28}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The device.\relax }}{19}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Two rectangular electrodes form an electrode pair.\relax }}{22}{figure.caption.30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces System Design: the yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue are marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.\relax }}{21}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces A handmade sensor strip. The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.\relax }}{22}{figure.caption.31}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Two rectangular electrodes form an electrode pair.\relax }}{22}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The sensor strip design to be implemented as flexible PCB. The red lines mark the copper layer, the green line is the outline of the board.\relax }}{23}{figure.caption.32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A handmade sensor strip. The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.\relax }}{23}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces A finished sensor strip assembled with cables and waterproofing on the left.\relax }}{23}{figure.caption.33}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The sensor strip design to be implemented as flexible PCB. The red lines mark the copper layer, the green line is the outline of the board.\relax }}{24}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining.\relax }}{24}{figure.caption.35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A finished sensor strip assembled with cables and waterproofing on the left.\relax }}{24}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Example Timing diagram: data input starts when (SYNC) is pulled low. On falling edges of (SCLK), (DIN) is read. If (DIN) is high at that moment, the bit is 1, if low it is 0. After eight bits are transferred, (SYNC) is pulled high again and the data transfer is finished.\relax }}{25}{figure.caption.36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining.\relax }}{25}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces The OpAmp modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).\relax }}{26}{figure.caption.38}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Example Timing diagram: data input starts when (SYNC) is pulled low. On falling edges of (SCLK), (DIN) is read. If (DIN) is high at that moment, the bit is 1, if low it is 0. After eight bits are transferred, (SYNC) is pulled high again and the data transfer is finished. The resulting state is a closed first switch while all other switches are open.\relax }}{25}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces After the switch, the capacitor discharges slowly.\relax }}{27}{figure.caption.39}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces The opamp (OA) modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).\relax }}{27}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces The response immediately follows the switching event, but the AC signal is now unfiltered.\relax }}{28}{figure.caption.40}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The blue graph shows the measured voltage with a resistance of 0. At the first red line, a switch breaks the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit [0.04]{s}, marked by the second red line. The red dot marks the halfway point between the old and new voltage.\relax }}{28}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces The assembled carrier boar with all parts mounted.\relax }}{30}{figure.caption.43}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0. The red line marks the breaking of the connection. The signal follows without delay.\relax }}{29}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Data Format\relax }}{31}{figure.caption.45}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The assembled carrier boar with all parts mounted.\relax }}{31}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Embedded Software Flow Diagram\relax }}{32}{figure.caption.48}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Embedded Software Flow Diagram\relax }}{33}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces OpenSalinity GUI\relax }}{33}{figure.caption.50}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces OpenSalinity GUI\relax }}{34}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Fixing the integer wrap of the time variable.\relax }}{35}{figure.caption.52}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Fixing the integer wrap of the time variable.\relax }}{36}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. It shows the sensor size of \unit [10x11]{mm}, the horizontal distance between sensors of \unit [50]{mm} and the vertical distance of \unit [25]{mm}.\relax }}{38}{figure.caption.59}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. It shows the sensor size of \unit [10x11]{mm}, the horizontal distance between sensors of \unit [50]{mm} and the vertical distance of \unit [25]{mm}.\relax }}{39}{figure.caption.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau $ the control volumes have moved. The sensor is covered by a mix of the two volumes.\relax }}{39}{figure.caption.61}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau $ the control volumes have moved. The sensor is covered by a mix of the two volumes.\relax }}{40}{figure.caption.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit [1]{m} length run towards the carrier board which is not in the frame.\relax }}{42}{figure.caption.74}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit [1]{m} length run towards the carrier board which is not in the frame.\relax }}{43}{figure.caption.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.\relax }}{43}{figure.caption.75}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.\relax }}{44}{figure.caption.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces noise\relax }}{44}{figure.caption.78}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces noise\relax }}{45}{figure.caption.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces feed switch\relax }}{45}{figure.caption.79}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces feed switch\relax }}{46}{figure.caption.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces feed add\relax }}{46}{figure.caption.80}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces feed add\relax }}{47}{figure.caption.82}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

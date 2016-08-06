@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  6 AUG 2016 18:46
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  6 AUG 2016 22:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1855,22 +1855,18 @@ File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count453
 \c@bbx:relatedtotal=\count454
 ))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1908,12 +1904,6 @@ File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
 ) (./elements/preamble.options.tex
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 Package hyperref Info: Option `unicode' set `false' on input line 86.
 
@@ -2321,13 +2311,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  (./content/material-and-methods.tex
 chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
+File: images/cb.jpg Graphic file (type QTm)
+<use  "images/cb.jpg" > [19
 
 
-Overfull \hbox (3.11661pt too wide) in paragraph at lines 7--9
+
+]
+Overfull \hbox (3.11661pt too wide) in paragraph at lines 15--17
 \EU1/SourceSerifPro(0)/m/sl/13 the measurement data from it and sends it to the
  PC. It also controls the matrix switches
  []
@@ -2337,165 +2327,152 @@ Overfull \hbox (3.11661pt too wide) in paragraph at lines 7--9
 no macro to compute MD5. Falling back to 'up to date check=diff'.
 ===== Image 'tikz-cache/document-figure0' is up-to-date. ======
 File: tikz-cache/document-figure0.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure0.pdf" > [19
-
-
-
-] [20]
-LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 54.
+<use  "tikz-cache/document-figure0.pdf" > [20] [21]
+LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 62.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.36993> on input line 54.
+(Font)              <6.36993> on input line 62.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.54997> on input line 54.
+(Font)              <4.54997> on input line 62.
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 ===== Image 'tikz-cache/document-figure1' is up-to-date. ======
 File: tikz-cache/document-figure1.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure1.pdf" > [21]
+<use  "tikz-cache/document-figure1.pdf" > [22]
 File: images/v2.jpg Graphic file (type QTm)
- <use  "images/v2.jpg" > [22]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+ <use  "images/v2.jpg" >
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 File: images/fpcbd.pdf Graphic file (type QTm)
 <use  "images/fpcbd.pdf" >
 File: images/fpcbp.jpg Graphic file (type QTm)
- <use  "images/fpcbp.jpg" >
-Overfull \hbox (4.07048pt too wide) in paragraph at lines 120--121
+ <use  "images/fpcbp.jpg" > [23]
+Overfull \hbox (4.07048pt too wide) in paragraph at lines 128--129
 [][]\EU1/SourceSerifPro(0)/m/sl/13 The matrix switches are an essential part of
  the system, enabling it use multiple sensors
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 File: images/ms.pdf Graphic file (type QTm)
 <use  "images/ms.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-[25]
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 7.86388pt on input line 165.
-LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 165
+(Font)              scaled to size 7.86388pt on input line 171.
+LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 171
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.66673> on input line 165.
+(Font)              <8.66673> on input line 171.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.06668> on input line 165.
+(Font)              <6.06668> on input line 171.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.33336> on input line 165.
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
+(Font)              <4.33336> on input line 171.
 [26]
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
 File: images/switch_cap.pdf Graphic file (type QTm)
- <use  "images/switch_cap.pdf" > [27]
+<use  "images/switch_cap.pdf" > [27] [28]
 File: images/switch_nocap.pdf Graphic file (type QTm)
  <use  "images/switch_nocap.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-[29]
+[29] [30]
 File: images/cb.jpg Graphic file (type QTm)
  <use  "images/cb.jpg" >
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
 
  []
 
-[30]
+
+LaTeX Warning: Reference `flst:ormat' on page 31 undefined on input line 242.
+
+[31]
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 5.89786pt on input line 244.
+(Font)              scaled to size 5.89786pt on input line 245.
+\openout3 = `tikz-cache/document-figure2.md5'.
 
-===== Image 'tikz-cache/document-figure2' is up-to-date. ======
+
+===== 'mode=convert with system call': Invoking 'xelatex -shell-escape -halt-on
+-error -interaction=batchmode -jobname "tikz-cache/document-figure2" "\def\tikz
+externalrealjob{document}\input{document}"' ========
+\openout3 = `document.auxlock'.
+
+runsystem(xelatex -shell-escape -halt-on-error -interaction=batchmode -jobname 
+"tikz-cache/document-figure2" "\def\tikzexternalrealjob{document}\input{documen
+t}")...executed.
+
+\openout3 = `document.auxlock'.
+
 File: tikz-cache/document-figure2.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure2.pdf" >
-
-LaTeX Warning: Float too large for page by 33.47905pt on input line 277.
-
-[31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
+<use  "tikz-cache/document-figure2.pdf" > [32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
 
 File: images/UI.png Graphic file (type QTm)
 <use  "images/UI.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
 
-Overfull \hbox (3.60336pt too wide) in paragraph at lines 309--310
-[][]\OMS/lmsy/m/n/13 ^^@\OT1/lmr/m/n/13 2147483647$ \EU1/SourceSerifPro(0)/m/sl
-/13 to $[][]\OT1/lmr/m/n/13 2147483647$\EU1/SourceSerifPro(0)/m/sl/13 , meaning
- that it wraps around roughly every $[][]\OT1/lmr/m/n/13 8\OML/lmm/m/it/13 :\OT
-1/lmr/m/n/13 9$ \EU1/SourceSerifPro(0)/m/sl/13 minutes.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
 ===== Image 'tikz-cache/document-figure3' is up-to-date. ======
 File: tikz-cache/document-figure3.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure3.pdf" > [34] [35]) [36]
+<use  "tikz-cache/document-figure3.pdf" > [35] [36]) [37]
 \openout2 = `content/results.aux'.
 
 
@@ -2513,19 +2490,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
 ===== Image 'tikz-cache/document-figure4' is up-to-date. ======
 File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure4.pdf" > [37
+<use  "tikz-cache/document-figure4.pdf" > [38
 
 
 
 ]
 ===== Image 'tikz-cache/document-figure5' is up-to-date. ======
 File: tikz-cache/document-figure5.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure5.pdf" > [38]
+<use  "tikz-cache/document-figure5.pdf" > [39]
 Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
  []
 
-[39]
+[40]
 Overfull \hbox (0.61436pt too wide) in paragraph at lines 144--145
 [][][]\EU1/SourceSerifPro(0)/m/sl/13 To test if the time resolution matches thi
 s, the measurement time itself can be timed.
@@ -2536,7 +2513,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
-[40]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
@@ -2546,35 +2523,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
-[41]
+[42]
 File: images/stripsinreactor.jpg Graphic file (type QTm)
  <use  "images/stripsinreactor.jpg" >
 File: images/pconreactor.jpg Graphic file (type QTm)
  <use  "images/pconreactor.jpg" >
-[42]
+[43]
 File: images/noise.pdf Graphic file (type QTm)
  <use  "images/noise.pdf" >
 File: images/feed_switch.pdf Graphic file (type QTm)
  <use  "images/feed_switch.pdf" >
 File: images/feed_add.pdf Graphic file (type QTm)
 
-<use  "images/feed_add.pdf" >) [43] [44] [45] [46]
+<use  "images/feed_add.pdf" >) [44] [45] [46] [47]
 \openout2 = `content/summary-and-outlook.aux'.
 
 
 (./content/summary-and-outlook.tex
 chapter 6.
-) [47
+) [48
 
 
 
-] [48
+] [49
 
 
 ]
 \openout2 = `content/appendix.aux'.
 
- (./content/appendix.tex) [49
+ (./content/appendix.tex) [50
 
 ]
 \openout2 = `elements/abbreviations.aux'.
@@ -2586,16 +2563,16 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [50
+) [51
 
 
 
 ]
 chapter B.
-(./document.lof [51
+(./document.lof [52
 
 
-] [52])
+] [53])
 \tf@lof=\write8
 \openout8 = `document.lof'.
 
@@ -2605,28 +2582,22 @@ chapter C.
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [53]
+ [54]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
 (Font)              using `EU1/SourceSerifPro(0)/m/n' instead on input line 80.
 
 
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(1)/m/n' will be
-(Font)              scaled to size 11.79573pt on input line 80.
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/it' will be
+(Font)              scaled to size 11.79573pt on input line 80.
+LaTeX Font Info:    Font shape `EU1/SourceSerifPro(1)/m/n' will be
 (Font)              scaled to size 11.79573pt on input line 80.
 
 Overfull \hbox (9.22302pt too wide) in paragraph at lines 81--81
 [][][][]\EU1/SourceSerifPro(0)/m/it/13 Edwards, Ryan (2016). MinieC I2C eC inte
 rface. 2016. URL: [][]$[][][][][][][] [] [] [] [][][] [] [][][][][][][][][][][]
 [][][] []
- []
-
-
-Overfull \hbox (4.70422pt too wide) in paragraph at lines 81--81
-[][][][]\EU1/SourceSerifPro(0)/m/it/13 fisherci (2016a). Fisher Scientific™ Tra
-ceable™ Conductivity, Resistivity, and TDS Meter.
  []
 
 
@@ -2639,7 +2610,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[54
+[55
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2661,6 +2632,9 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'document.run.xml'.
@@ -2670,12 +2644,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66845 strings out of 493638
- 1501755 string characters out of 6146797
- 2125896 words of memory out of 5000000
- 69139 multiletter control sequences out of 15000+600000
+ 66843 strings out of 493638
+ 1501255 string characters out of 6146797
+ 2126024 words of memory out of 5000000
+ 69142 multiletter control sequences out of 15000+600000
  49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,34n,106p,10440b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (54 pages).
+Output written on document.pdf (55 pages).

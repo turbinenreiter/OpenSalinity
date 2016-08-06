@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  30 JUL 2016 18:29
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  6 AUG 2016 22:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1725,21 +1725,17 @@ File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count453
 \c@bbx:relatedtotal=\count454
 ))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1774,10 +1770,6 @@ File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
 ) (./elements/preamble.options.tex (/usr/share/texlive/texmf-dist/tex/latex/lis
 tings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 Package hyperref Info: Option `unicode' set `false' on input line 86.
 
@@ -2081,8 +2073,27 @@ LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/bx/n' will be
 
 LaTeX Warning: Reference `tab:req' on page 11 undefined on input line 60.
 
+
+Overfull \hbox (2.53723pt too wide) in paragraph at lines 67--79
+ [][][][] 
+ []
+
 ) (./content/theory.tex
 chapter 3.
+
+LaTeX Warning: Citation 'trankler2015sensortechnik' on page 12 undefined on inp
+ut line 7.
+
+
+LaTeX Warning: Citation 'gevatter2000automatisierungstechnik' on page 12 undefi
+ned on input line 7.
+
+
+Overfull \hbox (0.41927pt too wide) in paragraph at lines 7--8
+[][]\EU1/SourceSerifPro(0)/m/sl/13 The following section is translated and summ
+arized from []
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
@@ -2099,10 +2110,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
+LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 24
+.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.83347> on input line 24.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.58339> on input line 24.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.41673> on input line 24.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
 
@@ -2117,8 +2136,20 @@ LaTeX Warning: Reference `eq:kref' on page 14 undefined on input line 80.
 
 LaTeX Warning: Reference `eq:kref+' on page 14 undefined on input line 87.
 
+
+LaTeX Warning: Citation 'expcm' on page 14 undefined on input line 96.
+
+
+LaTeX Warning: Citation 'cheapcm' on page 14 undefined on input line 96.
+
 The command '\includegraphics [scale=0.5]{images/ccm.jpg}' has been optimized a
 way. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: Citation 'cheapcm' on page 14 undefined on input line 102.
+
+
+LaTeX Warning: Citation 'cheapcm' on page 14 undefined on input line 102.
+
 
 LaTeX Warning: Reference `fig:ccm' on page 14 undefined on input line 107.
 
@@ -2127,233 +2158,303 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
+
+LaTeX Warning: Citation 'uec' on page 15 undefined on input line 116.
+
+
+LaTeX Warning: Citation 'cc' on page 15 undefined on input line 116.
+
 ) (./content/material-and-methods.tex
 chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+LaTeX Warning: Reference `fig:isys' on page 16 undefined on input line 3.
 
- []
+The command '\includegraphics [width=0.8\textwidth ]{images/cb.jpg}' has been o
+ptimized away. Use '/tikz/external/optimize=false' to disable this.
 
-
-LaTeX Warning: Reference `fig:sys' on page 16 undefined on input line 7.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
-
- []
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 51.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.36993> on input line 51.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.54997> on input line 51.
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
+LaTeX Warning: Reference `fig:sys' on page 17 undefined on input line 15.
 
 
-LaTeX Warning: Reference `fig:sensor' on page 17 undefined on input line 53.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
+Overfull \hbox (3.11661pt too wide) in paragraph at lines 15--17
+\EU1/SourceSerifPro(0)/m/sl/13 the measurement data from it and sends it to the
+ PC. It also controls the matrix switches
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `fig:v2' on page 17 undefined on input line 81.
+LaTeX Warning: Citation 'trankler2015sensortechnik' on page 19 undefined on inp
+ut line 62.
+
+LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 62.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.36993> on input line 62.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4.54997> on input line 62.
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+LaTeX Warning: Reference `fig:sensor' on page 19 undefined on input line 64.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `fig:v2' on page 19 undefined on input line 92.
 
 The command '\includegraphics [width=\textwidth ]{images/v2.jpg}' has been opti
 mized away. Use '/tikz/external/optimize=false' to disable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-LaTeX Warning: Reference `fig:fpcbd' on page 18 undefined on input line 97.
+LaTeX Warning: Reference `fig:fpcbd' on page 20 undefined on input line 108.
 
 
-LaTeX Warning: Reference `fig:fpcbp' on page 18 undefined on input line 97.
+LaTeX Warning: Reference `fig:fpcbp' on page 20 undefined on input line 108.
 
 The command '\includegraphics [width=\textwidth ]{images/fpcbd.pdf}' has been o
 ptimized away. Use '/tikz/external/optimize=false' to disable this.
 The command '\includegraphics [width=\textwidth ]{images/fpcbp.jpg}' has been o
 ptimized away. Use '/tikz/external/optimize=false' to disable this.
 
-Overfull \hbox (4.07048pt too wide) in paragraph at lines 117--118
+LaTeX Warning: Citation 'ms' on page 20 undefined on input line 128.
+
+
+Overfull \hbox (4.07048pt too wide) in paragraph at lines 128--129
 [][]\EU1/SourceSerifPro(0)/m/sl/13 The matrix switches are an essential part of
  the system, enabling it use multiple sensors
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 
-LaTeX Warning: Reference `fig:ms' on page 19 undefined on input line 119.
+LaTeX Warning: Reference `fig:ms' on page 21 undefined on input line 130.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 The command '\includegraphics [width=0.3\textwidth ]{images/ms.pdf}' has been o
 ptimized away. Use '/tikz/external/optimize=false' to disable this.
 
-LaTeX Warning: Reference `fig:msc' on page 19 undefined on input line 129.
+LaTeX Warning: Reference `fig:msc' on page 21 undefined on input line 140.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
+
+
+LaTeX Warning: Reference `fig:opamp' on page 22 undefined on input line 164.
 
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 7.86388pt on input line 162.
-LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 162
+(Font)              scaled to size 7.86388pt on input line 171.
+LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 171
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.66673> on input line 162.
+(Font)              <8.66673> on input line 171.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.06668> on input line 162.
+(Font)              <6.06668> on input line 171.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.33336> on input line 162.
+(Font)              <4.33336> on input line 171.
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-LaTeX Warning: Reference `fig:swcap' on page 21 undefined on input line 180.
+LaTeX Warning: Reference `fig:swcap' on page 23 undefined on input line 190.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 The command '\includegraphics [width=0.8\textwidth ]{images/switch_cap.pdf}' ha
 s been optimized away. Use '/tikz/external/optimize=false' to disable this.
 
-LaTeX Warning: Reference `fig:swnocap' on page 22 undefined on input line 190.
+LaTeX Warning: Reference `fig:swnocap' on page 24 undefined on input line 200.
+
+
+LaTeX Warning: Reference `val' on page 24 undefined on input line 200.
 
 The command '\includegraphics [width=0.8\textwidth ]{images/switch_nocap.pdf}' 
 has been optimized away. Use '/tikz/external/optimize=false' to disable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-
-LaTeX Warning: Reference `fig:cb' on page 23 undefined on input line 211.
+LaTeX Warning: Reference `fig:cb' on page 25 undefined on input line 219.
 
 The command '\includegraphics [width=0.8\textwidth ]{images/cb.jpg}' has been o
 ptimized away. Use '/tikz/external/optimize=false' to disable this.
 
-LaTeX Warning: Reference `uc' on page 24 undefined on input line 231.
+LaTeX Warning: Reference `uc' on page 26 undefined on input line 237.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
-LaTeX Warning: Reference `format' on page 25 undefined on input line 236.
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
+
+ []
+
+
+LaTeX Warning: Reference `flst:ormat' on page 26 undefined on input line 242.
 
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 5.89786pt on input line 241.
+(Font)              scaled to size 5.89786pt on input line 245.
 \openout6 = `tikz-cache/document-figure2.dpth'.
 
-[25
+[26
 
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
 
 The command '\includegraphics [width=\textwidth ]{images/UI.png}' has been opti
 mized away. Use '/tikz/external/optimize=false' to disable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
 
-LaTeX Warning: Reference `fig:wrap' on page 26 undefined on input line 306.
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
-
-Overfull \hbox (3.60336pt too wide) in paragraph at lines 306--307
-[][]\OMS/lmsy/m/n/13 ^^@\OT1/lmr/m/n/13 2147483647$ \EU1/SourceSerifPro(0)/m/sl
-/13 to $[][]\OT1/lmr/m/n/13 2147483647$\EU1/SourceSerifPro(0)/m/sl/13 , meaning
- that it wraps around roughly every $[][]\OT1/lmr/m/n/13 8\OML/lmm/m/it/13 :\OT
-1/lmr/m/n/13 9$ \EU1/SourceSerifPro(0)/m/sl/13 minutes.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+LaTeX Warning: Reference `fig:wrap' on page 28 undefined on input line 312.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+
+LaTeX Warning: Reference `tab:bom' on page 29 undefined on input line 344.
+
 ) (./content/results.tex
 chapter 5.
 
-LaTeX Warning: Reference `eq:resv' on page 28 undefined on input line 3.
+LaTeX Warning: Reference `obj' on page 30 undefined on input line 3.
 
 
-LaTeX Warning: Reference `fig:cv' on page 28 undefined on input line 10.
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+LaTeX Warning: Reference `fig:sensarray' on page 30 undefined on input line 11.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `eq:resn' on page 28 undefined on input line 46.
+LaTeX Warning: Reference `eq:resv2' on page 30 undefined on input line 70.
 
 
-LaTeX Warning: Reference `eq:resk' on page 28 undefined on input line 46.
+LaTeX Warning: Reference `fig:cv' on page 31 undefined on input line 77.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `eq:resn' on page 31 undefined on input line 117.
 
 
-LaTeX Warning: Reference `eq:resv' on page 28 undefined on input line 58.
+LaTeX Warning: Reference `eq:resk' on page 31 undefined on input line 117.
 
+
+LaTeX Warning: Reference `eq:resv' on page 31 undefined on input line 129.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
+
+ []
+
+
+LaTeX Warning: Reference `lst:data' on page 32 undefined on input line 144.
+
+
+Overfull \hbox (0.61436pt too wide) in paragraph at lines 144--145
+[][][]\EU1/SourceSerifPro(0)/m/sl/13 To test if the time resolution matches thi
+s, the measurement time itself can be timed.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+
+LaTeX Warning: Reference `tab:rns' on page 32 undefined on input line 157.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+
+LaTeX Warning: Reference `BOM' on page 33 undefined on input line 191.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+LaTeX Warning: Reference `fig:stripsr' on page 33 undefined on input line 199.
+
+
+LaTeX Warning: Reference `fig:pcr' on page 33 undefined on input line 199.
+
+The command '\includegraphics [width=0.8\textwidth ]{images/stripsinreactor.jpg
+}' has been optimized away. Use '/tikz/external/optimize=false' to disable this
+.
+The command '\includegraphics [width=0.8\textwidth ]{images/pconreactor.jpg}' h
+as been optimized away. Use '/tikz/external/optimize=false' to disable this.
 The command '\includegraphics [width=\textwidth ]{images/noise.pdf}' has been o
 ptimized away. Use '/tikz/external/optimize=false' to disable this.
 The command '\includegraphics [width=\textwidth ]{images/feed_switch.pdf}' has 
@@ -2362,7 +2463,7 @@ The command '\includegraphics [width=\textwidth ]{images/feed_add.pdf}' has bee
 n optimized away. Use '/tikz/external/optimize=false' to disable this.
 ) (./content/summary-and-outlook.tex
 chapter 6.
-) (./elements/abbreviations.tex
+) (./content/appendix.tex) (./elements/abbreviations.tex
 chapter A.
 
 Underfull \hbox (badness 10000) in alignment at lines 8--11
@@ -2373,16 +2474,16 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 chapter B.
 chapter C.
 
-LaTeX Warning: Empty bibliography on input line 79.
+LaTeX Warning: Empty bibliography on input line 80.
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 81.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 81.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 82.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 82.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -2393,20 +2494,25 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                tikz-cache/document-figure2
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'tikz-cache/document-figure2.run.xml'.
 
 \openout1 = `tikz-cache/document-figure2.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66565 strings out of 493638
- 1497219 string characters out of 6146797
- 2110859 words of memory out of 5000000
- 68950 multiletter control sequences out of 15000+600000
- 37677 words of font info for 83 fonts, out of 8000000 for 9000
+ 66718 strings out of 493638
+ 1499297 string characters out of 6146797
+ 2126057 words of memory out of 5000000
+ 69101 multiletter control sequences out of 15000+600000
+ 49709 words of font info for 98 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 74i,32n,106p,10478b,1940s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,34n,106p,10478b,1940s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on tikz-cache/document-figure2.pdf (1 page).
