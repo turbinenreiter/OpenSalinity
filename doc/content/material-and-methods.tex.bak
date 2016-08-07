@@ -208,8 +208,9 @@ First tests of the interface surfaced an interesting problem. The graph displaye
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/switch_cap.pdf} 
-		\caption{The blue graph shows the measured voltage with a resistance of 0. At the first red line, a switch breaks the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit[0.04]{s}, marked by the second red line. The red dot marks the halfway point between the old and new voltage.}
+		\input{images/log_12052016_1}
+		%\includegraphics[width=0.8\textwidth]{images/switch_cap.pdf} 
+		\caption{The blue graph shows the measured voltage with a resistance of 0. At the first red line, a switch breaks the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit[0.04]{s}, marked by the second red line.}
 		\label{fig:swcap}
 	\end{center}
 \end{figure}
@@ -218,7 +219,8 @@ Figure \ref{fig:swnocap} shows the response to the same switching as before, but
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/switch_nocap.pdf} 
+		\input{images/log_12052016_2}
+		%\includegraphics[width=0.8\textwidth]{images/switch_nocap.pdf} 
 		\caption{The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0. The red line marks the breaking of the connection. The signal follows without delay.}
 		\label{fig:swnocap}
 	\end{center}
@@ -322,7 +324,7 @@ The live visualization is a bar graph showing each sensors current measurement, 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/UI.png}
-		\caption{OpenSalinity GUI - in this example sensor #4 measures a zero , all others a infinite resistance.}
+		\caption{OpenSalinity GUI - in this example sensor $\#4$ measures a resistance of zero (shorted with a wire), all others a infinite resistance (air gap). The Start/Stop button is on the top left, the Save button on the top right. The path to the chosen file is displayed in the header bar.}
 		\label{fig:opamp}
 	\end{center}
 \end{figure}
@@ -337,7 +339,7 @@ Before the data can be analyzed it has to be conditioned to deal with certain pe
 
 The microcontroller measures time since start up by counting clock cycles. These are converted to microseconds stored as an integer value. The microcontroller is a 32-bit architecture, however the Micropython implementation uses 2 bits for data type identification, leaving 30 bits for data. This means the counter can count from $-2147483647$ to $2147483647$, resulting in a wrap around roughly every $8.9$ minutes. In the data conditioning phase, these wrapping times are translated to a rolling time since start-up. This is done by scanning for the first time value that is smaller than its predecessor and then adding the value of $2^{30}$ to all following values. This is repeated until all time values are corrected. Figure \ref{fig:wrap} visualizes the algorithm.\\
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 \begin{tikzpicture}[scale=1]
     \draw[darrow] (2.5,0) node(xline)[right] {$n$} -|

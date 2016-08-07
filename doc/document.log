@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  7 AUG 2016 19:59
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  8 AUG 2016 01:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2045,7 +2045,17 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 LaTeX Warning: Label `fig:opamp' multiply defined.
 
 ) (./content/results.aux) (./content/summary-and-outlook.aux)
-(./content/appendix.aux) (./elements/abbreviations.aux))
+(./content/appendix.aux
+
+LaTeX Warning: Label `fig:isys' multiply defined.
+
+
+LaTeX Warning: Label `fig:isys' multiply defined.
+
+
+LaTeX Warning: Label `fig:isys' multiply defined.
+
+) (./elements/abbreviations.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -2064,8 +2074,7 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 21.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 21.
-
-(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 21.
@@ -2421,132 +2430,132 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-File: images/switch_cap.pdf Graphic file (type QTm)
-<use  "images/switch_cap.pdf" > [27] [28]
-File: images/switch_nocap.pdf Graphic file (type QTm)
- <use  "images/switch_nocap.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
-
- []
-
-[29] [30]
-File: images/cb.jpg Graphic file (type QTm)
- <use  "images/cb.jpg" >
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
-
- []
-
-[31]
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 5.89786pt on input line 262.
-
+(./images/log_12052016_1.tex
 ===== Image 'tikz-cache/document-figure3' is up-to-date. ======
 File: tikz-cache/document-figure3.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure3.pdf" > [32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 319--321
+<use  "tikz-cache/document-figure3.pdf" >) [27] (./images/log_12052016_2.tex
+===== Image 'tikz-cache/document-figure4' is up-to-date. ======
+File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure4.pdf" >) [28]
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+
+ []
+
+[29]
+File: images/cb.jpg Graphic file (type QTm)
+ <use  "images/cb.jpg" > [30]
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+
+ []
+
+LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+(Font)              scaled to size 5.89786pt on input line 264.
+===== Image 'tikz-cache/document-figure5' is up-to-date. ======
+File: tikz-cache/document-figure5.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure5.pdf" > [31] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
 
  []
 
 File: images/UI.png Graphic file (type QTm)
-<use  "images/UI.png" > [34]
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+<use  "images/UI.png" > [33]
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
-
- []
-
-[35]
 Underfull \hbox (badness 10000) in paragraph at lines 338--339
 
  []
 
-===== Image 'tikz-cache/document-figure4' is up-to-date. ======
-File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure4.pdf" > [36]
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+===== Image 'tikz-cache/document-figure6' is up-to-date. ======
+File: tikz-cache/document-figure6.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure6.pdf" > [35]
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 [][][]|\EU1/SourceSerifPro(0)/m/sl/13 microcontroller
  []
 
 
-Overfull \hbox (12.1546pt too wide) in paragraph at lines 403--415
+Overfull \hbox (12.1546pt too wide) in paragraph at lines 405--417
  [][][][] 
  []
 
-) [37] [38]
+) [36] [37]
 \openout2 = `content/results.aux'.
 
  (./content/results.tex
 chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
-
- []
-
-===== Image 'tikz-cache/document-figure5' is up-to-date. ======
-File: tikz-cache/document-figure5.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure5.pdf" > [39
+===== Image 'tikz-cache/document-figure7' is up-to-date. ======
+File: tikz-cache/document-figure7.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure7.pdf" > [38
 
 
 
 ]
-===== Image 'tikz-cache/document-figure6' is up-to-date. ======
-File: tikz-cache/document-figure6.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure6.pdf" > [40]
-Underfull \hbox (badness 10000) in paragraph at lines 140--143
+===== Image 'tikz-cache/document-figure8' is up-to-date. ======
+File: tikz-cache/document-figure8.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure8.pdf" > [39]
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
-[41]
-Overfull \hbox (0.61436pt too wide) in paragraph at lines 144--145
+[40]
+Overfull \hbox (0.61436pt too wide) in paragraph at lines 146--147
 [][][]\EU1/SourceSerifPro(0)/m/sl/13 To test if the time resolution matches thi
 s, the measurement time itself can be timed.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-
- []
-
-[43]
 File: images/stripsinreactor.jpg Graphic file (type QTm)
  <use  "images/stripsinreactor.jpg" >
 File: images/pconreactor.jpg Graphic file (type QTm)
  <use  "images/pconreactor.jpg" >
-[44]
-File: images/noise.pdf Graphic file (type QTm)
- <use  "images/noise.pdf" >
-File: images/feed_switch.pdf Graphic file (type QTm)
- <use  "images/feed_switch.pdf" >
-File: images/feed_add.pdf Graphic file (type QTm)
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
-<use  "images/feed_add.pdf" >) [45] [46] [47] [48]
+ []
+
+[44]
+===== Image 'tikz-cache/document-figure9' is up-to-date. ======
+File: tikz-cache/document-figure9.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure9.pdf" >
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+File: images/log080716_2.pdf Graphic file (type QTm)
+<use  "images/log080716_2.pdf" > [45]
+File: images/log080716_3.pdf Graphic file (type QTm)
+ <use  "images/log080716_3.pdf" >
+File: images/log080716_4.pdf Graphic file (type QTm)
+
+<use  "images/log080716_4.pdf" >
+File: images/log080716_6.pdf Graphic file (type QTm)
+ <use  "images/log080716_6.pdf" >) [46]
+[47] [48]
 \openout2 = `content/summary-and-outlook.aux'.
 
-
-(./content/summary-and-outlook.tex
+ (./content/summary-and-outlook.tex
 chapter 6.
 ) [49
 
@@ -2558,38 +2567,50 @@ chapter 6.
 ]
 \openout2 = `content/appendix.aux'.
 
- (./content/appendix.tex) [51
+ (./content/appendix.tex
+===== Image 'tikz-cache/document-figure10' is up-to-date. ======
+File: tikz-cache/document-figure10.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure10.pdf" >
+Overfull \hbox (12.98259pt too wide) in paragraph at lines 7--25
+ [] 
+ []
 
-]
+File: images/conn.jpg Graphic file (type QTm)
+<use  "images/conn.jpg" >
+File: images/usb.jpg Graphic file (type QTm)
+ <use  "images/usb.jpg" > [51
+
+]) [52]
 \openout2 = `elements/abbreviations.aux'.
 
- (./elements/abbreviations.tex
+
+(./elements/abbreviations.tex
 chapter A.
 
 Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [52
+) [53
 
 
 
 ]
 chapter B.
-(./document.lof [53
+(./document.lof [54
 
 
-] [54])
+] [55])
 \tf@lof=\write8
 \openout8 = `document.lof'.
 
 
 chapter C.
-(./document.lot [55])
+(./document.lot [56])
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [56]
+ [57]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2624,7 +2645,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[57
+[58
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2648,10 +2669,6 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
@@ -2659,12 +2676,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66856 strings out of 493638
- 1501462 string characters out of 6146797
- 2126164 words of memory out of 5000000
- 69154 multiletter control sequences out of 15000+600000
+ 66885 strings out of 493638
+ 1502076 string characters out of 6146797
+ 2415754 words of memory out of 5000000
+ 69172 multiletter control sequences out of 15000+600000
  49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 73i,34n,106p,10440b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,34n,106p,41580b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (57 pages).
+Output written on document.pdf (58 pages).

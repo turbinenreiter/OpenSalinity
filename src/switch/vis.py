@@ -38,28 +38,36 @@ def main(argv):
 
     # plot
 
-    plt.title(fname.split('/')[-1])
-    plt.style.use('bmh')
+    #plt.title('')
+    #plt.style.use('bmh')
 
 #    for i, (vt, ve) in enumerate(zip(t, e)):
 #        if i < 4: c = 'b'
 #        else: c = 'r'
 #        plt.plot(vt, ve, color=c, alpha=0.6)
 
-    plt.plot(e[0], color='b', alpha=0.6)
+    plt.scatter(t[0], e[0], color='b', alpha=0.5, marker='.')
+    #plt.plot(t[0], e[0], color='b', alpha=0.5)
 
-    plt.axvline(x=t[0][999], linewidth=1, color='r')
+    plt.arrow(t[0][999], 1, 0, -0.2, color='red', alpha=0.5)
+
+    plt.axvline(x=t[0][999], linewidth=1, color='r', alpha=0.25)
     #ln2(10K*1uF)=0.0069s - Halbwertszeit Kondensator
-    #plt.plot(t[0][1020], e[0][1020], 'o', color='r', alpha=0.6)
-    #plt.axvline(x=t[0][1130], linewidth=1, color='r')
-    #plt.text(t[0][1200],0.2, str(t[0][1130]-t[0][999])+'s')
+    if fname.split('.')[0][-1] == '1':
+        #plt.plot(t[0][1020], e[0][1020], 'o', color='r', alpha=0.25)
+        plt.axvline(x=t[0][1130], linewidth=1, color='r', alpha=0.25)
+        plt.text(t[0][1200],0.2, str(t[0][1130]-t[0][999])+'s')
 
-    plt.xlabel('t[s]')
-    plt.ylabel('U[V]')
+    plt.xlabel('Time, s')
+    plt.ylabel('Voltage, V')
+
+    plt.ylim([0,1])
 
     try:
         if argv[2] == '-s':
-            plt.savefig(fname.split('.')[0]+'.svg', dpi=300)
+            plt.savefig(fname.split('.')[0]+'.svg', dpi=300, facecolor='white', edgecolor='none')
+            from matplotlib2tikz import save as tikz_save
+            tikz_save(fname.split('.')[0]+'.tex')
     except:
         plt.show()
 

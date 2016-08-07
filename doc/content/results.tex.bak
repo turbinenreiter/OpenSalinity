@@ -6,9 +6,11 @@ In this chapter the verification and validation of the developed sensor system a
 
 \subsection{Spacial Resolution}
 
-Requirement: The system shall have a spacial resolution in the order of \unit[10]{mm}.\\
+\begin{itemize}
+\item The system shall have a spacial resolution in the order of \unit[10]{mm}.
+\end{itemize}
 
-An inspection of the physical size of the sensor and their placement on the array, drawn in Figure \ref{fig:sensarray}, shows us a sensor size of \unit[10x11]{mm} arranged on a grid of \unit[25x50]{mm}. The theoretical minimal grid size achievable with the chosen sensor size and a minimum distance between electrodes of \unit[1]{mm} is \unit[11x12]{mm}.
+An inspection of the physical size of the sensor and their placement on the array, drawn in Figure \ref{fig:sensarray}, shows us a sensor size of \unit[10x11]{mm} arranged on a grid of \unit[25x50]{mm}. The theoretical minimal grid size achievable with the chosen sensor size is \unit[11x12]{mm} when a minimum distance between electrodes of \unit[1]{mm} is kept.
 This grid size is the physical limitation of the spacial resolution and by being well within the order of \unit[10]{mm} meets the requirement.\\
 
 \begin{figure}[H]
@@ -74,7 +76,7 @@ Due to the coupling of the spacial and time resolutions via the streams velocity
 \label{eq:resv2} 
 \end{equation}
 
-A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0.01]{s}. However, this assumes the size $ l $ of the sensor and the time $ \tau $ a measurement takes to be infinitesimal small, which in reality it is not. While the sensors measures, the flow continuous and instead of measuring the conductivity of a certain volume at a certain time, an average is measured. Figure \ref{fig:cv} visualizes this issue.
+A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0.01]{s}. However, this assumes the size $ l $ of the sensor and the time $ \tau $ a measurement takes to be infinitesimal small, which in reality they are not. While the sensor measures, the flow continuous and instead of measuring the conductivity of a certain volume at a certain time, an average is measured. Figure \ref{fig:cv} visualizes this issue.
 
 \begin{figure}
 	\begin{center}
@@ -109,7 +111,7 @@ A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0
 		\node [] at (4,-6) {$t>\tau$};
 		\end{tikzpicture}
 		%\includegraphics[width=0.45\textwidth]{images/resolution.pdf} 
-		\caption{The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When  the measurement ends at $t=\tau$ the control volumes have moved. The sensor is covered by a mix of the two volumes.}
+		\caption{The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau$ the control volumes have moved. The sensor is covered by a mix of the two volumes.}
 		\label{fig:cv}
 	\end{center}
 \end{figure}
@@ -151,8 +153,11 @@ To test if the time resolution matches this, the measurement time itself can be 
 
 \subsection{Electrical Conductivity Resolution and Range}
 
-Requirement: The system shall have a sensitivity of  \unit[0.1]{\%} salinity.\\
-Requirement: The system shall have a range from 0 to \unit[5]{\%} salinity.\\
+
+\begin{itemize}
+\item The system shall have a sensitivity of  \unit[0.1]{\%} salinity.
+\item The system shall have a range from 0 to \unit[5]{\%} salinity.
+\end{itemize}
 
 Table \ref{tab:rns} shows the results of measurements of solutions with different salinities. A \unit[10]{\%} solution was created by adding \unit[5]{g} of salt to \unit[100]{ml} of demineralized water. The subsequent solutions resulted from diluting the original one by adding more water.
 
@@ -182,19 +187,23 @@ On the lower limit, a measurement without any water, resulted in a voltage of \u
     \end{tabular}
 \end{table}
 
-While the requirement for sensitivity is clearly met, the range is just barely acceptable.
+While the requirement for sensitivity is clearly met, the range is just barely acceptable. The later validation will show if it is sufficient or not.
 
 \subsection{Cost}
 
-Requirement: The cost per sensor shall be less than \euro{25}\\
+\begin{itemize}
+\item Requirement: The cost per sensor shall be less than \euro{25}
+\end{itemize}
 
 Using the bill of materials in Chapter \ref{BOM} a total price of \euro{121.8} for all materials for a sensor system with eight sensors can be calculated, resulting in a price per sensor of \euro{15.23}. Adding additional sensors after that would cost \euro{11.17} per sensor, as parts like the microcontroller do not have to be duplicated.
 
-This price does not include the host PC as the PCs already installed in the laboratory can be used, as well as personal laptops like it was done in the testing phase. The demands on the host PC are very low, so in the worst case even a single board computer like the Raspberry Pie or similar can be used.
+This price does not include the host PC as the PCs already installed in the laboratory can be used, as well as personal laptops like it was done in the testing phase. The demands on the host PC are very low, so in the worst case even a single board computer like the Raspberry Pi or similar can be used.
 
 \subsection{Deployability in the Bioreactor}
 
-Requirement: The system shall be deployable in the algae reactor.\\
+\begin{itemize}
+\item  The system shall be deployable in the algae reactor.\\
+\end{itemize}
 
 The deployability was demonstrated during two test campaigns on the reactor. Figures \ref{fig:stripsr} and \ref{fig:pcr} show the set up during the tests. The host PC can be placed on a desk beside the reactor and connected to the carrier board with a USB cable. The carrier board can also be placed on desk or temporarily mounted on the reactor. The sensor strips connect to the carrier board with \unit[1]{m} long cables and are attached to the reactor with electrical tape.
 
@@ -216,31 +225,171 @@ The deployability was demonstrated during two test campaigns on the reactor. Fig
 
 \subsection{Usability}
 
-Requirement: The system shall be usable with a minimal set of written instructions.
+\begin{itemize}
+\item  The system shall be usable with a minimal set of written instructions.\\
+\end{itemize}
 
 The instructions for taking a series of measurements can be found in the Appendix. First, an image describes the different parts of the system relevant to the user. After that a step-by-step description with images helps the user through the process. All in all, only 8 steps are necessary.
 
+TEST!!!
+
 \section{Validation} \label{val}
 
-\begin{figure}
+The following chapter describes a number of experiments conducted using the developed sensor system. The data is analyzed and interpreted to verify if the results are reasonable. Finally, a comparison with data from simulations tries to validate the usefulness of the device.
+
+All experiments where done on the same day on the same bioreactor. The schematic in Figure \ref{fig:senspos} shows how the sensors were positioned.
+
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{images/noise.pdf} 
-		\caption{noise}
+\begin{tikzpicture}[
+    scale=0.03,
+    every node/.style={
+            font={\large\bf},
+            scale=1.2
+        },
+    geometryLine/.style={
+            very thick
+        },
+    internalGeometryLine/.style={
+            dashed
+        },
+    ]
+    
+    % center line
+    \draw[internalGeometryLine]
+        (0, -252) -- (0, 40);
+
+    % general outline
+    \draw[geometryLine] 
+            (0, 0)
+         -- (272, 0)
+         -- (425, -80)
+         -- (425, -212)
+         -- (0, -212);
+    \draw[geometryLine]
+            (0, -80)
+         -- (425, -80);
+    
+    % baffle
+    \draw[geometryLine]
+            (25, 0)
+         -- (25, -10);
+    \draw[geometryLine]
+            (0, -10)
+         -- (60, -10)
+         -- (60, -80)
+         -- (0, -80)
+         -- cycle;
+        
+    % water flow
+    % inlet
+    \fill[blue!50!white] (0, 0) -- (25, 0) -- (25, -10) -- (0, -10) -- cycle;
+    \draw[blue!50, very thick, ->, >={Stealth}] (60, -20) -- (100, -20);
+    % from inlet to weir
+    \draw[blue!50, thick, ->, >={Stealth}] plot [smooth] coordinates {(70, -60) (80, -80) (70, -100)};
+    \draw[blue!50, thick, ->, >={Stealth}] plot [smooth] coordinates {(300, -60) (310, -80) (300, -100)};
+    % weir
+    \draw[blue!50, very thick, ->, >={Stealth}] (50, -192) -- (50, -232);
+    \draw[blue!50, very thick, ->, >={Stealth}] (150, -192) -- (150, -232);
+    \draw[blue!50, very thick, ->, >={Stealth}] (250, -192) -- (250, -232);
+    \draw[blue!50, very thick, ->, >={Stealth}] (350, -192) -- (350, -232);
+        
+    % measurement strips
+    \begin{scope}[shift={(82, -30)}]
+        \fill[Sepia]
+                (0, 0) -- (200, 0)
+             -- (200, -20) -- (0, -20)
+             -- cycle;
+        \draw[Goldenrod, thick] (10, -5) -- (10, -15);
+        \draw[Goldenrod, thick] (20, -5) -- (20, -15)
+            node[black, below, xshift=-4pt, yshift=-1pt] (inner-4) {4};
+        \draw[Goldenrod, thick] (60, -5) -- (60, -15);
+        \draw[Goldenrod, thick] (70, -5) -- (70, -15)
+            node[black, below, xshift=-4pt, yshift=-1pt] (inner-3) {3};
+        \draw[Goldenrod, thick] (110, -5) -- (110, -15);
+        \draw[Goldenrod, thick] (120, -5) -- (120, -15)
+            node[black, below, xshift=-4pt, yshift=-1pt] (inner-2) {2};
+        \draw[Goldenrod, thick] (160, -5) -- (160, -15);
+        \draw[Goldenrod, thick] (170, -5) -- (170, -15)
+            node[black, below, xshift=-4pt, yshift=-1pt] (inner-1) {1};
+    \end{scope}
+    
+    \begin{scope}[shift={(82, -136)}]
+        \fill[Sepia]
+                (0, 0) -- (200, 0)
+             -- (200, -20) -- (0, -20)
+             -- cycle;
+        \draw[Goldenrod, thick] (10, -5) -- (10, -15);
+        \draw[Goldenrod, thick] (20, -5) -- (20, -15)
+            node[black, below, xshift=-4pt, yshift=-1pt] (weir-4) {8};
+        \draw[Goldenrod, thick] (60, -5) -- (60, -15);
+        \draw[Goldenrod, thick] (70, -5) -- (70, -15)
+            node[black, below, xshift=-4pt, yshift=-1pt] (weir-3) {7};
+        \draw[Goldenrod, thick] (110, -5) -- (110, -15);
+        \draw[Goldenrod, thick] (120, -5) -- (120, -15)
+            node[black, below, xshift=-4pt, yshift=-1pt] (weir-2) {6};
+        \draw[Goldenrod, thick] (160, -5) -- (160, -15);
+        \draw[Goldenrod, thick] (170, -5) -- (170, -15)
+            node[black, below, xshift=-4pt, yshift=-1pt] (weir-1) {5};
+    \end{scope}
+\end{tikzpicture}    
+		\caption{Position of the sensors in the inlet basin. \parencite{ts}}
+		\label{fig:senspos}
 	\end{center}
 \end{figure}
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=\textwidth]{images/feed_switch.pdf} 
-		\caption{feed switch}
-	\end{center}
-\end{figure}
+With this configuration, two types of experiments were run: the first method uses the bioreactors plumbing to switch the feed from the return basin to an external tank containing saltwater. Instead of pumping water in a loop, saltwater from the tank is added to the water cycle and the increase can be measured. The second method retains the original water cycle, but adds an impulse of saltwater in the return basin.
+
+For the following analysis of the experiments their original numeration is retained, but not all of them are described as not all of them are relevant. For example, in the first experiment no salt water was added, others were exact duplicates. By keeping the original notation continuity between the data files, notes and documentation can be upheld.\\
+
+\textbf{Test No. 2}
+
+In this test the feed switch method was used. The total amount of water in the tank was \unit[65]{l} and the flow rate was $\dot{v} =  \unitfrac[1.6]{l}{s}$. The saltwater in the external tank had a salinity of \unit[1.5]{\%}.
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=\textwidth]{images/feed_add.pdf} 
-		\caption{feed add}
+		%\input{images/log080716_2}
+		\includegraphics[width=0.8\textwidth]{images/log080716_2.pdf} 
+		\caption{2}
+		\label{fig:test2}
 	\end{center}
 \end{figure}
 
+\textbf{Test No. 3}
 
+The next test retained all specifics of the prior one, except for a higher salinity of \unit[1.9]{\%}.
+
+\begin{figure}
+	\begin{center}
+		%\input{images/log080716_3}
+		\includegraphics[width=0.8\textwidth]{images/log080716_3.pdf} 
+		\caption{3}
+		\label{fig:test3}
+	\end{center}
+\end{figure}
+
+\textbf{Test No. 4}
+
+While maintaining the previous volume and flow rate, this test used the impulse method instead of the feed switch. There were \unit[5]{l} of water with a salinity of \unit[7.7]{\%} added to the return basin.
+
+\begin{figure}
+	\begin{center}
+		%\input{images/log080716_4}
+		\includegraphics[width=0.8\textwidth]{images/log080716_4.pdf} 
+		\caption{4}
+		\label{fig:test4}
+	\end{center}
+\end{figure}
+
+\textbf{Test No. 6}
+
+Again the impluse method was used but with an increased flow rate of $\dot{v} \unitfrac[2]{l}{s}$ and a lower salinity of \unit[6.7]{\%}.
+
+\begin{figure}
+	\begin{center}
+		%\input{images/log080716_6}
+		\includegraphics[width=0.8\textwidth]{images/log080716_6.pdf} 
+		\caption{6}
+		\label{fig:test6}
+	\end{center}
+\end{figure}

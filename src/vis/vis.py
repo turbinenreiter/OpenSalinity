@@ -3,6 +3,7 @@
 import sys, getopt
 
 import matplotlib.pyplot as plt
+import copy
 #import mpld3
 import numpy as np
 import scipy as sp
@@ -17,16 +18,16 @@ def low_pass(cutoff, sample_rate, vector):
     return sps.lfilter(b, a, vector)
 
 def envelope(vector):
-    return vector
+    return np.abs(sps.hilbert(vector))
 
-def low_cut(vector):
-    zeros = np.where(vector<=0.1)[0]
-    for zero in zeros:
+def roll_max_savgol(vector):
+    for i,val in enumerate(vector):
         try:
-            vector[zero] = max(vector[zero-10:zero])
+            vector[i] = max(vector[i+1:i+100])
         except:
             pass
-    return vector
+    off = [0]*100
+    return sps.savgol_filter(np.insert(vector, 1, off)[:-100], 99, 2)
 
 def main(argv):
 
@@ -34,7 +35,7 @@ def main(argv):
 
     fname = argv[1]
 
-    start = 0
+    start = 0#3000
     length = None
     te1, e1, te2, e2, te3, e3, te4, e4, te5, e5, te6, e6, te7, e7, te8, e8 = np.genfromtxt(fname, delimiter=' ', skip_header=start, max_rows=length, unpack=True)
 
@@ -70,13 +71,17 @@ def main(argv):
     e_raw = [0]*8
     freqs = [0]*8
     diff = [0]*8
+    means = [0]*8
 
     for i, vector in enumerate([e1, e2, e3, e4, e5, e6, e7, e8]):
         e[i] = vector / 4096
-        e_raw[i] = e[i]
+        means[i] = np.mean(e[i][3000:4000])
+        e[i] = e[i] * (means[0]/means[i])
+        e_raw[i] = copy.copy(e[i])
         #e[i] = low_pass(0.1, sample_rate, e[i])
         #e[i] = sps.savgol_filter(e[i], 99, 3)
-        e[i] = envelope(e[i])
+        e[i] = roll_max_savgol(e[i])
+        #e[i] = envelope(e[i])
         freqs[i] = spfft.fftfreq(e_raw[i].size, t[i][1]-t[i][0])
         diff[i] = np.diff((e[i], t[i]), 2)
         #e[i] = e[i]/(max(e[i])-min(e[i]))
@@ -87,26 +92,32 @@ def main(argv):
 
     # plot
 
-    c = ['b','g','w','c','m','y','b','r']
+    #     0   1   2   3   4   5   6   7
+    c = ['b','c','w','g','y','m','b','r']
 
     fig, ax = plt.subplots() #plt.subplots(nrows=2, ncols=1, sharex=True)
 
-    fig.suptitle(fname.split('/')[-1])
-    plt.style.use('bmh')
+    #fig.suptitle(fname.split('/')[-1])
+    #plt.style.use('bmh')
 
     tau = np.mean(t[0]-t[1])
 
     for i, (vt, ve, ve_raw, vfreq, vd) in enumerate(zip(t, e, e_raw, freqs, diff)):
-        if i in [7]:
+        if i in [0,3,4,7]:
 
             # sal
             #plt.subplot(211)
-            ax.plot(vt[2:], ve[2:], alpha=0.5, label='#'+str(i+1), color=c[i])
-            ax.plot(vt[2:], ve_raw[2:], alpha=0.1, label='#'+str(i+1)+'r', color='b')#c[i])
-            ax.set_xlabel('t[s]')
-            ax.set_ylabel('U[V]')
-            ax.legend(loc='best')
+            ax.plot(vt[2:], ve[2:], alpha=0.75, label='#'+str(i+1), color=c[i])
+            #ax.plot(vt[2:], ve_raw[2:], alpha=0.25, label='#'+str(i+1)+'r', color=c[i])
 
+            lfont = {'fontname':'Source Serif Pro'}
+            ax.set_xlabel('Time, s', **lfont)
+            ax.set_ylabel('Voltage, V', **lfont)
+            #ax.legend(loc='best')
+
+            ax.set_ylim([0,1])
+            ax.set_xlim([0,vt[2:][-1]])
+            ax.grid(True, linestyle='dashed')
             # diff
             #plt.subplot(212)
             #ax[1].plot(vt[2:], vd[0], alpha=0.5, label='d#'+str(i+1), color=c[i])
@@ -118,10 +129,13 @@ def main(argv):
             #plt.plot(vfreq, 20*sp.log10(abs(sp.fft(ve_raw))),
             #         '.', alpha=0.6, color=c[i])
 
-    try:
-        if argv[2] == '-s':
-            plt.savefig(fname.split('.')[0]+'.svg', dpi=300)
-    except:
+#    try:
+    if argv[2] == '-s':
+        plt.savefig(fname.split('.')[0]+'.pdf', dpi=300)
+        from matplotlib2tikz import save as tikz_save
+        tikz_save(fname.split('.')[0]+'.tex')
+#    except:
+    else:
         plt.show()
         #mpld3.save_html(fig, 'plot.html')
 

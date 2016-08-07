@@ -36,35 +36,45 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.9}{\ignorespaces The opamp (OA) modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).\relax }}{27}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces The blue graph shows the measured voltage with a resistance of 0. At the first red line, a switch breaks the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit [0.04]{s}, marked by the second red line. The red dot marks the halfway point between the old and new voltage.\relax }}{28}{figure.caption.41}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The blue graph shows the measured voltage with a resistance of 0. At the first red line, a switch breaks the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit [0.04]{s}, marked by the second red line.\relax }}{28}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.11}{\ignorespaces The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0. The red line marks the breaking of the connection. The signal follows without delay.\relax }}{29}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.12}{\ignorespaces The assembled carrier board with all parts directly soldered on.\relax }}{31}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Embedded Software Flow Diagram - If the power state of the device is "on" and the control state is "start" data is collected. The control state is set by a signal sent from the GUI and can be changed asynchronously. Data collection is done in a while-loop that runs as long as the iterator i is smaller than the number of sensors n. In the loop, first the Matrix Switches are set to the i-th sensor, then the ADC is read and afterwards a timestamp is created. When the cycle through all sensors is finished the data is sent to the GUI. Then the loop is started again. This happens until either the control state switches to "stop" or the power state to "off.\relax }}{33}{figure.caption.51}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Embedded Software Flow Diagram - If the power state of the device is "on" and the control state is "start" data is collected. The control state is set by a signal sent from the GUI and can be changed asynchronously. Data collection is done in a while-loop that runs as long as the iterator i is smaller than the number of sensors n. In the loop, first the Matrix Switches are set to the i-th sensor, then the ADC is read and afterwards a timestamp is created. When the cycle through all sensors is finished the data is sent to the GUI. Then the loop is started again. This happens until either the control state switches to "stop" or the power state to "off.\relax }}{32}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces OpenSalinity GUI - in this example sensor $\#4$ measures a resistance of zero (shorted with a wire), all others a infinite resistance (air gap). The Start/Stop button is on the top left, the Save button on the top right. The path to the chosen file is displayed in the header bar.\relax }}{35}{figure.caption.53}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces OpenSalinity GUI - in this example sensor $\#4$ measures a resistance of zero (shorted with a wire), all others a infinite resistance (air gap). The Start/Stop button is on the top left, the Save button on the top right. The path to the chosen file is displayed in the header bar.\relax }}{34}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Fixing the integer wrap of the time variable.\relax }}{36}{figure.caption.55}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Fixing the integer wrap of the time variable.\relax }}{35}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. It shows the sensor size of \unit [10x11]{mm}, the horizontal distance between sensors of \unit [50]{mm} and the vertical distance of \unit [25]{mm}.\relax }}{39}{figure.caption.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau $ the control volumes have moved. The sensor is covered by a mix of the two volumes.\relax }}{40}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit [1]{m} length run towards the carrier board which is not in the frame.\relax }}{43}{figure.caption.78}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.\relax }}{44}{figure.caption.79}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Position of the sensors in the inlet basin. \parencite {ts}\relax }}{45}{figure.caption.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces 2\relax }}{46}{figure.caption.83}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces 3\relax }}{47}{figure.caption.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces 4\relax }}{47}{figure.caption.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces 6\relax }}{48}{figure.caption.86}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. It shows the sensor size of \unit [10x11]{mm}, the horizontal distance between sensors of \unit [50]{mm} and the vertical distance of \unit [25]{mm}.\relax }}{40}{figure.caption.63}
+\contentsline {figure}{\numberline {.1}{\ignorespaces USB connection (\drawline [red,ultra thick]) sensor strip (\drawline [blue!75!white,ultra thick]) connectors (\drawline [red!25!yellow,ultra thick])\relax }}{51}{figure.caption.91}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau $ the control volumes have moved. The sensor is covered by a mix of the two volumes.\relax }}{41}{figure.caption.65}
+\contentsline {figure}{\numberline {.2}{\ignorespaces connectors\relax }}{51}{figure.caption.92}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit [1]{m} length run towards the carrier board which is not in the frame.\relax }}{44}{figure.caption.78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.\relax }}{45}{figure.caption.79}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces noise\relax }}{46}{figure.caption.82}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces feed switch\relax }}{47}{figure.caption.83}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces feed add\relax }}{48}{figure.caption.84}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {.3}{\ignorespaces USB\relax }}{52}{figure.caption.93}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
