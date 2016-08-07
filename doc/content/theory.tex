@@ -95,7 +95,7 @@ The temperature coefficient $ C_{T} $ assumes a linear correlation and is only v
 
 Conductivity meters can be readily bought and range from prices of over \euro{1000} for lab equipment \parencite{expcm} to \euro{100} for simple field water quality monitors \parencite{cheapcm}. Even cheaper water quality testers from no-name manufacturers can be found for as little as \euro{10} from online vendors.
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
     	\tikzset{external/export next=false}
 		\includegraphics[scale=0.5]{images/ccm.jpg}
@@ -111,8 +111,26 @@ Figure \ref{fig:ccm} shows a field conductivity meter from a quality manufacture
 	\item designed to perform singular reads with high quality
 \end{itemize}
 
-While field conductivity meters have the electrodes integrated to form one compact device, the more expensive lab equipment often has the electrodes attached to the device with a cable, allowing for a more flexible use. \\
+While field conductivity meters have the electrodes integrated to form one compact device, the more expensive lab equipment often has the electrodes attached to the device with a cable, allowing for a more flexible use.\\
 
-A different option was found in the MinieC I2C eC interface from Sparky's Widgets \parencite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons \parencite{cc}. This license allows to study the original design files and build modified versions. Ready-made boards can be purchased for about \euro{25}.
+A different option was found in the MinieC I2C eC interface from Sparky's Widgets \parencite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons \parencite{cc}. This license allows to study the original design files and build modified versions. Ready-made boards can be purchased for about \euro{25}. The design approach of this solution is also more modular than that of the more professional equipment. The MinieC offers an interface to connect external electrodes and can be controlled and read by a microcontroller.\\
 
-The design approach of this solution is also more modular than that of the more professional equipment. The MinieC offers an interface to connect external electrodes and can be controlled and read by a microcontroller.
+Table \ref{tab:feat} shows a comparison of the strengths and weaknesses of the different systems in respect to the use case of this project. Both the lab and field conductivity meters offer complete solutions with high accuracy. They do however lack the modularity of the MinieC as well as the machine interface, both of which are more important for the intended purpose then the accuracy. The complete solutions they offer simply are solutions for a different use case than ours, while the MinieC is positioned as a flexible building block to be used in whatever way needed. While it means that more work has to be done in designing a system around it, this is exactly the trait that allows us to build a device fit for our tasks.
+
+\begin{table}[H]
+    \centering
+
+    \caption[]{Feature comparison table of different conductivity sensor solutions. Strengths and weaknesses are indicated by + and - signs.}
+    \label{tab:feat}
+    \begin{tabular}{l  c  c  c}
+        	\toprule
+         Feature & Lab Conductivity Meter & Field Conductivity Meter & MinieC \\
+        	\midrule
+		Price & --- & - & + \\
+		Modularity & - & --- & ++ \\
+		Completeness & ++ & ++ & - \\
+		Interface & - & - & ++ \\
+		Accuracy & ++ & + & - \\
+        \bottomrule
+    \end{tabular}
+\end{table}

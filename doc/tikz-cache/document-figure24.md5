@@ -1,0 +1,1 @@
+\begingroup \toks 0={macro:-> \draw [red!20!yellow,ultra thick] (0pt,0pt) -- (15pt,0pt); }\xdef \tikzexternallastkey {\the \toks 0 }\endgroup %

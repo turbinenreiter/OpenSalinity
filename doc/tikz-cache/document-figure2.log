@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  6 AUG 2016 22:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  7 AUG 2016 17:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2164,18 +2164,52 @@ LaTeX Warning: Citation 'uec' on page 15 undefined on input line 116.
 
 LaTeX Warning: Citation 'cc' on page 15 undefined on input line 116.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+LaTeX Warning: Reference `tab:feat' on page 15 undefined on input line 118.
+
 ) (./content/material-and-methods.tex
 chapter 4.
 
-LaTeX Warning: Reference `fig:isys' on page 16 undefined on input line 3.
+LaTeX Warning: Reference `fig:isys' on page 17 undefined on input line 3.
 
-The command '\includegraphics [width=0.8\textwidth ]{images/cb.jpg}' has been o
-ptimized away. Use '/tikz/external/optimize=false' to disable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/sc' will be
+(Font)              scaled to size 9.8299pt on input line 25.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-LaTeX Warning: Reference `fig:sys' on page 17 undefined on input line 15.
+LaTeX Warning: Reference `fig:sys' on page 18 undefined on input line 32.
 
 
-Overfull \hbox (3.11661pt too wide) in paragraph at lines 15--17
+Overfull \hbox (3.11661pt too wide) in paragraph at lines 32--34
 \EU1/SourceSerifPro(0)/m/sl/13 the measurement data from it and sends it to the
  PC. It also controls the matrix switches
  []
@@ -2183,198 +2217,199 @@ Overfull \hbox (3.11661pt too wide) in paragraph at lines 15--17
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Citation 'trankler2015sensortechnik' on page 19 undefined on inp
-ut line 62.
+LaTeX Warning: Citation 'trankler2015sensortechnik' on page 20 undefined on inp
+ut line 79.
 
-LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 62.
+LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 79.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.36993> on input line 62.
+(Font)              <6.36993> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.54997> on input line 62.
+(Font)              <4.54997> on input line 79.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-
-LaTeX Warning: Reference `fig:sensor' on page 19 undefined on input line 64.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `fig:v2' on page 19 undefined on input line 92.
-
-The command '\includegraphics [width=\textwidth ]{images/v2.jpg}' has been opti
-mized away. Use '/tikz/external/optimize=false' to disable this.
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-LaTeX Warning: Reference `fig:fpcbd' on page 20 undefined on input line 108.
+LaTeX Warning: Reference `fig:sensor' on page 20 undefined on input line 81.
 
 
-LaTeX Warning: Reference `fig:fpcbp' on page 20 undefined on input line 108.
-
-The command '\includegraphics [width=\textwidth ]{images/fpcbd.pdf}' has been o
-ptimized away. Use '/tikz/external/optimize=false' to disable this.
-The command '\includegraphics [width=\textwidth ]{images/fpcbp.jpg}' has been o
-ptimized away. Use '/tikz/external/optimize=false' to disable this.
-
-LaTeX Warning: Citation 'ms' on page 20 undefined on input line 128.
-
-
-Overfull \hbox (4.07048pt too wide) in paragraph at lines 128--129
-[][]\EU1/SourceSerifPro(0)/m/sl/13 The matrix switches are an essential part of
- the system, enabling it use multiple sensors
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-
-LaTeX Warning: Reference `fig:ms' on page 21 undefined on input line 130.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
-
- []
-
-The command '\includegraphics [width=0.3\textwidth ]{images/ms.pdf}' has been o
-ptimized away. Use '/tikz/external/optimize=false' to disable this.
-
-LaTeX Warning: Reference `fig:msc' on page 21 undefined on input line 140.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-LaTeX Warning: Reference `fig:opamp' on page 22 undefined on input line 164.
-
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 7.86388pt on input line 171.
-LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 171
-.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.66673> on input line 171.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.06668> on input line 171.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.33336> on input line 171.
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-LaTeX Warning: Reference `fig:swcap' on page 23 undefined on input line 190.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-The command '\includegraphics [width=0.8\textwidth ]{images/switch_cap.pdf}' ha
-s been optimized away. Use '/tikz/external/optimize=false' to disable this.
-
-LaTeX Warning: Reference `fig:swnocap' on page 24 undefined on input line 200.
-
-
-LaTeX Warning: Reference `val' on page 24 undefined on input line 200.
-
-The command '\includegraphics [width=0.8\textwidth ]{images/switch_nocap.pdf}' 
-has been optimized away. Use '/tikz/external/optimize=false' to disable this.
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
-
- []
-
-
-LaTeX Warning: Reference `fig:cb' on page 25 undefined on input line 219.
-
-The command '\includegraphics [width=0.8\textwidth ]{images/cb.jpg}' has been o
-ptimized away. Use '/tikz/external/optimize=false' to disable this.
-
-LaTeX Warning: Reference `uc' on page 26 undefined on input line 237.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
-
- []
-
-
-LaTeX Warning: Reference `flst:ormat' on page 26 undefined on input line 242.
-
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 5.89786pt on input line 245.
 \openout6 = `tikz-cache/document-figure2.dpth'.
 
-[26
+[20
 
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+
+LaTeX Warning: Reference `fig:v2' on page 20 undefined on input line 109.
+
+The command '\includegraphics [width=\textwidth ]{images/v2.jpg}' has been opti
+mized away. Use '/tikz/external/optimize=false' to disable this.
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+LaTeX Warning: Reference `fig:fpcbd' on page 21 undefined on input line 125.
+
+
+LaTeX Warning: Reference `fig:fpcbp' on page 21 undefined on input line 125.
+
+The command '\includegraphics [width=\textwidth ]{images/fpcbd.pdf}' has been o
+ptimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=\textwidth ]{images/fpcbp.jpg}' has been o
+ptimized away. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: Citation 'ms' on page 21 undefined on input line 145.
+
+
+Overfull \hbox (4.07048pt too wide) in paragraph at lines 145--146
+[][]\EU1/SourceSerifPro(0)/m/sl/13 The matrix switches are an essential part of
+ the system, enabling it use multiple sensors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+LaTeX Warning: Reference `fig:ms' on page 22 undefined on input line 147.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+The command '\includegraphics [width=0.3\textwidth ]{images/ms.pdf}' has been o
+ptimized away. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: Reference `fig:msc' on page 22 undefined on input line 157.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+LaTeX Warning: Reference `fig:opamp' on page 23 undefined on input line 181.
+
+LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+(Font)              scaled to size 7.86388pt on input line 188.
+LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 188
+.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8.66673> on input line 188.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.06668> on input line 188.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4.33336> on input line 188.
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+
+LaTeX Warning: Reference `fig:swcap' on page 24 undefined on input line 207.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+The command '\includegraphics [width=0.8\textwidth ]{images/switch_cap.pdf}' ha
+s been optimized away. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: Reference `fig:swnocap' on page 25 undefined on input line 217.
+
+
+LaTeX Warning: Reference `val' on page 25 undefined on input line 217.
+
+The command '\includegraphics [width=0.8\textwidth ]{images/switch_nocap.pdf}' 
+has been optimized away. Use '/tikz/external/optimize=false' to disable this.
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+
+ []
+
+
+LaTeX Warning: Reference `fig:cb' on page 26 undefined on input line 236.
+
+The command '\includegraphics [width=0.8\textwidth ]{images/cb.jpg}' has been o
+ptimized away. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: Reference `uc' on page 27 undefined on input line 254.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+
+ []
+
+
+LaTeX Warning: Reference `lst:format' on page 27 undefined on input line 259.
+
+LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+(Font)              scaled to size 5.89786pt on input line 262.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 
  []
 
 The command '\includegraphics [width=\textwidth ]{images/UI.png}' has been opti
 mized away. Use '/tikz/external/optimize=false' to disable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 
-LaTeX Warning: Reference `fig:wrap' on page 28 undefined on input line 312.
+LaTeX Warning: Reference `fig:wrap' on page 29 undefined on input line 338.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `tab:bom' on page 29 undefined on input line 344.
+LaTeX Warning: Reference `tab:bom' on page 30 undefined on input line 370.
 
 ) (./content/results.tex
 chapter 5.
 
-LaTeX Warning: Reference `obj' on page 30 undefined on input line 3.
+LaTeX Warning: Reference `obj' on page 31 undefined on input line 3.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -2382,7 +2417,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
  []
 
 
-LaTeX Warning: Reference `fig:sensarray' on page 30 undefined on input line 11.
+LaTeX Warning: Reference `fig:sensarray' on page 31 undefined on input line 11.
 
 
 
@@ -2393,21 +2428,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `eq:resv2' on page 30 undefined on input line 70.
+LaTeX Warning: Reference `eq:resv2' on page 31 undefined on input line 70.
 
 
-LaTeX Warning: Reference `fig:cv' on page 31 undefined on input line 77.
+LaTeX Warning: Reference `fig:cv' on page 32 undefined on input line 77.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `eq:resn' on page 31 undefined on input line 117.
+LaTeX Warning: Reference `eq:resn' on page 32 undefined on input line 117.
 
 
-LaTeX Warning: Reference `eq:resk' on page 31 undefined on input line 117.
+LaTeX Warning: Reference `eq:resk' on page 32 undefined on input line 117.
 
 
-LaTeX Warning: Reference `eq:resv' on page 31 undefined on input line 129.
+LaTeX Warning: Reference `eq:resv' on page 32 undefined on input line 129.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 140--143
@@ -2415,7 +2450,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--143
  []
 
 
-LaTeX Warning: Reference `lst:data' on page 32 undefined on input line 144.
+LaTeX Warning: Reference `lst:data' on page 33 undefined on input line 144.
 
 
 Overfull \hbox (0.61436pt too wide) in paragraph at lines 144--145
@@ -2429,7 +2464,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
  []
 
 
-LaTeX Warning: Reference `tab:rns' on page 32 undefined on input line 157.
+LaTeX Warning: Reference `tab:rns' on page 33 undefined on input line 157.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
@@ -2437,7 +2472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
  []
 
 
-LaTeX Warning: Reference `BOM' on page 33 undefined on input line 191.
+LaTeX Warning: Reference `BOM' on page 34 undefined on input line 191.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
@@ -2445,10 +2480,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
  []
 
 
-LaTeX Warning: Reference `fig:stripsr' on page 33 undefined on input line 199.
+LaTeX Warning: Reference `fig:stripsr' on page 34 undefined on input line 199.
 
 
-LaTeX Warning: Reference `fig:pcr' on page 33 undefined on input line 199.
+LaTeX Warning: Reference `fig:pcr' on page 34 undefined on input line 199.
 
 The command '\includegraphics [width=0.8\textwidth ]{images/stripsinreactor.jpg
 }' has been optimized away. Use '/tikz/external/optimize=false' to disable this
@@ -2507,12 +2542,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66718 strings out of 493638
- 1499297 string characters out of 6146797
- 2126057 words of memory out of 5000000
- 69101 multiletter control sequences out of 15000+600000
+ 66646 strings out of 493638
+ 1498184 string characters out of 6146797
+ 2126163 words of memory out of 5000000
+ 69029 multiletter control sequences out of 15000+600000
  49709 words of font info for 98 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 74i,34n,106p,10478b,1940s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,34n,106p,10478b,1936s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on tikz-cache/document-figure2.pdf (1 page).

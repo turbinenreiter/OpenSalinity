@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  6 AUG 2016 22:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  7 AUG 2016 19:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2306,105 +2306,118 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-) [17] [18]
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+) [18]
 \openout2 = `content/material-and-methods.aux'.
 
  (./content/material-and-methods.tex
 chapter 4.
-File: images/cb.jpg Graphic file (type QTm)
-<use  "images/cb.jpg" > [19
-
-
-
-]
-Overfull \hbox (3.11661pt too wide) in paragraph at lines 15--17
-\EU1/SourceSerifPro(0)/m/sl/13 the measurement data from it and sends it to the
- PC. It also controls the matrix switches
- []
-
 
 ! Package tikz Warning: The key 'up to date check=md5' is impossible, there is 
 no macro to compute MD5. Falling back to 'up to date check=diff'.
 ===== Image 'tikz-cache/document-figure0' is up-to-date. ======
 File: tikz-cache/document-figure0.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure0.pdf" > [20] [21]
-LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 62.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.36993> on input line 62.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.54997> on input line 62.
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
+<use  "tikz-cache/document-figure0.pdf" >
+Overfull \hbox (12.98259pt too wide) in paragraph at lines 7--25
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
+Overfull \hbox (3.11661pt too wide) in paragraph at lines 32--34
+\EU1/SourceSerifPro(0)/m/sl/13 the measurement data from it and sends it to the
+ PC. It also controls the matrix switches
  []
 
+[19
+
+
+
+]
 ===== Image 'tikz-cache/document-figure1' is up-to-date. ======
 File: tikz-cache/document-figure1.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure1.pdf" > [22]
-File: images/v2.jpg Graphic file (type QTm)
- <use  "images/v2.jpg" >
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+<use  "tikz-cache/document-figure1.pdf" > [20]
+LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 79.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.36993> on input line 79.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4.54997> on input line 79.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+===== Image 'tikz-cache/document-figure2' is up-to-date. ======
+File: tikz-cache/document-figure2.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure2.pdf" > [21]
+File: images/v2.jpg Graphic file (type QTm)
+ <use  "images/v2.jpg" >
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+[22]
 File: images/fpcbd.pdf Graphic file (type QTm)
-<use  "images/fpcbd.pdf" >
+ <use  "images/fpcbd.pdf" >
 File: images/fpcbp.jpg Graphic file (type QTm)
- <use  "images/fpcbp.jpg" > [23]
-Overfull \hbox (4.07048pt too wide) in paragraph at lines 128--129
+ <use  "images/fpcbp.jpg" >
+Overfull \hbox (4.07048pt too wide) in paragraph at lines 145--146
 [][]\EU1/SourceSerifPro(0)/m/sl/13 The matrix switches are an essential part of
  the system, enabling it use multiple sensors
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 File: images/ms.pdf Graphic file (type QTm)
-<use  "images/ms.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+<use  "images/ms.pdf" > [23]
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
 [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 7.86388pt on input line 171.
-LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 171
+(Font)              scaled to size 7.86388pt on input line 188.
+LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 188
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.66673> on input line 171.
+(Font)              <8.66673> on input line 188.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.06668> on input line 171.
+(Font)              <6.06668> on input line 188.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.33336> on input line 171.
+(Font)              <4.33336> on input line 188.
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
@@ -2412,71 +2425,65 @@ File: images/switch_cap.pdf Graphic file (type QTm)
 <use  "images/switch_cap.pdf" > [27] [28]
 File: images/switch_nocap.pdf Graphic file (type QTm)
  <use  "images/switch_nocap.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 [29] [30]
 File: images/cb.jpg Graphic file (type QTm)
  <use  "images/cb.jpg" >
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
 
  []
-
-
-LaTeX Warning: Reference `flst:ormat' on page 31 undefined on input line 242.
 
 [31]
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 5.89786pt on input line 245.
-\openout3 = `tikz-cache/document-figure2.md5'.
+(Font)              scaled to size 5.89786pt on input line 262.
 
-
-===== 'mode=convert with system call': Invoking 'xelatex -shell-escape -halt-on
--error -interaction=batchmode -jobname "tikz-cache/document-figure2" "\def\tikz
-externalrealjob{document}\input{document}"' ========
-\openout3 = `document.auxlock'.
-
-runsystem(xelatex -shell-escape -halt-on-error -interaction=batchmode -jobname 
-"tikz-cache/document-figure2" "\def\tikzexternalrealjob{document}\input{documen
-t}")...executed.
-
-\openout3 = `document.auxlock'.
-
-File: tikz-cache/document-figure2.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure2.pdf" > [32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+===== Image 'tikz-cache/document-figure3' is up-to-date. ======
+File: tikz-cache/document-figure3.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure3.pdf" > [32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 
  []
 
 File: images/UI.png Graphic file (type QTm)
-<use  "images/UI.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
-
- []
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+<use  "images/UI.png" > [34]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
-===== Image 'tikz-cache/document-figure3' is up-to-date. ======
-File: tikz-cache/document-figure3.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure3.pdf" > [35] [36]) [37]
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+ []
+
+===== Image 'tikz-cache/document-figure4' is up-to-date. ======
+File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure4.pdf" > [36]
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+[][][]|\EU1/SourceSerifPro(0)/m/sl/13 microcontroller
+ []
+
+
+Overfull \hbox (12.1546pt too wide) in paragraph at lines 403--415
+ [][][][] 
+ []
+
+) [37] [38]
 \openout2 = `content/results.aux'.
 
-
-(./content/results.tex
+ (./content/results.tex
 chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -2488,21 +2495,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-===== Image 'tikz-cache/document-figure4' is up-to-date. ======
-File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure4.pdf" > [38
+===== Image 'tikz-cache/document-figure5' is up-to-date. ======
+File: tikz-cache/document-figure5.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure5.pdf" > [39
 
 
 
 ]
-===== Image 'tikz-cache/document-figure5' is up-to-date. ======
-File: tikz-cache/document-figure5.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure5.pdf" > [39]
+===== Image 'tikz-cache/document-figure6' is up-to-date. ======
+File: tikz-cache/document-figure6.pdf Graphic file (type QTm)
+<use  "tikz-cache/document-figure6.pdf" > [40]
 Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
  []
 
-[40]
+[41]
 Overfull \hbox (0.61436pt too wide) in paragraph at lines 144--145
 [][][]\EU1/SourceSerifPro(0)/m/sl/13 To test if the time resolution matches thi
 s, the measurement time itself can be timed.
@@ -2513,7 +2520,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
-[41]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
@@ -2523,35 +2530,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
-[42]
+[43]
 File: images/stripsinreactor.jpg Graphic file (type QTm)
  <use  "images/stripsinreactor.jpg" >
 File: images/pconreactor.jpg Graphic file (type QTm)
  <use  "images/pconreactor.jpg" >
-[43]
+[44]
 File: images/noise.pdf Graphic file (type QTm)
  <use  "images/noise.pdf" >
 File: images/feed_switch.pdf Graphic file (type QTm)
  <use  "images/feed_switch.pdf" >
 File: images/feed_add.pdf Graphic file (type QTm)
 
-<use  "images/feed_add.pdf" >) [44] [45] [46] [47]
+<use  "images/feed_add.pdf" >) [45] [46] [47] [48]
 \openout2 = `content/summary-and-outlook.aux'.
 
 
 (./content/summary-and-outlook.tex
 chapter 6.
-) [48
+) [49
 
 
 
-] [49
+] [50
 
 
 ]
 \openout2 = `content/appendix.aux'.
 
- (./content/appendix.tex) [50
+ (./content/appendix.tex) [51
 
 ]
 \openout2 = `elements/abbreviations.aux'.
@@ -2563,26 +2570,26 @@ Underfull \hbox (badness 10000) in alignment at lines 8--11
 [] []
  []
 
-) [51
+) [52
 
 
 
 ]
 chapter B.
-(./document.lof [52
+(./document.lof [53
 
 
-] [53])
+] [54])
 \tf@lof=\write8
 \openout8 = `document.lof'.
 
 
 chapter C.
-(./document.lot)
+(./document.lot [55])
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [54]
+ [56]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2601,6 +2608,13 @@ rface. 2016. URL: [][]$[][][][][][][] [] [] [] [][][] [] [][][][][][][][][][][]
  []
 
 
+Overfull \hbox (2.39963pt too wide) in paragraph at lines 81--81
+[][]$[][][][][][][] [] [] [] [][][] [] [][][][][][][][][] [] [][][] [] [][][][]
+ [] [][][][][][][][] [] [][][][][][] [][] [][][][][][][][][][] [][] [][][][][][
+][][][] [][] [][][][][][][][][][][][] [][]
+ []
+
+
 Overfull \hbox (8.43744pt too wide) in paragraph at lines 81--81
 [][][][]\EU1/SourceSerifPro(0)/m/it/13 Tränkler, Hans-Rolf and Leonhard M Reind
 l (2015). Sensortechnik: Handbuch für Praxis
@@ -2610,7 +2624,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[55
+[57
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2632,10 +2646,11 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
@@ -2644,12 +2659,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66843 strings out of 493638
- 1501255 string characters out of 6146797
- 2126024 words of memory out of 5000000
- 69142 multiletter control sequences out of 15000+600000
+ 66856 strings out of 493638
+ 1501462 string characters out of 6146797
+ 2126164 words of memory out of 5000000
+ 69154 multiletter control sequences out of 15000+600000
  49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,34n,106p,10440b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (55 pages).
+Output written on document.pdf (57 pages).

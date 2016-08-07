@@ -43,54 +43,10 @@
   \strng{namehash}{C1}
   \strng{fullhash}{C1}
   \field{labelyear}{2016}
-  \field{extrayear}{1}
   \field{sortinit}{C}
   \field{title}{Creative Commons Attribution-ShareAlike 3.0 Unported}
   \verb{url}
   \verb https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-  \endverb
-  \field{year}{2016}
-\endentry
-
-\entry{expcm}{online}{}
-  \name{author}{1}{}{%
-    {{}%
-     {{Creative Commons}}{C.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{C1}
-  \strng{fullhash}{C1}
-  \field{labelyear}{2016}
-  \field{extrayear}{2}
-  \field{sortinit}{C}
-  \field{title}{Fisher Scientific™ Traceable™ Conductivity, Resistivity,
-  and TDS Meter}
-  \verb{url}
-  \verb https://www.fishersci.com/shop/products/fisher-scientific-traceable-con
-  \verb ductivity-resistivity-tds-meter/093262
-  \endverb
-  \field{year}{2016}
-\endentry
-
-\entry{cheapcm}{online}{}
-  \name{author}{1}{}{%
-    {{}%
-     {{Creative Commons}}{C.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{C1}
-  \strng{fullhash}{C1}
-  \field{labelyear}{2016}
-  \field{extrayear}{3}
-  \field{sortinit}{C}
-  \field{title}{Fisher Scientific™ Traceable™ Salinity Meter Pen}
-  \verb{url}
-  \verb https://www.fishersci.com/shop/products/fisher-scientific-traceable-con
-  \verb ductivity-tds-salinity-meter-pens-2/15078202
   \endverb
   \field{year}{2016}
 \endentry
@@ -114,6 +70,49 @@
   \field{year}{2016}
 \endentry
 
+\entry{expcm}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Fisher Scientific}}{F.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{F1}
+  \strng{fullhash}{F1}
+  \field{labelyear}{2016}
+  \field{extrayear}{1}
+  \field{sortinit}{F}
+  \field{title}{Fisher Scientific™ Traceable™ Conductivity, Resistivity,
+  and TDS Meter}
+  \verb{url}
+  \verb https://www.fishersci.com/shop/products/fisher-scientific-traceable-con
+  \verb ductivity-resistivity-tds-meter/093262
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{cheapcm}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Fisher Scientific}}{F.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{F1}
+  \strng{fullhash}{F1}
+  \field{labelyear}{2016}
+  \field{extrayear}{2}
+  \field{sortinit}{F}
+  \field{title}{Fisher Scientific™ Traceable™ Salinity Meter Pen}
+  \verb{url}
+  \verb https://www.fishersci.com/shop/products/fisher-scientific-traceable-con
+  \verb ductivity-tds-salinity-meter-pens-2/15078202
+  \endverb
+  \field{year}{2016}
+\endentry
+
 \entry{gevatter2000automatisierungstechnik}{misc}{}
   \name{author}{1}{}{%
     {{}%
@@ -132,6 +131,25 @@
   \field{pages}{255}
   \field{title}{Automatisierungstechnik 1. Me{\ss}-und Regeltechnik}
   \field{year}{2000}
+\endentry
+
+\entry{upy}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{MicroPython}}{M.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{M1}
+  \strng{fullhash}{M1}
+  \field{labelyear}{2016}
+  \field{sortinit}{M}
+  \field{title}{MicroPython project homepage}
+  \verb{url}
+  \verb http://micropython.org/
+  \endverb
+  \field{year}{2016}
 \endentry
 
 \entry{trankler2015sensortechnik}{book}{}

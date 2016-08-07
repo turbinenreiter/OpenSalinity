@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import time
-import threading
 import serial
 import cairo
 import gi
@@ -98,7 +97,7 @@ class LivePlot(Gtk.Window):
         context.translate(w*0, h*0.9)
 
         context.set_line_width(1)
-        context.set_source_rgb(0.878, 0.878, 0.878)
+        context.set_source_rgb(0,0,0)#0.878, 0.878, 0.878)
         context.set_font_size(16)
 
         context.move_to(w*0.05, -h*0.85)
