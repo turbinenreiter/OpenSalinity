@@ -168,7 +168,7 @@ On the lower limit, a measurement without any water, resulted in a voltage of \u
 \begin{table}[H]
     \centering
 
-    \caption[cal]{Range and Sensitivity}
+    \caption[Range and Sensitivity]{Range and Sensitivity}
     \label{tab:rns}
     \begin{tabular}{rr}
         	\toprule

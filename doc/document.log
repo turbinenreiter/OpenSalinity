@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  8 AUG 2016 15:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  8 AUG 2016 16:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2608,33 +2608,33 @@ File: images/conn.jpg Graphic file (type QTm)
 File: images/usb.jpg Graphic file (type QTm)
  <use  "images/usb.jpg" > [56
 
-]) [57]
+] [57]) [58]
 \openout2 = `elements/abbreviations.aux'.
 
 
 (./elements/abbreviations.tex
 chapter A.
 
-Underfull \hbox (badness 10000) in alignment at lines 8--11
+Underfull \hbox (badness 10000) in alignment at lines 8--29
 [] []
  []
 
-) [58
+) [59
 
 
 
 ]
 chapter B.
-(./document.lof [59
+(./document.lof [60
 
 
-] [60]
+] [61]
 Overfull \hbox (1.68013pt too wide) in paragraph at lines 69--69
  [][][][] [][][]\EU1/SourceSerifPro(0)/m/sl/13 Behavior during the start of the
  water flow - sensor four ( []) and sensor 
  []
 
-[61])
+[62])
 \tf@lof=\write8
 \openout8 = `document.lof'.
 
@@ -2644,7 +2644,7 @@ chapter C.
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [62]
+ [63]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2685,7 +2685,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[63
+[64
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2716,12 +2716,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66898 strings out of 493638
- 1502354 string characters out of 6146797
- 2417275 words of memory out of 5000000
- 69182 multiletter control sequences out of 15000+600000
+ 66906 strings out of 493638
+ 1502427 string characters out of 6146797
+ 2417329 words of memory out of 5000000
+ 69190 multiletter control sequences out of 15000+600000
  49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,34n,106p,41580b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (63 pages).
+Output written on document.pdf (64 pages).

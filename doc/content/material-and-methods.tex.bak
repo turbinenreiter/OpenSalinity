@@ -376,7 +376,7 @@ The carrier board and sensor strip are made to order by PCB makers. Generally, a
 \begin{table}[H]
     \centering
 
-    \caption[BOM]{Bill of Materials}
+    \caption[Bill of Materials]{Bill of Materials}
     \label{tab:bom}
     \begin{tabular}{llllll}
         	\toprule
@@ -400,7 +400,7 @@ Table \ref{tab:sw} lists all software used in this project, including the versio
 \begin{table}[H]
     \centering
 
-    \caption[sw]{Collection of Software}
+    \caption[Collection of Software]{Collection of Software}
     \label{tab:sw}
     \begin{tabular}{lllp{0.25\textwidth}}
         	\toprule

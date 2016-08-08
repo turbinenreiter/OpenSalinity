@@ -1,0 +1,21 @@
+\chapter{Abbreviations}
+
+{
+% Force full \textwidth
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+
+\begin{longtable}{p{3cm}l@{\extracolsep{\fill}}}
+    CFD   & Computational Fluid Dynamics \tabularnewline
+    PBR   & Photobioreactor \tabularnewline
+    Personal Computer & PC \tabularnewline
+    I2C & Inter-Integrated Circuit \tabularnewline
+    SPI & Serial Peripheral Interface \tabularnewline
+	GND & electrical ground \tabularnewline
+    SIG & Signal
+    PCB   & Printe Circuit Board \tabularnewline
+    opamp  & Operational Amplifier \tabularnewline
+    OUT & Output
+    
+\end{longtable}
+}

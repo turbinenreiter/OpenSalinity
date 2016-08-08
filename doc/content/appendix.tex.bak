@@ -1,6 +1,6 @@
 \section*{Instruction Manual}
 
-\subsection*{Minimal Instruction Set}
+\subsection*{Setting up the Hardware}
 
 \begin{figure}[H]
 	\begin{center}
@@ -46,9 +46,32 @@
 	\end{center}
 \end{figure}
 	Wrong orientation can cause no damage, but the system does not work
-	\item[4] Start the OpenSalinity GUI.
-	\item[5] Click "Save" on the top right to chose a file to log the data too. If you want to use the default filename, just click "Open" in the file menu.
-	\item[6] Start the measurement by clicking "Start".
-	\item[7] Stop the measurement by clicking "Stop".
-	\item[8] Repeat from step 5 for all subsequent measurements. If no new file is chosen before starting a new measurement, the data is added at the end of the previous file.
+\end{itemize}
+
+\subsection*{Capturing data using the OpenSalinityGUI}
+
+\begin{itemize}
+	\item[0] Follow the three steps of "Setting up the Hardware".
+	\item[1] Start the OpenSalinity GUI by clicking on the icon.
+	\item[2] Click "Save" on the top right to chose a file to log the data too. If you want to use the default filename, just click "Open" in the file menu.
+	\item[3] Start the measurement by clicking "Start".
+	\item[4] Stop the measurement by clicking "Stop".
+	\item[5] Repeat from step 1 for all subsequent measurements. If no new file is chosen before starting a new measurement, the data is added at the end of the previous file.
+\end{itemize}
+
+\subsection*{Capturing data using command line tools}
+
+\begin{itemize}
+	\item[0] Follow the three steps of "Setting up the Hardware".
+	\item[1] Open a terminal.
+	\item[2] Change the working directory to the directory liveplot.sh is in:
+	\begin{lstlisting}
+		cd ~/path/to/directory
+	\end{lstlisting}
+	\item[3] Execute "liveplot.sh" with a file name as argument:
+	\begin{lstlisting}
+		./liveplot.sh log.csv
+	\end{lstlisting}
+	\item[4] To end data capturing, click into the terminal and press "Ctrl+C".
+	\item[5] Repeat from step 1 for all subsequent measurements. If you don not change the file name, the file is overwritten.
 \end{itemize}
