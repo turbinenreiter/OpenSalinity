@@ -152,6 +152,35 @@
   \field{year}{2016}
 \endentry
 
+\entry{savitzky1964smoothing}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Savitzky}{S.}%
+     {Abraham}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Golay}{G.}%
+     {Marcel~JE}{M.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACS Publications}%
+  }
+  \strng{namehash}{SA+1}
+  \strng{fullhash}{SAGMJ1}
+  \field{labelyear}{1964}
+  \field{sortinit}{S}
+  \field{number}{8}
+  \field{pages}{1627\bibrangedash 1639}
+  \field{title}{Smoothing and differentiation of data by simplified least
+  squares procedures.}
+  \field{volume}{36}
+  \field{journaltitle}{Analytical chemistry}
+  \field{year}{1964}
+\endentry
+
 \entry{ts}{misc}{}
   \name{author}{1}{}{%
     {{}%

@@ -38,8 +38,15 @@
 	\end{center}
 \end{figure}
 	\item[3] Connect the carrier board to the host PC with the USB cable. Note the orientation in the picture:
+		\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{images/usb.jpg}
+		\caption{USB}
+		\label{fig:isys}
+	\end{center}
+\end{figure}
 	Wrong orientation can cause no damage, but the system does not work
-	\item[4] Start the OpenSalinity GUI by clicking on the icon:
+	\item[4] Start the OpenSalinity GUI.
 	\item[5] Click "Save" on the top right to chose a file to log the data too. If you want to use the default filename, just click "Open" in the file menu.
 	\item[6] Start the measurement by clicking "Start".
 	\item[7] Stop the measurement by clicking "Stop".

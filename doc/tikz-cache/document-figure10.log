@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  8 AUG 2016 00:43
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  8 AUG 2016 12:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2509,23 +2509,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
-The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2.pdf}' h
-as been optimized away. Use '/tikz/external/optimize=false' to disable this.
-The command '\includegraphics [width=0.8\textwidth ]{images/log080716_3.pdf}' h
-as been optimized away. Use '/tikz/external/optimize=false' to disable this.
-The command '\includegraphics [width=0.8\textwidth ]{images/log080716_4.pdf}' h
-as been optimized away. Use '/tikz/external/optimize=false' to disable this.
-The command '\includegraphics [width=0.8\textwidth ]{images/log080716_6.pdf}' h
-as been optimized away. Use '/tikz/external/optimize=false' to disable this.
-) (./content/summary-and-outlook.tex
-chapter 6.
-) (./content/appendix.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+
+ []
+
+
+LaTeX Warning: Reference `fig:test2_7_scatter' on page 36 undefined on input li
+ne 349.
+
+
+LaTeX Warning: Citation 'savitzky1964smoothing' on page 36 undefined on input l
+ine 349.
+
+The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2_7_scatt
+er.pdf}' has been optimized away. Use '/tikz/external/optimize=false' to disabl
+e this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `fig:test2_37_adj' on page 37 undefined on input line 
+360.
+
 \openout6 = `tikz-cache/document-figure10.dpth'.
 
-File: images/cb.jpg Graphic file (type QTm)
-<use  "images/cb.jpg" >
-File: images/fpcbp.jpg Graphic file (type QTm)
-<use  "images/fpcbp.jpg" > [40
+File: images/log080716_2_37_unadj.pdf Graphic file (type QTm)
+<use  "images/log080716_2_37_unadj.pdf" >
+File: images/log080716_2_37_adj.pdf Graphic file (type QTm)
+<use  "images/log080716_2_37_adj.pdf" > [37
 
 
 
@@ -2540,10 +2561,33 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+The command '\includegraphics [width=0.8\textwidth ]{images/log080716_3.pdf}' h
+as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=0.8\textwidth ]{images/log080716_4.pdf}' h
+as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=0.8\textwidth ]{images/log080716_6.pdf}' h
+as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+) (./content/summary-and-outlook.tex
+chapter 6.
+) (./content/appendix.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+The command '\includegraphics [width=0.5\textwidth ]{images/conn.jpg}' has been
+ optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=0.5\textwidth ]{images/usb.jpg}' has been 
+optimized away. Use '/tikz/external/optimize=false' to disable this.
 ) (./elements/abbreviations.tex
 chapter A.
 
@@ -2588,12 +2632,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66668 strings out of 493638
- 1498611 string characters out of 6146797
- 2127203 words of memory out of 5000000
- 69040 multiletter control sequences out of 15000+600000
+ 66665 strings out of 493638
+ 1498647 string characters out of 6146797
+ 2127205 words of memory out of 5000000
+ 69038 multiletter control sequences out of 15000+600000
  49709 words of font info for 98 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 74i,34n,106p,10478b,1936s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,34n,106p,10478b,1938s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on tikz-cache/document-figure10.pdf (1 page).

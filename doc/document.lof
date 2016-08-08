@@ -60,21 +60,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Position of the sensors in the inlet basin. \parencite {ts}\relax }}{45}{figure.caption.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces 2\relax }}{46}{figure.caption.83}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Filter design - the scatter plot shows the raw data (\drawline [cyan]), filtered for local maxima (\drawline [blue]) and smoothed with a Savitzky-Golay filter (\drawline [red]).\relax }}{46}{figure.caption.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces 3\relax }}{47}{figure.caption.84}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Sensor calibration - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared uncalibrated on the left and calibrated on the right.\relax }}{47}{figure.caption.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces 4\relax }}{47}{figure.caption.85}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Test No. 2 - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared. Signal four which is measured further upstream always changes before the downstream signal does.\relax }}{48}{figure.caption.85}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces 6\relax }}{48}{figure.caption.86}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Behavior during the start of the water flow - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared uncalibrated on the left and calibrated on the right. Signal eight rises only after the inlet basin is completely filled which takes about \unit [4]{s}.\relax }}{49}{figure.caption.86}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Test No.3 with a higher salinity than before - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{50}{figure.caption.87}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Test No. 4 using the impulse method - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{51}{figure.caption.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Test No. 6 impulse method with higher flow rate and lower salinity - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{52}{figure.caption.89}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.1}{\ignorespaces USB connection (\drawline [red,ultra thick]) sensor strip (\drawline [blue!75!white,ultra thick]) connectors (\drawline [red!25!yellow,ultra thick])\relax }}{51}{figure.caption.91}
+\contentsline {figure}{\numberline {.1}{\ignorespaces USB connection (\drawline [red,ultra thick]) sensor strip (\drawline [blue!75!white,ultra thick]) connectors (\drawline [red!25!yellow,ultra thick])\relax }}{56}{figure.caption.94}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.2}{\ignorespaces connectors\relax }}{51}{figure.caption.92}
+\contentsline {figure}{\numberline {.2}{\ignorespaces connectors\relax }}{56}{figure.caption.95}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.3}{\ignorespaces USB\relax }}{52}{figure.caption.93}
+\contentsline {figure}{\numberline {.3}{\ignorespaces USB\relax }}{57}{figure.caption.96}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
