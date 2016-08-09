@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  8 AUG 2016 00:23
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  9 AUG 2016 18:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2039,7 +2039,13 @@ LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/sl' undefined
 
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/sl' will be
 (Font)              scaled to size 11.79573pt on input line 29.
-(./content/abstract.tex) (./content/introduction.tex
+(./content/abstract.tex
+Overfull \hbox (0.44133pt too wide) in paragraph at lines 3--4
+[][][]\EU1/SourceSerifPro(0)/m/sl/13 In the light of problems surrounding the u
+se of fossil fuels, photobioreactors emerge
+ []
+
+) (./content/introduction.tex
 chapter 1.
 ) (./content/motivation.tex
 chapter 2.
@@ -2227,6 +2233,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <4.54997> on input line 79.
 
+LaTeX Warning: Citation 'trankler2015sensortechnik' on page 18 undefined on inp
+ut line 79.
+
+
+Overfull \hbox (12.92923pt too wide) in paragraph at lines 79--80
+\EU1/SourceSerifPro(0)/m/sl/13 cell constant $[][]\OML/lmm/m/it/13 C$ \EU1/Sour
+ceSerifPro(0)/m/sl/13 of $[][]\OT1/lmr/m/n/13 1$ \EU1/SourceSerifPro(0)/m/sl/13
+ is the best compromise for our purpose. []
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
@@ -2263,12 +2280,6 @@ The command '\includegraphics [width=\textwidth ]{images/fpcbp.jpg}' has been o
 ptimized away. Use '/tikz/external/optimize=false' to disable this.
 
 LaTeX Warning: Citation 'ms' on page 20 undefined on input line 145.
-
-
-Overfull \hbox (4.07048pt too wide) in paragraph at lines 145--146
-[][]\EU1/SourceSerifPro(0)/m/sl/13 The matrix switches are an essential part of
- the system, enabling it use multiple sensors
- []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
@@ -2422,9 +2433,6 @@ Overfull \hbox (12.1546pt too wide) in paragraph at lines 405--417
 ) (./content/results.tex
 chapter 5.
 
-LaTeX Warning: Reference `obj' on page 31 undefined on input line 3.
-
-
 LaTeX Warning: Reference `fig:sensarray' on page 31 undefined on input line 13.
 
 
@@ -2494,12 +2502,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--230
  []
 
 
-LaTeX Warning: Reference `fig:senspos' on page 35 undefined on input line 240.
+LaTeX Warning: Reference `fig:senspos' on page 36 undefined on input line 239.
 
 \openout6 = `tikz-cache/document-figure9.dpth'.
 
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 14.15483pt on input line 305.
+(Font)              scaled to size 14.15483pt on input line 304.
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              You should note, that in 1994 font command `\bf' has
@@ -2512,10 +2520,10 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 305.
+(scrreprt)              by `\normalfont \bfseries ' on input line 304.
 
 LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/bx/n' will be
-(Font)              scaled to size 14.15483pt on input line 305.
+(Font)              scaled to size 14.15483pt on input line 304.
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              You should note, that in 1994 font command `\bf' has
@@ -2528,21 +2536,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 308.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 311.
+(scrreprt)              by `\normalfont \bfseries ' on input line 307.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -2556,7 +2550,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 314.
+(scrreprt)              by `\normalfont \bfseries ' on input line 310.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -2570,7 +2564,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 324.
+(scrreprt)              by `\normalfont \bfseries ' on input line 313.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -2584,7 +2578,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 327.
+(scrreprt)              by `\normalfont \bfseries ' on input line 323.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -2598,7 +2592,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 330.
+(scrreprt)              by `\normalfont \bfseries ' on input line 326.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -2612,9 +2606,23 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 333.
+(scrreprt)              by `\normalfont \bfseries ' on input line 329.
 
-[35
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 332.
+
+[36
 
 
 
@@ -2622,21 +2630,156 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 
 ]
 
-LaTeX Warning: Citation 'ts' on page 35 undefined on input line 336.
+LaTeX Warning: Citation 'ts' on page 36 undefined on input line 335.
 
 
-LaTeX Warning: Citation 'ts' on page 35 undefined on input line 336.
+LaTeX Warning: Citation 'ts' on page 36 undefined on input line 335.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+
+ []
+
+
+LaTeX Warning: Reference `fig:test2_7_scatter' on page 36 undefined on input li
+ne 348.
+
+
+LaTeX Warning: Citation 'savitzky1964smoothing' on page 36 undefined on input l
+ine 348.
+
+The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2_7_scatt
+er.pdf}' has been optimized away. Use '/tikz/external/optimize=false' to disabl
+e this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `fig:test2_37_adj' on page 37 undefined on input line 
+359.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `fig:test2' on page 37 undefined on input line 372.
 
 The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2.pdf}' h
 as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `fig:test2_on' on page 37 undefined on input line 382.
+
+
+
+Overfull \hbox (8.11014pt too wide) in paragraph at lines 382--383
+[][][]\EU1/SourceSerifPro(0)/m/sl/13 Another interesting data point is the the 
+behavior when the water flow is first switched
+ []
+
+The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2_on.pdf}
+' has been optimized away. Use '/tikz/external/optimize=false' to disable this.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `fig:test2_sim' on page 38 undefined on input line 392
+.
+
+The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2_sim.pdf
+}' has been optimized away. Use '/tikz/external/optimize=false' to disable this
+.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `fig:test3' on page 38 undefined on input line 404.
+
 The command '\includegraphics [width=0.8\textwidth ]{images/log080716_3.pdf}' h
 as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 The command '\includegraphics [width=0.8\textwidth ]{images/log080716_4.pdf}' h
 as been optimized away. Use '/tikz/external/optimize=false' to disable this.
-The command '\includegraphics [width=0.8\textwidth ]{images/log080716_5.pdf}' h
-as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 The command '\includegraphics [width=0.8\textwidth ]{images/log080716_6.pdf}' h
 as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 ) (./content/summary-and-outlook.tex
 chapter 6.
 ) (./content/appendix.tex
@@ -2654,22 +2797,19 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+The command '\includegraphics [width=0.5\textwidth ]{images/conn.jpg}' has been
+ optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=0.5\textwidth ]{images/usb.jpg}' has been 
+optimized away. Use '/tikz/external/optimize=false' to disable this.
 ) (./elements/abbreviations.tex
 chapter A.
 
-Underfull \hbox (badness 10000) in alignment at lines 8--11
+Underfull \hbox (badness 10000) in alignment at lines 8--29
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 29--29
 [] []
  []
 
@@ -2710,10 +2850,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66737 strings out of 493638
- 1500110 string characters out of 6146797
- 2127199 words of memory out of 5000000
- 69111 multiletter control sequences out of 15000+600000
+ 66751 strings out of 493638
+ 1500296 string characters out of 6146797
+ 2127214 words of memory out of 5000000
+ 69125 multiletter control sequences out of 15000+600000
  49725 words of font info for 100 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  74i,34n,106p,10478b,1936s stack positions out of 5000i,500n,10000p,200000b,80000s

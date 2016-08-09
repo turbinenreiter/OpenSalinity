@@ -27,7 +27,7 @@
 \newcommand\drawline[1][black]{%
 	\tikzset{external/export next=false}
   		\begin{tikzpicture}                                                           
-    			\draw[#1] (0pt,3pt) -- (16pt,3pt);
+    			\draw[#1, ultra thick] (0pt,3pt) -- (16pt,3pt);
     			\draw[white] (0pt,0pt) -- (18pt,0pt);                                  
   		\end{tikzpicture}%
 }

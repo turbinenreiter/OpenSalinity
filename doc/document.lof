@@ -50,7 +50,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. It shows the sensor size of \unit [10x11]{mm}, the horizontal distance between sensors of \unit [50]{mm} and the vertical distance of \unit [25]{mm}.\relax }}{39}{figure.caption.63}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. The sensor has a size of \unit [10x11]{mm}, the horizontal distance between the sensors is \unit [50]{mm} and the vertical distance \unit [25]{mm}.\relax }}{39}{figure.caption.63}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau $ the control volumes have moved. The sensor is covered by a mix of the two volumes.\relax }}{40}{figure.caption.65}
 \defcounter {refsection}{0}\relax 
@@ -62,25 +62,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Filter design - the scatter plot shows the raw data (\drawline [cyan]), filtered for local maxima (\drawline [blue]) and smoothed with a Savitzky-Golay filter (\drawline [red]).\relax }}{46}{figure.caption.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Sensor calibration - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared uncalibrated on the left and calibrated on the right.\relax }}{47}{figure.caption.84}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Sensor calibration - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared uncalibrated on the left and normalized on the right.\relax }}{47}{figure.caption.84}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Test No. 2 - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared. Signal four which is measured further upstream always changes before the downstream signal does.\relax }}{48}{figure.caption.85}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Behavior during the start of the water flow - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared uncalibrated on the left and calibrated on the right. Signal eight rises only after the inlet basin is completely filled which takes about \unit [4]{s}.\relax }}{49}{figure.caption.86}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Measurements of sensor four (\drawline [blue]) and sensor eight (\drawline [red]) during the start phase of the water flow. Signal eight rises only after the inlet basin is completely filled which takes about \unit [4]{s}.\relax }}{49}{figure.caption.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Test No.3 with a higher salinity than before - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{50}{figure.caption.87}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces The graphs show the data of sensor one (\drawline [blue]), two (\drawline [yellow!80!black]), four (\drawline [cyan]), five (\drawline [magenta!80!blue]), six (\drawline [green!70!black]) and eight (\drawline [red]), the scatter plots show the respective simulation results. The chosen time segment shows the upwards slope of the first rise in salinity after the switching of the feed.\relax }}{50}{figure.caption.87}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Test No. 4 using the impulse method - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{51}{figure.caption.88}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Test No.3 with a higher salinity than before - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{51}{figure.caption.88}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Test No. 6 impulse method with higher flow rate and lower salinity - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{52}{figure.caption.89}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Test No. 4 using the impulse method - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{52}{figure.caption.89}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Test No. 6 impulse method with higher flow rate and lower salinity - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{53}{figure.caption.90}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.1}{\ignorespaces USB connection (\drawline [red,ultra thick]) sensor strip (\drawline [blue!75!white,ultra thick]) connectors (\drawline [red!25!yellow,ultra thick])\relax }}{56}{figure.caption.94}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.2}{\ignorespaces connectors\relax }}{56}{figure.caption.95}
+\contentsline {figure}{\numberline {.1}{\ignorespaces USB connection (\drawline [red,ultra thick]) sensor strip (\drawline [blue!75!white,ultra thick]) connectors (\drawline [red!25!yellow,ultra thick])\relax }}{57}{figure.caption.96}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.3}{\ignorespaces USB\relax }}{57}{figure.caption.96}
+\contentsline {figure}{\numberline {.2}{\ignorespaces connectors\relax }}{57}{figure.caption.97}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {.3}{\ignorespaces USB\relax }}{58}{figure.caption.98}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

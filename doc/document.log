@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  9 AUG 2016 12:59
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  9 AUG 2016 18:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2543,13 +2543,9 @@ File: images/log080716_2_7_scatter.pdf Graphic file (type QTm)
 ===== Image 'tikz-cache/document-figure10' is up-to-date. ======
 File: tikz-cache/document-figure10.pdf Graphic file (type QTm)
 <use  "tikz-cache/document-figure10.pdf" >
-Overfull \hbox (2.52937pt too wide) in paragraph at lines 372--373
-\EU1/SourceSerifPro(0)/m/sl/13 can begin. Figure [][]5.8[][] shows a comparison
- of sensor four and eight. Signal four changes
- []
-
 File: images/log080716_2.pdf Graphic file (type QTm)
-<use  "images/log080716_2.pdf" > [47]
+ <use  "images/log080716_2.pdf" >
+[47]
 Overfull \hbox (8.11014pt too wide) in paragraph at lines 382--383
 [][][]\EU1/SourceSerifPro(0)/m/sl/13 Another interesting data point is the the 
 behavior when the water flow is first switched
@@ -2557,23 +2553,30 @@ behavior when the water flow is first switched
 
 File: images/log080716_2_on.pdf Graphic file (type QTm)
 <use  "images/log080716_2_on.pdf" > [48]
-File: images/log080716_3.pdf Graphic file (type QTm)
- <use  "images/log080716_3.pdf" >
+File: images/log080716_2_sim.pdf Graphic file (type QTm)
+ <use  "images/log080716_2_sim.pdf" >
 [49]
+File: images/log080716_3.pdf Graphic file (type QTm)
+ <use  "images/log080716_3.pdf" > [50]
 File: images/log080716_4.pdf Graphic file (type QTm)
- <use  "images/log080716_4.pdf" > [50]
+ <use  "images/log080716_4.pdf" >
+[51]
 File: images/log080716_6.pdf Graphic file (type QTm)
- <use  "images/log080716_6.pdf" >
-[51]) [52]
+ <use  "images/log080716_6.pdf" > [52]) [53]
 \openout2 = `content/summary-and-outlook.aux'.
 
- (./content/summary-and-outlook.tex
+
+(./content/summary-and-outlook.tex
 chapter 6.
-) [53
+[54
 
 
 
-] [54] [55
+]
+chapter 7.
+) [55
+
+] [56
 
 
 ]
@@ -2590,9 +2593,9 @@ Overfull \hbox (12.98259pt too wide) in paragraph at lines 7--25
 File: images/conn.jpg Graphic file (type QTm)
 <use  "images/conn.jpg" >
 File: images/usb.jpg Graphic file (type QTm)
- <use  "images/usb.jpg" > [56
+ <use  "images/usb.jpg" > [57
 
-] [57]) [58]
+] [58]) [59]
 \openout2 = `elements/abbreviations.aux'.
 
 
@@ -2608,22 +2611,22 @@ Underfull \hbox (badness 10000) in alignment at lines 29--29
 [] []
  []
 
-) [59
+) [60
 
 
 
 ]
 chapter B.
-(./document.lof [60
+(./document.lof [61
 
 
-] [61]
-Overfull \hbox (1.68013pt too wide) in paragraph at lines 69--69
- [][][][] [][][]\EU1/SourceSerifPro(0)/m/sl/13 Behavior during the start of the
- water flow - sensor four ( []) and sensor 
+] [62]
+Overfull \hbox (14.3293pt too wide) in paragraph at lines 53--53
+ \EU1/SourceSerifPro(0)/m/sl/13 sensor has a size of 10x11mm, the horizontal di
+stance between the sensors 
  []
 
-[62])
+[63])
 \tf@lof=\write8
 \openout8 = `document.lof'.
 
@@ -2633,7 +2636,7 @@ chapter C.
 \tf@lot=\write9
 \openout9 = `document.lot'.
 
- [63]
+ [64]
 chapter D.
 
 LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
@@ -2674,7 +2677,7 @@ l (2015). Sensortechnik: Handbuch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[64
+[65
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2705,12 +2708,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66910 strings out of 493638
- 1502472 string characters out of 6146797
- 2417926 words of memory out of 5000000
- 69194 multiletter control sequences out of 15000+600000
+ 66921 strings out of 493638
+ 1502658 string characters out of 6146797
+ 2418293 words of memory out of 5000000
+ 69204 multiletter control sequences out of 15000+600000
  49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,34n,106p,41580b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (64 pages).
+Output written on document.pdf (65 pages).
