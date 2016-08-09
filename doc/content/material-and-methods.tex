@@ -1,6 +1,6 @@
 \chapter{Design}
 
-Figure \ref{fig:isys} shows the device developed in this thesis. The following sections describes the design of the sensor system and all components involved.
+Figure \ref{fig:isys} shows the device developed in this thesis. The following section describes the design of the sensor system and all components involved.
 
 \begin{figure}[H]
 	\begin{center}
@@ -60,7 +60,7 @@ On the user-facing side there is a personal computer (PC). This PC runs software
 \end{tikzpicture}
 		%\input{images/system_design.tikz}
 		%\includegraphics[width=\textwidth]{images/systemdesign.pdf} 
-		\caption{System Design: the yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue are marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.}
+		\caption{System Design: the yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue area marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.}
 		\label{fig:sys}
 	\end{center}
 \end{figure}
@@ -69,14 +69,14 @@ To add further sensors to the system, two strategies are possible:
 
 \begin{itemize}
     \item by chaining up multiple stages of matrix switches, the number of electrodes can be increased eightfold with each stage
-    \item by connecting another MinieC Interface with it's own set of matrix switches to the microcontroller, 8 more electrodes can be added with each of these subsystems
+    \item by connecting another MinieC Interface with its own set of matrix switches to the microcontroller, 8 more electrodes can be added with each of these subsystems
 \end{itemize}
 
 The first option results in lower cost per added electrode, as the MinieC interface is reused. However, with a system like that, all electrodes have to be read in serial, while with the second option each MinieC interface can be read in parallel, resulting in a higher sample rate. Practically the second option is also easier to achieve. For the first option, a board with 18 matrix switches and 80 connections is needed, while the second option only uses 2 switches per board resulting in 16 connections. The simpler board greatly reduces complexity and can also be made smaller.
 
 \section{Electrodes}
 
-The electrode pairs are the actual sensors in contact with the fluid to be measured. Their material and geometry influence the measuring range of the system. According to  \textcite{trankler2015sensortechnik} a cell constant $ C $ of $1$ enables a range from \unitfrac[$2 \cdot 10^3$]{$\mu S$}{cm} to \unitfrac[$10 \cdot 10^3$]{$\mu S$}{cm}. For a water temperature of \unit[$18^\circ$]{C} this corresponds to salinities of \unit[0.12]{\%} and \unit[0.66]{\%}, which would be lower than stated in the requirements. Still, a cell constant $ C $ of $1$ is the best compromise for our purpose. The book also does not specify the materials influence on the range and it also does not specify how the usable range is defined, leaving room for a possibly higher than anticipated range. First bench tests confirmed this assumption.\\
+The electrode pairs are the actual sensors in contact with the fluid to be measured. Their material and geometry influence the measuring range of the system. According to  \textcite{trankler2015sensortechnik} a cell constant $ C $ of $1$ enables a range from \unitfrac[$2 \cdot 10^3$]{$\mu S$}{cm} to \unitfrac[$10 \cdot 10^3$]{$\mu S$}{cm}. For a water temperature of \unit[$18^\circ$]{C} this corresponds to salinities of \unit[0.12]{\%} and \unit[0.66]{\%}, which would be lower than those stated in the requirements. Still, a cell constant $ C $ of $1$ is the best compromise for our purpose. \textcite{trankler2015sensortechnik} also do not specify the material's influence on the range and also do not specify how the usable range is defined, leaving room for a possibly higher than anticipated range. First bench tests confirmed this assumption.\\
 
 Figure \ref{fig:sensor} shows the geometry of the sensor. To achieve a cell constant $C$ of $1$, a width $w$ of \unit[1]{mm}, height $h$ of \unit[10]{mm} and distance $d$ of \unit[10]{mm} were chosen.\\
 
@@ -106,9 +106,9 @@ Figure \ref{fig:sensor} shows the geometry of the sensor. To achieve a cell cons
 	\end{center}
 \end{figure}
 
-As a first proof-of-concept a sensor array was built, containing multiple electrode pairs on a strip, pictured in Figure \ref{fig:v2}. A \unit[50]{mm} wide and \unit[250]{mm} long band of Kapton adhesive tape served as the base. Four electrode pairs made from \unit[0.2]{mm} platinum wire were arranged equidistant on the strip. Eight \unit[0.4]{mm} enameled copper wire run along the tape to connect each electrode to the left end of the strip, from which insulated cables run to the carrier board. After soldering the joints, two smaller strips of tape were used to cover the wiring, exposing only the electrodes to fluid.
+As a first proof-of-concept a sensor array was built, containing multiple electrode pairs on a strip, pictured in Figure \ref{fig:v2}. A \unit[50]{mm} wide and \unit[250]{mm} long band of Kapton adhesive tape served as the base. Four electrode pairs made from \unit[0.2]{mm} platinum wire were arranged equidistant on the strip. Eight \unit[0.4]{mm} enameled copper wires were run along the tape to connect each electrode to the left end of the strip, from which insulated cables run to the carrier board. After soldering the joints, two smaller strips of tape were used to cover the wiring, exposing only the electrodes to fluid.
 
-First tests with this sensor array showed the viability of the concept, however a simple look at it shows the inherit problems: instead of a uniformly flat strip with minimal influence on the flow, the assembly forms several irregularities. Soldering \unit[0.2]{mm} platinum wire to \unit[0.4]{mm} enameled copper wire on a piece of adhesive tape per hand also did not result in clean solder joints. And while with the experience of the first array, the second array turned out a bit cleaner, the fundamental problem remains: it is a tedious manufacturing process resulting in a low quality product.
+First tests with this sensor array showed the viability of the concept, however a simple look at it shows the inherit problems: instead of a uniformly flat strip with minimal influence on the flow, the assembly forms several irregularities. Soldering \unit[0.2]{mm} platinum wire to \unit[0.4]{mm} enameled copper wire on a piece of adhesive tape per hand also did not result in clean solder joints. While, after the experience of the first array, the second array turned out a bit cleaner, the fundamental problem remains: it is a tedious manufacturing process resulting in a low quality product.
 
 \begin{figure}[H]
 	\begin{center}
@@ -118,7 +118,7 @@ First tests with this sensor array showed the viability of the concept, however 
 	\end{center}
 \end{figure}
 
-As an alternative to these handmade strips, industrially produced flex-PCBs were identified. Flex-PCBs are flexible printed circuit boards that are very close to the handmade arrays described above. They also use Kapton as base, on which a copper coating gets applied and is partially removed by etching to form the conducting paths. On top, another layer of Kapton is applied, with cutouts in the places where the copper is supposed to be exposed. The exposed copper is then plated with ENIG (Electroless nickel immersion gold) to protect the copper from oxidation and provide the landing pads for electrical components to be soldered on.
+As an alternative to these handmade strips, industrially produced flexible printed circuit boards (flex-PCB) were identified. Flex-PCBs are constructed similar to the handmade arrays described above. They also use Kapton as base, on which a copper coating is applied and partially removed by etching to form the conducting paths. On top, another layer of Kapton is applied, with cutouts in the places where the copper is supposed to be exposed. The exposed copper is then plated with ENIG (Electroless nickel immersion gold) to protect the copper from oxidation and provide the landing pads for electrical components to be soldered on.
 
 For our purpose those exposed and plated landing pads can be used as electrodes, being nicely embedded in a FlexPCB that also runs the wiring up to an interface from where cables can be run. Using the FlexPCB itself as cable is not viable due to the high cost per area. Instead, cables are soldered directly to the PCB and silicone is used to create a waterproof seal around the connection.\\
 
@@ -142,7 +142,7 @@ The final design for the sensor strip, as shown in Figure \ref{fig:fpcbd}, imple
 
 \section{Matrix Switches}
 
-The matrix switches are an essential part of the system, enabling it use multiple sensors with a single MinieC Interface, thus lowering the cost per sensor. The part used is an Analog Devices ADG738 . It is an 8-channel CMOS analog matrix switch controlled via a 3-wire serial interface. The following information is taken from the data sheet from \textcite{ms}.\\
+The matrix switches are an essential part of the system, enabling the use of multiple sensors with a single MinieC Interface, thus lowering the cost per sensor. The part used is an Analog Devices ADG738 . It is an 8-channel CMOS analog matrix switch controlled via a 3-wire serial interface. The following information is taken from the data sheet provided by the manufacturer \textcite{ms}.\\
 
 Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain pin (D) and 8 source pins (S1..S8). Despite the naming of drain and source, the internals provide simple switches between the drain and each source pin. The switches work in both directions without any restriction on the signal other than a maximum current of \unit[120]{mA}, which far exceeds our needs. By sending control commands via the SPI interface, each of the 8 internal switches can be turned on and off individually.\\
 
@@ -154,7 +154,7 @@ Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain
 	\end{center}
 \end{figure}
 
-The example timing diagram in Figure \ref{fig:msc} describes the data transmission process. The microcontroller sends one byte of data to the matrix switch. Each of the 8 bits of this byte controls one switch. The first bit controls the first switch and so on. If the bit is 1, the switch is closed, if 0, the switch is open. To send the byte, first the synchronization pin (SYNC) has to be pulled low from it's usual high level. A clock signal is provided to the clock pin (SCLK). At each falling edge of the clock signal, the data input (DIN) is read - where high leads to a 1-bit and low to a 0-bit. After 8 cycles, SYNC is pulled high again marking the end of data transmission with a full byte transferred. After that, the switches immediately take their instructed states with switching times in the order of \unit[100]{ns}. The complete process of transferring one byte an switching to the new state takes about \unit[520]{$\mu$s}.\\
+The example timing diagram in Figure \ref{fig:msc} describes the data transmission process. The microcontroller sends one byte of data to the matrix switch. Each of the 8 bits of this byte controls one switch. The first bit controls the first switch and so on. If the bit is 1, the switch is closed, if 0, the switch is open. To send the byte, first the synchronization pin (SYNC) has to be pulled low from it's usual high level. A clock signal is provided to the clock pin (SCLK). At each falling edge of the clock signal, the data input (DIN) is read - where high leads to a 1-bit and low to a 0-bit. After 8 cycles, SYNC is pulled high again marking the end of data transmission with a full byte transferred. After that, the switches immediately take their instructed states with switching times in the order of \unit[100]{ns}. The complete process of transferring one byte and switching to the new state takes about \unit[520]{$\mu$s}.\\
 
 \begin{figure}
 	\begin{center}
@@ -170,15 +170,15 @@ The example timing diagram in Figure \ref{fig:msc} describes the data transmissi
 	\end{center}
 \end{figure}
 
-Multiple matrix switches can be controlled at once by daisy-chaining the data output pin (DOUT) of the first device to DIN of the second one, and on so forth. Both SYNC and SCLK are connected to the same bus. This assures that all matrix switches are set in the same state and at the same time and is important for our use case to synchronize the two used ADG378 parts.
+Multiple matrix switches can be controlled at once by daisy-chaining the data output pin (DOUT) of the first device to DIN of the second one, and so forth. Both SYNC and SCLK are connected to the same bus. This assures that all matrix switches are set in the same state and at the same time which is important for our case to synchronize the two used ADG378 parts.
 
 \section{MinieC Interface}
 
 The MinieC Interface contains the electronics to perform the resistance measurement. It contains several parts used to generate an electrical signal, run it through a circuit in which the liquid to be measured serves as a resistor and measure the voltage drop over it.\\
 
-The first part is a TPS6040 charge pump voltage inverter. It's purpose is to generate a negative output voltage from a positive input. This negative voltage and the positive voltage are needed to drive a Wien bridge oscillator. This oscillator outputs a sine wave voltage oscillating between the positive and negative input voltage. This whole first stages purpose is to generate an alternating current to be used in the measurement, avoiding the polarization effects described before.\\
+The first part is a charge pump voltage inverter. Its purpose is to generate a negative output voltage from a positive input. This negative voltage and the positive voltage are needed to drive a Wien bridge oscillator. This oscillator outputs a sine wave voltage oscillating between the positive and negative input voltage. This whole first stage's purpose is to generate an alternating current to be used in the measurement, avoiding the polarization effects described before.\\
 
-The AC signal provided by the first stage is then fed into an operational amplifier (opamp). An opamp is a part that has two input signals and one output, where the output is proportional to the difference of the input signals. In our use case, the opamp's output is pulled to ground via a voltage divider as shown in Figure \ref{fig:opamp}. The first resistor $R_i$ in the divider is fixed, while the second one $R$ is the liquid to be measured. The output voltage of this divider is depended on the liquids resistance. This voltage is then fed back into the second input of the OpAmp. Via this feedback, the output (OUT) of the opamp is now the input signal (SIG) modulated in amplitude by the resistance of the liquid.
+The AC signal provided by the first stage is then fed into an operational amplifier (opamp). An opamp is a part that has two input signals and one output, where the output is proportional to the difference of the input signals. In our case, the opamp's output is pulled to ground via a voltage divider as shown in Figure \ref{fig:opamp}. The first resistor $R_i$ in the divider is fixed, while the second one $R$ is the liquid to be measured. The output voltage of this divider is depended on the liquid's resistance. This voltage is then fed back into the second input of the OpAmp. Via this feedback, the output (OUT) of the opamp is now the input signal (SIG) modulated in amplitude by the resistance of the liquid.
 
 \begin{figure}[H]
 	\begin{center}
@@ -228,8 +228,8 @@ Figure \ref{fig:swnocap} shows the response to the same switching as before, but
 
 \section{Microcontroller} \label{uc}
 
-The microcontroller has to be able to control the functions of the sensor nodes attached to it, read the data from them, log it and serve it to the user-interface. They usually are programmed in C or C++, however in recent years other options emerged. One of those is \textcite{upy}, which is an implementation of the Python 3 programming language designed to run on microcontrollers. As a scripting language Python is a vastly easier language to work with than C/C++, and helps to sped up the development process. Scripting languages also often are familiar from usage for data processing and visualization. Using MicroPython allows us to design a system where it is more likely that the people using it are able to quickly understand the code, enabling them to improve it and adapt it to alternate use-cases.
-It does however limit our choice of hardware to supported platforms and it requires more powerful and thereby expensive micro-controllers. But as the system only requires one microcontroller to drive a very large amount of sensors, the added cost is relative and outweighed by the benefits of the better usability.\\
+The microcontroller has to be able to control the functions of the sensor nodes attached to it, read the data from them, log it and serve it to the user-interface. They usually are programmed in C or C++, however in recent years other options emerged. One of those is \textcite{upy}, which is an implementation of the Python 3 programming language designed to run on microcontrollers. As a scripting language Python is a vastly easier language to work with than C/C++, and helps to speed up the development process. Scripting languages are also often familiar to the targeted users of this device from usage for data processing and visualization. Using MicroPython allows us to design a system where it is more likely that the people using it are able to quickly understand the code, enabling them to improve or adapt it for alternative purposes.
+It does however limit our choice of hardware to supported platforms and it requires more powerful and thus more expensive micro-controllers. But as the system only requires one microcontroller to drive a very large amount of sensors, the added cost is relatively small and outweighed by the benefits of the better usability.\\
 
 For prototyping, a development board named "Espruino Pico" was chosen. It is a very small and simple board that provides the electrical boilerplate to use a micro-controller without needing to deal with the lowest level of electronics. It provides a stable power supply and a USB connection to a host PC for programming and to export the collected data.
 
@@ -239,7 +239,7 @@ The carrier board is a simple printed circuit board (PCB) implementing all parts
 
 In the middle there are two matrix switches. They can either be directly soldered on as in this image or they can be soldered to an adapter board that is again mounted to the carrier with pin header connectors in the inner rows of through-holes.  The outer through-holes are where the connectors for the cables to the sensors are mounted.
 
-The MineeC is located on the right side. It also can be either directly soldered or used with pin header connectors. Additionally, two wires have to be run to the carrier board because of an misalignment of ports due to a design error.
+The MineeC is located on the right-hand side. It can also be either directly soldered or used with pin header connectors. Additionally, two wires have to be run to the carrier board because of a misalignment of ports due to a design flaw.
 
 The design is tailored for use as a prototype. That means that everything is made bigger than necessary, which allows for easier modifications. All used pins are replicated on additional through-holes, making them accessible for measuring equipment like an oscilloscope or multimeter. It is also kept modular, so that each part can be swapped out separately. A later redesign would integrate all boards into one and try to reduce size, which in turn saves money on PCB manufacturing. However, the prototype showed no critical design errors and is fully functional, so the next design step is only necessary when more boards are needed.
 
@@ -302,7 +302,7 @@ The data is sent in a simple format described in the Listing \ref{lst:format}. O
 		\draw [dashed] (-2.5,17) -- (-2.5,-0.5);
 	%\end{pgfonlayer}
 \end{tikzpicture}
-		\caption{Embedded Software Flow Diagram - If the power state of the device is "on" and  the control state is "start" data is collected. The control state is set by a signal sent from the GUI and can be changed asynchronously. Data collection is done in a while-loop that runs as long as the iterator i is smaller than the number of sensors n. In the loop, first the Matrix Switches are set to the i-th sensor, then the ADC is read and afterwards a timestamp is created. When the cycle through all sensors is finished the data is sent to the GUI. Then the loop is started again. This happens until either the control state switches to "stop" or the power state to "off.}
+		\caption{Embedded Software Flow Diagram - If the power state of the device is "on" and  the control state is "start" data is collected. The control state is set by a signal sent from the GUI and can be changed asynchronously. Data collection is done in a while-loop that runs as long as the iterator i is smaller than the number of sensors n. In the loop, first the Matrix Switches are set to the i-th sensor, then the ADC is read and afterwards a timestamp is created. When the cycle through all sensors is finished the data is sent to the GUI. Then the loop is started again. This happens until either the control state switches to "stop" or the power state to "off".}
 		\label{fig:flow}
 	\end{center}
 \end{figure}
@@ -315,11 +315,11 @@ The OpenSalinity GUI is a Graphical User Interface (GUI) designed to simplify an
 	\item Storing all sensor data to a file.
 	\item Choosing a file to which the data is stored.
 	\item Starting and Stopping the data capture.
-	\item Visualize the data.
+	\item Visualizing the data.
 \end{itemize}
 
 The Save button allows to create the file to be written to and offers a default file name containing the date and time of the creation, helping to keep the data logs in order. Once a file to save to is chosen the data capturing can be started.
-The live visualization is a bar graph showing each sensors current measurement, allowing to monitor the ongoing experiment. In addition to size, the bars are also color coded, shifting from red to blue with increasing salinity.\\
+The live visualization is a bar graph showing each sensor's current measurement, allowing to monitor the ongoing experiment. In addition to size, the bars are also color coded, shifting from red to blue with increasing salinity.\\
 
 \begin{figure}[H]
 	\begin{center}
@@ -329,13 +329,13 @@ The live visualization is a bar graph showing each sensors current measurement, 
 	\end{center}
 \end{figure}
 
-The software again is written in Python, using GTK+ as GUI toolkit and pyserial to communicate with the microcontroller. It was developed and testes on a Linux based operating system, however due the nature of the used programming language and toolkits it is cross-platform and can be run on Windows and OSX also.\\
+The software again is written in Python, using GTK+ as GUI toolkit and pyserial to communicate with the microcontroller. It was developed and tested on a Linux-based operating system, however, due the nature of the used programming language and toolkits it is cross-platform and can be run on Windows and OSX also.\\
 
 In addition to or as replacement of the GUI, a set of standard command line tools can be used. These tools allow for a redundant capturing of the sensor data and for an alternative visualization. Usage of those is less intuitive but they are more robust and faster than the GUI. A detailed manual on how to use those tools as well as the GUI is provided in the Appendix.
 
 \section{Data Conditioning}
 
-Before the data can be analyzed it has to be conditioned to deal with certain peculiarities of the embedded software. This is done in post processing rather than during the data capturing to minimize overhead and retain high sampling rates.\\
+Before the data can be analyzed it has to be conditioned to deal with certain peculiarities of the embedded software. This is done in post-processing rather than during the data capturing to minimize overhead and retain high sampling rates.\\
 
 The microcontroller measures time since start up by counting clock cycles. These are converted to microseconds stored as an integer value. The microcontroller is a 32-bit architecture, however the Micropython implementation uses 2 bits for data type identification, leaving 30 bits for data. This means the counter can count from $-2147483647$ to $2147483647$, resulting in a wrap around roughly every $8.9$ minutes. In the data conditioning phase, these wrapping times are translated to a rolling time since start-up. This is done by scanning for the first time value that is smaller than its predecessor and then adding the value of $2^{30}$ to all following values. This is repeated until all time values are corrected. Figure \ref{fig:wrap} visualizes the algorithm.\\
 
@@ -369,7 +369,7 @@ The microcontroller measures time since start up by counting clock cycles. These
 
 \section{Bill of Materials} \label{BOM}
 
-The bill of materials collects all used components, their price and a possible source in the Table \ref{tab:bom}. Except for the MinieC Interface multiple sources are available for all parts. In case it becomes unavailable, the hardware design files are provided to have them manufactured by a different source. The Espruino Pico also comes from a small manufacturer and may not be available in the future. However, alternatives are plentiful and can be used either with simple jumper cables or by redesigning the carrier board.
+The bill of materials collects all used components, their price and a possible source in Table \ref{tab:bom}. Except for the MinieC multiple sources are available for all parts. In case it becomes unavailable, the hardware design files are provided, tso they could be manufactured by a different source if need be. The Espruino Pico also comes from a small manufacturer and may not be available in the future. However, alternatives are plentiful and can be used either with simple jumper cables or by redesigning the carrier board to accommodate the different footprint.
 
 The carrier board and sensor strip are made to order by PCB makers. Generally, any manufacturer will be able to produce the boards with the provided design files, however the size limits and corresponding prices can vary. The prices also strongly depend on lot size. The prices in the table are the prices per piece for a lot of ten carrier boards and 16 sensor strips.
 
@@ -395,7 +395,7 @@ The carrier board and sensor strip are made to order by PCB makers. Generally, a
 
 \section{Collection of Software}
 
-Table \ref{tab:sw} lists all software used in this project, including the version numbers. All involved software is Open Source and can be obtained freely. The packages used to analyze and plot the data are provided at the end of the list, however the documented data format should enable the user to replace those with whatever tools he or she is most comfortable with. All sources written during this project are provided under the MIT license.
+Table \ref{tab:sw} lists all software used in this project, including the version numbers. All involved software is Open Source and can be obtained freely. The packages used to analyze and plot the data are provided at the end of the list, however, the documented data format should enable the user to replace those with whatever tools he or she is most comfortable with. All software written during this project are provided under the MIT license.
 
 \begin{table}[H]
     \centering

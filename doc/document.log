@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  8 AUG 2016 16:30
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  9 AUG 2016 12:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2045,17 +2045,7 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 LaTeX Warning: Label `fig:opamp' multiply defined.
 
 ) (./content/results.aux) (./content/summary-and-outlook.aux)
-(./content/appendix.aux
-
-LaTeX Warning: Label `fig:isys' multiply defined.
-
-
-LaTeX Warning: Label `fig:isys' multiply defined.
-
-
-LaTeX Warning: Label `fig:isys' multiply defined.
-
-) (./elements/abbreviations.aux))
+(./content/appendix.aux) (./elements/abbreviations.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -2074,7 +2064,8 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 21.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 21.
- (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 21.
@@ -2384,12 +2375,6 @@ File: images/fpcbd.pdf Graphic file (type QTm)
  <use  "images/fpcbd.pdf" >
 File: images/fpcbp.jpg Graphic file (type QTm)
  <use  "images/fpcbp.jpg" >
-Overfull \hbox (4.07048pt too wide) in paragraph at lines 145--146
-[][]\EU1/SourceSerifPro(0)/m/sl/13 The matrix switches are an essential part of
- the system, enabling it use multiple sensors
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
@@ -2548,17 +2533,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
-
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
-[45]
 File: images/log080716_2_7_scatter.pdf Graphic file (type QTm)
- <use  "images/log080716_2_7_scatter.pdf" >
+<use  "images/log080716_2_7_scatter.pdf" > [46]
 ===== Image 'tikz-cache/document-figure10' is up-to-date. ======
 File: tikz-cache/document-figure10.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure10.pdf" > [46]
+<use  "tikz-cache/document-figure10.pdf" >
 Overfull \hbox (2.52937pt too wide) in paragraph at lines 372--373
 \EU1/SourceSerifPro(0)/m/sl/13 can begin. Figure [][]5.8[][] shows a comparison
  of sensor four and eight. Signal four changes
@@ -2616,6 +2600,11 @@ File: images/usb.jpg Graphic file (type QTm)
 chapter A.
 
 Underfull \hbox (badness 10000) in alignment at lines 8--29
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 29--29
 [] []
  []
 
@@ -2716,10 +2705,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66906 strings out of 493638
- 1502427 string characters out of 6146797
- 2417329 words of memory out of 5000000
- 69190 multiletter control sequences out of 15000+600000
+ 66910 strings out of 493638
+ 1502472 string characters out of 6146797
+ 2417926 words of memory out of 5000000
+ 69194 multiletter control sequences out of 15000+600000
  49717 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,34n,106p,41580b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s

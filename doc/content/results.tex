@@ -69,14 +69,14 @@ This grid size is the physical limitation of the spacial resolution and by being
 	\end{center}
 \end{figure}
 
-Due to the coupling of the spacial and time resolutions via the streams velocity as shown in Equation \eqref{eq:resv2}, this however is not sufficient to verify the requirement. 
+Due to the coupling of the spacial and time resolutions via the streams velocity as shown in Equation \eqref{eq:resv2} this is not sufficient to verify the requirement. 
 
 \begin{equation}
 	v = \dfrac{\diff s}{\diff t}
 \label{eq:resv2} 
 \end{equation}
 
-A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0.01]{s}. However, this assumes the size $ l $ of the sensor and the time $ \tau $ a measurement takes to be infinitesimal small, which in reality they are not. While the sensor measures, the flow continuous and instead of measuring the conductivity of a certain volume at a certain time, an average is measured. Figure \ref{fig:cv} visualizes this issue.
+A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0.01]{s}. However, this assumes the size $ l $ of the sensor and the time $ \tau $ a measurement takes to be infinitesimal small, which in reality they are not. While the sensor measures, the flow continues and instead of measuring the conductivity of a certain volume at a certain time, an average is measured. Figure \ref{fig:cv} visualizes this issue.
 
 \begin{figure}
 	\begin{center}
@@ -140,7 +140,7 @@ The ratio $ r $
 	r = \frac{k}{n}
 \label{eq:resr} 
 \end{equation}
-is the ratio of the time it takes a control volume to enter and leave the sensor area  to the time a measurement takes. Its inverse is the movement of the control volume during the measurement time and thereby the percentage by which the measured volume is bigger than the control volume. A ratio of 1 on would mean the measured volume is two times the sensor size, thereby halving the spacial resolution. To keep the resolution close the the sensor size, a ratio of 4, increasing the measured volume by \unit[25]{\%} is viable.
+is the ratio of the time it takes a control volume to enter and leave the sensor area  to the time a measurement takes. Its inverse is the movement of the control volume during the measurement time and thereby the percentage by which the measured volume is bigger than the control volume. A ratio of one would mean the measured volume is two times the sensor size, thereby halving the spacial resolution. To keep the resolution close the the sensor size, a ratio of 4, increasing the measured volume by \unit[25]{\%} is viable.
 With the given sensor size and flow speed, a measurement time $ \tau $ of \unit[0.0025]{s} or \unit[2.5]{ms} is needed.\\
 
 To test if the time resolution matches this, the measurement time itself can be timed. The difference between two adjacent times, i.e. the first time (\unit[975209221]{ns}) and the second time (\unit[975209961]{ns}), in the data set in Listing \ref{lst:data} is the measurement time of \unit[740]{ns}. The mean of the differences through the whole data set is \unit[748]{ns}. This means that the measurement is more than three times faster than required, showing that the time resolution easily matches the spacial resolution.
@@ -205,12 +205,12 @@ This price does not include the host PC as the PCs already installed in the labo
 \item  The system shall be deployable in the algae reactor.\\
 \end{itemize}
 
-The deployability was demonstrated during two test campaigns on the reactor. Figures \ref{fig:stripsr} and \ref{fig:pcr} show the set up during the tests. The host PC can be placed on a desk beside the reactor and connected to the carrier board with a USB cable. The carrier board can also be placed on desk or temporarily mounted on the reactor. The sensor strips connect to the carrier board with \unit[1]{m} long cables and are attached to the reactor with electrical tape.
+The deployability was demonstrated during two test campaigns on the reactor. Figures \ref{fig:stripsr} and \ref{fig:pcr} show the set up during the tests. The host PC can be placed on a desk next to the reactor and be connected to the carrier board with a USB cable. The carrier board can also be placed on the desk or temporarily be mounted on the reactor. The sensor strips connect to the carrier board with \unit[1]{m} long cables and are attached to the reactor with electrical tape.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/stripsinreactor.jpg} 
-		\caption{The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit[1]{m} length run towards the carrier board which is not in the frame.}
+		\caption{The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit[1]{m} length run towards the carrier board.}
 	\label{fig:stripsr}
 	\end{center}
 \end{figure}
@@ -229,7 +229,7 @@ The deployability was demonstrated during two test campaigns on the reactor. Fig
 \item  The system shall be usable with a minimal set of written instructions.\\
 \end{itemize}
 
-The instruction manual for taking a series of measurements can be found in the Appendix. First, an image describes the different parts of the system relevant to the user. After that a step-by-step description with images helps the user through the process. In a test, a person not familiar with the device, but generally familiar with laboratory equipment, was able to successfully conduct measurements within minutes by following the manual. It is however to note that errors in the software occurring in certain situations can quickly destroy this ease of use.
+The instruction manual for taking a series of measurements can be found in the Appendix. First, an image describes the different parts of the system relevant to the user. After that a step-by-step description with images helps the user through the process. In a test, a person not familiar with the device, but generally familiar with laboratory equipment, was able to successfully conduct measurements within minutes by following the manual. However, there is to note that errors in the software occurring in certain situations can quickly destroy this ease of use. Further testing needs to be done to surface those errors so they can be fixed.
 
 \section{Validation} \label{val}
 
@@ -356,7 +356,7 @@ Figure \ref{fig:test2_7_scatter} shows a plot of the a slice of data taken by se
 	\end{center}
 \end{figure}
 
-In Figure \ref{fig:test2_37_adj} the data for sensors four and eight are compared. In the left plot a difference in the scale of the graphs can be seen. This scaling offset is a result of the different internal resistance along each sensors conductive path as well as the thickness of the water film on the electrodes. For our comparison this scaling is unfavorably as the slopes of the signal changing over time are of interest, which are influenced by the absolute values. To counter this, all data is calibrated by calculating a mean value over an undisturbed data sample and scaling it to the first sensor.
+In Figure \ref{fig:test2_37_adj} the data for sensors four and eight are compared. In the left plot a difference in the scale of the graphs can be seen. This scaling offset is a result of the different internal resistance along each sensor's conductive path as well as the amount of  water over on the electrodes. On the weir, there is just a thin water film, while the basin is much deeper. For our comparison this scaling is unfavorably as the slopes of the signal changing over time are of interest, which are influenced by the absolute values. To counter this, all data is calibrated by calculating a mean value over an undisturbed data sample and scaling it to the first sensor.
 
 \begin{figure}[H]
 	\begin{center}
@@ -379,7 +379,7 @@ With the data now properly filtered and scaled interpretation of the measurement
 	\end{center}
 \end{figure}
 
-Another interesting data point is the the behavior when the water flow is first switched on. Figure \ref{fig:test2_on} shows the signals during this phase. Signal four in the inlet basin rises first, signal eight rises about \unit[4]{s} later. This is the time it takes the empty basin to fill up completely, only after that the water flows over weir. At a flow rate of \unitfrac[1.6]{l}{s}, this suggest a volume of the inlet basin of around \unit[6.4]{l}. The real volume calculated from the schematics is about \unit[6]{l}.
+Another interesting data point is the the behavior when the water flow is first switched on. Figure \ref{fig:test2_on} shows the signals during this phase. Signal four in the inlet basin rises first, signal eight rises about \unit[4]{s} later. This is the time it takes the empty basin to fill up completely, only after that the water flows over the weir. At a flow rate of \unitfrac[1.6]{l}{s}, this suggests a volume of the inlet basin of around \unit[6.4]{l}. The real volume calculated from the schematics is about \unit[6]{l}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -417,7 +417,7 @@ While maintaining the previous volume and flow rate, this test used the impulse 
 
 \textbf{Test No. 6}
 
-Again the impulse method was used but with an increased flow rate of \unitfrac[2]{l}{s} and a lower salinity of \unit[6.7]{\%}. The time from first to second peak is now about \unit[40]{s}, as expected to the higher flow rate. The voltages are also a little lower because of the lower salinity.
+Again the impulse method was used but with an increased flow rate of \unitfrac[2]{l}{s} and a lower salinity of \unit[6.7]{\%}. The time from first to second peak is now about \unit[40]{s}, as expected due to the higher flow rate. The voltages are also a little lower because of the lower salinity.
 
 \begin{figure}[H]
 	\begin{center}
@@ -428,4 +428,4 @@ Again the impulse method was used but with an increased flow rate of \unitfrac[2
 	\end{center}
 \end{figure}
 
-After proper filtering and scaling of the data, all conducted tests showed results consistent with the expected behavior of the bioreactor. The problem of the limited range of the sensors did not negatively impact the measurement, as the occurring salinities were lower than initially estimated. Given the new information, a range going only as high as \unit[2.5]{\%} proves sufficient. The developed system provides a low-cost electrical conductivity meter for liquids suitable to be used as an aid to measure and analyze the flow in a photobioreactor and thereby succeeds in meeting the goal of the project.
+After proper filtering and scaling of the data, all conducted tests showed results consistent with the expected behavior of the bioreactor. The problem of the limited range of the sensors did not negatively impact on the measurement, as the occurring salinities were lower than initially estimated. Given the new information, a range going only as high as \unit[2.5]{\%} proves sufficient. The developed system provides a low-cost electrical conductivity meter for liquids suitable to be used as an aid to measure and analyze the flow in a photobioreactor and thereby succeeds in meeting the goal of the project.
