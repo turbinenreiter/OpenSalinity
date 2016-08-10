@@ -1,0 +1,6 @@
+	[Desktop Entry]
+	Name=OpenSalinityGUI
+	Exec=python3 /home/plam/Documents/Semesterarbeit/OpenSalinity/src/vis/vis.py
+	Icon=clipit
+	Type=Application
+	Categories=GTK;GNOME;Utility;
