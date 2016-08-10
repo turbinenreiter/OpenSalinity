@@ -159,7 +159,7 @@ To test if the time resolution matches this, the measurement time itself can be 
 \item The system shall have a range from 0 to \unit[5]{\%} salinity.
 \end{itemize}
 
-Table \ref{tab:rns} shows the results of measurements of solutions with different salinities. A \unit[10]{\%} solution was created by adding \unit[10]{g} of salt to \unit[100]{ml} of demineralized water. The subsequent solutions resulted from diluting the original one by adding more water.
+Table \ref{tab:rns} shows the results of measurements of solutions with different salinities. A \unit[10]{\%} solution was created by adding \unit[5]{g} of salt to \unit[50]{ml} of demineralized water. The subsequent solutions resulted from diluting the original one by adding more water.
 
 The measurable change of the voltage was visible at the drop from a salinity of \unit[5]{\%} to \unit[2.5]{\%}. Between \unit[10]{\%} and \unit[5]{\%} no difference was measurable at all. The upper range limit can therefore be placed between at \unit[2.5]{\%}, above those values the sensor is saturated, providing only the information that the salinity is above the threshold.
 
