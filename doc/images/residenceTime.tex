@@ -1,0 +1,39 @@
+\tikzset{external/export next=false}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin=0, xmax=6,
+        ymin=0, ymax=11,
+        scaled x ticks=false,
+        xlabel={Time, s},
+        ylabel={Concentration, a.u.},
+        width=8cm, height=6cm, 
+        ignore legend,
+        xticklabel style={
+            /pgf/number format/fixed,
+            /pgf/number format/precision=1
+        },
+        yticklabel style={
+            /pgf/number format/fixed,
+            /pgf/number format/precision=1,
+        },
+        ytick={1,5,10},
+        % only 0, not 0.0
+        yticklabel={\ifdim\tick pt=0pt 0 \else\pgfmathprintnumber{\tick}\fi},
+        xticklabel={\ifdim\tick pt=0pt 0 \else\pgfmathprintnumber{\tick}\fi},
+        ]
+    
+        \pgfplotstableread[col sep=semicolon]{data/residenceTime.csv}{\residenceTable}
+        
+        \addplot[red!80!white, very thick, mark=none] table[x={time}, y={yIn}, col sep=semicolon] {\residenceTable};
+        \addlegendentry{Input Step}
+        \label{graph:channel_velocity-1degree_U}
+        
+        \addplot[blue!80!white, very thick, mark=none, dashed] table[x={time}, y={Reactor 2}, col sep=semicolon] {\residenceTable};
+        \addlegendentry{Reactor response \#1}
+        \label{graph:channel_velocity-1degree_U}
+        
+%        \addplot[blue!75!white, very thick, mark=none, dashed] table[x={time}, y={Reactor 3}, col sep=semicolon] {\residenceTable};
+%        \addlegendentry{Reactor response \#2}
+%        \label{graph:channel_velocity-1degree_U}
+    \end{axis}
+\end{tikzpicture}

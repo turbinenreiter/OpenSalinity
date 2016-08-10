@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  9 AUG 2016 18:10
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  10 AUG 2016 14:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2475,21 +2475,34 @@ s, the measurement time itself can be timed.
  []
 
 
-LaTeX Warning: Reference `tab:rns' on page 33 undefined on input line 162.
+LaTeX Warning: Reference `tab:rns' on page 33 undefined on input line 161.
 
 
-LaTeX Warning: Reference `BOM' on page 34 undefined on input line 198.
+LaTeX Warning: Reference `fig:rns' on page 33 undefined on input line 161.
+
+(./images/sal_sens_range.tex
+\openout6 = `tikz-cache/document-figure9.dpth'.
+
+[34
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+
+
+])
+
+LaTeX Warning: Reference `BOM' on page 34 undefined on input line 206.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-LaTeX Warning: Reference `fig:stripsr' on page 34 undefined on input line 208.
+LaTeX Warning: Reference `fig:stripsr' on page 35 undefined on input line 216.
 
 
-LaTeX Warning: Reference `fig:pcr' on page 34 undefined on input line 208.
+LaTeX Warning: Reference `fig:pcr' on page 35 undefined on input line 216.
 
 The command '\includegraphics [width=0.8\textwidth ]{images/stripsinreactor.jpg
 }' has been optimized away. Use '/tikz/external/optimize=false' to disable this
@@ -2497,161 +2510,41 @@ The command '\includegraphics [width=0.8\textwidth ]{images/stripsinreactor.jpg
 The command '\includegraphics [width=0.8\textwidth ]{images/pconreactor.jpg}' h
 as been optimized away. Use '/tikz/external/optimize=false' to disable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
-LaTeX Warning: Reference `fig:senspos' on page 36 undefined on input line 239.
-
-\openout6 = `tikz-cache/document-figure9.dpth'.
-
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 14.15483pt on input line 304.
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 304.
-
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/bx/n' will be
-(Font)              scaled to size 14.15483pt on input line 304.
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 307.
+LaTeX Warning: Reference `aman' on page 35 undefined on input line 240.
 
 
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 310.
+LaTeX Warning: Reference `fig:senspos' on page 36 undefined on input line 247.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Citation 'ts' on page 36 undefined on input line 343.
 
 
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 313.
+LaTeX Warning: Citation 'ts' on page 36 undefined on input line 343.
 
 
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 323.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 326.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 329.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 332.
-
-[36
-
-
-
-
-
-]
-
-LaTeX Warning: Citation 'ts' on page 36 undefined on input line 335.
-
-
-LaTeX Warning: Citation 'ts' on page 36 undefined on input line 335.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
 
 LaTeX Warning: Reference `fig:test2_7_scatter' on page 36 undefined on input li
-ne 348.
+ne 356.
 
 
 LaTeX Warning: Citation 'savitzky1964smoothing' on page 36 undefined on input l
-ine 348.
+ine 356.
 
 The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2_7_scatt
 er.pdf}' has been optimized away. Use '/tikz/external/optimize=false' to disabl
@@ -2670,7 +2563,7 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `fig:test2_37_adj' on page 37 undefined on input line 
-359.
+367.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -2683,7 +2576,7 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `fig:test2' on page 37 undefined on input line 372.
+LaTeX Warning: Reference `fig:test2' on page 37 undefined on input line 380.
 
 The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2.pdf}' h
 as been optimized away. Use '/tikz/external/optimize=false' to disable this.
@@ -2696,11 +2589,11 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `fig:test2_on' on page 37 undefined on input line 382.
+LaTeX Warning: Reference `fig:test2_on' on page 38 undefined on input line 390.
 
 
 
-Overfull \hbox (8.11014pt too wide) in paragraph at lines 382--383
+Overfull \hbox (8.11014pt too wide) in paragraph at lines 390--391
 [][][]\EU1/SourceSerifPro(0)/m/sl/13 Another interesting data point is the the 
 behavior when the water flow is first switched
  []
@@ -2717,7 +2610,7 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `fig:test2_sim' on page 38 undefined on input line 392
+LaTeX Warning: Reference `fig:test2_sim' on page 38 undefined on input line 400
 .
 
 The command '\includegraphics [width=0.8\textwidth ]{images/log080716_2_sim.pdf
@@ -2748,7 +2641,7 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `fig:test3' on page 38 undefined on input line 404.
+LaTeX Warning: Reference `fig:test3' on page 39 undefined on input line 412.
 
 The command '\includegraphics [width=0.8\textwidth ]{images/log080716_3.pdf}' h
 as been optimized away. Use '/tikz/external/optimize=false' to disable this.
@@ -2782,6 +2675,7 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 ) (./content/summary-and-outlook.tex
 chapter 6.
+chapter 7.
 ) (./content/appendix.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -2850,12 +2744,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \iftrue on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 66751 strings out of 493638
- 1500296 string characters out of 6146797
- 2127214 words of memory out of 5000000
- 69125 multiletter control sequences out of 15000+600000
- 49725 words of font info for 100 fonts, out of 8000000 for 9000
+ 67088 strings out of 493638
+ 1511519 string characters out of 6146797
+ 2126214 words of memory out of 5000000
+ 69461 multiletter control sequences out of 15000+600000
+ 49709 words of font info for 98 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 74i,34n,106p,10478b,1936s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,34n,106p,10478b,2213s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on tikz-cache/document-figure9.pdf (1 page).

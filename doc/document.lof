@@ -6,85 +6,91 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The inlet through which the water is fed back from the bottom of the reactor to the top.\relax }}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The inlet basin.}}{11}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The equivalent circuit diagram shows the voltage drop $U_R$ over the resistance of the fluid relative to the internal resistance $R_i$, driven by the applied voltage $U$.\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The equivalent circuit diagram.}}{15}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Two electrodes with the area $A$ are submerged in the solution with the distance $d$ between them. A voltmeter is used to measure the voltage drop.\relax }}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Two electrodes submerged in the solution.}}{15}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Fisher Scientific™ Traceable™ Salinity Meter Pen \parencite {cheapcm}\relax }}{17}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The developed sensor system. The microcontroler and USB connection (\drawline [red,ultra thick]) control all parts and connect to the host PC. The Matrix Switches (\drawline [red!50!yellow,ultra thick]) connect the MinieC (\drawline [blue,ultra thick]) to the sensor strip (\drawline [blue!75!white,ultra thick]) containing the sensors (\drawline [blue!50!white,ultra thick]) via the connectors (\drawline [red!25!yellow,ultra thick]).\relax }}{19}{figure.caption.28}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The developed sensor system.}}{19}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces System Design: the yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue area marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.\relax }}{20}{figure.caption.30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces System Design}}{20}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Two rectangular electrodes form an electrode pair.\relax }}{21}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces A handmade sensor strip. The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.\relax }}{22}{figure.caption.33}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A handmade sensor strip.}}{22}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The sensor strip design to be implemented as flexible PCB. The red lines mark the copper layer, the green line is the outline of the board.\relax }}{23}{figure.caption.34}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The sensor strip design to be implemented as flexible PCB.}}{23}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.6}{\ignorespaces A finished sensor strip assembled with cables and waterproofing on the left.\relax }}{23}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining.\relax }}{24}{figure.caption.37}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The functional block diagram of the ADG738 matrix switch.}}{24}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Example Timing diagram: data input starts when (SYNC) is pulled low. On falling edges of (SCLK), (DIN) is read. If (DIN) is high at that moment, the bit is 1, if low it is 0. After eight bits are transferred, (SYNC) is pulled high again and the data transfer is finished. The resulting state is a closed first switch while all other switches are open.\relax }}{25}{figure.caption.38}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Example Timing Diagram}}{25}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces The opamp (OA) modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).\relax }}{27}{figure.caption.40}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces The opamp (OA) modulates the input signals (SIG) amplitude.}}{27}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces The blue graph shows the measured voltage with a resistance of 0. At the first red line, a switch breaks the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit [0.04]{s}, marked by the second red line.\relax }}{28}{figure.caption.41}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The scatter plot shows the measured voltage with a resistance of 0.}}{28}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0. The red line marks the breaking of the connection. The signal follows without delay.\relax }}{29}{figure.caption.42}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0.}}{29}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.12}{\ignorespaces The assembled carrier board with all parts directly soldered on.\relax }}{31}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Embedded Software Flow Diagram - If the power state of the device is "on" and the control state is "start" data is collected. The control state is set by a signal sent from the GUI and can be changed asynchronously. Data collection is done in a while-loop that runs as long as the iterator i is smaller than the number of sensors n. In the loop, first the Matrix Switches are set to the i-th sensor, then the ADC is read and afterwards a timestamp is created. When the cycle through all sensors is finished the data is sent to the GUI. Then the loop is started again. This happens until either the control state switches to "stop" or the power state to "off".\relax }}{32}{figure.caption.51}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Embedded Software Flow Diagram}}{32}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces OpenSalinity GUI - in this example sensor $\#4$ measures a resistance of zero (shorted with a wire), all others a infinite resistance (air gap). The Start/Stop button is on the top left, the Save button on the top right. The path to the chosen file is displayed in the header bar.\relax }}{34}{figure.caption.53}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces OpenSalinity GUI}}{34}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Fixing the integer wrap of the time variable.\relax }}{35}{figure.caption.55}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. The sensor has a size of \unit [10x11]{mm}, the horizontal distance between the sensors is \unit [50]{mm} and the vertical distance \unit [25]{mm}.\relax }}{39}{figure.caption.63}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid.}}{39}{figure.caption.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau $ the control volumes have moved. The sensor is covered by a mix of the two volumes.\relax }}{40}{figure.caption.65}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The control volumes in blue have the same size as the sensor (black rectangle).}}{40}{figure.caption.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit [1]{m} length run towards the carrier board.\relax }}{43}{figure.caption.78}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Measured voltages over the increasing salinity show the saturation of the sensor.\relax }}{42}{figure.caption.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.\relax }}{44}{figure.caption.79}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape.}}{44}{figure.caption.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Position of the sensors in the inlet basin. \parencite {ts}\relax }}{45}{figure.caption.82}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces A laptop is used as host PC.}}{44}{figure.caption.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Filter design - the scatter plot shows the raw data (\drawline [cyan]), filtered for local maxima (\drawline [blue]) and smoothed with a Savitzky-Golay filter (\drawline [red]).\relax }}{46}{figure.caption.83}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Position of the sensors in the inlet basin [by Timm Severin].\relax }}{46}{figure.caption.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Sensor calibration - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared uncalibrated on the left and normalized on the right.\relax }}{47}{figure.caption.84}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Step change of the salinity of the feed and the expected response [by Timm Severin}}{47}{figure.caption.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Test No. 2 - sensor four (\drawline [blue]) and sensor eight (\drawline [red]) are compared. Signal four which is measured further upstream always changes before the downstream signal does.\relax }}{48}{figure.caption.85}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Filter design}}{48}{figure.caption.87}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Measurements of sensor four (\drawline [blue]) and sensor eight (\drawline [red]) during the start phase of the water flow. Signal eight rises only after the inlet basin is completely filled which takes about \unit [4]{s}.\relax }}{49}{figure.caption.86}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Sensor calibration}}{49}{figure.caption.88}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces The graphs show the data of sensor one (\drawline [blue]), two (\drawline [yellow!80!black]), four (\drawline [cyan]), five (\drawline [magenta!80!blue]), six (\drawline [green!70!black]) and eight (\drawline [red]), the scatter plots show the respective simulation results. The chosen time segment shows the upwards slope of the first rise in salinity after the switching of the feed.\relax }}{50}{figure.caption.87}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Test No. 2}}{50}{figure.caption.89}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Test No.3 with a higher salinity than before - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{51}{figure.caption.88}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Measurements of sensors four and eight during the start phase of the water flow.}}{51}{figure.caption.90}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Test No. 4 using the impulse method - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{52}{figure.caption.89}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces The graphs show the data of the sensors compared to the scatter plots of the respective simulation results.}}{52}{figure.caption.91}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Test No. 6 impulse method with higher flow rate and lower salinity - sensor four (\drawline [blue]) and sensor eight (\drawline [red])\relax }}{53}{figure.caption.90}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Test No.3}}{53}{figure.caption.92}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Test No. 4}}{54}{figure.caption.93}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Test No. 6}}{55}{figure.caption.94}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.1}{\ignorespaces USB connection (\drawline [red,ultra thick]) sensor strip (\drawline [blue!75!white,ultra thick]) connectors (\drawline [red!25!yellow,ultra thick])\relax }}{57}{figure.caption.96}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.2}{\ignorespaces connectors\relax }}{57}{figure.caption.97}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Important parts of the system.}}{58}{figure.caption.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {.3}{\ignorespaces USB\relax }}{58}{figure.caption.98}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces The connectors for the sensor strips.\relax }}{59}{figure.caption.101}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.3}{\ignorespaces The correct USB orientation.\relax }}{59}{figure.caption.102}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

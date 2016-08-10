@@ -44,7 +44,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.10}Bill of Materials}{35}{section.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.11}Collection of Software}{36}{section.58}
+\contentsline {section}{\numberline {4.11}List of Software}{36}{section.58}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Results}{38}{chapter.60}
 \defcounter {refsection}{0}\relax 
@@ -54,24 +54,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.2}Electrical Conductivity Resolution and Range}{41}{subsection.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Cost}{42}{subsection.76}
+\contentsline {subsection}{\numberline {5.1.3}Cost}{43}{subsection.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Deployability in the Bioreactor}{42}{subsection.77}
+\contentsline {subsection}{\numberline {5.1.4}Deployability in the Bioreactor}{43}{subsection.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Usability}{44}{subsection.80}
+\contentsline {subsection}{\numberline {5.1.5}Usability}{45}{subsection.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Validation}{45}{section.81}
+\contentsline {section}{\numberline {5.2}Validation}{45}{section.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{54}{chapter.91}
+\contentsline {chapter}{\numberline {6}Conclusion}{56}{chapter.95}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Outlook}{55}{chapter.92}
+\contentsline {chapter}{\numberline {7}Outlook}{57}{chapter.96}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbreviations}{60}{appendix.105}
+\contentsline {chapter}{\numberline {A}Appendix}{58}{appendix.97}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix}{60}{lstnumber.104}
+\contentsline {section}{\numberline {A.1}Instruction Manual}{58}{section.98}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}List of Figures}{61}{appendix.107}
+\contentsline {section}{\numberline {A.2}Algorithms}{61}{section.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Tables}{64}{appendix.108}
+\contentsline {chapter}{\numberline {B}Abbreviations}{63}{appendix.149}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Bibliography}{65}{appendix.109}
+\contentsline {chapter}{\numberline {C}List of Figures}{64}{appendix.151}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}List of Tables}{65}{appendix.152}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {E}Bibliography}{66}{appendix.153}

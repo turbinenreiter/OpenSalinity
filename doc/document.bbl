@@ -181,22 +181,6 @@
   \field{year}{1964}
 \endentry
 
-\entry{ts}{misc}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Severin}{S.}%
-     {Timm}{T.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{ST1}
-  \strng{fullhash}{ST1}
-  \field{labelyear}{2016}
-  \field{sortinit}{S}
-  \field{title}{???}
-  \field{year}{2016}
-\endentry
-
 \entry{trankler2015sensortechnik}{book}{}
   \name{author}{2}{}{%
     {{}%

@@ -1,30 +1,38 @@
 % This file was created by matplotlib2tikz v0.5.10.
-\begin{tikzpicture}
+\tikzset{external/export next=false}
+\begin{tikzpicture}[scale=0.9]
 
 \definecolor{color1}{rgb}{0,0.75,0.75}
 \definecolor{color0}{rgb}{0.75,0.75,0}
 \definecolor{color2}{rgb}{0.75,0,0.75}
 
-\begin{axis}[
-xlabel={Time, s},
-ylabel={Voltage, V},
-xmin=0, xmax=1,
-ymin=0, ymax=1,
-axis on top
-]
-\path [draw=black, fill opacity=0] (axis cs:1,0)
---(axis cs:1,1);
+\node[] at (7.25,-14.5) {Time, s};
+\node[rotate=90] at (-1.5,-4) {relative Voltage, -};
 
-\path [draw=black, fill opacity=0] (axis cs:0,1)
---(axis cs:1,1);
+%\begin{axis}[
+%xlabel={Time, s},
+%ylabel={relative Voltage, -},
+%xmin=0, xmax=1,
+%ymin=65, ymax=90,
+%axis on top,
+%xtick={},
+%xticklabels={},
+%ytick={},
+%yticklabels={}
+%]
+%\path [draw=black, fill opacity=0] (axis cs:0,1)
+%--(axis cs:1,1);
 
-\path [draw=black, fill opacity=0] (axis cs:0,0)
---(axis cs:1,0);
+%\path [draw=black, fill opacity=0] (axis cs:0,0)
+%--(axis cs:0,1);
 
-\path [draw=black, fill opacity=0] (axis cs:0,0)
---(axis cs:0,1);
+%\path [draw=black, fill opacity=0] (axis cs:1,0)
+%--(axis cs:1,1);
 
-\end{axis}
+%\path [draw=black, fill opacity=0] (axis cs:0,0)
+%--(axis cs:1,0);
+
+%\end{axis}
 
 \begin{groupplot}[group style={group size=2 by 3}]
 \nextgroupplot[
@@ -3364,17 +3372,17 @@ table {%
 87.716712 0.575241198377018
 87.723369 0.57533530616593
 };
-\path [draw=black, fill opacity=0] (axis cs:1,0)
---(axis cs:1,1);
-
 \path [draw=black, fill opacity=0] (axis cs:67.898429,1)
 --(axis cs:87.73,1);
 
-\path [draw=black, fill opacity=0] (axis cs:67.898429,0)
---(axis cs:87.73,0);
-
 \path [draw=black, fill opacity=0] (axis cs:0,0)
 --(axis cs:0,1);
+
+\path [draw=black, fill opacity=0] (axis cs:1,0)
+--(axis cs:1,1);
+
+\path [draw=black, fill opacity=0] (axis cs:67.898429,0)
+--(axis cs:87.73,0);
 
 \nextgroupplot[
 xmin=67.899145, xmax=87.730752,
@@ -6713,17 +6721,17 @@ table {%
 87.71746 0.650204703680073
 87.724085 0.650279638670922
 };
-\path [draw=black, fill opacity=0] (axis cs:1,0)
---(axis cs:1,1);
-
 \path [draw=black, fill opacity=0] (axis cs:67.899145,1)
 --(axis cs:87.730752,1);
 
-\path [draw=black, fill opacity=0] (axis cs:67.899145,0)
---(axis cs:87.730752,0);
-
 \path [draw=black, fill opacity=0] (axis cs:0,0)
 --(axis cs:0,1);
+
+\path [draw=black, fill opacity=0] (axis cs:1,0)
+--(axis cs:1,1);
+
+\path [draw=black, fill opacity=0] (axis cs:67.899145,0)
+--(axis cs:87.730752,0);
 
 \nextgroupplot[
 xmin=67.900614, xmax=87.732195,
@@ -10062,17 +10070,17 @@ table {%
 87.718899 0.644211476788357
 87.725554 0.643839029040853
 };
-\path [draw=black, fill opacity=0] (axis cs:1,0)
---(axis cs:1,1);
-
 \path [draw=black, fill opacity=0] (axis cs:67.900614,1)
 --(axis cs:87.732195,1);
 
-\path [draw=black, fill opacity=0] (axis cs:67.900614,0)
---(axis cs:87.732195,0);
-
 \path [draw=black, fill opacity=0] (axis cs:0,0)
 --(axis cs:0,1);
+
+\path [draw=black, fill opacity=0] (axis cs:1,0)
+--(axis cs:1,1);
+
+\path [draw=black, fill opacity=0] (axis cs:67.900614,0)
+--(axis cs:87.732195,0);
 
 \nextgroupplot[
 xmin=67.901336, xmax=87.732911,
@@ -13411,17 +13419,17 @@ table {%
 87.71962 0.62767147164906
 87.72627 0.627757362282862
 };
-\path [draw=black, fill opacity=0] (axis cs:1,0)
---(axis cs:1,1);
-
 \path [draw=black, fill opacity=0] (axis cs:67.901336,1)
 --(axis cs:87.732911,1);
 
-\path [draw=black, fill opacity=0] (axis cs:67.901336,0)
---(axis cs:87.732911,0);
-
 \path [draw=black, fill opacity=0] (axis cs:0,0)
 --(axis cs:0,1);
+
+\path [draw=black, fill opacity=0] (axis cs:1,0)
+--(axis cs:1,1);
+
+\path [draw=black, fill opacity=0] (axis cs:67.901336,0)
+--(axis cs:87.732911,0);
 
 \nextgroupplot[
 xmin=67.902051, xmax=87.733631,
@@ -16760,17 +16768,17 @@ table {%
 87.720342 0.603930320098698
 87.726985 0.604001229863913
 };
-\path [draw=black, fill opacity=0] (axis cs:1,0)
---(axis cs:1,1);
-
 \path [draw=black, fill opacity=0] (axis cs:67.902051,1)
 --(axis cs:87.733631,1);
 
-\path [draw=black, fill opacity=0] (axis cs:67.902051,0)
---(axis cs:87.733631,0);
-
 \path [draw=black, fill opacity=0] (axis cs:0,0)
 --(axis cs:0,1);
+
+\path [draw=black, fill opacity=0] (axis cs:1,0)
+--(axis cs:1,1);
+
+\path [draw=black, fill opacity=0] (axis cs:67.902051,0)
+--(axis cs:87.733631,0);
 
 \nextgroupplot[
 xmin=67.903493, xmax=87.735069,
@@ -20109,18 +20117,22 @@ table {%
 87.721779 0.60078453146822
 87.728427 0.601017890370236
 };
-\path [draw=black, fill opacity=0] (axis cs:1,0)
---(axis cs:1,1);
 
-\path [draw=black, fill opacity=0] (axis cs:67.903493,1)
---(axis cs:87.735069,1);
 
-\path [draw=black, fill opacity=0] (axis cs:67.903493,0)
---(axis cs:87.735069,0);
+%\path [draw=black, fill opacity=0] (axis cs:67.903493,1)
+%--(axis cs:87.735069,1);
 
-\path [draw=black, fill opacity=0] (axis cs:0,0)
---(axis cs:0,1);
+%\path [draw=black, fill opacity=0] (axis cs:0,0)
+%--(axis cs:0,1);
+
+%\path [draw=black, fill opacity=0] (axis cs:1,0)
+%--(axis cs:1,1);
+
+%\path [draw=black, fill opacity=0] (axis cs:67.903493,0)
+%--(axis cs:87.735069,0);
 
 \end{groupplot}
+
+
 
 \end{tikzpicture}

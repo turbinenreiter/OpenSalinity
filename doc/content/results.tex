@@ -7,7 +7,7 @@ In this chapter the verification and validation of the developed sensor system a
 \subsection{Spacial Resolution}
 
 \begin{itemize}
-\item The system shall have a spacial resolution in the order of \unit[10]{mm}.
+\item[|] The system shall have a spacial resolution in the order of \unit[10]{mm}.
 \end{itemize}
 
 An inspection of the physical size of the sensor and their placement on the array, drawn in Figure \ref{fig:sensarray}, shows us a sensor size of \unit[10x11]{mm} arranged on a grid of \unit[25x50]{mm}. The theoretical minimal grid size achievable with the chosen sensor size is \unit[11x12]{mm} when a minimum distance between electrodes of \unit[1]{mm} is kept.
@@ -64,7 +64,7 @@ This grid size is the physical limitation of the spacial resolution and by being
 		\end{scope}
 		\end{scope}
 		\end{tikzpicture}
-		\caption{A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. The sensor has a size of \unit[10x11]{mm}, the horizontal distance between the sensors is \unit[50]{mm} and the vertical distance \unit[25]{mm}.}
+		\caption[A dimensioned drawing of the sensor grid.]{A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. The sensor has a size of \unit[10x11]{mm}, the horizontal distance between the sensors is \unit[50]{mm} and the vertical distance \unit[25]{mm}.}
 		\label{fig:sensarray}
 	\end{center}
 \end{figure}
@@ -111,7 +111,7 @@ A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0
 		\node [] at (4,-6) {$t>\tau$};
 		\end{tikzpicture}
 		%\includegraphics[width=0.45\textwidth]{images/resolution.pdf} 
-		\caption{The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau$ the control volumes have moved. The sensor is covered by a mix of the two volumes.}
+		\caption[The control volumes in blue have the same size as the sensor (black rectangle).]{The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau$ the control volumes have moved. The sensor is covered by a mix of the two volumes.}
 		\label{fig:cv}
 	\end{center}
 \end{figure}
@@ -140,10 +140,10 @@ The ratio $ r $
 	r = \frac{k}{n}
 \label{eq:resr} 
 \end{equation}
-is the ratio of the time it takes a control volume to enter and leave the sensor area  to the time a measurement takes. Its inverse is the movement of the control volume during the measurement time and thereby the percentage by which the measured volume is bigger than the control volume. A ratio of one would mean the measured volume is two times the sensor size, thereby halving the spacial resolution. To keep the resolution close the the sensor size, a ratio of four, increasing the measured volume by \unit[25]{\%} is viable.
+is the ratio of the time it takes a control volume to enter and leave the sensor area  to the time a measurement takes. Its inverse is the movement of the control volume during the measurement time and thereby the percentage by which the measured volume is bigger than the control volume. A ratio of one would mean the measured volume is two times the sensor size, thereby halving the spacial resolution. To keep the resolution close the the sensor size, a ratio $r$ of four, increasing the measured volume by \unit[25]{\%} is viable.
 With the given sensor size and flow speed, a measurement time $ \tau $ of \unit[2.5]{ms} is needed.\\
 
-To test if the time resolution matches this, the measurement time itself can be timed. First, the difference between two adjacent times in the data set in Listing \ref{lst:data} is calculated. The mean of the differences through the complete data set is \unit[748]{$\mu$s}. This time includes the \unit[520]{$\mu$s} it takes to switch from one electrode pair to the next. The resulting net measurement time is \unit[228]{$\mu$s}. This means that the measurement is more than ten times faster than required, showing that the time resolution easily matches the spacial resolution.
+To test if the time resolution matches this, the measurement time itself can be timed. First, the difference between two adjacent times in the data set in Listing \ref{lst:data} is calculated. The mean of the differences through the complete data set is \unit[748]{$\mu$s}. This time includes the \unit[520]{$\mu$s} it takes to switch from one electrode pair to the next. The resulting net measurement time is \unit[228]{$\mu$s}, the resulting ratio $r$ is $43.9$. This means that the measurement is more than ten times faster than required, showing that the time resolution easily matches the spacial resolution. The measured volume is only \unit[2.28]{\%} bigger than the control volume.
 
 \begin{lstlisting}[caption={An excerpt of measurement data showing three lines of data from eight sensors. The long numbers are the times at which the measurements were taken in microseconds measured from the start, the short numbers are the measured values.},label={lst:data}]
 975209221 21 975209961 59 975210676 15 975211397 0 975212119 0 975212840 26 975213554 59 975214276 9 
@@ -153,13 +153,12 @@ To test if the time resolution matches this, the measurement time itself can be 
 
 \subsection{Electrical Conductivity Resolution and Range}
 
-
 \begin{itemize}
-\item The system shall have a sensitivity of  \unit[0.1]{\%} salinity.
-\item The system shall have a range from 0 to \unit[5]{\%} salinity.
+\item[|]  The system shall have a sensitivity of  \unit[0.1]{\%} salinity.
+\item[|]  The system shall have a range from 0 to \unit[5]{\%} salinity.
 \end{itemize}
 
-Table \ref{tab:rns} shows the results of measurements of solutions with different salinities. A \unit[10]{\%} solution was created by adding \unit[5]{g} of salt to \unit[50]{ml} of demineralized water. The subsequent solutions resulted from diluting the original one by adding more water.
+Table \ref{tab:rns} and Figure \ref{fig:rns} show the results of measurements of solutions with different salinities. A \unit[10]{\%} solution was created by adding \unit[5]{g} of salt to \unit[50]{ml} of demineralized water. The subsequent solutions resulted from diluting the original one by adding more water.
 
 The measurable change of the voltage was visible at the drop from a salinity of \unit[5]{\%} to \unit[2.5]{\%}. Between \unit[10]{\%} and \unit[5]{\%} no difference was measurable at all. The upper range limit can therefore be placed between at \unit[2.5]{\%}, above those values the sensor is saturated, providing only the information that the salinity is above the threshold.
 
@@ -187,12 +186,21 @@ On the lower limit a measurement without any water resulted in a voltage of \uni
     \end{tabular}
 \end{table}
 
-While the requirement for sensitivity is clearly met, the range is just barely acceptable. The later validation will show if it is sufficient or not.
+\begin{figure}[H]
+	\begin{center}
+		\input{images/sal_sens_range}
+		%\includegraphics[width=0.8\textwidth]{images/switch_cap.pdf} 
+		\caption{Measured voltages over the increasing salinity show the saturation of the sensor.}
+		\label{fig:rns}
+	\end{center}
+\end{figure}
+
+While the requirement for sensitivity is clearly met, the range is just barely acceptable. For validation, the used range has to be adjusted and will show if it is sufficient.
 
 \subsection{Cost}
 
 \begin{itemize}
-\item Requirement: The cost per sensor shall be less than \euro{25}
+\item[|] Requirement: The cost per sensor shall be less than \euro{25}
 \end{itemize}
 
 Using the bill of materials in Chapter \ref{BOM} a total price of \euro{121.8} for all materials for a sensor system with eight sensors can be calculated, resulting in a price per sensor of \euro{15.23}. Adding additional sensors after that would cost \euro{11.17} per sensor, as parts like the microcontroller do not have to be duplicated.
@@ -202,15 +210,15 @@ This price does not include the host PC as the PCs already installed in the labo
 \subsection{Deployability in the Bioreactor}
 
 \begin{itemize}
-\item  The system shall be deployable in the algae reactor.\\
+\item[|] The system shall be deployable in the algae reactor.\\
 \end{itemize}
 
-The deployability was demonstrated during two test campaigns on the reactor. Figures \ref{fig:stripsr} and \ref{fig:pcr} show the set up during the tests. The host PC can be placed on a desk next to the reactor and be connected to the carrier board with a USB cable. The carrier board can also be placed on the desk or temporarily be mounted on the reactor. The sensor strips connect to the carrier board with \unit[1]{m} long cables and are attached to the reactor with electrical tape.
+The deployability was demonstrated during two test campaigns on the reactor. Figures \ref{fig:stripsr} and \ref{fig:pcr} show the set up during the tests. The host PC can be placed on a desk next to the reactor and be connected to the carrier board with a USB cable. The carrier board can also be placed on the desk or temporarily be mounted on the reactor. The sensor strips connect to the carrier board with long cables and are attached to the reactor with electrical tape.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/stripsinreactor.jpg} 
-		\caption{The sensor strips are mounted to the bioreactor with electrical tape. Cables of \unit[1]{m} length run towards the carrier board.}
+		\caption[The sensor strips are mounted to the bioreactor with electrical tape.]{The sensor strips are mounted to the bioreactor with electrical tape. The cables run towards the carrier board.}
 	\label{fig:stripsr}
 	\end{center}
 \end{figure}
@@ -218,7 +226,7 @@ The deployability was demonstrated during two test campaigns on the reactor. Fig
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/pconreactor.jpg} 
-		\caption{A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.}
+		\caption[A laptop is used as host PC.]{A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.}
 	\label{fig:pcr}
 	\end{center}
 \end{figure}
@@ -226,7 +234,7 @@ The deployability was demonstrated during two test campaigns on the reactor. Fig
 \subsection{Usability}
 
 \begin{itemize}
-\item  The system shall be usable with a minimal set of written instructions.\\
+\item[|] The system shall be usable with a minimal set of written instructions.\\
 \end{itemize}
 
 The instruction manual for taking a series of measurements can be found in the Appendix \ref{aman}. First, an image describes the different parts of the system relevant to the user. After that a step-by-step description with images helps the user through the process. In a test, a person not familiar with the device, but generally familiar with laboratory equipment, was able to successfully conduct measurements within minutes by following the manual. However, there is to note that errors in the software occurring in certain situations can quickly destroy this ease of use. Further testing needs to be done to surface those errors so they can be fixed.
@@ -332,12 +340,22 @@ All experiments where done on the same day on the same bioreactor. The schematic
             node[black, below, xshift=-4pt, yshift=-1pt] (weir-1) {5};
     \end{scope}
 \end{tikzpicture}    
-		\caption{Position of the sensors in the inlet basin. \parencite{ts}}
+		\caption{Position of the sensors in the inlet basin [by Timm Severin].}
 		\label{fig:senspos}
 	\end{center}
 \end{figure}
 
-With this configuration, two types of experiments were run: the first method uses the bioreactors plumbing to switch the feed from the collection tank to an external tank containing saltwater. Instead of pumping water in a loop, saltwater from the tank is added to the water cycle and the increase in salinity can be measured. The second method retains the original water cycle, but adds an impulse of saltwater in the return basin.
+With this configuration, two types of experiments were run: the first method uses the bioreactors plumbing to switch the feed from the collection tank to an external tank containing saltwater. Instead of pumping water in a loop, saltwater from the tank is added to the water cycle and the increase in salinity can be measured. Figure \ref{fig:rest} shows the step change of the concentration in the input feed and the expected response of the system.
+
+\begin{figure}[H]
+	\begin{center}
+		\input{images/residenceTime}
+		\caption[Step change of the salinity of the feed and the expected response [by Timm Severin].]{Step change of the salinity of the feed (\drawline[red!80!white]) and the expected response (\drawline[blue!80!white, dashed]) [by Timm Severin].}
+		\label{fig:rest}
+	\end{center}
+\end{figure}
+
+The second method retains the original water cycle with no switching to an external feed, but adds an impulse of saltwater in the return basin instead.
 
 In the following section a selection of the experiments will be described. The numeration equals the numeration of the collected data sets. By keeping the original notation continuity between the data files, notes and documentation can be maintained.\\
 
@@ -345,56 +363,68 @@ In the following section a selection of the experiments will be described. The n
 
 In this test the feed switch method was used. The total amount of water in the tank was \unit[65]{l} and the flow rate was $\dot{V} =  \unitfrac[1.6]{l}{s}$. The saltwater in the external tank had a salinity of \unit[1.5]{\%}.\\
 
-Figure \ref{fig:test2_7_scatter} shows a plot of the a slice of data taken by sensor eight, located on the inner side of the weir and is used to illustrate the filter design. The aim of the filter is to create an envelope tightly following the maxima of the signal. In the first step, a reduced data set is constructed from the maximum values over small slices of the raw data. The second step applies a smoothing filter developed by \textcite{savitzky1964smoothing} to create the final graph.
+Figure \ref{fig:test2_7_scatter} shows a plot of the a slice of data taken by sensor eight, located on the inner side of the weir and is used to illustrate the filter design. The aim of the filter is to create an envelope tightly following the maxima of the signal. In the first step, a reduced data set is constructed from the maximum values over small slices of the raw data. A detailed explanation of this algorithm can be found in the Section \ref{rollmax} of the Appendix. The second step applies a smoothing filter developed by \textcite{savitzky1964smoothing} to create the final graph.
 
 \begin{figure}[H]
 	\begin{center}
-		%\input{images/log080716_2}
-		\includegraphics[width=0.8\textwidth]{images/log080716_2_7_scatter.pdf} 
-		\caption{Filter design - the scatter plot shows the raw data (\drawline[cyan]), filtered for local maxima (\drawline[blue]) and smoothed with a Savitzky-Golay filter (\drawline[red]).}
+		\input{images/log080716_2_7_scatter}
+		%\includegraphics[width=0.8\textwidth]{images/log080716_2_7_scatter.pdf} 
+		\caption[Filter design]{Filter design - The scatter plot shows the raw data (\drawline[cyan]), filtered for local maxima (\drawline[blue!80!white]) and smoothed with a Savitzky-Golay filter (\drawline[red]).}
 		\label{fig:test2_7_scatter}
 	\end{center}
 \end{figure}
 
-In Figure \ref{fig:test2_37_adj} the data for sensors four and eight are compared. In the left plot a difference in the scale of the graphs can be seen. This scaling offset is a result of the different internal resistance along each sensor's conductive path as well as the amount of  water over on the electrodes. On the weir, there is just a thin water film, while the basin is much deeper. For our comparison this scaling is unfavorably as the slopes of the signal changing over time are of interest, which are influenced by the absolute values. To counter this, all data is calibrated by calculating a mean value over an undisturbed data sample and scaling it to the first sensor.
+In Figure \ref{fig:test2_37_adj} the data for sensors one and eight are compared. In the left plot (a) a difference in the scale of the graphs can be seen. This scaling offset is a result of the different internal resistance along each sensor's conductive path as well as the amount of  water over on the electrodes. On the weir, there is just a thin water film, while the basin is much deeper. For our comparison this scaling is unfavorably as the slopes of the signal changing over time are of interest, which are influenced by the absolute values. To counter this, all data is calibrated by calculating a mean value over an undisturbed data sample and scaling it to the first sensor. The plot (b) on the right shows the scaled data. Section \ref{sc} in the Appendix describes the method in detail.
 
 \begin{figure}[H]
 	\begin{center}
-		\begin{tikzpicture}
-			\node[,inner sep=0] (a) at (0,0) {\includegraphics[width=0.5\textwidth]{images/log080716_2_37_unadj.pdf}};
-			\node[inner sep=0, right of=a, node distance=0.5\textwidth] {\includegraphics[width=0.5\textwidth]{images/log080716_2_37_adj.pdf}};
+	\tikzset{external/export next=false}
+		\begin{tikzpicture}[scale=0.9]
+			\begin{scope}[local bounding box=unadj]
+				\input{images/log080716_2_unadj}
+				\node[very thick] at (0,-1) {(a)};
+			\end{scope}
+			\begin{scope}[xshift=0.55\textwidth]
+				\input{images/log080716_2_adj}
+				\node[very thick] at (0,-1) {(b)};
+			\end{scope}
+%			\node[,inner sep=0] (a) at (0,0) {\includegraphics[width=0.5\textwidth]{images/log080716_2_37_unadj.pdf}};
+%			\node[inner sep=0, right of=a, node distance=0.5\textwidth] {\includegraphics[width=0.5\textwidth]{images/log080716_2_37_adj.pdf}};
 		\end{tikzpicture}
-		\caption{Sensor calibration - sensor four (\drawline[blue]) and sensor eight (\drawline[red]) are compared uncalibrated on the left and normalized on the right.}
+		\caption[Sensor calibration]{Sensor calibration - Sensors one (\drawline[blue]) and eight (\drawline[red]) are compared uncalibrated on the left (a) and normalized on the right (b).}
 		\label{fig:test2_37_adj}
 	\end{center}
 \end{figure}
 
-Figure \ref{fig:test2} shows a comparison of the resulting data for sensor four and eight. Signal four changes first with signal eight trailing those changes with a delay. As sensor four is closer to the inlet, this behavior matches the expectations. The first big impulse happens directly after the feed is switched. The drop afterwards and the leveling off suggests a blending of the added saltwater with water still in the system.
+Figure \ref{fig:test2} shows a comparison of the resulting data for sensor four and eight. Signal four changes first with signal eight trailing those changes with a delay. As sensor four is closer to the inlet, this behavior matches the expectations. The first big impulse happens directly after the feed is switched. The drop afterwards and the leveling off suggests a blending of the added saltwater with water still in the system, however this behavior is not yet fully understood.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/log080716_2.pdf} 
-		\caption{Test No. 2 - sensor four (\drawline[blue]) and sensor eight (\drawline[red]) are compared. Signal four which is measured further upstream always changes before the downstream signal does.}
+		\input{images/log080716_2}
+		%\includegraphics[width=0.8\textwidth]{images/log080716_2.pdf} 
+		\caption[Test No. 2]{Test No. 2 - Sensors four (\drawline[cyan]) and eight (\drawline[red]) are compared. Signal four which is measured further upstream always changes before the downstream signal does.}
 		\label{fig:test2}
 	\end{center}
 \end{figure}
 
-Another interesting data point is the the behavior when the water flow is first switched on. Figure \ref{fig:test2_on} shows the signals during this phase. Signal four in the inlet basin rises first, signal eight rises about \unit[4]{s} later. This is the time it takes the empty basin to fill up completely, only after that the water flows over the weir. At a flow rate of \unitfrac[1.6]{l}{s}, this suggests a volume of the inlet basin of around \unit[6.4]{l}. The real volume calculated according to the schematic is about \unit[5.8]{l}.
+Another interesting data point is the the behavior when the water flow is first switched on. Figure \ref{fig:test2_on} shows the signals during this phase. Signal four in the inlet basin rises first, signal eight rises about $\diff t =  \unit[4]{s}$ later. This is the time it takes the empty basin to fill up completely, only after which the water flows over the weir. At a flow rate of \unitfrac[1.6]{l}{s}, this suggests a volume of the inlet basin of around \unit[6.4]{l}. The real volume calculated according to the schematic is about \unit[5.8]{l}.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/log080716_2_on.pdf} 
-		\caption{Measurements of sensor four (\drawline[blue]) and sensor eight (\drawline[red]) during the start phase of the water flow. Signal eight rises only after the inlet basin is completely filled which takes about \unit[4]{s}.}
+		\input{images/log080716_2_on}
+		%\includegraphics[width=0.8\textwidth]{images/log080716_2_on.pdf} 
+		\caption[Measurements of sensors four and eight during the start phase of the water flow.]{Measurements of sensors four (\drawline[cyan]) and eight (\drawline[red]) during the start phase of the water flow. Signal eight rises only after the inlet basin is completely filled which takes about $\diff t =  \unit[4]{s}$.}
 		\label{fig:test2_on}
 	\end{center}
 \end{figure}
 
-A comparison of six different sensor outputs with data from the simulation is shown in Figure \ref{fig:test2_sim}. The time segment shows the salinity increase happening directly after the feed is switched to the salt water tank. Generally, the behavior of both correspond well, with the big exception of the position one. Here, the simulation and experimental data are offset by around \unit[2]{s}. The reason for that is not yet perfectly clear but it is suspected that adverse effects in the simulation are at fault.
+A comparison of six different sensor outputs with data from the simulation done by Timm Severin is shown in Figure \ref{fig:test2_sim}. The time segment shows the salinity increase happening directly after the feed is switched to the salt water tank. Generally, the behavior of both correspond well, with the big exception of the position one. Here, the simulation and experimental data are offset by around \unit[2]{s}. The reason for that is not yet perfectly clear but it is suspected that adverse effects in the simulation are at fault.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/log080716_2_sim.pdf} 
-		\caption{The graphs show the data of sensor one (\drawline[blue]), two (\drawline[yellow!80!black]), four (\drawline[cyan]), five (\drawline[magenta!80!blue]), six (\drawline[green!70!black]) and eight (\drawline[red]), the scatter plots show the respective simulation results. The chosen time segment shows the upwards slope of the first rise in salinity after the switching of the feed.}
+		\input{images/log080716_2_sim}
+		%\includegraphics[width=0.8\textwidth]{images/log080716_2_sim.pdf} 
+		\caption[The graphs show the data of the sensors compared to the scatter plots of the respective simulation results.]{The graphs show the data of sensor one (\drawline[blue]), two (\drawline[yellow!80!black]), four (\drawline[cyan]), five (\drawline[magenta!80!blue]), six (\drawline[green!70!black]) and eight (\drawline[red]), compared to the scatter plots of the respective simulation results. The chosen time segment shows the upwards slope of the first rise in salinity after the switching of the feed.}
 		\label{fig:test2_sim}
 	\end{center}
 \end{figure}
@@ -405,35 +435,35 @@ The next test retained all specifics of the prior one, except for a higher salin
 
 \begin{figure}[H]
 	\begin{center}
-		%\input{images/log080716_3}
-		\includegraphics[width=0.8\textwidth]{images/log080716_3.pdf} 
-		\caption{Test No.3 with a higher salinity than before - sensor four (\drawline[blue]) and sensor eight (\drawline[red])}
+		\input{images/log080716_3}
+		%\includegraphics[width=0.8\textwidth]{images/log080716_3.pdf} 
+		\caption[Test No.3]{Test No.3 - A higher salinity than before was used. Sensors four (\drawline[cyan]) and eight (\drawline[red]) are shown.}
 		\label{fig:test3}
 	\end{center}
 \end{figure}
 
 \textbf{Test No. 4}
 
-While maintaining the previous volume and flow rate, this test used the impulse method instead of the feed switch. There were \unit[5]{l} of water with a salinity of \unit[7.7]{\%} added to the collection tank. The first peak directly follows the addition of the saltwater, after about \unit[50]{s} a second peak follows. This is the time it takes the water volume to completely circle through the bioreactor. The third peak is barely visible as the water and saltwater are almost completely diffused.
+While maintaining the previous volume and flow rate, this test used the impulse method instead of the feed switch. There were \unit[5]{l} of water with a salinity of \unit[7.7]{\%} added to the collection tank. The first peak directly follows the addition of the saltwater, after about \unit[49]{s} a second peak follows. This is the time $t_{cycle}$ it takes the water volume to completely circle through the bioreactor. The third peak is barely visible as the water and saltwater are almost completely diffused.
 
 \begin{figure}[H]
 	\begin{center}
-		%\input{images/log080716_4}
-		\includegraphics[width=0.8\textwidth]{images/log080716_4.pdf} 
-		\caption{Test No. 4 using the impulse method - sensor four (\drawline[blue]) and sensor eight (\drawline[red])}
+		\input{images/log080716_4}
+		%\includegraphics[width=0.8\textwidth]{images/log080716_4.pdf} 
+		\caption[Test No. 4]{Test No. 4 - The impulse method was used. Sensors four (\drawline[cyan]) and eight (\drawline[red]) are shown. The time $t_{cycle}$ is about \unit[49]{s}.}
 		\label{fig:test4}
 	\end{center}
 \end{figure}
 
 \textbf{Test No. 6}
 
-Again the impulse method was used but with an increased flow rate of \unitfrac[2]{l}{s} and a lower salinity of \unit[6.7]{\%}. The time from first to second peak is now about \unit[40]{s}, as expected due to the higher flow rate. The voltages are also a little lower because of the lower salinity.
+Again the impulse method was used but with an increased flow rate of \unitfrac[2]{l}{s} and a lower salinity of \unit[6.7]{\%}. The time $t_{cycle}$ from first to second peak is now about \unit[41]{s}, as expected due to the higher flow rate. The voltages are also a little lower because of the lower salinity.
 
 \begin{figure}[H]
 	\begin{center}
-		%\input{images/log080716_6}
-		\includegraphics[width=0.8\textwidth]{images/log080716_6.pdf} 
-		\caption{Test No. 6 impulse method with higher flow rate and lower salinity - sensor four (\drawline[blue]) and sensor eight (\drawline[red])}
+		\input{images/log080716_6}
+		%\includegraphics[width=0.8\textwidth]{images/log080716_6.pdf} 
+		\caption[Test No. 6]{Test No. 6 - The impulse method was used with a higher flow rate and lower salinity then before. Sensors four (\drawline[cyan]) and eight (\drawline[red]) are shown. The time $t_{cycle}$ is about \unit[41]{s}.}
 		\label{fig:test6}
 	\end{center}
 \end{figure}

@@ -22,7 +22,7 @@ Figure \ref{fig:isys} shows the device developed in this thesis. The following s
 			\draw[blue!75!white,ultra thick,rounded corners] (-8,-4) rectangle (8,-2);
 			\draw[blue!50!white,ultra thick,rounded corners] (-2.75,-3.5) rectangle (-1.65,-2.5);
 		\end{tikzpicture}
-		\caption{The developed sensor system. The microcontroler and USB connection (\drawline[red,ultra thick]) control all parts and connect to the host PC. The Matrix Switches (\drawline[red!50!yellow,ultra thick]) connect the MinieC (\drawline[blue,ultra thick]) to the sensor strip (\drawline[blue!75!white,ultra thick]) containing the sensors (\drawline[blue!50!white,ultra thick]) via the connectors (\drawline[red!25!yellow,ultra thick]).}
+		\caption[The developed sensor system.]{The developed sensor system. The microcontroler and USB connection (\drawline[red,ultra thick]) control all parts and connect to the host PC. The Matrix Switches (\drawline[red!50!yellow,ultra thick]) connect the MinieC (\drawline[blue,ultra thick]) to the sensor strip (\drawline[blue!75!white,ultra thick]) containing the sensors (\drawline[blue!50!white,ultra thick]) via the connectors (\drawline[red!25!yellow,ultra thick]).}
 		\label{fig:isys}
 	\end{center}
 \end{figure}
@@ -60,7 +60,7 @@ On the user-facing side there is a personal computer (PC). This PC runs software
 \end{tikzpicture}
 		%\input{images/system_design.tikz}
 		%\includegraphics[width=\textwidth]{images/systemdesign.pdf} 
-		\caption{System Design: the yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue area marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.}
+		\caption[System Design]{System Design - The yellow area marks the user facing side of the system, the green area is the hardware that is mounted on the carrier board and the blue area marks the sensors deployed in the water stream. The rectangle marks the part of the system that is repeated $n$ times to get to the needed number of sensors.}
 		\label{fig:sys}
 	\end{center}
 \end{figure}
@@ -113,7 +113,7 @@ First tests with this sensor array showed the viability of the concept, however 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/v2.jpg} 
-		\caption{A handmade sensor strip. The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.}
+		\caption[A handmade sensor strip.]{A handmade sensor strip. The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.}
 		\label{fig:v2}
 	\end{center}
 \end{figure}
@@ -127,7 +127,7 @@ The final design for the sensor strip, as shown in Figure \ref{fig:fpcbd}, imple
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/fpcbd.pdf} 
-		\caption{The sensor strip design to be implemented as flexible PCB. The red lines mark the copper layer, the green line is the outline of the board.}
+		\caption[The sensor strip design to be implemented as flexible PCB.]{The sensor strip design to be implemented as flexible PCB. The red lines mark the copper layer, the green line is the outline of the board.}
 		\label{fig:fpcbd}
 	\end{center}
 \end{figure}
@@ -149,7 +149,7 @@ Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=0.3\textwidth]{images/ms.pdf} 
-		\caption{The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining.}
+		\caption[The functional block diagram of the ADG738 matrix switch.]{The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 .. S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is the driven by the clock signal, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining.}
 		\label{fig:ms}
 	\end{center}
 \end{figure}
@@ -165,7 +165,7 @@ The example timing diagram in Figure \ref{fig:msc} describes the data transmissi
   			DIN  	& 2{L} {2H} N(B1) 15{2L} \\
   			Data	& 2D{} 2D{1} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{} 2D{0} 2D{}\\
 		\end{tikztimingtable}
-		\caption{Example Timing diagram: data input starts when (SYNC) is pulled low. On falling edges of (SCLK), (DIN) is read. If (DIN) is high at that moment, the bit is 1, if low it is 0. After eight bits are transferred, (SYNC) is pulled high again and the data transfer is finished. The resulting state is a closed first switch while all other switches are open.}
+		\caption[Example Timing Diagram]{Example Timing Diagram - Data input starts when (SYNC) is pulled low. On falling edges of (SCLK), (DIN) is read. If (DIN) is high at that moment, the bit is 1, if low it is 0. After eight bits are transferred, (SYNC) is pulled high again and the data transfer is finished. The resulting state is a closed first switch while all other switches are open.}
 		\label{fig:msc}
 	\end{center}
 \end{figure}
@@ -197,31 +197,31 @@ The AC signal provided by the first stage is then fed into an operational amplif
 			   (out) node[right] {OUT}
 				;
 		\end{circuitikz}
-		\caption{The opamp (OA) modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).}
+		\caption[The opamp (OA) modulates the input signals (SIG) amplitude.]{The opamp (OA) modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).}
 		\label{fig:opamp}
 	\end{center}
 \end{figure}
 
 In the last step, the modulated output is amplified in two stages, filtered, and then measured by an analog-digital-converter (ADC). The ADC measures the voltage and provides the measurement to the microcontroller via I2C.\\
 
-First tests of the interface surfaced an interesting problem. The graph displayed in figure \ref{fig:swcap} shows the response to an immediate switch from the AC input signal to zero. The first red line marks the moment of the switch, the second line marks the moment when the response reached the voltage zero. The red dot marks the moment when the response reached the midpoint between the old and new input. It took \unit[40]{ms} for the response to follow the input. This slow response time is not acceptable in our system because it prohibits the rapid switching between sensors needed for the fast sampling of data. The slow response would smear the measurement over all sensors and it would not be possible to measure a difference between them. Waiting for that amount of time between each read of a sensor would reduce the time resolution to a level where the desired information can no longer be extracted from the data. The cause of this behavior is the filter placed before the ADC. As the output of the OpAmp is an alternating current, a diode and a filter capacitor are used to generate a direct current signal proportional to the amplitude of the AC signal. This is done so the sample rate of the ADC does not have to match the frequency of the signal, which makes it easier to use when fast sampling rates are not necessary.\\
+First tests of the interface surfaced an interesting problem. The graph displayed in figure \ref{fig:swcap} shows the response to an immediate switch from the AC input signal to zero. The first red line marks the moment of the switch, the second line marks the moment when the response reached the voltage zero. The red dot marks the moment when the response reached the midpoint between the old and new input. It took \unit[40]{ms} for the response to follow the input. This slow response time is not acceptable in our system because it prohibits the rapid switching between sensors needed for the fast sampling of data. The slow response would smear the measurement over all sensors and it would not be possible to measure a difference between them. Waiting for that amount of time between each read of a sensor would reduce the time resolution to a level where the desired information can no longer be extracted from the data. The cause of this behavior is the filter placed before the ADC. As the output of the opamp is an alternating current, a diode and a filter capacitor are used to generate a direct current signal proportional to the amplitude of the AC signal. This is done so the sample rate of the ADC does not have to match the frequency of the signal, which makes it easier to use when fast sampling rates are not necessary.\\
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\input{images/log_12052016_1}
 		%\includegraphics[width=0.8\textwidth]{images/switch_cap.pdf} 
-		\caption{The blue graph shows the measured voltage with a resistance of 0. At the first red line, a switch breaks the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit[0.04]{s}, marked by the second red line.}
+		\caption[The scatter plot shows the measured voltage with a resistance of 0.]{The blue graph shows the measured voltage with a resistance of 0. At the first red line, a switch breaks the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit[0.04]{s}, marked by the second red line.}
 		\label{fig:swcap}
 	\end{center}
 \end{figure}
 
 Figure \ref{fig:swnocap} shows the response to the same switching as before, but with the filter capacitor removed. The diode is still in place and removes the negative voltages from the output. Without the capacitor however, the signal oscillates with the same \unit[1666]{Hz} as the Wien bridge oscillator provides. Because the sample rate of the ADC is not as fast as the oscillation, it measures at random moments on the sine wave, resulting in an output that moves between zero and the maximum amplitude. The red line again marks the moment of the switch and it can be clearly seen that the response delay is now gone. The oscillating behavior that was electrically filtered before is now visible and has to be addressed in the data analysis which will be described later in the Section \ref{val} Validation.
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\input{images/log_12052016_2}
 		%\includegraphics[width=0.8\textwidth]{images/switch_nocap.pdf} 
-		\caption{The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0. The red line marks the breaking of the connection. The signal follows without delay.}
+		\caption[The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0.]{The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0. The red line marks the breaking of the connection. The signal follows without delay.}
 		\label{fig:swnocap}
 	\end{center}
 \end{figure}
@@ -272,7 +272,7 @@ The data is sent in a simple format described in the Listing \ref{lst:format}. O
 	%\begin{pgfonlayer}{nodelayer}
 		\node [style=scircle, inner sep=6pt, fill=Green!20!White, draw=Green!20!White,align=center, minimum width={width("control")+12pt},] (0) at (0, 16) {power:\\on};
 		\node [style=scircle, inner sep=6pt, fill=Green!20!White, draw=Green!20!White, align=center] (1) at (0, 12.5) {control:\\start};
-		\node [style=diamond, inner sep=8pt, align=center, fill=Blue!20!White, draw=Blue!20!White] (2) at (0, 9) {if i < n};
+		\node [style=diamond, inner sep=8pt, align=center, fill=Blue!20!White, draw=Blue!20!White] (2) at (0, 9) {while\\i < n};
 		\node [style=rect, inner sep=8pt, align=center, fill=Yellow!20!White, draw=Yellow!20!White] (3) at (0, 6) {switch to\\sensor i};
 		\node [style=rect, inner sep=8pt, align=center, fill=Yellow!20!White, draw=Yellow!20!White] (4) at (0, 4) {read ADC};
 		\node [style=rect, inner sep=8pt, align=center, fill=Yellow!20!White, draw=Yellow!20!White] (5) at (0, 2) {create\\timestamp};
@@ -302,7 +302,7 @@ The data is sent in a simple format described in the Listing \ref{lst:format}. O
 		\draw [dashed] (-2.5,17) -- (-2.5,-0.5);
 	%\end{pgfonlayer}
 \end{tikzpicture}
-		\caption{Embedded Software Flow Diagram - If the power state of the device is "on" and  the control state is "start" data is collected. The control state is set by a signal sent from the GUI and can be changed asynchronously. Data collection is done in a while-loop that runs as long as the iterator i is smaller than the number of sensors n. In the loop, first the Matrix Switches are set to the i-th sensor, then the ADC is read and afterwards a timestamp is created. When the cycle through all sensors is finished the data is sent to the GUI. Then the loop is started again. This happens until either the control state switches to "stop" or the power state to "off".}
+		\caption[Embedded Software Flow Diagram]{Embedded Software Flow Diagram - If the power state of the device is "on" and  the control state is "start" data is collected. The control state is set by a signal sent from the GUI and can be changed asynchronously. Data collection is done in a while-loop that runs as long as the iterator i is smaller than the number of sensors n. In the loop, first the Matrix Switches are set to the i-th sensor, then the ADC is read and afterwards a timestamp is created. When the cycle through all sensors is finished the data is sent to the GUI. Then the loop is started again. This happens until either the control state switches to "stop" or the power state to "off".}
 		\label{fig:flow}
 	\end{center}
 \end{figure}
@@ -324,7 +324,7 @@ The live visualization is a bar graph showing each sensor's current measurement,
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/UI.png}
-		\caption{OpenSalinity GUI - in this example sensor $\#4$ measures a resistance of zero (shorted with a wire), all others a infinite resistance (air gap). The Start/Stop button is on the top left, the Save button on the top right. The path to the chosen file is displayed in the header bar.}
+		\caption[OpenSalinity GUI]{OpenSalinity GUI - in this example sensor $\#4$ measures a resistance of zero (shorted with a wire), all others a infinite resistance (air gap). The Start/Stop button is on the top left, the Save button on the top right. The path to the chosen file is displayed in the header bar.}
 		\label{fig:opamp}
 	\end{center}
 \end{figure}
@@ -369,7 +369,7 @@ The microcontroller measures time since start up by counting clock cycles. These
 
 \section{Bill of Materials} \label{BOM}
 
-The bill of materials collects all used components, their price and a possible source in Table \ref{tab:bom}. Except for the MinieC multiple sources are available for all parts. In case it becomes unavailable, the hardware design files are provided, tso they could be manufactured by a different source if need be. The Espruino Pico also comes from a small manufacturer and may not be available in the future. However, alternatives are plentiful and can be used either with simple jumper cables or by redesigning the carrier board to accommodate the different footprint.
+The bill of materials collects all used components, their price and a possible source in Table \ref{tab:bom}. Except for the MinieC multiple sources are available for all parts. In case it becomes unavailable, the hardware design files are provided, so they could be manufactured by a different source if need be. The Espruino Pico also comes from a small manufacturer and may not be available in the future. However, alternatives are plentiful and can be used either with simple jumper cables or by redesigning the carrier board to accommodate the different footprint.
 
 The carrier board and sensor strip are made to order by PCB makers. Generally, any manufacturer will be able to produce the boards with the provided design files, however the size limits and corresponding prices can vary. The prices also strongly depend on lot size. The prices in the table are the prices per piece for a lot of ten carrier boards and 16 sensor strips.
 
@@ -378,29 +378,29 @@ The carrier board and sensor strip are made to order by PCB makers. Generally, a
 
     \caption[Bill of Materials]{Bill of Materials}
     \label{tab:bom}
-    \begin{tabular}{llllll}
+    \begin{tabular}{llllr}
         	\toprule
-        	Nr. & Qt. & Name & Source & Price \tabularnewline
+        	Nr. & Qt. & Name & Source & Price, \euro{}/pt  \tabularnewline
         	\midrule
-		1 & 1 & Espruino Pico & watterott.com & \euro{26.95} \tabularnewline
-		2 & 1 & Sparky's Widgets MinieeC Interface & sparkyswidgets.com & \euro{21.66} \tabularnewline
-		3 & 2 & Analog Devices ADG738 & mouser.de & \euro{3.89} \tabularnewline
-		4 & 1 & Carrier Board & dirtypcbs.com & \euro{4.87} \tabularnewline
-		5 & 2 & Sensor Strip & leiton.de & \euro{23.53} \tabularnewline
-		6 & 1 & USB Extension Cable & amazon.de & \euro{5.49} \tabularnewline
-		7 & 1 &  Flat Ribbon Cable 40-pole & amazon.de & \euro{7.99} \tabularnewline
+		1 & 1 & Espruino Pico & watterott.com & 26.95 \tabularnewline
+		2 & 1 & Sparky's Widgets MinieeC Interface & sparkyswidgets.com & 21.66 \tabularnewline
+		3 & 2 & Analog Devices ADG738 & mouser.de & 3.89 \tabularnewline
+		4 & 1 & Carrier Board & dirtypcbs.com & 4.87 \tabularnewline
+		5 & 2 & Sensor Strip & leiton.de & 23.53 \tabularnewline
+		6 & 1 & USB Extension Cable & amazon.de & 5.49 \tabularnewline
+		7 & 1 &  Flat Ribbon Cable 40-pole & amazon.de & 7.99 \tabularnewline
         \bottomrule
     \end{tabular}
 \end{table}
 
-\section{Collection of Software}
+\section{List of Software}
 
 Table \ref{tab:sw} lists all software used in this project, including the version numbers. All involved software is Open Source and can be obtained freely. The packages used to analyze and plot the data are provided at the end of the list, however, the documented data format should enable the user to replace those with whatever tools he or she is most comfortable with. All software written during this project are provided under the MIT license.
 
 \begin{table}[H]
     \centering
 
-    \caption[Collection of Software]{Collection of Software}
+    \caption[List of Software]{List of Software}
     \label{tab:sw}
     \begin{tabular}{lllp{0.25\textwidth}}
         	\toprule

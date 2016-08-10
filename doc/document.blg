@@ -28,44 +28,44 @@ Database file #2: salinity.bib
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 11 entries,
+You've used 10 entries,
             6047 wiz_defined-function locations,
-            1185 strings with 9534 characters,
-and the built_in function-call counts, 29353 in all, are:
-= -- 1122
-> -- 907
-< -- 287
-+ -- 243
-- -- 290
-* -- 1886
-:= -- 1848
+            1182 strings with 9517 characters,
+and the built_in function-call counts, 26812 in all, are:
+= -- 1036
+> -- 829
+< -- 263
++ -- 228
+- -- 266
+* -- 1723
+:= -- 1706
 add.period$ -- 0
-call.type$ -- 11
-change.case$ -- 143
+call.type$ -- 10
+change.case$ -- 133
 chr.to.int$ -- 34
-cite$ -- 20
-duplicate$ -- 3330
-empty$ -- 3306
-format.name$ -- 513
-if$ -- 6802
+cite$ -- 18
+duplicate$ -- 3024
+empty$ -- 3006
+format.name$ -- 465
+if$ -- 6209
 int.to.chr$ -- 0
-int.to.str$ -- 26
+int.to.str$ -- 24
 missing$ -- 0
-newline$ -- 226
-num.names$ -- 464
-pop$ -- 3321
+newline$ -- 210
+num.names$ -- 423
+pop$ -- 2991
 preamble$ -- 1
-purify$ -- 155
+purify$ -- 144
 quote$ -- 0
-skip$ -- 1733
+skip$ -- 1580
 stack$ -- 0
-substring$ -- 537
-swap$ -- 1028
-text.length$ -- 265
-text.prefix$ -- 10
+substring$ -- 523
+swap$ -- 940
+text.length$ -- 241
+text.prefix$ -- 9
 top$ -- 1
-type$ -- 406
+type$ -- 368
 warning$ -- 0
-while$ -- 224
+while$ -- 208
 width$ -- 0
-write$ -- 214
+write$ -- 199

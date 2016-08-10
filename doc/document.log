@@ -1,20 +1,18 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.6.6)  10 AUG 2016 09:55
-entering extended mode
- \write18 enabled.
- %&-line parsing enabled.
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2016.6.6)  10 AUG 2016 20:34
+ restricted \write18 enabled.
 **document.tex
 (./document.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrreprt.cls
 Document Class: scrreprt 2015/10/03 v3.19a KOMA-Script document class (report)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
-basics and keyval usage)
+Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
+Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -38,8 +36,8 @@ Package tocbasic Info: omitting babel extension for `lof'
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 127.
-Package tocbasic Info: defining new hook before heading of `' on input line 158
-8.
+Package tocbasic Info: defining new hook before heading of `' on input line 1588
+.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
@@ -94,6 +92,88 @@ LaTeX Info: Redefining \textsubscript on input line 4652.
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/02/24 3.9q The Babel package
 
+(/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
+\l@dumylang=\language1
+\l@nohyphenation=\language2
+\l@estonian=\language3
+\l@friulan=\language4
+\l@greek=\language5
+\l@romanian=\language6
+\l@kurmanji=\language7
+\l@classiclatin=\language8
+\l@gujarati=\language9
+\l@ancientgreek=\language10
+\l@assamese=\language11
+\l@occitan=\language12
+\l@afrikaans=\language13
+\l@catalan=\language14
+\l@farsi=\language15
+\l@dutch=\language16
+\l@serbianc=\language17
+\l@slovak=\language18
+\l@german=\language19
+\l@panjabi=\language20
+\l@croatian=\language21
+\l@usenglishmax=\language22
+\l@portuguese=\language23
+\l@bokmal=\language24
+\l@serbian=\language25
+\l@ukenglish=\language26
+\l@hindi=\language27
+\l@welsh=\language28
+\l@marathi=\language29
+\l@slovenian=\language30
+\l@ngerman-x-2014-05-21=\language31
+\l@swissgerman=\language32
+\l@russian=\language33
+\l@pinyin=\language34
+\l@lithuanian=\language35
+\l@finnish=\language36
+\l@icelandic=\language37
+\l@turkmen=\language38
+\l@telugu=\language39
+\l@mongolian=\language40
+\l@uppersorbian=\language41
+\l@bulgarian=\language42
+\l@swedish=\language43
+\l@arabic=\language44
+\l@german-x-2014-05-21=\language45
+\l@french=\language46
+\l@turkish=\language47
+\l@ngerman=\language48
+\l@sanskrit=\language49
+\l@romansh=\language50
+\l@tamil=\language51
+\l@latin=\language52
+\l@galician=\language53
+\l@hungarian=\language54
+\l@interlingua=\language55
+\l@italian=\language56
+\l@kannada=\language57
+\l@ethiopic=\language58
+\l@bengali=\language59
+\l@monogreek=\language60
+\l@danish=\language61
+\l@polish=\language62
+\l@ibycus=\language63
+\l@oriya=\language64
+\l@czech=\language65
+\l@basque=\language66
+\l@mongolianlmc=\language67
+\l@esperanto=\language68
+\l@irish=\language69
+\l@nynorsk=\language70
+\l@ukrainian=\language71
+\l@malayalam=\language72
+\l@piedmontese=\language73
+\l@latvian=\language74
+\l@spanish=\language75
+\l@thai=\language76
+\l@armenian=\language77
+\l@indonesian=\language78
+\l@georgian=\language79
+\l@coptic=\language80
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
@@ -102,12 +182,15 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def))
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-en-gb.te
+x ASCII Hyphenation patterns for British English
+(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-en-gb.te
+x)))) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
@@ -130,8 +213,6 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box27
 )
-Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
-
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -217,18 +298,19 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
-Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-def/xetex.def
-File: xetex.def 2015/09/11 v4.06 LaTeX color/graphics driver for XeTeX (TeX Liv
-e/RRM/JK)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-))
+)
+\Gread@gobject=\count94
+)
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
@@ -243,8 +325,9 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \everycr=\toks19
 \minrowclearance=\skip53
 )
-\rownum=\count94
+\rownum=\count95
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -265,38 +348,38 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip55
 \LTpre=\skip56
 \LTpost=\skip57
-\LTchunksize=\count95
+\LTchunksize=\count96
 \LTcapwidth=\dimen120
 \LT@head=\box28
 \LT@firsthead=\box29
 \LT@foot=\box30
 \LT@lastfoot=\box31
-\LT@cols=\count96
-\LT@rows=\count97
-\c@LT@tables=\count98
-\c@LT@chunks=\count99
+\LT@cols=\count97
+\LT@rows=\count98
+\c@LT@tables=\count99
+\c@LT@chunks=\count100
 \LT@p@ftn=\toks20
 )
 Class scrreprt Info: longtable captions redefined on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count100
+\lst@mode=\count101
 \lst@gtempboxa=\box32
 \lst@token=\toks21
-\lst@length=\count101
+\lst@length=\count102
 \lst@currlwidth=\dimen121
-\lst@column=\count102
-\lst@pos=\count103
+\lst@column=\count103
+\lst@pos=\count104
 \lst@lostspace=\dimen122
 \lst@width=\dimen123
-\lst@newlines=\count104
-\lst@lineno=\count105
+\lst@newlines=\count105
+\lst@lineno=\count106
 \lst@maxwidth=\dimen124
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count106
-\lst@skipnumbers=\count107
+\c@lstnumber=\count107
+\lst@skipnumbers=\count108
 \lst@framebox=\box33
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -315,6 +398,7 @@ Package: expl3 2016/01/19 v6377 L3 programming layer (loader)
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2016/01/19 v6377 L3 programming layer (code)
 L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
+\ucharcat@table=\catcodetable5
 L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
 L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
 L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
@@ -322,24 +406,24 @@ L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
 L3 Module: l3str 2016/01/03 v6357 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/01/05 v6366 L3 Integers
-\c_max_int=\count108
-\l_tmpa_int=\count109
-\l_tmpb_int=\count110
-\g_tmpa_int=\count111
-\g_tmpb_int=\count112
+\c_max_int=\count109
+\l_tmpa_int=\count110
+\l_tmpb_int=\count111
+\g_tmpa_int=\count112
+\g_tmpb_int=\count113
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count113
+\g__prg_map_int=\count114
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2015/09/28 v6113 L3 Messages
 L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
-\l_iow_line_count_int=\count114
-\l__iow_target_count_int=\count115
-\l__iow_current_line_int=\count116
-\l__iow_current_word_int=\count117
-\l__iow_current_indentation_int=\count118
+\l_iow_line_count_int=\count115
+\l__iow_target_count_int=\count116
+\l__iow_current_line_int=\count117
+\l__iow_current_word_int=\count118
+\l__iow_current_indentation_int=\count119
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen125
 \c_max_dim=\dimen126
@@ -360,18 +444,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count119
-\l_keys_choice_int=\count120
+\g__keyval_level_int=\count120
+\l_keys_choice_int=\count121
 L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
-\c__fp_leading_shift_int=\count121
-\c__fp_middle_shift_int=\count122
-\c__fp_trailing_shift_int=\count123
-\c__fp_big_leading_shift_int=\count124
-\c__fp_big_middle_shift_int=\count125
-\c__fp_big_trailing_shift_int=\count126
-\c__fp_Bigg_leading_shift_int=\count127
-\c__fp_Bigg_middle_shift_int=\count128
-\c__fp_Bigg_trailing_shift_int=\count129
+\c__fp_leading_shift_int=\count122
+\c__fp_middle_shift_int=\count123
+\c__fp_trailing_shift_int=\count124
+\c__fp_big_leading_shift_int=\count125
+\c__fp_big_middle_shift_int=\count126
+\c__fp_big_trailing_shift_int=\count127
+\c__fp_Bigg_leading_shift_int=\count128
+\c__fp_Bigg_middle_shift_int=\count129
+\c__fp_Bigg_trailing_shift_int=\count130
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box34
 \l_tmpa_box=\box35
@@ -419,25 +503,61 @@ L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
 \l__coffin_scaled_width_dim=\dimen155
 L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
-File: l3xdvidpfmx.def 2015/11/11 v6250 L3 Experimental driver: xdvipdfmx
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count131
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count130
-\l__xparse_m_args_int=\count131
-\l__xparse_mandatory_args_int=\count132
-\l__xparse_processor_int=\count133
-\l__xparse_v_nesting_int=\count134
+\l__xparse_current_arg_int=\count132
+\l__xparse_m_args_int=\count133
+\l__xparse_mandatory_args_int=\count134
+\l__xparse_processor_int=\count135
+\l__xparse_v_nesting_int=\count136
 )
 Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload.sty
+Package: luaotfload 2015/12/09 v2.6 OpenType layout system
+Lua module: luaotfload-main 2015/12/09 2.60001 OpenType layout system.
+Lua module: lualibs 2015-12-02 2.3 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2015-12-02 2.3 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /home/plam/.texmf-var/luatex-cache/generic)(using r
+ead cache: /var/lib/texmf/luatex-cache/generic /home/plam/.texmf-var/luatex-cach
+e/generic)
+luaotfload | conf : Root cache directory is /home/plam/.texmf-var/luatex-cache/g
+eneric/names.
+luaotfload | init : Loading fontloader “fontloader-2016-02-12.lua” from kpse
+-resolved path “/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader
+-2016-02-12.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@cursbase = 2
+Lua-only attribute luaotfload@noligature = 3
+luaotfload | init : Context OpenType loader version “2.82”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /home/plam/.texmf-var/luatex-cache/g
+eneric/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.056 seconds)
+Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
 X
-\l_fontspec_script_int=\count135
-\l_fontspec_language_int=\count136
-\l_fontspec_strnum_int=\count137
+\l_fontspec_script_int=\count137
+\l_fontspec_language_int=\count138
+\l_fontspec_strnum_int=\count139
 \l__fontspec_tmpa_dim=\dimen156
 \l__fontspec_tmpb_dim=\dimen157
 \l__fontspec_tmpc_dim=\dimen158
@@ -446,31 +566,45 @@ X
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def
-File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu2enc.def
+File: eu2enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 )
-LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+LaTeX Font Info:    Try loading font information for EU2+lmr on input line 105.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd
-File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu2lmr.fd
+File: eu2lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+luaotfload | db : Font names database loaded from /home/plam/.texmf-var/luatex-c
+ache/generic/names/luaotfload-names.luc(compiling luc: /var/lib/texmf/luatex-cac
+he/generic/fonts/otf/lmroman10-regular.luc)(load luc: /home/plam/.texmf-var/luat
+ex-cache/generic/fonts/otf/lmroman10-regular.luc))(compiling luc: /var/lib/texmf
+/luatex-cache/generic/fonts/otf/lmroman12-regular.luc)(load luc: /home/plam/.tex
+mf-var/luatex-cache/generic/fonts/otf/lmroman12-regular.luc)
 (/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
-File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
-other characters in Unicode lower plane
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
+ther characters in Unicode lower plane
 
 *** you should *not* be loading the inputenc package
 *** XeTeX expects the source to be in UTF8 encoding
 *** some features of other encodings may conflict, resulting in poor output.
 (/usr/share/texmf/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
-LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
-.
+(compiling luc: /var/lib/texmf/luatex-cache/generic/fonts/otf/lmromanslant12-reg
+ular.luc)(load luc: /home/plam/.texmf-var/luatex-cache/generic/fonts/otf/lmroman
+slant12-regular.luc)(compiling luc: /var/lib/texmf/luatex-cache/generic/fonts/ot
+f/lmroman12-italic.luc)(load luc: /home/plam/.texmf-var/luatex-cache/generic/fon
+ts/otf/lmroman12-italic.luc)(compiling luc: /var/lib/texmf/luatex-cache/generic/
+fonts/otf/lmroman12-bold.luc)(load luc: /home/plam/.texmf-var/luatex-cache/gener
+ic/fonts/otf/lmroman12-bold.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmss on input line 357.
 
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
-File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-\tipaTiiicode=\count138
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu2lmss.fd
+File: eu2lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)(compiling luc: /var/lib/texmf/luatex-cache/generic/fonts/otf/lmsans12-regular.
+luc)(load luc: /home/plam/.texmf-var/luatex-cache/generic/fonts/otf/lmsans12-reg
+ular.luc))
+\tipaTiiicode=\count140
 \tipasavetokens=\toks22
 \tipachecktokens=\toks23
 
@@ -486,7 +620,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: xetex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 )
 \Gin@req@height=\dimen159
 \Gin@req@width=\dimen160
@@ -494,157 +628,197 @@ Package graphics Info: Driver file: xetex.def on input line 95.
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 353.
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 356.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fontspec with sig. 'om' on line 355.
+. Defining command \fontspec with sig. 'om' on line 358.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmainfont with sig. 'om' on line 365.
+. Defining command \setmainfont with sig. 'om' on line 368.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setsansfont with sig. 'om' on line 375.
+. Defining command \setsansfont with sig. 'om' on line 378.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmonofont with sig. 'om' on line 385.
+. Defining command \setmonofont with sig. 'om' on line 388.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathrm with sig. 'om' on line 399.
+. Defining command \setmathrm with sig. 'om' on line 402.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setboldmathrm with sig. 'om' on line 407.
+. Defining command \setboldmathrm with sig. 'om' on line 410.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathsf with sig. 'om' on line 415.
+. Defining command \setmathsf with sig. 'om' on line 418.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathtt with sig. 'om' on line 423.
+. Defining command \setmathtt with sig. 'om' on line 426.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontfamily with sig. 'mom' on line 437.
+. Defining command \newfontfamily with sig. 'mom' on line 440.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontface with sig. 'mom' on line 453.
+. Defining command \newfontface with sig. 'mom' on line 456.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \defaultfontfeatures with sig. 't+om' on line 467.
+. Defining command \defaultfontfeatures with sig. 't+om' on line 470.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \addfontfeatures with sig. 'm' on line 529.
+. Defining command \addfontfeatures with sig. 'm' on line 533.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontfeature with sig. 'mm' on line 540.
+. Defining command \newfontfeature with sig. 'mm' on line 544.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newAATfeature with sig. 'mmmm' on line 548.
+. Defining command \newAATfeature with sig. 'mmmm' on line 552.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newopentypefeature with sig. 'mmm' on line 556.
+. Defining command \newopentypefeature with sig. 'mmm' on line 560.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \aliasfontfeature with sig. 'mm' on line 577.
+. Defining command \aliasfontfeature with sig. 'mm' on line 581.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 586.
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 590.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontscript with sig. 'mm' on line 590.
+. Defining command \newfontscript with sig. 'mm' on line 594.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontlanguage with sig. 'mm' on line 594.
+. Defining command \newfontlanguage with sig. 'mm' on line 598.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 603.
 .................................................
-\l__fontspec_tmp_int=\count139
+\l__fontspec_tmp_int=\count141
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
-LaTeX Info: Redefining \itshape on input line 2705.
-LaTeX Info: Redefining \slshape on input line 2710.
-LaTeX Info: Redefining \scshape on input line 2715.
-LaTeX Info: Redefining \upshape on input line 2720.
-\l__fontspec_em_int=\count140
-\l__fontspec_emdef_int=\count141
-LaTeX Info: Redefining \em on input line 2736.
-LaTeX Info: Redefining \emph on input line 2742.
-LaTeX Info: Redefining \- on input line 2746.
+LaTeX Info: Redefining \itshape on input line 2629.
+LaTeX Info: Redefining \slshape on input line 2634.
+LaTeX Info: Redefining \scshape on input line 2639.
+LaTeX Info: Redefining \upshape on input line 2644.
+\l__fontspec_em_int=\count142
+\l__fontspec_emdef_int=\count143
+LaTeX Info: Redefining \em on input line 2660.
+LaTeX Info: Redefining \emph on input line 2666.
+LaTeX Info: Redefining \- on input line 2670.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \oldstylenums with sig. 'm' on line 2841.
+. Redefining command \oldstylenums with sig. 'm' on line 2765.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \liningnums with sig. 'm' on line 2845.
+. Defining command \liningnums with sig. 'm' on line 2769.
 .................................................
 ))
+luaotfload | cache : Lookup cache loaded from /home/plam/.texmf-var/luatex-cache
+/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"(compiling luc: /var/lib/texmf/luatex-cache/generic/fonts/otf/sourceserifpro-
+regular.luc)(load luc: /home/plam/.texmf-var/luatex-cache/generic/fonts/otf/sour
+ceserifpro-regular.luc)
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+*************************************************
+* fontspec warning: "no-mapping-ligtex"
+* 
+* Input mapping not (yet?) supported in LuaTeX.
+* Use "Ligatures=TeX" instead of "Mapping=tex-text".
+*************************************************
 .................................................
 . fontspec info: "set-scale"
 . 
 . Source Serif Pro scale = 0.9073674586406712.
 .................................................
-\g__fontspec_family_SourceSerifPro_int=\count142
+\g__fontspec_family_SourceSerifPro_int=\count144
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.o
+tf"
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Source Serif Pro/BI (it probably doesn't exist).
+.................................................
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Bold.ttf"
+(compiling luc: /var/lib/texmf/luatex-cache/generic/fonts/otf/sourceserifpro-bol
+d.luc)(load luc: /home/plam/.texmf-var/luatex-cache/generic/fonts/otf/sourceseri
+fpro-bold.luc)
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.o
+tf"
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font Source Serif Pro/I (it probably doesn't exist).
 .................................................
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
 .................................................
 . fontspec info: "set-scale"
 . 
-. Source Serif Pro scale = 0.9073674586406712.
+. SourceSerifPro scale = 0.9073674586406712.
 .................................................
+luaotfload | aux : font no 25 (SourceSerifPro-Regular) does not define feature s
+mcp for script latn with language dflt
+luaotfload | aux : no font with id 25
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Bold.ttf"
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Bold.ttf"
 .................................................
 . fontspec info: "set-scale"
 . 
-. Source Serif Pro/B scale = 0.9073674586406712.
+. SourceSerifPro/B scale = 0.9073674586406712.
 .................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Source Serif Pro/BI scale = 0.9073674586406712.
-.................................................
+luaotfload | aux : font no 26 (SourceSerifPro-Bold) does not define feature smcp
+ for script latn with language dflt
+luaotfload | aux : no font with id 26
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -652,72 +826,100 @@ LaTeX Info: Redefining \- on input line 2746.
 . options [Mapping=tex-text,Scale=MatchLowercase,Ligatures=TeX].
 . 
 . This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->s*[0.9073674586406712]"Source Serif
-. Pro/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;"
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[0.9073674586406712]"SourceSerifPro:mode=node;script=latn;language=DFLT;+
+tlig;+tlig;"
 . - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
-. <->s*[0.9073674586406712]"Source Serif
-. Pro/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: - 'bold italic' (bx/it) with
-. NFSS spec.: <->s*[0.9073674586406712]"Source Serif
-. Pro/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. <->s*[0.9073674586406712]"SourceSerifPro/B:mode=node;script=latn;language=DFLT
+;+tlig;+tlig;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
 .................................................
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
 (Font)              scaled to size 11.79573pt on input line 22.
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+*************************************************
+* fontspec warning: "no-mapping-ligtex"
+* 
+* Input mapping not (yet?) supported in LuaTeX.
+* Use "Ligatures=TeX" instead of "Mapping=tex-text".
+*************************************************
 .................................................
 . fontspec info: "set-scale"
 . 
 . Source Serif Pro scale = 0.9073625165251987.
 .................................................
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.o
+tf"
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Source Serif Pro/BI (it probably doesn't exist).
+.................................................
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Bold.ttf"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.t
+tf"
+luaotfload | load : Lookup/name: "Source Serif Pro" -> "SourceSerifPro-Regular.o
+tf"
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font Source Serif Pro/I (it probably doesn't exist).
 .................................................
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
 .................................................
 . fontspec info: "set-scale"
 . 
-. Source Serif Pro scale = 0.9073625165251987.
+. SourceSerifPro scale = 0.9073625165251987.
 .................................................
+luaotfload | aux : font no 25 (SourceSerifPro-Regular) does not define feature s
+mcp for script latn with language dflt
+luaotfload | aux : no font with id 25
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Bold.ttf"
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Bold.ttf"
 .................................................
 . fontspec info: "set-scale"
 . 
-. Source Serif Pro/B scale = 0.9073625165251987.
+. SourceSerifPro/B scale = 0.9073625165251987.
 .................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Source Serif Pro/BI scale = 0.9073625165251987.
-.................................................
+luaotfload | aux : font no 26 (SourceSerifPro-Bold) does not define feature smcp
+ for script latn with language dflt
+luaotfload | aux : no font with id 26
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'SourceSerifPro(1)' created for font 'Source Serif Pro' with
 . options
-. [Mapping=tex-text,Scale=MatchLowercase,WordSpace={1,0,0},PunctuationSpace=Wor
-dSpace].
+. [Mapping=tex-text,Scale=MatchLowercase,WordSpace={1,0,0},PunctuationSpace=Word
+Space].
 . 
 . This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->s*[0.9073625165251987]"Source Serif
-. Pro/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[0.9073625165251987]"SourceSerifPro:mode=node;script=latn;language=DFLT;+
+tlig;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 . and font adjustment code:
 . \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
 . \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
-. - 'bold' (bx/n) with NFSS spec.: <->s*[0.9073625165251987]"Source Serif
-. Pro/B/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[0.9073625165251987]"SourceSerifPro/B:mode=node;script=latn;language=DFLT
+;+tlig;"
 . - 'bold small caps'  (bx/sc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
-. - 'bold italic' (bx/it) with NFSS spec.: <->s*[0.9073625165251987]"Source
-. Serif Pro/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 . and font adjustment code:
 . \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
 . \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
 .................................................
-
 (/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2015/11/14 v0.62 LaTeX wrapper for `PSTricks' (RN,HV)
 
@@ -733,20 +935,20 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks24
 \XKV@tempa@toks=\toks25
 )
-\XKV@depth=\count143
+\XKV@depth=\count145
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.05, 2010/01/17 (hv)
-\pstFP@xs=\count144
-\pstFP@xia=\count145
-\pstFP@xib=\count146
-\pstFP@xfa=\count147
-\pstFP@xfb=\count148
-\pstFP@rega=\count149
-\pstFP@regb=\count150
-\pstFP@regs=\count151
-\pstFP@times=\count152
+\pstFP@xs=\count146
+\pstFP@xia=\count147
+\pstFP@xib=\count148
+\pstFP@xfa=\count149
+\pstFP@xfb=\count150
+\pstFP@rega=\count151
+\pstFP@regb=\count152
+\pstFP@regs=\count153
+\pstFP@times=\count154
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks26
@@ -773,16 +975,16 @@ ex
 \pgf@ya=\dimen168
 \pgf@yb=\dimen169
 \pgf@yc=\dimen170
-\c@pgf@counta=\count153
-\c@pgf@countb=\count154
-\c@pgf@countc=\count155
-\c@pgf@countd=\count156
-\pgfutil@tempcnta=\count157
-\pgfutil@tempcntb=\count158
+\c@pgf@counta=\count155
+\c@pgf@countb=\count156
+\c@pgf@countc=\count157
+\c@pgf@countd=\count158
+\pgfutil@tempcnta=\count159
+\pgfutil@tempcntb=\count160
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen171
-\pgfmath@count=\count159
+\pgfmath@count=\count161
 \pgfmath@box=\box49
 \pgfmath@toks=\toks30
 \pgfmath@stack@operand=\toks31
@@ -806,14 +1008,14 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count160
+\c@pgfmathroundto@lastzeros=\count162
 ))
 \pgffor@iter=\dimen172
 \pgffor@skip=\dimen173
 \pgffor@stack=\toks33
 \pgffor@toks=\toks34
 )
-\psLoopIndex=\count161
+\psLoopIndex=\count163
 
 `PSTricks' v2.64b  <2015/14/11> (tvz)
 \pst@dima=\dimen174
@@ -829,24 +1031,23 @@ thmetics.code.tex)))
 \pst@hbox=\box50
 \pst@ibox=\box51
 \pst@boxg=\box52
-\pst@cnta=\count162
-\pst@cntb=\count163
-\pst@cntc=\count164
-\pst@cntd=\count165
-\pst@cntg=\count166
-\pst@cnth=\count167
-\pst@cntm=\count168
-\pst@cntn=\count169
-\pst@cnto=\count170
-\pst@cntp=\count171
-\@zero=\count172
+\pst@cnta=\count164
+\pst@cntb=\count165
+\pst@cntc=\count166
+\pst@cntd=\count167
+\pst@cntg=\count168
+\pst@cnth=\count169
+\pst@cntm=\count170
+\pst@cntn=\count171
+\pst@cnto=\count172
+\pst@cntp=\count173
+\@zero=\count174
 \pst@toks=\toks35
-(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
-(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
 \psunit=\dimen184
 \psxunit=\dimen185
 \psyunit=\dimen186
-\pst@C@@rType=\count173
+\pst@C@@rType=\count175
 \pslinewidth=\dimen187
 \psk@startLW=\dimen188
 \psk@endLW=\dimen189
@@ -861,13 +1062,10 @@ thmetics.code.tex)))
 \sh@wgridXunit=\dimen196
 \sh@wgridYunit=\dimen197
 \pst@shift=\dimen198
-
-(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
-(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg
-Using PSTricks configuration for XeTeX+xdvipdfmx
-)))
+)
 File: pstricks.tex 2015/14/11 v2.64b `PSTricks' (tvz,hv)
- (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
 File: pst-fp.tex 2015/14/11 v2.64b `PST-fp' (hv)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
@@ -877,12 +1075,12 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@old@col=\dimen257
 \TX@target=\dimen258
 \TX@delta=\dimen259
-\TX@cols=\count174
+\TX@cols=\count176
 \TX@ftn=\toks38
 )
 (/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
-Package: circuitikz 2015/05/15 The CircuiTikz circuit drawing package version 0
-.4
+Package: circuitikz 2015/05/15 The CircuiTikz circuit drawing package version 0.
+4
 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -919,10 +1117,10 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \pgf@yc=\dimen269
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count175
-\c@pgf@countb=\count176
-\c@pgf@countc=\count177
-\c@pgf@countd=\count178
+\c@pgf@counta=\count177
+\c@pgf@countb=\count178
+\c@pgf@countc=\count179
+\c@pgf@countd=\count180
 \t@pgf@toka=\toks40
 \t@pgf@tokb=\toks41
 \t@pgf@tokc=\toks42
@@ -930,25 +1128,20 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-xetex.def
+Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
-File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
-File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
 f
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)
-\pgfsys@objnum=\count179
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count180
-\pgfsyssoftpath@bigbuffer@items=\count181
+\pgfsyssoftpath@smallbuffer@items=\count181
+\pgfsyssoftpath@bigbuffer@items=\count182
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -994,7 +1187,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box54
 \pgf@hbox=\box55
 \pgf@layerbox@main=\box56
-\pgf@picture@serial@count=\count182
+\pgf@picture@serial@count=\count183
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -1027,7 +1220,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen293
-\pgf@sys@shading@range@num=\count183
+\pgf@sys@shading@range@num=\count184
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1084,7 +1277,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count184
+\pgf@plot@mark@count=\count185
 \pgfplotmarksize=\dimen298
 )
 \tikz@lastx=\dimen299
@@ -1097,18 +1290,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box60
 \tikz@tempbox=\box61
 \tikz@tempbox@bg=\box62
-\tikztreelevel=\count185
-\tikznumberofchildren=\count186
-\tikznumberofcurrentchild=\count187
-\tikz@fig@count=\count188
+\tikztreelevel=\count186
+\tikznumberofchildren=\count187
+\tikznumberofcurrentchild=\count188
+\tikz@fig@count=\count189
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count189
-\pgfmatrixcurrentcolumn=\count190
-\pgf@matrix@numberofcolumns=\count191
+\pgfmatrixcurrentrow=\count190
+\pgfmatrixcurrentcolumn=\count191
+\pgf@matrix@numberofcolumns=\count192
 )
-\tikz@expandcount=\count192
+\tikz@expandcount=\count193
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1168,13 +1361,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count193
+\inf@bad=\count194
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count194
-\leftroot@=\count195
+\uproot@=\count195
+\leftroot@=\count196
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count196
-\DOTSCASE@=\count197
+\classnum@=\count197
+\DOTSCASE@=\count198
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
@@ -1183,15 +1376,15 @@ LaTeX Info: Redefining \cdots on input line 518.
 \big@size=\dimen318
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count198
-\c@MaxMatrixCols=\count199
+\macc@depth=\count199
+\c@MaxMatrixCols=\count266
 \dotsspace@=\muskip17
-\c@parentequation=\count266
-\dspbrk@lvl=\count267
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
 \tag@help=\toks46
-\row@=\count268
-\column@=\count269
-\maxfields@=\count270
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
 \andhelp@=\toks47
 \eqnshift@=\dimen319
 \alignsep@=\dimen320
@@ -1219,20 +1412,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
-Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
-
 (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(/usr/share/texlive/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count272
+)
+\CatcodeTableOther=\catcodetable6
+\CatcodeTableExpl=\catcodetable7
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+Package pgfplots info on input line 123: Initializing with LUA version Lua 5.2
+\pgfplots@luabackend@table=\catcodetable8
 \t@pgfplots@toka=\toks50
 \t@pgfplots@tokb=\toks51
 \t@pgfplots@tokc=\toks52
 \pgfplots@tmpa=\dimen325
-\c@pgfplots@coordindex=\count271
-\c@pgfplots@scanlineindex=\count272
+\c@pgfplots@coordindex=\count273
+\c@pgfplots@scanlineindex=\count274
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -1248,8 +1451,13 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 gfsupp_pgflibraryfpu.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count273
-))
+\c@pgfmathroundto@lastzeros=\count275
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibraryluam
+ath.code.tex)
+Package pgfplots info on input line 219: luamath library shipped with pgf 3.0.1a
+ is up-to-date
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
 tructure.code.tex)
@@ -1257,13 +1465,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count274
+\c@pgfplotsarray@tmp=\count276
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count275
+\c@pgfplotstable@counta=\count277
 \t@pgfplotstable@a=\toks53
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -1276,14 +1484,10 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count276
+\c@pgfplotslibrarysurf@no=\count278
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
-shading.pgfsys-xetex.def
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
-shading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count277
-))))
+shading.pgfsys-pdftex.def)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
 tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
@@ -1312,7 +1516,7 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen328
 \pgfdecoratedinputsegmentremainingdistance=\dimen329
 \pgf@decorate@distancetomove=\dimen330
-\pgf@decorate@repeatstate=\count278
+\pgf@decorate@repeatstate=\count279
 \pgfdecorationsegmentamplitude=\dimen331
 \pgfdecorationsegmentlength=\dimen332
 )
@@ -1326,7 +1530,7 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count279
+\pgfplots@numplots=\count280
 \pgfplots@xmin@reg=\dimen333
 \pgfplots@xmax@reg=\dimen334
 \pgfplots@ymin@reg=\dimen335
@@ -1343,20 +1547,20 @@ de.tex
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
-\XC@nummixins=\count280
-\XC@countmixins=\count281
+\XC@nummixins=\count281
+\XC@countmixins=\count282
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplotstable 2016/01/06 v1.13 Table typesetting and Pretty-printing (
-1.13)
+Package: pgfplotstable 2016/01/06 v1.13 Table typesetting and Pretty-printing (1
+.13)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.code
 .tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.colt
 ype.code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count282
+\c@float@type=\count283
 \float@exts=\toks54
 \float@box=\box66
 \@float@everytoks=\toks55
@@ -1380,7 +1584,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen345
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count283
+\c@ContinuedFloat=\count284
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1388,21 +1592,21 @@ Package caption Info: longtable package is loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 ))
-\c@subfigure=\count284
-\c@subtable=\count285
+\c@subfigure=\count285
+\c@subtable=\count286
 )
 (/usr/share/texlive/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count286
+\c@OptionTest=\count287
 \figbox=\box68
 \tabbox=\box69
 \pagebox=\box70
-\ffigcount=\count287
-\ftabcount=\count288
-\fftest=\count289
-\hangcount=\count290
-\nosuccesstryfig=\count291
-\nosuccesstrytab=\count292
+\ffigcount=\count288
+\ftabcount=\count289
+\fftest=\count290
+\hangcount=\count291
+\nosuccesstryfig=\count292
+\nosuccesstrytab=\count293
 \figgutter=\dimen346
 \tabgutter=\dimen347
 \htdone=\dimen348
@@ -1421,25 +1625,25 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count293
+\FV@CodeLineNo=\count294
 \FV@InFile=\read3
 \FV@TabBox=\box71
-\c@FancyVerbLine=\count294
-\FV@StepNumber=\count295
+\c@FancyVerbLine=\count295
+\FV@StepNumber=\count296
 \FV@OutFile=\write4
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
-Package: scrlayer-scrpage 2015/10/03 v3.19a KOMA-Script package (end user inter
-face for scrlayer)
+Package: scrlayer-scrpage 2015/10/03 v3.19a KOMA-Script package (end user interf
+ace for scrlayer)
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty
-Package: scrlayer 2015/10/03 v3.19a KOMA-Script package (defining layers and pa
-ge styles)
+Package: scrlayer 2015/10/03 v3.19a KOMA-Script package (defining layers and pag
+e styles)
 Package scrlayer Info: Using already defined \footheight
 (scrlayer)             hoping, that this is a length and
 (scrlayer)             not only a macro on input line 107.
-Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 197
-5.
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 1975
+.
 )
 Package scrlayer-scrpage Info: deactivating warning for font element
 (scrlayer-scrpage)             `pagefoot' on input line 1191.
@@ -1456,36 +1660,33 @@ Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
-
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package ifluatex Info: LuaTeX detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
+
+(/usr/share/texlive/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode not found.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks57
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
-)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO)
+
 Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
 Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
@@ -1509,13 +1710,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen354
-\Hy@linkcounter=\count296
-\Hy@pagecounter=\count297
+\Hy@linkcounter=\count297
+\Hy@pagecounter=\count298
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count298
+\Hy@SavedSpaceFactor=\count299
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1531,10 +1732,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count299
+\c@Hy@tempcnt=\count300
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen355
-\Fld@menulength=\count300
+\Fld@menulength=\count301
 \Field@Width=\dimen356
 \Fld@charsize=\dimen357
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1546,53 +1747,38 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count301
-\c@Item=\count302
-\c@Hfootnote=\count303
+\Hy@abspage=\count302
+\c@Item=\count303
+\c@Hfootnote=\count304
 )
 
-Package hyperref Message: Driver (autodetected): hxetex.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty
-Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
-)
-)
-\pdfm@box=\box72
-\c@Hy@AnnotLevel=\count304
-\HyField@AnnotCount=\count305
-\Fld@listcount=\count306
-\c@bookmark@seq@number=\count307
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
-(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
-
-(rerunfilecheck)             Therefore file contents cannot be checked efficien
-tly
-(rerunfilecheck)             and the loading of the package is aborted.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
 )
 \Hy@SectionHShift=\skip67
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-dvipdfm.def
-File: bkm-dvipdfm.def 2011/12/02 v1.24 bookmark driver for dvipdfm (HO)
-\BKM@id=\count308
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
+\BKM@id=\count307
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count309
+\etb@tempcnta=\count308
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
 Package: fmtcount 2015/05/05 v3.01
@@ -1602,48 +1788,49 @@ Package: fcprefix 2012/09/28
 
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2012/09/28
-\fc@digit@counter=\count310
+\fc@digit@counter=\count309
 ))
-\c@padzeroesN=\count311
-\fc@tmpcatcode=\count312
-\@DT@modctr=\count313
-\@ordinalctr=\count314
-\@orgargctr=\count315
-\@strctr=\count316
-\@tmpstrctr=\count317
-\@DT@loopN=\count318
-\@DT@X=\count319
+\c@padzeroesN=\count310
+\fc@tmpcatcode=\count311
 
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2013/08/17
-))
+)
+\@DT@modctr=\count312
+\@ordinalctr=\count313
+\@orgargctr=\count314
+\@strctr=\count315
+\@tmpstrctr=\count316
+\@DT@loopN=\count317
+\@DT@X=\count318
+)
 (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count320
-\@month=\count321
-\@year=\count322
-\c@HOUR=\count323
-\c@HOURXII=\count324
-\c@MINUTE=\count325
-\c@TOHOUR=\count326
-\c@TOMINUTE=\count327
-\c@SECOND=\count328
-\currenthour=\count329
-\currentminute=\count330
-\currentsecond=\count331
-Package datetime Info: No datetime.cfg file found, using default settings on in
-put line 308.
-\@dtctr=\count332
-\dayofyear=\count333
-\dayofweek=\count334
+\@day=\count319
+\@month=\count320
+\@year=\count321
+\c@HOUR=\count322
+\c@HOURXII=\count323
+\c@MINUTE=\count324
+\c@TOHOUR=\count325
+\c@TOMINUTE=\count326
+\c@SECOND=\count327
+\currenthour=\count328
+\currentminute=\count329
+\currentsecond=\count330
+Package datetime Info: No datetime.cfg file found, using default settings on inp
+ut line 308.
+\@dtctr=\count331
+\dayofyear=\count332
+\dayofweek=\count333
 LaTeX Info: Redefining \today on input line 736.
 
 (/usr/share/texlive/texmf-dist/tex/latex/datetime/dt-british.def
 File: dt-british.def 2013/09/10
 )
-\dt@a=\toks57
-\dt@b=\toks58
+\dt@a=\toks58
+\dt@b=\toks59
 )
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/remreset.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrhack.sty
@@ -1662,26 +1849,26 @@ Package scrhack Info: undefining \float@addtolists on input line 161.
 Package scrhack Info: loading listings hack on input line 172.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/listings.hak
-File: listings.hak 2015/10/03 v3.19a KOMA-Script package (hacking package listi
-ngs)
+File: listings.hak 2015/10/03 v3.19a KOMA-Script package (hacking package listin
+gs)
 Package tocbasic Info: setting babel extension for `lol' on input line 137.
 Package scrhack Info: redefining \lstlistoflistings on input line 137.
 )
 Package scrhack Info: loading setspace hack on input line 179.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/setspace.hak
-File: setspace.hak 2015/10/03 v3.19a KOMA-Script package (hacking package setsp
-ace)
+File: setspace.hak 2015/10/03 v3.19a KOMA-Script package (hacking package setspa
+ce)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
-\csq@reset=\count335
-\csq@gtype=\count336
-\csq@glevel=\count337
-\csq@qlevel=\count338
-\csq@maxlvl=\count339
-\csq@tshold=\count340
-\csq@ltx@everypar=\toks59
+\csq@reset=\count334
+\csq@gtype=\count335
+\csq@glevel=\count336
+\csq@qlevel=\count337
+\csq@maxlvl=\count338
+\csq@tshold=\count339
+\csq@ltx@everypar=\toks60
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
@@ -1698,51 +1885,51 @@ Package csquotes Info: Redefining alias 'german' -> 'german/quotes'.
 Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_legacy.sty
-Package: biblatex_legacy 2016/03/03 v3.3 programmable bibliographies (bibtex) (
-PK/JW/AB)
+Package: biblatex_legacy 2016/03/03 v3.3 programmable bibliographies (bibtex) (P
+K/JW/AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count341
+\lrq@indent=\count340
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count342
-\c@listtotal=\count343
-\c@listcount=\count344
-\c@liststart=\count345
-\c@liststop=\count346
-\c@citecount=\count347
-\c@citetotal=\count348
-\c@multicitecount=\count349
-\c@multicitetotal=\count350
-\c@instcount=\count351
-\c@maxnames=\count352
-\c@minnames=\count353
-\c@maxitems=\count354
-\c@minitems=\count355
-\c@citecounter=\count356
-\c@savedcitecounter=\count357
-\c@uniquelist=\count358
-\c@uniquename=\count359
-\c@refsection=\count360
-\c@refsegment=\count361
-\c@maxextrayear=\count362
-\c@maxextraalpha=\count363
-\c@abbrvpenalty=\count364
-\c@highnamepenalty=\count365
-\c@lownamepenalty=\count366
-\c@maxparens=\count367
-\c@parenlevel=\count368
-\blx@tempcnta=\count369
-\blx@tempcntb=\count370
-\blx@tempcntc=\count371
-\blx@maxsection=\count372
-\blx@maxsegment=\count373
-\blx@notetype=\count374
-\blx@parenlevel@text=\count375
-\blx@parenlevel@foot=\count376
+\c@tabx@nest=\count341
+\c@listtotal=\count342
+\c@listcount=\count343
+\c@liststart=\count344
+\c@liststop=\count345
+\c@citecount=\count346
+\c@citetotal=\count347
+\c@multicitecount=\count348
+\c@multicitetotal=\count349
+\c@instcount=\count350
+\c@maxnames=\count351
+\c@minnames=\count352
+\c@maxitems=\count353
+\c@minitems=\count354
+\c@citecounter=\count355
+\c@savedcitecounter=\count356
+\c@uniquelist=\count357
+\c@uniquename=\count358
+\c@refsection=\count359
+\c@refsegment=\count360
+\c@maxextrayear=\count361
+\c@maxextraalpha=\count362
+\c@abbrvpenalty=\count363
+\c@highnamepenalty=\count364
+\c@lownamepenalty=\count365
+\c@maxparens=\count366
+\c@parenlevel=\count367
+\blx@tempcnta=\count368
+\blx@tempcntb=\count369
+\blx@tempcntc=\count370
+\blx@maxsection=\count371
+\blx@maxsegment=\count372
+\blx@notetype=\count373
+\blx@parenlevel@text=\count374
+\blx@parenlevel@foot=\count375
 \labelnumberwidth=\skip68
 \labelalphawidth=\skip69
 \shorthandwidth=\skip70
@@ -1754,75 +1941,75 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip76
 \blx@auxin=\read4
 \blx@auxout=\write5
-\c@mincomprange=\count377
-\c@maxcomprange=\count378
-\c@mincompwidth=\count379
-\c@labelname=\count380
-\c@savedlabelname=\count381
-\c@author=\count382
-\c@savedauthor=\count383
-\c@shortauthor=\count384
-\c@savedshortauthor=\count385
-\c@editor=\count386
-\c@savededitor=\count387
-\c@editora=\count388
-\c@savededitora=\count389
-\c@editorb=\count390
-\c@savededitorb=\count391
-\c@editorc=\count392
-\c@savededitorc=\count393
-\c@shorteditor=\count394
-\c@savedshorteditor=\count395
-\c@bookauthor=\count396
-\c@savedbookauthor=\count397
-\c@translator=\count398
-\c@savedtranslator=\count399
-\c@annotator=\count400
-\c@savedannotator=\count401
-\c@commentator=\count402
-\c@savedcommentator=\count403
-\c@introduction=\count404
-\c@savedintroduction=\count405
-\c@foreword=\count406
-\c@savedforeword=\count407
-\c@afterword=\count408
-\c@savedafterword=\count409
-\c@holder=\count410
-\c@savedholder=\count411
-\c@namea=\count412
-\c@savednamea=\count413
-\c@nameb=\count414
-\c@savednameb=\count415
-\c@namec=\count416
-\c@savednamec=\count417
-\c@institution=\count418
-\c@savedinstitution=\count419
-\c@language=\count420
-\c@savedlanguage=\count421
-\c@location=\count422
-\c@savedlocation=\count423
-\c@organization=\count424
-\c@savedorganization=\count425
-\c@origlocation=\count426
-\c@savedoriglocation=\count427
-\c@origpublisher=\count428
-\c@savedorigpublisher=\count429
-\c@pageref=\count430
-\c@savedpageref=\count431
-\c@publisher=\count432
-\c@savedpublisher=\count433
-\c@lista=\count434
-\c@savedlista=\count435
-\c@listb=\count436
-\c@savedlistb=\count437
-\c@listc=\count438
-\c@savedlistc=\count439
-\c@listd=\count440
-\c@savedlistd=\count441
-\c@liste=\count442
-\c@savedliste=\count443
-\c@listf=\count444
-\c@savedlistf=\count445
+\c@mincomprange=\count376
+\c@maxcomprange=\count377
+\c@mincompwidth=\count378
+\c@labelname=\count379
+\c@savedlabelname=\count380
+\c@author=\count381
+\c@savedauthor=\count382
+\c@shortauthor=\count383
+\c@savedshortauthor=\count384
+\c@editor=\count385
+\c@savededitor=\count386
+\c@editora=\count387
+\c@savededitora=\count388
+\c@editorb=\count389
+\c@savededitorb=\count390
+\c@editorc=\count391
+\c@savededitorc=\count392
+\c@shorteditor=\count393
+\c@savedshorteditor=\count394
+\c@bookauthor=\count395
+\c@savedbookauthor=\count396
+\c@translator=\count397
+\c@savedtranslator=\count398
+\c@annotator=\count399
+\c@savedannotator=\count400
+\c@commentator=\count401
+\c@savedcommentator=\count402
+\c@introduction=\count403
+\c@savedintroduction=\count404
+\c@foreword=\count405
+\c@savedforeword=\count406
+\c@afterword=\count407
+\c@savedafterword=\count408
+\c@holder=\count409
+\c@savedholder=\count410
+\c@namea=\count411
+\c@savednamea=\count412
+\c@nameb=\count413
+\c@savednameb=\count414
+\c@namec=\count415
+\c@savednamec=\count416
+\c@institution=\count417
+\c@savedinstitution=\count418
+\c@language=\count419
+\c@savedlanguage=\count420
+\c@location=\count421
+\c@savedlocation=\count422
+\c@organization=\count423
+\c@savedorganization=\count424
+\c@origlocation=\count425
+\c@savedoriglocation=\count426
+\c@origpublisher=\count427
+\c@savedorigpublisher=\count428
+\c@pageref=\count429
+\c@savedpageref=\count430
+\c@publisher=\count431
+\c@savedpublisher=\count432
+\c@lista=\count433
+\c@savedlista=\count434
+\c@listb=\count435
+\c@savedlistb=\count436
+\c@listc=\count437
+\c@savedlistc=\count438
+\c@listd=\count439
+\c@savedlistd=\count440
+\c@liste=\count441
+\c@savedliste=\count442
+\c@listf=\count443
+\c@savedlistf=\count444
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1834,13 +2021,13 @@ Package biblatex Info: ... file 'biblatex_legacy.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_legacy.def
 File: biblatex_legacy.def 
-\c@textcitecount=\count446
-\c@textcitetotal=\count447
-\c@textcitemaxnames=\count448
-\c@biburlnumpenalty=\count449
-\c@biburlucpenalty=\count450
-\c@biburllcpenalty=\count451
-\c@smartand=\count452
+\c@textcitecount=\count445
+\c@textcitetotal=\count446
+\c@textcitemaxnames=\count447
+\c@biburlnumpenalty=\count448
+\c@biburlucpenalty=\count449
+\c@biburllcpenalty=\count450
+\c@smartand=\count451
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -1852,8 +2039,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count453
-\c@bbx:relatedtotal=\count454
+\c@bbx:relatedcount=\count452
+\c@bbx:relatedtotal=\count453
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -1876,9 +2063,9 @@ File: biblatex.cfg
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/xargs/xargs.sty
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
-\xargs@max=\count455
-\xargs@toksa=\toks60
-\xargs@toksb=\toks61
+\xargs@max=\count454
+\xargs@toksa=\toks61
+\xargs@toksb=\toks62
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tikz-timing/tikz-timing.sty
 (/usr/share/texlive/texmf-dist/tex/latex/svn-prov/svn-prov.sty
@@ -1889,53 +2076,39 @@ Package: tikz-timing 2011/01/09 v0.7d Digital Timing Diagrams using TikZ
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box73
-\pgf@layerboxsaved@background=\box74
+\pgf@layerbox@background=\box72
+\pgf@layerboxsaved@background=\box73
 )
-\tikztiming@numint=\count456
-\tikztiming@numfrac=\count457
+\tikztiming@numint=\count455
+\tikztiming@numfrac=\count456
 \tikztiming@xunit=\skip77
 \tikztiming@yunit=\skip78
-\tikztiming@debug=\count458
-\c@tikztiming@nrows=\count459
-\c@tikztimingrows=\count460
-\c@tikztimingtrans=\count461
-\c@tikztimingtranspos=\count462
+\tikztiming@debug=\count457
+\c@tikztiming@nrows=\count458
+\c@tikztimingrows=\count459
+\c@tikztimingtrans=\count460
+\c@tikztimingtranspos=\count461
 ) (./elements/preamble.options.tex
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Package hyperref Info: Option `unicode' set `false' on input line 86.
-
-
-Package hyperref Warning: XeTeX driver only supports `unicode=true'. Ignoring
-(hyperref)                option setting `unicode=false' on input line 86.
-
 Package hyperref Info: Option `pdftoolbar' set `true' on input line 86.
 Package hyperref Info: Option `pdfmenubar' set `true' on input line 86.
 Package hyperref Info: Option `pdffitwindow' set `false' on input line 86.
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
-File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
-
-)
-
-Package hyperref Warning: pdfproducer: xdvipdfmx will use its own setting
-(hyperref)                instead of the value given on input line 86.
-
 Package hyperref Info: Option `colorlinks' set `true' on input line 86.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
 yexternal.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zexternalshared.code.tex))
-\openout3 = `document.auxlock'.
-
+\openout3 = document.auxlock
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarymath.code.tex
-\tikz@math@for@depth=\count463
+\tikz@math@for@depth=\count462
 \tikz@math@dimen=\dimen358
-\tikz@math@toks=\toks62
+\tikz@math@toks=\toks63
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
@@ -1955,13 +2128,12 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
-)
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
 s.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
-
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.symbols.code.tex
@@ -2001,9 +2173,9 @@ File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.gr
 oupplots.code.tex
-\pgfplots@group@current@plot=\count464
-\pgfplots@group@current@row=\count465
-\pgfplots@group@current@column=\count466
+\pgfplots@group@current@plot=\count463
+\pgfplots@group@current@row=\count464
+\pgfplots@group@current@column=\count465
 )) (./elements/preamble.tweaks.tex
 (/usr/share/texlive/texmf-dist/tex/latex/pdfsync/pdfsync.sty
 Package: pdfsync 2008/01/26 v1.1
@@ -2015,10 +2187,10 @@ Package: pdfsync 2008/01/26 v1.1
 zlibrarydecorations.markings.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.markings.code.tex))
-\pgf@layerbox@edgelayer=\box75
-\pgf@layerboxsaved@edgelayer=\box76
-\pgf@layerbox@nodelayer=\box77
-\pgf@layerboxsaved@nodelayer=\box78
+\pgf@layerbox@edgelayer=\box74
+\pgf@layerboxsaved@edgelayer=\box75
+\pgf@layerbox@nodelayer=\box76
+\pgf@layerboxsaved@nodelayer=\box77
 \imagewidth=\skip80
 \imagescale=\skip81
 )
@@ -2044,9 +2216,13 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 
 LaTeX Warning: Label `fig:opamp' multiply defined.
 
-) (./content/results.aux) (./content/summary-and-outlook.aux)
-(./content/appendix.aux) (./elements/abbreviations.aux))
-\openout1 = `document.aux'.
+) (./content/results.aux
+
+LaTeX Warning: Label `graph:channel_velocity-1degree_U' multiply defined.
+
+) (./content/summary-and-outlook.aux) (./content/appendix.aux)
+(./elements/abbreviations.aux))
+\openout1 = document.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
@@ -2060,27 +2236,53 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 21.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 21.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 21.
-
-(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-\c@lstlisting=\count467
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count466
+\scratchdimen=\dimen363
+\scratchbox=\box78
+\nofMPsegments=\count467
+\nofMParguments=\count468
+\everyMPshowfont=\toks64
+\MPscratchCnt=\count469
+\MPscratchDim=\dimen364
+\MPnumerator=\count470
+\makeMPintoPDFobject=\count471
+\everyMPtoPDFconversion=\toks65
+)
+\c@lstlisting=\count472
 
 *** you should *not* be loading the inputenc package
 *** XeTeX expects the source to be in UTF8 encoding
 *** some features of other encodings may conflict, resulting in poor output.
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.tif,.jpeg,.PNG,.PDF,.JPG,.JPEG,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+))
 ABD: EveryShipout initializing macros
-Package pgfplots notification 'compat/show suggested version=true': document ha
-s been generated with the most recent feature set (\pgfplotsset{compat=1.13}).
+Package pgfplots notification 'compat/show suggested version=true': document has
+ been generated with the most recent feature set (\pgfplotsset{compat=1.13}).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatflt package is loaded.
@@ -2094,13 +2296,13 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count468
+\c@section@level=\count473
 )
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
 Package scrhack Info: undefining \float@addtolists on input line 21.
-Package biblatex Info: XeTeX detected.
+Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -2109,8 +2311,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Warning: Data encoding is 'utf8'.
 (biblatex)                Use backend=biber.
 
-\openout5 = `document-blx.bib'.
 
+\openout5 = document-blx.bib
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'document.bbl' found.
 (./document.bbl)
@@ -2118,33 +2320,50 @@ Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
 Configuring pdfsync
 \PDFSYNC@ut=\write6
-\openout6 = `document.pdfsync'.
 
-\PDFSYNCf@li@=\count469
-\PDFSYNC@rder=\count470
+\openout6 = document.pdfsync
+\PDFSYNCf@li@=\count474
+\PDFSYNC@rder=\count475
 **** pdfsync.sty: Synchronizing at \everypar
-\PDFSYNCeveryp@r=\toks63
+\PDFSYNCeveryp@r=\toks66
 **** pdfsync.sty: Synchronizing at \everymath
-\PDFSYNCeverym@th=\toks64
+\PDFSYNCeverym@th=\toks67
 **** pdfsync.sty: Synchronizing at \everyhbox
-\PDFSYNCeveryhb@x=\toks65
+\PDFSYNCeveryhb@x=\toks68
 **** pdfsync.sty: started
-\openout2 = `elements/title.aux'.
 
+\openout2 = elements/title.aux
  (./elements/title.tex
-File: images/title/logo-TUM-empty.pdf Graphic file (type QTm)
+<images/title/logo-TUM-empty.pdf, id=31, 53.24893pt x 28.45631pt>
+File: images/title/logo-TUM-empty.pdf Graphic file (type pdf)
 
-<use  "images/title/logo-TUM-empty.pdf" >
-File: images/title/logo-MW.pdf Graphic file (type QTm)
- <use  "images/title/logo-MW.pdf" >
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+<use images/title/logo-TUM-empty.pdf>
+Package pdftex.def Info: images/title/logo-TUM-empty.pdf used on input line 3.
+(pdftex.def)             Requested size: 66.57674pt x 35.58289pt.
+
+<images/title/logo-MW.pdf, id=32, 42.67915pt x 36.98859pt>
+File: images/title/logo-MW.pdf Graphic file (type pdf)
+
+<use images/title/logo-MW.pdf>
+Package pdftex.def Info: images/title/logo-MW.pdf used on input line 5.
+(pdftex.def)             Requested size: 66.57674pt x 57.70927pt.
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
 (Font)              scaled to size 29.34785pt on input line 11.
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
 (Font)              scaled to size 16.98587pt on input line 13.
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/bx/n' will be
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/bx/n' will be
 (Font)              scaled to size 11.79573pt on input line 28.
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/bx/n' will be
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Bold.ttf"
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/bx/n' will be
 (Font)              scaled to size 20.38298pt on input line 28.
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Bold.ttf"
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-british.def
+File: fc-british.def 2013/08/17
+)
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 35.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 35.
 
@@ -2158,12 +2377,10 @@ File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 35.
 
-
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 35.
-
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2184,34 +2401,45 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
 (Font)              scaled to size 8.25697pt on input line 35.
- [1
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+" [1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 
 
-] [2
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./images/title/logo-TUM-empt
+y.pdf><./images/title/logo-MW.pdf>] [2
 
 ])
-\openout2 = `elements/declaration-of-authorship.aux'.
+\openout2 = elements/declaration-of-authorship.aux
 
+(./elements/declaration-of-authorship.tex(compiling luc: /var/lib/texmf/luatex-c
+ache/generic/fonts/otf/lmsans10-bold.luc)(load luc: /home/plam/.texmf-var/luatex
+-cache/generic/fonts/otf/lmsans10-bold.luc))
 
-(./elements/declaration-of-authorship.tex)
+LaTeX Font Warning: Font shape `EU2/SourceSerifPro(0)/m/sl' undefined
+(Font)              using `EU2/SourceSerifPro(0)/m/n' instead on input line 29.
 
-LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/sl' undefined
-(Font)              using `EU1/SourceSerifPro(0)/m/n' instead on input line 29.
-
-
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/sl' will be
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/sl' will be
 (Font)              scaled to size 11.79573pt on input line 29.
-[3
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+" [3
 
 
 
 
 ] (./content/abstract.tex
-Overfull \hbox (0.44133pt too wide) in paragraph at lines 3--4
-[][][]\EU1/SourceSerifPro(0)/m/sl/13 In the light of problems surrounding the u
-se of fossil fuels, photobioreactors emerge
+Overfull \hbox (0.44131pt too wide) in paragraph at lines 3--4
+[][][][]\EU2/SourceSerifPro(0)/m/sl/13 In the light of prob-lems sur-round-ing 
+the use of fossil fuels, pho-to-bi-ore-act-ors emerge
  []
 
 [4
@@ -2222,19 +2450,19 @@ se of fossil fuels, photobioreactors emerge
 
 ])
 \tf@toc=\write7
-\openout7 = `document.toc'.
 
- [6]
-\openout2 = `content/introduction.aux'.
-
+\openout7 = document.toc
+(compiling luc: /var/lib/texmf/luatex-cache/generic/fonts/otf/lmsans12-oblique.l
+uc)(load luc: /home/plam/.texmf-var/luatex-cache/generic/fonts/otf/lmsans12-obli
+que.luc) [6]
+\openout2 = content/introduction.aux
  (./content/introduction.tex
 chapter 1.
 ) [7
 
 
 ] [8]
-\openout2 = `content/motivation.aux'.
-
+\openout2 = content/motivation.aux
  (./content/motivation.tex
 chapter 2.
 
@@ -2256,20 +2484,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-File: images/Einlaufbecken.pdf Graphic file (type QTm)
-<use  "images/Einlaufbecken.pdf" >
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+<images/Einlaufbecken.pdf, id=191, 1195.01462pt x 845.0471pt>
+File: images/Einlaufbecken.pdf Graphic file (type pdf)
+
+<use images/Einlaufbecken.pdf>
+Package pdftex.def Info: images/Einlaufbecken.pdf used on input line 36.
+(pdftex.def)             Requested size: 443.86305pt x 313.8746pt.
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
 (Font)              scaled to size 9.8299pt on input line 37.
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/bx/n' will be
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/bx/n' will be
 (Font)              scaled to size 9.8299pt on input line 37.
- [10] [11]
-Overfull \hbox (2.53723pt too wide) in paragraph at lines 67--79
- [][][][] 
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Bold.ttf" 
+[10] [11<./images/Einlaufbecken.pdf>]
+Overfull \hbox (2.53728pt too wide) in paragraph at lines 67--79
+ [][][][][] 
  []
 
 [12]) [13]
-\openout2 = `content/theory.aux'.
-
+\openout2 = content/theory.aux
  (./content/theory.tex
 chapter 3.
 
@@ -2282,8 +2516,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 24
-.
+LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 24.
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.83347> on input line 24.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2304,49 +2538,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
-[16]
-File: images/ccm.jpg Graphic file (type QTm)
- <use  "images/ccm.jpg" >
+[16] <images/ccm.jpg, id=269, 243.91125pt x 433.62pt>
+File: images/ccm.jpg Graphic file (type jpg)
+ <use images/ccm.jpg>
+Package pdftex.def Info: images/ccm.jpg used on input line 101.
+(pdftex.def)             Requested size: 121.95532pt x 216.80946pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-[17]
+[17<./images/ccm.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 ) [18]
-\openout2 = `content/material-and-methods.aux'.
-
+\openout2 = content/material-and-methods.aux
  (./content/material-and-methods.tex
 chapter 4.
-
-! Package tikz Warning: The key 'up to date check=md5' is impossible, there is 
-no macro to compute MD5. Falling back to 'up to date check=diff'.
 ===== Image 'tikz-cache/document-figure0' is up-to-date. ======
-File: tikz-cache/document-figure0.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure0.pdf" >
-Overfull \hbox (12.98259pt too wide) in paragraph at lines 7--25
+
+Overfull \hbox (12.98373pt too wide) in paragraph at lines 7--25
  [] 
  []
 
 
-Overfull \hbox (3.11661pt too wide) in paragraph at lines 32--34
-\EU1/SourceSerifPro(0)/m/sl/13 the measurement data from it and sends it to the
- PC. It also controls the matrix switches
+Overfull \hbox (3.11656pt too wide) in paragraph at lines 32--34
+\EU2/SourceSerifPro(0)/m/sl/13 the meas-ure-ment data from it and sends it to t
+he PC. It also con-trols the mat-rix switches
  []
 
 [19
 
 
 
-]
+<./tikz-cache/document-figure0.pdf>]
 ===== Image 'tikz-cache/document-figure1' is up-to-date. ======
-File: tikz-cache/document-figure1.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure1.pdf" > [20]
+[20<./tikz-cache/document-figure1.pdf>]
 LaTeX Font Info:    Calculating math sizes for size <9.09996> on input line 79.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6.36993> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2362,19 +2592,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
  []
 
 ===== Image 'tikz-cache/document-figure2' is up-to-date. ======
-File: tikz-cache/document-figure2.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure2.pdf" > [21]
-File: images/v2.jpg Graphic file (type QTm)
- <use  "images/v2.jpg" >
+[21<./tikz-cache/document-figure2.pdf>]
+<images/v2.jpg, id=354, 4218.76125pt x 1048.91875pt>
+File: images/v2.jpg Graphic file (type jpg)
+ <use images/v2.jpg>
+Package pdftex.def Info: images/v2.jpg used on input line 115.
+(pdftex.def)             Requested size: 443.86305pt x 110.35579pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-[22]
-File: images/fpcbd.pdf Graphic file (type QTm)
- <use  "images/fpcbd.pdf" >
-File: images/fpcbp.jpg Graphic file (type QTm)
- <use  "images/fpcbp.jpg" >
+[22<./images/v2.jpg>] <images/fpcbd.pdf, id=361, 161.45119pt x 24.71634pt>
+File: images/fpcbd.pdf Graphic file (type pdf)
+
+<use images/fpcbd.pdf>
+Package pdftex.def Info: images/fpcbd.pdf used on input line 129.
+(pdftex.def)             Requested size: 443.86305pt x 67.95576pt.
+ <images/fpcbp.jpg, id=362, 4426.5375pt x 502.87875pt>
+File: images/fpcbp.jpg Graphic file (type jpg)
+
+<use images/fpcbp.jpg>
+Package pdftex.def Info: images/fpcbp.jpg used on input line 137.
+(pdftex.def)             Requested size: 443.86305pt x 50.42126pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
@@ -2384,13 +2625,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-File: images/ms.pdf Graphic file (type QTm)
-<use  "images/ms.pdf" > [23]
+<images/ms.pdf, id=365, 108.88681pt x 160.43939pt>
+File: images/ms.pdf Graphic file (type pdf)
+ <use images/ms.pdf>
+Package pdftex.def Info: images/ms.pdf used on input line 151.
+(pdftex.def)             Requested size: 133.16026pt x 196.22539pt.
+ [23<./images/fpcbd.pdf><./images/fpcbp.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-[24] [25]
+[24<./images/ms.pdf>] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
@@ -2400,10 +2645,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
 (Font)              scaled to size 7.86388pt on input line 188.
-LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 188
-.
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 188.
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8.66673> on input line 188.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2422,18 +2669,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
 (./images/log_12052016_1.tex
 ===== Image 'tikz-cache/document-figure3' is up-to-date. ======
-File: tikz-cache/document-figure3.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure3.pdf" >) [27] (./images/log_12052016_2.tex
+) [27] (./images/log_12052016_2.tex
 ===== Image 'tikz-cache/document-figure4' is up-to-date. ======
-File: tikz-cache/document-figure4.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure4.pdf" >) [28]
+) [28<./tikz-cache/document-figure3.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
-[29]
-File: images/cb.jpg Graphic file (type QTm)
- <use  "images/cb.jpg" > [30]
+[29<./tikz-cache/document-figure4.pdf>]
+<images/cb.jpg, id=456, 3929.68124pt x 1123.19624pt>
+File: images/cb.jpg Graphic file (type jpg)
+ <use images/cb.jpg>
+Package pdftex.def Info: images/cb.jpg used on input line 248.
+(pdftex.def)             Requested size: 355.09178pt x 101.47748pt.
+
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
@@ -2443,17 +2693,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--260
 
  []
 
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
 (Font)              scaled to size 5.89786pt on input line 264.
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
 ===== Image 'tikz-cache/document-figure5' is up-to-date. ======
-File: tikz-cache/document-figure5.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure5.pdf" > [31] [32]
+[31<./images/cb.jpg>] [32<./tikz-cache/document-figure5.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 321--323
 
  []
 
-File: images/UI.png Graphic file (type QTm)
-<use  "images/UI.png" > [33]
+<images/UI.png, id=492, 1847.90375pt x 1039.885pt>
+File: images/UI.png Graphic file (type png)
+ <use images/UI.png>
+Package pdftex.def Info: images/UI.png used on input line 326.
+(pdftex.def)             Requested size: 443.86305pt x 249.7679pt.
+ [33]
 Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
@@ -2463,144 +2718,153 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--339
 
  []
 
-[34]
+[34<./images/UI.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 ===== Image 'tikz-cache/document-figure6' is up-to-date. ======
-File: tikz-cache/document-figure6.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure6.pdf" > [35]
+[35<./tikz-cache/document-figure6.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 409--410
-[][][]|\EU1/SourceSerifPro(0)/m/sl/13 microcontroller
+[][][][]|\EU2/SourceSerifPro(0)/m/sl/13 mi-cro-con-trol-ler
  []
 
 
-Overfull \hbox (12.1546pt too wide) in paragraph at lines 405--417
- [][][][] 
+Overfull \hbox (12.15468pt too wide) in paragraph at lines 405--417
+ [][][][][] 
  []
 
 ) [36] [37]
-\openout2 = `content/results.aux'.
-
+\openout2 = content/results.aux
  (./content/results.tex
 chapter 5.
+
+Overfull \hbox (7.13817pt too wide) in paragraph at lines 13--15
+\EU2/SourceSerifPro(0)/m/sl/13 drawn in Fig-ure [][]5.1[][], shows us a sensor 
+size of 10x11mm ar-ranged on a grid of 25x50mm.
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
 ===== Image 'tikz-cache/document-figure7' is up-to-date. ======
-File: tikz-cache/document-figure7.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure7.pdf" > [38
+[38
 
 
 
 ]
 ===== Image 'tikz-cache/document-figure8' is up-to-date. ======
-File: tikz-cache/document-figure8.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure8.pdf" > [39]
+[39<./tikz-cache/document-figure7.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
-[40]
-Overfull \hbox (0.61436pt too wide) in paragraph at lines 146--147
-[][][]\EU1/SourceSerifPro(0)/m/sl/13 To test if the time resolution matches thi
-s, the measurement time itself can be timed.
+[40<./tikz-cache/document-figure8.pdf>]
+Overfull \hbox (0.61429pt too wide) in paragraph at lines 146--147
+[][][][]\EU2/SourceSerifPro(0)/m/sl/13 To test if the time res-ol-u-tion matche
+s this, the meas-ure-ment time it-self can be timed.
  []
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-[42]
-File: images/stripsinreactor.jpg Graphic file (type QTm)
- <use  "images/stripsinreactor.jpg" >
-File: images/pconreactor.jpg Graphic file (type QTm)
- <use  "images/pconreactor.jpg" >
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-
- []
-
-[44]
+[41] (./images/sal_sens_range.tex
 ===== Image 'tikz-cache/document-figure9' is up-to-date. ======
-File: tikz-cache/document-figure9.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure9.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+) [42<./tikz-cache/document-figure9.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+<images/stripsinreactor.jpg, id=625, 4632.30624pt x 3275.23625pt>
+File: images/stripsinreactor.jpg Graphic file (type jpg)
+
+<use images/stripsinreactor.jpg>
+Package pdftex.def Info: images/stripsinreactor.jpg used on input line 220.
+(pdftex.def)             Requested size: 355.09178pt x 251.02953pt.
+ [43]
+<images/pconreactor.jpg, id=633, 1276.77pt x 903.375pt>
+File: images/pconreactor.jpg Graphic file (type jpg)
+
+<use images/pconreactor.jpg>
+Package pdftex.def Info: images/pconreactor.jpg used on input line 228.
+(pdftex.def)             Requested size: 355.09178pt x 251.23401pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-File: images/log080716_2_7_scatter.pdf Graphic file (type QTm)
-<use  "images/log080716_2_7_scatter.pdf" > [46]
+[44<./images/stripsinreactor.jpg><./images/pconreactor.jpg>]
 ===== Image 'tikz-cache/document-figure10' is up-to-date. ======
-File: tikz-cache/document-figure10.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure10.pdf" >
-File: images/log080716_2.pdf Graphic file (type QTm)
- <use  "images/log080716_2.pdf" >
-[47]
-Overfull \hbox (8.11014pt too wide) in paragraph at lines 382--383
-[][][]\EU1/SourceSerifPro(0)/m/sl/13 Another interesting data point is the the 
-behavior when the water flow is first switched
+[45] (./images/residenceTime.tex
+PGFPlots: reading {data/residenceTime.csv}
+) [46<./tikz-cache/document-figure10.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
  []
 
-File: images/log080716_2_on.pdf Graphic file (type QTm)
-<use  "images/log080716_2_on.pdf" > [48]
-File: images/log080716_2_sim.pdf Graphic file (type QTm)
- <use  "images/log080716_2_sim.pdf" >
-[49]
-File: images/log080716_3.pdf Graphic file (type QTm)
- <use  "images/log080716_3.pdf" > [50]
-File: images/log080716_4.pdf Graphic file (type QTm)
- <use  "images/log080716_4.pdf" >
-[51]
-File: images/log080716_6.pdf Graphic file (type QTm)
- <use  "images/log080716_6.pdf" > [52]) [53]
-\openout2 = `content/summary-and-outlook.aux'.
 
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
-(./content/summary-and-outlook.tex
+ []
+
+(./images/log080716_2_7_scatter.tex) [47] (./images/log080716_2_unadj.tex)
+(./images/log080716_2_adj.tex) [48] (./images/log080716_2.tex) [49]
+Overfull \hbox (8.11003pt too wide) in paragraph at lines 410--411
+[][][][]\EU2/SourceSerifPro(0)/m/sl/13 An-other in-ter-est-ing data point is th
+e the be-ha-vior when the wa-ter flow is first switched
+ []
+
+(./images/log080716_2_on.tex) [50] (./images/log080716_2_sim.tex) [51] [52]
+(./images/log080716_3.tex) (./images/log080716_4.tex) [53]
+(./images/log080716_6.tex) [54]) [55]
+\openout2 = content/summary-and-outlook.aux
+ (./content/summary-and-outlook.tex
 chapter 6.
-[54
+[56
 
 
 
 ]
 chapter 7.
-) [55
-
-] [56
-
+) [57
 
 ]
-\openout2 = `content/appendix.aux'.
-
+\openout2 = content/appendix.aux
  (./content/appendix.tex
-===== Image 'tikz-cache/document-figure11' is up-to-date. ======
-File: tikz-cache/document-figure11.pdf Graphic file (type QTm)
-<use  "tikz-cache/document-figure11.pdf" >
-Overfull \hbox (12.98259pt too wide) in paragraph at lines 7--25
+chapter A.
+File: images/cb.jpg Graphic file (type jpg)
+<use images/cb.jpg>
+Package pdftex.def Info: images/cb.jpg used on input line 11.
+(pdftex.def)             Requested size: 221.93152pt x 63.42986pt.
+File: images/fpcbp.jpg Graphic file (type jpg)
+ <use images/fpcbp.jpg>
+Package pdftex.def Info: images/fpcbp.jpg used on input line 12.
+(pdftex.def)             Requested size: 443.86305pt x 50.42126pt.
+
+Overfull \hbox (12.98085pt too wide) in paragraph at lines 10--28
  [] 
  []
 
-File: images/conn.jpg Graphic file (type QTm)
-<use  "images/conn.jpg" >
-File: images/usb.jpg Graphic file (type QTm)
- <use  "images/usb.jpg" > [57
+<images/conn.jpg, id=737, 3751.01375pt x 2110.88625pt>
+File: images/conn.jpg Graphic file (type jpg)
+ <use images/conn.jpg>
+Package pdftex.def Info: images/conn.jpg used on input line 38.
+(pdftex.def)             Requested size: 221.93152pt x 124.87619pt.
 
-] [58]) [59]
-\openout2 = `elements/abbreviations.aux'.
+[58
 
+
+
+] <images/usb.jpg, id=744, 1997.4625pt x 813.0375pt>
+File: images/usb.jpg Graphic file (type jpg)
+ <use images/usb.jpg>
+Package pdftex.def Info: images/usb.jpg used on input line 46.
+(pdftex.def)             Requested size: 221.93152pt x 90.32762pt.
+
+[59<./images/conn.jpg><./images/usb.jpg>] [60] [61]) [62]
+\openout2 = elements/abbreviations.aux
 
 (./elements/abbreviations.tex
-chapter A.
+chapter B.
 
 Underfull \hbox (badness 10000) in alignment at lines 8--29
 [] []
@@ -2611,73 +2875,67 @@ Underfull \hbox (badness 10000) in alignment at lines 29--29
 [] []
  []
 
-) [60
+) [63
 
 
 
 ]
-chapter B.
-(./document.lof [61
-
-
-] [62]
-Overfull \hbox (14.3293pt too wide) in paragraph at lines 53--53
- \EU1/SourceSerifPro(0)/m/sl/13 sensor has a size of 10x11mm, the horizontal di
-stance between the sensors 
- []
-
-[63])
-\tf@lof=\write8
-\openout8 = `document.lof'.
-
-
 chapter C.
+(./document.lof [64
+
+
+])
+\tf@lof=\write8
+
+\openout8 = document.lof
+
+chapter D.
 (./document.lot)
 \tf@lot=\write9
-\openout9 = `document.lot'.
 
- [64]
-chapter D.
+\openout9 = document.lot
+ [65]
+chapter E.
 
-LaTeX Font Warning: Font shape `EU1/SourceSerifPro(0)/m/it' undefined
-(Font)              using `EU1/SourceSerifPro(0)/m/n' instead on input line 80.
+LaTeX Font Warning: Font shape `EU2/SourceSerifPro(0)/m/it' undefined
+(Font)              using `EU2/SourceSerifPro(0)/m/n' instead on input line 80.
 
-
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(0)/m/it' will be
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/it' will be
 (Font)              scaled to size 11.79573pt on input line 80.
-LaTeX Font Info:    Font shape `EU1/SourceSerifPro(1)/m/n' will be
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+LaTeX Font Info:    Font shape `EU2/SourceSerifPro(1)/m/n' will be
 (Font)              scaled to size 11.79573pt on input line 80.
-
-Overfull \hbox (9.22302pt too wide) in paragraph at lines 81--81
-[][][][]\EU1/SourceSerifPro(0)/m/it/13 Edwards, Ryan (2016). MinieC I2C eC inte
-rface. 2016. URL: [][]$[][][][][][][] [] [] [] [][][] [] [][][][][][][][][][][]
-[][][] []
+luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
+"
+Overfull \hbox (13.78pt too wide) in paragraph at lines 81--81
+[][][][][]\EU2/SourceSerifPro(1)/m/n/13 Ed-wards, Ryan (2016). Min-ieC I2C eC i
+n-ter-face. 2016. URL: [][]$[][]https : / / www . sparkyswidgets .
  []
 
 
 Overfull \hbox (2.39963pt too wide) in paragraph at lines 81--81
-[][]$[][][][][][][] [] [] [] [][][] [] [][][][][][][][][] [] [][][] [] [][][][]
- [] [][][][][][][][] [] [][][][][][] [][] [][][][][][][][][][] [][] [][][][][][
-][][][] [][] [][][][][][][][][][][][] [][]
+[][]$[][]\EU2/SourceSerifPro(1)/m/n/13 https : / / www . fishersci . com / shop
+ / products / fisher -[] scientific -[] traceable -[] conductivity -[]
  []
 
 
-Overfull \hbox (6.16664pt too wide) in paragraph at lines 81--81
-\EU1/SourceSerifPro(0)/m/it/13 by simplified least squares procedures.’ In: Ana
-lytical chemistry 36.8 (1964), pp. 1627–
+Overfull \hbox (9.81665pt too wide) in paragraph at lines 81--81
+\EU2/SourceSerifPro(1)/m/n/13 by sim-pli-fied least squares pro-ced-ures.’ In
+: Ana-lyt-ical chem-istry 36.8 (1964), pp. 1627–
  []
 
 
-Overfull \hbox (8.43744pt too wide) in paragraph at lines 81--81
-[][][][]\EU1/SourceSerifPro(0)/m/it/13 Tränkler, Hans-Rolf and Leonhard M Reind
-l (2015). Sensortechnik: Handbuch für Praxis
+Overfull \hbox (11.17308pt too wide) in paragraph at lines 81--81
+[][][][][]\EU2/SourceSerifPro(1)/m/n/13 Tränk-ler, Hans-Rolf and Leon-hard M R
+eindl (2015). Sensor-tech-nik: Hand-buch für Praxis
  []
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[65
+[66
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2688,7 +2946,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
 (./content/material-and-methods.aux) (./content/results.aux)
 (./content/summary-and-outlook.aux) (./content/appendix.aux)
 (./elements/abbreviations.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 82.
 
 
@@ -2702,18 +2960,42 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'document.run.xml'.
-\openout1 = `document.run.xml'.
 
+\openout1 = document.run.xml
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
- )
-(\end occurred when \iftrue on line 21 was incomplete) 
-Here is how much of TeX's memory you used:
- 66921 strings out of 493638
- 1502658 string characters out of 6146797
- 2418294 words of memory out of 5000000
- 69204 multiletter control sequences out of 15000+600000
- 49717 words of font info for 99 fonts, out of 8000000 for 9000
- 1328 hyphenation exceptions out of 8191
- 73i,34n,106p,41580b,3431s stack positions out of 5000i,500n,10000p,200000b,80000s
+)
+(\end occurred when \iftrue on line 21 was incomplete)
 
-Output written on document.pdf (65 pages).
+Here is how much of LuaTeX's memory you used:
+ 67416 strings out of 495004
+ 931392,14696376 words of node,token memory allocated
+ 1147 words of node memory still in use:
+   15 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 1 glyph, 60 attribute, 50 glue_sp
+ec, 60 attribute_list, 11 action, 4 write, 16 pdf_literal, 8 pdf_refxform, 3 pdf
+_save_pos, 16 pdf_colorstack nodes
+   avail lists: 1:14,2:239333,3:119746,4:4192,5:1363,6:2578,7:1187,8:31,9:2892,1
+0:254,12:1
+ 67966 multiletter control sequences out of 65536+600000
+ 98 fonts using 6673503 bytes
+ 73i,35n,108p,1771b,2579s stack positions out of 5000i,500n,10000p,2053073b,100000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/opentype/
+public/lm/lmsans12-regular.otf>{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.en
+c}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc
+/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/opentype/public/lm/lmsans12-obli
+que.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></home/plam
+/.local/share/fonts/SourceSerifPro-Bold.ttf></home/plam/.local/share/fonts/Sourc
+eSerifPro-Regular.ttf><</usr/share/texlive/texmf-dist/fonts/type1/public/eurosym
+/feymr10.pfb><</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb><</usr/share/te
+xmf/fonts/type1/public/lm/lmmi10.pfb><</usr/share/texmf/fonts/type1/public/lm/lm
+mi12.pfb><</usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb><</usr/share/texmf/f
+onts/type1/public/lm/lmmi9.pfb><</usr/share/texmf/fonts/type1/public/lm/lmr10.pf
+b><</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb><</usr/share/texmf/fonts/ty
+pe1/public/lm/lmr9.pfb><</usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><</us
+r/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
+Output written on document.pdf (66 pages, 9181684 bytes).
+
+PDF statistics: 1087 PDF objects out of 1200 (max. 8388607)
+ 876 compressed objects within 9 object streams
+ 227 named destinations out of 1000 (max. 131072)
+ 424 words of extra memory for PDF output out of 10000 (max. 10000000)
+
