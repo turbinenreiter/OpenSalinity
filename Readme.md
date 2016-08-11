@@ -24,6 +24,6 @@ In this project, the [Espruino Pico](espruino.com) development board was used, b
 Design files for the [MinieC](sparkyswidgets.com) and carrier board files are provided in the [eagle](cadsoft.io)-format.  
 
 Gerbers for the electrode design are offerd as well.  
-All hardware is licensed as CC-BY-SA.4.0  
+All hardware is licensed as CC-BY-SA-4.0  
 
 ![Hardware](compsys.jpg)
