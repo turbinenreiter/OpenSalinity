@@ -20,7 +20,7 @@ All software is licensed under the MIT-license.
 
 In this project, the [Espruino Pico](espruino.com) development board was used, but other boards running MicroPython can replace it.  
 
-Design files for the and carrier board are [MinieC](sparkyswidgets.com) design files are provided in the [eagle](cadsoft.io)-format.  
+Design files for the [MinieC](sparkyswidgets.com) and carrier board files are provided in the [eagle](cadsoft.io)-format.  
 
 Gerbers for the electrode design are offerd as well.  
 All hardware is licensed as CC-BY-SA.4.0
