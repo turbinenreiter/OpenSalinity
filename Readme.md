@@ -2,7 +2,7 @@
 
 doc - Latex files for the semester thesis  
 src - source code  
-data -- all data gathered during experiments  
+data - all data gathered during experiments  
 hardware - hardware design files  
 
 ## Software
