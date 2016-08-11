@@ -10,7 +10,7 @@ hardware - hardware design files
 The software for the microcontroller is developed using [MicroPython](micropython.org). The controller has to be flashed with the MicroPython firmware before it is able to run the Python scripts. Those Python scripts can be deployed on the microcontroller by copying them over to its filesystem which is present as flash drive when connected to a PC.  
 
 The OpenSalinityGUI offers a simple user interface to capture and visualize data.  
-![Hardware](doc/images.jpg)
+![Hardware](doc/images/UI.png)
 
 The OpenSalintyCLI shell script uses standard command line tools to do the same.  
 
