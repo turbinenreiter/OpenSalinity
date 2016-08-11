@@ -25,4 +25,4 @@ Design files for the [MinieC](sparkyswidgets.com) and carrier board files are pr
 Gerbers for the electrode design are offerd as well.  
 All hardware is licensed as CC-BY-SA.4.0
 
-![Hardware](/compsys.jpg)
+![Hardware](compsys.jpg)
