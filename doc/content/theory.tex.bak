@@ -1,10 +1,10 @@
 \chapter{Background}
 
-In this chapter a theoretical background of electrical conductivity measurement will be established. After that, a market research takes a look at the commercially available solutions of sensor systems and parts that could be used to develop one.
+In this chapter the theoretical background of electrical conductivity measurement will be explained. A market research was conducted to compare commercially available solutions of sensor systems and components that could be used to develop one.
 
 \section{Theoretical Background}
 
-The following section is translated and summarized from \textcite{trankler2015sensortechnik} and \textcite{gevatter2000automatisierungstechnik}.\\
+The following section is summarized and translated from \textcite{trankler2015sensortechnik} and \textcite{gevatter2000automatisierungstechnik}.\\
 
 The conductivity $ \kappa $  is the ability of a certain volume of a substance to conduct electricity. It is measured in the unit \unitfrac{S}{m} and is a specific parameter normalized to the length and cross section of the volume. Conductivity in a liquid depends on ions as charge carrier and can therefore be used to measure its concentration.
 
@@ -43,7 +43,7 @@ To better understand conductivity, an equivalent circuit diagram, shown in figur
     		%Draw water
     		\fill [blue!75, opacity=0.3] (-0.5,1) rectangle (6,-2);
 		\end{tikzpicture}
-		\caption[Two electrodes submerged in the solution.]{Two electrodes with the area $A$ are submerged in the solution with the distance $d$ between them. A voltmeter is used to measure the voltage drop.}
+		\caption[Two electrodes submerged in the solution.]{Two electrodes with the area $A$ are submerged in the solution with the distance $d$ between them. A voltmeter is used to measure the voltage drop $U_R$.}
 		\label{fig:elec}
 	\end{center}
 \end{figure}
@@ -65,16 +65,15 @@ The cell constant $ C $ describes the geometry of the sensor
 	C = \dfrac{d}{A}
 \label{eq:C}
 \end{equation}
-where $ d $ is the distance between and $ A $ the surface area of  the electrodes. 
+where $ d $ is the distance between the electrodes and $ A $ the surface area thereof. 
 
-Considering the cell constant $ C $ finally yields the conductivity
+Considering the cell constant $ C $ finally yields the conductivity $\kappa$
 \begin{equation}
 	\kappa = G \cdot C
 \label{eq:kappa} 
 \end{equation}
-\\
 
-In electrolytes, the electrical conduction is a result of mass transfer, where ions are carrying the charges. If the measurement is conducted with direct current, this mass transfer leads to changes in the measured solution and the electrode surface, negatively impacting the measurement. Furthermore, polarization effects create additional resistance, leading to lower than actual results. To avoid this, alternating current is used. The fast, periodical swap of polarity eliminates the net mass flow and its effects. Polarization is a result of the current flowing through the electrode, thereby its effects can be minimized by minimizing this current. One method to do this is replacing the two-electrode-cell with a four-electrode-cell.
+In electrolytes, the electrical conduction is a result of mass transfer, where ions are carrying the charges. If the measurement is conducted with direct current, this mass transfer leads to changes in the measured solution and the electrode surface, negatively impacting the measurement. Furthermore, polarization effects create additional resistance, leading to lower than actual results. To avoid this, alternating current is used. The fast, periodical swap of polarity eliminates the net mass flow and its effects. Polarization is a result of the current flowing through the electrode, thereby its effects can be minimized by minimizing this current. One method to do so is replacing the two-electrode-cell with a four-electrode-cell.
 This separates the current flow from the potential measurement by using one electrode pair to apply the current, and a separate pair to measure the potential drop. \\
 
 The electrolyte's temperature affects the mobility of the ions and thereby also has a big influence on the conductivity. It has to be taken into account when comparing two measurements. If the temperature $ T $ is known, the conductivity at that temperature $ \kappa_{T} $ can be normalized to a reference temperature $ T_{ref} $ using equation \eqref{eq:kref}, resulting in the reference conductivity $ \kappa_{ref} $.
@@ -98,13 +97,13 @@ Conductivity meters can be readily bought and range from prices of over \euro{10
 \begin{figure}[H]
 	\begin{center}
     	\tikzset{external/export next=false}
-		\includegraphics[scale=0.5]{images/ccm.jpg}
+		\includegraphics[scale=0.6]{images/ccm.jpg}
 		\caption{Fisher Scientific™ Traceable™ Salinity Meter Pen \parencite{cheapcm}}
 		\label{fig:ccm}
 	\end{center}
 \end{figure}
 
-Figure \ref{fig:ccm} shows a field conductivity meter from a quality manufacturer as example for the typical traits most available solutions share:
+Figure \ref{fig:ccm} shows a field conductivity meter from a quality manufacturer as an example for the typical traits most available solutions share:
 \begin{itemize}
 	\item a single electrode pair
 	\item a display to report measurements
@@ -113,7 +112,7 @@ Figure \ref{fig:ccm} shows a field conductivity meter from a quality manufacture
 
 While field conductivity meters have the electrodes integrated to form one compact device, the more expensive lab equipment often has the electrodes attached to the device with a cable, allowing for a more flexible use.\\
 
-A different option was found in the MinieC I2C eC interface from Sparky's Widgets \parencite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons \parencite{cc}. This license allows to study the original design files and build modified versions. Ready-made boards can be purchased for about \euro{25}. The design approach of this solution is also more modular than that of the more professional equipment. The MinieC offers an interface to connect external electrodes and can be controlled and read by a microcontroller.\\
+A different option was found in the MinieC I2C eC interface from Sparky's Widgets \parencite{uec}. The MinieC interface is an Open Hardware project providing a conductivity sensor that easily interfaces with a microcontroller, licensed under Creative Commons \parencite{cc}. This license allows to study the original design files and build modified versions. Ready-made boards can be purchased for about \euro{25}. The design approach of this solution is also more modular than that the other products. The MinieC offers an interface to connect external electrodes and can be controlled and read by a microcontroller.\\
 
 Table \ref{tab:feat} shows a comparison of the strengths and weaknesses of the different systems with respect to the use case in this project. Both the lab and field conductivity meters offer complete solutions with high accuracy. They do however lack the modularity of the MinieC as well as the machine interface, both of which are more important for the intended purpose than the accuracy. The complete solutions they offer simply are solutions for a different case than ours, while the MinieC is positioned as a flexible building block to be used in whatever way needed. While it means that more work has to be done in designing a system around it, this is exactly the trait that allows us to build a device fit for our tasks.
 

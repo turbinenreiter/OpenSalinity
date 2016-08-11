@@ -1,6 +1,6 @@
 \chapter{Results}
 
-In this chapter the verification and validation of the developed sensor system are described. The verification is a set of tests designed to review whether or not the system meets the requirements specified in the Chapter Objectives. The validation is done by analyzing the data gathered during a number of experiments in the bioreactor.
+In this chapter the verification and validation of the developed sensor system are described. As verification serves a set of tests designed to review whether or not the system meets the requirements specified in the Chapter Objectives. The validation is done by analyzing data gathered during a number of experiments in the bioreactor.
 
 \section{Verification}
 
@@ -10,10 +10,10 @@ In this chapter the verification and validation of the developed sensor system a
 \item[|] The system shall have a spacial resolution in the order of \unit[10]{mm}.
 \end{itemize}
 
-An inspection of the physical size of the sensor and their placement on the array, drawn in Figure \ref{fig:sensarray}, shows us a sensor size of \unit[10x11]{mm} arranged on a grid of \unit[25x50]{mm}. The theoretical minimal grid size achievable with the chosen sensor size is \unit[11x12]{mm} when a minimum distance between electrodes of \unit[1]{mm} is kept.
+An inspection of the physical size of the sensors and their placement on the array, drawn in Figure \ref{fig:sensarray}, shows us a sensor size of \unit[10x11]{mm} arranged on a grid of \unit[25x50]{mm}. The theoretical minimal grid size achievable with the chosen sensor size is \unit[11x12]{mm} when a minimum distance between electrodes of \unit[1]{mm} is kept.
 This grid size is the physical limitation of the spacial resolution and by being well within the order of \unit[10]{mm} meets the requirement.\\
 
-\begin{figure}[H]
+\begin{figure}
 	\begin{center}
 		\begin{tikzpicture}
 		\begin{scope}
@@ -69,7 +69,7 @@ This grid size is the physical limitation of the spacial resolution and by being
 	\end{center}
 \end{figure}
 
-Due to the coupling of the spacial and time resolutions via the streams velocity as shown in Equation \eqref{eq:resv2}, the grid size is not sufficient to verify the requirement. 
+Due to the coupling of spacial and time resolutions via the stream's velocity as shown in Equation \eqref{eq:resv2}, the grid size is not sufficient to verify the requirement. 
 
 \begin{equation}
 	v = \dfrac{\diff s}{\diff t}
@@ -78,10 +78,10 @@ Due to the coupling of the spacial and time resolutions via the streams velocity
 
 A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0.01]{s} for a velocity of \unitfrac[1]{m}{s}. However, this assumes the size $ l $ of the sensor and the time $ \tau $ a measurement takes to be infinitesimal small, which in reality they are not. While the sensor measures, the flow continues and instead of measuring the conductivity of a certain volume at a certain time, an average is measured. Figure \ref{fig:cv} visualizes this issue.
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\begin{tikzpicture}
-		\node [minimum height=32pt, minimum width=32pt, style=rect, fill opacity=0.2] (0) at (0, 0) {};
+		\node [minimum height=32pt, minimum width=32pt, style=rect] (0) at (0, 0) {};
 		\draw (-0.55,0) -- (-0.55,-1.5);
 		\draw (0.55,0) -- (0.55,-1.5);
 		\draw [darrow] (-0.55,-1.3) -- (0.55,-1.3) node[above, pos=0.5] {$l$};
@@ -111,12 +111,12 @@ A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0
 		\node [] at (4,-6) {$t>\tau$};
 		\end{tikzpicture}
 		%\includegraphics[width=0.45\textwidth]{images/resolution.pdf} 
-		\caption[The control volumes in blue have the same size as the sensor (black rectangle).]{The control volumes in blue have the same size as the sensor (black rectangle). At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau$ the control volumes have moved. The sensor is covered by a mix of the two volumes.}
+		\caption[The two control volumes in light and dark blue have the same size as the sensor shown as black rectangle.]{The two control volumes in light and dark blue have the same size as the sensor shown as black rectangle. At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau$, the control volumes have moved. The sensor is covered by a mix of the two volumes.}
 		\label{fig:cv}
 	\end{center}
 \end{figure}
 
-To accommodate for that, factors $ n $ \eqref{eq:resn} and $ k $ \eqref{eq:resk} are introduced, describing the ratio of the resolutions to the actual sizes.
+Factors $ n $ \eqref{eq:resn} and $ k $ \eqref{eq:resk} are introduced to accommodate for this problem, describing the ratio of the resolutions to the actual sizes.
 
 \begin{equation}
 	n = \dfrac{l}{\diff s}
@@ -128,7 +128,7 @@ To accommodate for that, factors $ n $ \eqref{eq:resn} and $ k $ \eqref{eq:resk}
 \label{eq:resk}
 \end{equation}
 
-Inserting $ k $ and $ n $ in Equation \eqref{eq:resv} yields:
+Inserting $ k $ and $ n $ in Equation \eqref{eq:resv1} yields:
 
 \begin{equation}
 	v = \dfrac{\diff s}{\diff t} = \dfrac{k \cdot l}{n \cdot \tau}
@@ -143,7 +143,7 @@ The ratio $ r $
 is the ratio of the time it takes a control volume to enter and leave the sensor area  to the time a measurement takes. Its inverse is the movement of the control volume during the measurement time and thereby the percentage by which the measured volume is bigger than the control volume. A ratio of one would mean the measured volume is two times the sensor size, thereby halving the spacial resolution. To keep the resolution close the the sensor size, a ratio $r$ of four, increasing the measured volume by \unit[25]{\%} is viable.
 With the given sensor size and flow speed, a measurement time $ \tau $ of \unit[2.5]{ms} is needed.\\
 
-To test if the time resolution matches this, the measurement time itself can be timed. First, the difference between two adjacent times in the data set in Listing \ref{lst:data} is calculated. The mean of the differences through the complete data set is \unit[748]{$\mu$s}. This time includes the \unit[520]{$\mu$s} it takes to switch from one electrode pair to the next. The resulting net measurement time is \unit[228]{$\mu$s}, the resulting ratio $r$ is $43.9$. This means that the measurement is more than ten times faster than required, showing that the time resolution easily matches the spacial resolution. The measured volume is only \unit[2.28]{\%} bigger than the control volume.
+To test if the time resolution matches this requirement, the measurement time itself can be timed. First, the difference between two adjacent times in the data set in Listing \ref{lst:data} is calculated. The mean of the differences through the complete data set is \unit[748]{$\mu$s}. This time includes the \unit[520]{$\mu$s} it takes to switch from one electrode pair to the next. The resulting net measurement time is \unit[228]{$\mu$s}, the resulting ratio $r$ is $43.9$. This signifies that the measurement is more than ten times faster than required, showing that the time resolution easily matches the spacial resolution. The measured volume is only \unit[2.28]{\%} bigger than the control volume.
 
 \begin{lstlisting}[caption={An excerpt of measurement data showing three lines of data from eight sensors. The long numbers are the times at which the measurements were taken in microseconds measured from the start, the short numbers are the measured values.},label={lst:data}]
 975209221 21 975209961 59 975210676 15 975211397 0 975212119 0 975212840 26 975213554 59 975214276 9 
@@ -160,11 +160,7 @@ To test if the time resolution matches this, the measurement time itself can be 
 
 Table \ref{tab:rns} and Figure \ref{fig:rns} show the results of measurements of solutions with different salinities. A \unit[10]{\%} solution was created by adding \unit[5]{g} of salt to \unit[50]{ml} of demineralized water. The subsequent solutions resulted from diluting the original one by adding more water.
 
-The measurable change of the voltage was visible at the drop from a salinity of \unit[5]{\%} to \unit[2.5]{\%}. Between \unit[10]{\%} and \unit[5]{\%} no difference was measurable at all. The upper range limit can therefore be placed between at \unit[2.5]{\%}, above those values the sensor is saturated, providing only the information that the salinity is above the threshold.
-
-On the lower limit a measurement without any water resulted in a voltage of \unit[0.02]{V}. This has to be considered the level of noise in the system. Above that, a clear distinction of salinities of \unit[0.08]{\%} and \unit[0.16]{\%} can be seen.
-
-\begin{table}[H]
+\begin{table}
     \centering
 
     \caption[Range and Sensitivity]{Range and Sensitivity}
@@ -195,7 +191,10 @@ On the lower limit a measurement without any water resulted in a voltage of \uni
 	\end{center}
 \end{figure}
 
-While the requirement for sensitivity is clearly met, the range is just barely acceptable. For validation, the used range has to be adjusted and will show if it is sufficient.
+The measurable change of the voltage was visible at the drop from a salinity of \unit[5]{\%} to \unit[2.5]{\%}. Between \unit[10]{\%} and \unit[5]{\%} no difference was measurable at all. The upper range limit can therefore be placed at \unit[2.5]{\%}, above those values the sensor is saturated, providing only the information that the salinity is above the threshold.
+
+On the lower limit a measurement without any water resulted in a voltage of \unit[0.02]{V}. This has to be considered the level of noise in the system. Above that, a clear distinction of salinities of \unit[0.08]{\%} and \unit[0.16]{\%} can be seen.
+While the requirement for sensitivity is clearly met, the range is requirement is not met. For validation, the used range has to be adjusted and will show if it is sufficient.
 
 \subsection{Cost}
 
@@ -244,9 +243,9 @@ The instruction manual for taking a series of measurements can be found in the A
 The following chapter describes a number of experiments conducted using the developed sensor system. The data is analyzed and interpreted to validate if the results are reasonable. 
 %Finally, a comparison with data from simulations tries to validate the usefulness of the device.
 
-All experiments where done on the same day on the same bioreactor. The schematic in Figure \ref{fig:senspos} shows how the sensors were positioned.
+All experiments where done on August 8, 2016 on the same bioreactor. The schematic in Figure \ref{fig:senspos} shows how the sensors were positioned.
 
-\begin{figure}[H]
+\begin{figure}
 	\begin{center}
 \begin{tikzpicture}[
     scale=0.03,
@@ -347,10 +346,10 @@ All experiments where done on the same day on the same bioreactor. The schematic
 
 With this configuration, two types of experiments were run: the first method uses the bioreactors plumbing to switch the feed from the collection tank to an external tank containing saltwater. Instead of pumping water in a loop, saltwater from the tank is added to the water cycle and the increase in salinity can be measured. Figure \ref{fig:rest} shows the step change of the concentration in the input feed and the expected response of the system.
 
-\begin{figure}[H]
+\begin{figure}
 	\begin{center}
 		\input{images/residenceTime}
-		\caption[Step change of the salinity of the feed and the expected response [by Timm Severin].]{Step change of the salinity of the feed (\drawline[red!80!white]) and the expected response (\drawline[blue!80!white, dashed]) [by Timm Severin].}
+		\caption[Step change of the salinity of the feed and the expected response [by Timm Severin].{Step change of the salinity of the feed (\drawline[red!80!white]) and the expected response (\drawline[blue!80!white, dashed]) [by Timm Severin].}
 		\label{fig:rest}
 	\end{center}
 \end{figure}
@@ -359,7 +358,7 @@ The second method retains the original water cycle with no switching to an exter
 
 In the following section a selection of the experiments will be described. The numeration equals the numeration of the collected data sets. By keeping the original notation continuity between the data files, notes and documentation can be maintained.\\
 
-\textbf{Test No. 2}
+\textbf{Test No. 2}\\
 
 In this test the feed switch method was used. The total amount of water in the tank was \unit[65]{l} and the flow rate was $\dot{V} =  \unitfrac[1.6]{l}{s}$. The saltwater in the external tank had a salinity of \unit[1.5]{\%}.\\
 
@@ -409,7 +408,7 @@ Figure \ref{fig:test2} shows a comparison of the resulting data for sensor four 
 
 Another interesting data point is the the behavior when the water flow is first switched on. Figure \ref{fig:test2_on} shows the signals during this phase. Signal four in the inlet basin rises first, signal eight rises about $\diff t =  \unit[4]{s}$ later. This is the time it takes the empty basin to fill up completely, only after which the water flows over the weir. At a flow rate of \unitfrac[1.6]{l}{s}, this suggests a volume of the inlet basin of around \unit[6.4]{l}. The real volume calculated according to the schematic is about \unit[5.8]{l}.
 
-\begin{figure}[H]
+\begin{figure}
 	\begin{center}
 		\input{images/log080716_2_on}
 		%\includegraphics[width=0.8\textwidth]{images/log080716_2_on.pdf} 
@@ -418,7 +417,7 @@ Another interesting data point is the the behavior when the water flow is first 
 	\end{center}
 \end{figure}
 
-A comparison of six different sensor outputs with data from the simulation done by Timm Severin is shown in Figure \ref{fig:test2_sim}. The time segment shows the salinity increase happening directly after the feed is switched to the salt water tank. Generally, the behavior of both correspond well, with the big exception of the position one. Here, the simulation and experimental data are offset by around \unit[2]{s}. The reason for that is not yet perfectly clear but it is suspected that adverse effects in the simulation are at fault.
+A comparison of six different sensor outputs with data from the simulation done by Timm Severin is shown in Figure \ref{fig:test2_sim}. The time segment shows the salinity increase happening directly after the feed is switched to the salt water tank. Generally, the behavior of both correspond well, with the big exception of the position one. Here, the simulation and experimental data are offset by around \unit[2]{s}. The reason for that is not yet perfectly clear but it is suspected that adverse effects in the simulation are at fault.\\
 
 \begin{figure}[H]
 	\begin{center}
@@ -429,9 +428,9 @@ A comparison of six different sensor outputs with data from the simulation done 
 	\end{center}
 \end{figure}
 
-\textbf{Test No. 3}
+\textbf{Test No. 3}\\
 
-The next test retained all specifics of the prior one, except for a higher salinity of \unit[1.9]{\%}. In Figure \ref{fig:test3} again sensors four and eight are compared. The behavior mirrors the previous experiment with the main difference being the higher voltage measured due to the higher salinity of the water from the external tank.
+The next test retained all specifics of the prior one, except for a higher salinity of \unit[1.9]{\%}. In Figure \ref{fig:test3} again sensors four and eight are compared. The behavior mirrors the previous experiment with the main difference being the higher voltage measured due to the higher salinity of the water from the external tank.\\
 
 \begin{figure}[H]
 	\begin{center}
@@ -442,9 +441,9 @@ The next test retained all specifics of the prior one, except for a higher salin
 	\end{center}
 \end{figure}
 
-\textbf{Test No. 4}
+\textbf{Test No. 4}\\
 
-While maintaining the previous volume and flow rate, this test used the impulse method instead of the feed switch. There were \unit[5]{l} of water with a salinity of \unit[7.7]{\%} added to the collection tank. The first peak directly follows the addition of the saltwater, after about \unit[49]{s} a second peak follows. This is the time $t_{cycle}$ it takes the water volume to completely circle through the bioreactor. The third peak is barely visible as the water and saltwater are almost completely diffused.
+While maintaining the previous volume and flow rate, this test used the impulse method instead of the feed switch. There were \unit[5]{l} of water with a salinity of \unit[7.7]{\%} added to the collection tank. The first peak directly follows the addition of the saltwater, after about \unit[49]{s} a second peak follows. This is the time $t_{cycle}$ it takes the water volume to completely circle through the bioreactor. The third peak is barely visible as the water and saltwater are almost completely diffused.\\
 
 \begin{figure}[H]
 	\begin{center}
@@ -455,7 +454,7 @@ While maintaining the previous volume and flow rate, this test used the impulse 
 	\end{center}
 \end{figure}
 
-\textbf{Test No. 6}
+\textbf{Test No. 6}\\
 
 Again the impulse method was used but with an increased flow rate of \unitfrac[2]{l}{s} and a lower salinity of \unit[6.7]{\%}. The time $t_{cycle}$ from first to second peak is now about \unit[41]{s}, as expected due to the higher flow rate. The voltages are also a little lower because of the lower salinity.
 

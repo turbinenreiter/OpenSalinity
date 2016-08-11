@@ -26,5 +26,6 @@
     ADC & Analog-Digital-Converter \tabularnewline
     AC & Alternating Current \tabularnewline
 	GUI & Graphical User Interface \tabularnewline
+	Command Line Interface & (CLI) \tabularnewline
 \end{longtable}
 }

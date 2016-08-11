@@ -6,15 +6,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Objectives}{9}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Spacial and Time Resolution}{9}{section.6}
+\contentsline {section}{\numberline {2.1}Spacial and Time Resolution}{10}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Electrical Conductivity Resolution}{12}{section.9}
+\contentsline {section}{\numberline {2.2}Electrical Conductivity Resolution}{11}{section.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Cost}{12}{section.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Usability}{12}{section.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Requirements}{13}{section.12}
+\contentsline {section}{\numberline {2.5}Summary of Requirements}{12}{section.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Background}{14}{chapter.14}
 \defcounter {refsection}{0}\relax 
@@ -30,17 +30,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Matrix Switches}{23}{section.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}MinieC Interface}{26}{section.39}
+\contentsline {section}{\numberline {4.4}MinieC Interface}{25}{section.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Microcontroller}{29}{section.43}
+\contentsline {section}{\numberline {4.5}Microcontroller}{28}{section.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Carrier Board}{30}{section.44}
+\contentsline {section}{\numberline {4.6}Carrier Board}{29}{section.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Embedded Software}{31}{section.46}
+\contentsline {section}{\numberline {4.7}OpenSalinityGUI}{30}{section.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}OpenSalinity GUI}{33}{section.52}
+\contentsline {section}{\numberline {4.8}Embedded Software}{33}{section.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Data Conditioning}{34}{section.54}
+\contentsline {section}{\numberline {4.9}Data Conditioning}{35}{section.54}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.10}Bill of Materials}{35}{section.56}
 \defcounter {refsection}{0}\relax 
@@ -62,20 +62,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Validation}{45}{section.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{56}{chapter.95}
+\contentsline {chapter}{\numberline {6}Conclusion}{55}{chapter.95}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Outlook}{57}{chapter.96}
+\contentsline {chapter}{\numberline {7}Outlook}{56}{chapter.96}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{58}{appendix.97}
+\contentsline {chapter}{\numberline {A}Appendix}{57}{appendix.97}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Instruction Manual}{58}{section.98}
+\contentsline {section}{\numberline {A.1}Instruction Manual}{57}{section.98}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Algorithms}{61}{section.109}
+\contentsline {section}{\numberline {A.2}Algorithms}{60}{section.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Abbreviations}{63}{appendix.149}
+\contentsline {chapter}{\numberline {B}Abbreviations}{62}{appendix.149}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Figures}{64}{appendix.151}
+\contentsline {chapter}{\numberline {C}List of Figures}{63}{appendix.151}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}List of Tables}{65}{appendix.152}
+\contentsline {chapter}{\numberline {D}List of Tables}{64}{appendix.152}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Bibliography}{66}{appendix.153}
+\contentsline {chapter}{\numberline {E}Bibliography}{65}{appendix.153}

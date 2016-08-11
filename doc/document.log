@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2016.6.6)  10 AUG 2016 20:34
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2016.6.6)  11 AUG 2016 03:04
  restricted \write18 enabled.
 **document.tex
 (./document.tex
@@ -550,7 +550,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.056 seconds)
+luaotfload | main : initialization completed in 0.060 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -2212,11 +2212,7 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 (./document.aux (./elements/title.aux)
 (./elements/declaration-of-authorship.aux) (./content/introduction.aux)
 (./content/motivation.aux) (./content/theory.aux)
-(./content/material-and-methods.aux
-
-LaTeX Warning: Label `fig:opamp' multiply defined.
-
-) (./content/results.aux
+(./content/material-and-methods.aux) (./content/results.aux
 
 LaTeX Warning: Label `graph:channel_velocity-1degree_U' multiply defined.
 
@@ -2502,7 +2498,7 @@ Overfull \hbox (2.53728pt too wide) in paragraph at lines 67--79
  [][][][][] 
  []
 
-[12]) [13]
+) [12] [13]
 \openout2 = content/theory.aux
  (./content/theory.tex
 chapter 3.
@@ -2529,27 +2525,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-
- []
-
-[16] <images/ccm.jpg, id=269, 243.91125pt x 433.62pt>
+[16] <images/ccm.jpg, id=271, 243.91125pt x 433.62pt>
 File: images/ccm.jpg Graphic file (type jpg)
  <use images/ccm.jpg>
-Package pdftex.def Info: images/ccm.jpg used on input line 101.
-(pdftex.def)             Requested size: 121.95532pt x 216.80946pt.
+Package pdftex.def Info: images/ccm.jpg used on input line 100.
+(pdftex.def)             Requested size: 146.34787pt x 260.17401pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 [17<./images/ccm.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
@@ -2561,12 +2552,6 @@ chapter 4.
 
 Overfull \hbox (12.98373pt too wide) in paragraph at lines 7--25
  [] 
- []
-
-
-Overfull \hbox (3.11656pt too wide) in paragraph at lines 32--34
-\EU2/SourceSerifPro(0)/m/sl/13 the meas-ure-ment data from it and sends it to t
-he PC. It also con-trols the mat-rix switches
  []
 
 [19
@@ -2625,17 +2610,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-<images/ms.pdf, id=365, 108.88681pt x 160.43939pt>
+[23<./images/fpcbd.pdf><./images/fpcbp.jpg>]
+<images/ms.pdf, id=381, 108.88681pt x 160.43939pt>
 File: images/ms.pdf Graphic file (type pdf)
  <use images/ms.pdf>
 Package pdftex.def Info: images/ms.pdf used on input line 151.
 (pdftex.def)             Requested size: 133.16026pt x 196.22539pt.
- [23<./images/fpcbd.pdf><./images/fpcbp.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-[24<./images/ms.pdf>] [25]
+[24<./images/ms.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
@@ -2645,6 +2631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
+[25]
 LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
 (Font)              scaled to size 7.86388pt on input line 188.
 luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
@@ -2657,7 +2644,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6.06668> on input line 188.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <4.33336> on input line 188.
-[26]
+
 Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
@@ -2667,70 +2654,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-(./images/log_12052016_1.tex
+[26] (./images/log_12052016_1.tex
 ===== Image 'tikz-cache/document-figure3' is up-to-date. ======
-) [27] (./images/log_12052016_2.tex
+) (./images/log_12052016_2.tex
 ===== Image 'tikz-cache/document-figure4' is up-to-date. ======
-) [28<./tikz-cache/document-figure3.pdf>]
+) [27<./tikz-cache/document-figure3.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
-[29<./tikz-cache/document-figure4.pdf>]
-<images/cb.jpg, id=456, 3929.68124pt x 1123.19624pt>
+[28<./tikz-cache/document-figure4.pdf>]
+<images/cb.jpg, id=451, 3929.68124pt x 1123.19624pt>
 File: images/cb.jpg Graphic file (type jpg)
  <use images/cb.jpg>
-Package pdftex.def Info: images/cb.jpg used on input line 248.
+Package pdftex.def Info: images/cb.jpg used on input line 242.
 (pdftex.def)             Requested size: 355.09178pt x 101.47748pt.
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+[29<./images/cb.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+
+ []
+
+<images/UI.png, id=459, 1847.90375pt x 1039.885pt>
+File: images/UI.png Graphic file (type png)
+ <use images/UI.png>
+Package pdftex.def Info: images/UI.png used on input line 270.
+(pdftex.def)             Requested size: 443.86305pt x 249.7679pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+[30] [31<./images/UI.png>] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+Overfull \hbox (1.05365pt too wide) in paragraph at lines 284--287
+[][][][]\EU2/SourceSerifPro(0)/m/sl/13 Fig-ure [][]4.14[][] shows the flow dia-
+gram of the soft-ware. As soon as the sys-tem is powered
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--287
 
  []
 
 LaTeX Font Info:    Font shape `EU2/SourceSerifPro(0)/m/n' will be
-(Font)              scaled to size 5.89786pt on input line 264.
+(Font)              scaled to size 5.89786pt on input line 291.
 luaotfload | load : Lookup/name: "SourceSerifPro" -> "SourceSerifPro-Regular.ttf
 "
 ===== Image 'tikz-cache/document-figure5' is up-to-date. ======
-[31<./images/cb.jpg>] [32<./tikz-cache/document-figure5.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
-<images/UI.png, id=492, 1847.90375pt x 1039.885pt>
-File: images/UI.png Graphic file (type png)
- <use images/UI.png>
-Package pdftex.def Info: images/UI.png used on input line 326.
-(pdftex.def)             Requested size: 443.86305pt x 249.7679pt.
- [33]
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
-
- []
-
-[34<./images/UI.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+[34<./tikz-cache/document-figure5.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 ===== Image 'tikz-cache/document-figure6' is up-to-date. ======
 [35<./tikz-cache/document-figure6.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 [][][][]|\EU2/SourceSerifPro(0)/m/sl/13 mi-cro-con-trol-ler
  []
 
 
-Overfull \hbox (12.15468pt too wide) in paragraph at lines 405--417
+Overfull \hbox (12.15468pt too wide) in paragraph at lines 406--418
  [][][][][] 
  []
 
@@ -2739,93 +2732,123 @@ Overfull \hbox (12.15468pt too wide) in paragraph at lines 405--417
  (./content/results.tex
 chapter 5.
 
-Overfull \hbox (7.13817pt too wide) in paragraph at lines 13--15
-\EU2/SourceSerifPro(0)/m/sl/13 drawn in Fig-ure [][]5.1[][], shows us a sensor 
-size of 10x11mm ar-ranged on a grid of 25x50mm.
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
 ===== Image 'tikz-cache/document-figure7' is up-to-date. ======
+===== Image 'tikz-cache/document-figure8' is up-to-date. ======
 [38
 
 
 
-]
-===== Image 'tikz-cache/document-figure8' is up-to-date. ======
-[39<./tikz-cache/document-figure7.pdf>]
+] [39<./tikz-cache/document-figure7.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
-[40<./tikz-cache/document-figure8.pdf>]
-Overfull \hbox (0.61429pt too wide) in paragraph at lines 146--147
-[][][][]\EU2/SourceSerifPro(0)/m/sl/13 To test if the time res-ol-u-tion matche
-s this, the meas-ure-ment time it-self can be timed.
- []
-
-[41] (./images/sal_sens_range.tex
+[40<./tikz-cache/document-figure8.pdf>] [41] (./images/sal_sens_range.tex
 ===== Image 'tikz-cache/document-figure9' is up-to-date. ======
 ) [42<./tikz-cache/document-figure9.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
-<images/stripsinreactor.jpg, id=625, 4632.30624pt x 3275.23625pt>
+<images/stripsinreactor.jpg, id=629, 4632.30624pt x 3275.23625pt>
 File: images/stripsinreactor.jpg Graphic file (type jpg)
 
 <use images/stripsinreactor.jpg>
-Package pdftex.def Info: images/stripsinreactor.jpg used on input line 220.
+Package pdftex.def Info: images/stripsinreactor.jpg used on input line 219.
 (pdftex.def)             Requested size: 355.09178pt x 251.02953pt.
  [43]
-<images/pconreactor.jpg, id=633, 1276.77pt x 903.375pt>
+<images/pconreactor.jpg, id=637, 1276.77pt x 903.375pt>
 File: images/pconreactor.jpg Graphic file (type jpg)
 
 <use images/pconreactor.jpg>
-Package pdftex.def Info: images/pconreactor.jpg used on input line 228.
+Package pdftex.def Info: images/pconreactor.jpg used on input line 227.
 (pdftex.def)             Requested size: 355.09178pt x 251.23401pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
 [44<./images/stripsinreactor.jpg><./images/pconreactor.jpg>]
 ===== Image 'tikz-cache/document-figure10' is up-to-date. ======
-[45] (./images/residenceTime.tex
+(./images/residenceTime.tex
 PGFPlots: reading {data/residenceTime.csv}
-) [46<./tikz-cache/document-figure10.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+)
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+[45] [46<./tikz-cache/document-figure10.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
 (./images/log080716_2_7_scatter.tex) [47] (./images/log080716_2_unadj.tex)
-(./images/log080716_2_adj.tex) [48] (./images/log080716_2.tex) [49]
-Overfull \hbox (8.11003pt too wide) in paragraph at lines 410--411
+(./images/log080716_2_adj.tex) (./images/log080716_2.tex) [48]
+Overfull \hbox (8.11003pt too wide) in paragraph at lines 409--410
 [][][][]\EU2/SourceSerifPro(0)/m/sl/13 An-other in-ter-est-ing data point is th
 e the be-ha-vior when the wa-ter flow is first switched
  []
 
-(./images/log080716_2_on.tex) [50] (./images/log080716_2_sim.tex) [51] [52]
-(./images/log080716_3.tex) (./images/log080716_4.tex) [53]
-(./images/log080716_6.tex) [54]) [55]
+(./images/log080716_2_on.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
+
+ []
+
+(./images/log080716_2_sim.tex) [50]
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
+
+ []
+
+(./images/log080716_3.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+(./images/log080716_4.tex) [52]
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+(./images/log080716_6.tex)) [53] [54]
 \openout2 = content/summary-and-outlook.aux
  (./content/summary-and-outlook.tex
 chapter 6.
-[56
+[55
 
 
 
 ]
 chapter 7.
-) [57
+) [56
 
 ]
 \openout2 = content/appendix.aux
@@ -2844,23 +2867,23 @@ Overfull \hbox (12.98085pt too wide) in paragraph at lines 10--28
  [] 
  []
 
-<images/conn.jpg, id=737, 3751.01375pt x 2110.88625pt>
+<images/conn.jpg, id=735, 3751.01375pt x 2110.88625pt>
 File: images/conn.jpg Graphic file (type jpg)
  <use images/conn.jpg>
 Package pdftex.def Info: images/conn.jpg used on input line 38.
 (pdftex.def)             Requested size: 221.93152pt x 124.87619pt.
 
-[58
+[57
 
 
 
-] <images/usb.jpg, id=744, 1997.4625pt x 813.0375pt>
+] <images/usb.jpg, id=742, 1997.4625pt x 813.0375pt>
 File: images/usb.jpg Graphic file (type jpg)
  <use images/usb.jpg>
 Package pdftex.def Info: images/usb.jpg used on input line 46.
 (pdftex.def)             Requested size: 221.93152pt x 90.32762pt.
 
-[59<./images/conn.jpg><./images/usb.jpg>] [60] [61]) [62]
+[58<./images/conn.jpg><./images/usb.jpg>] [59] [60]) [61]
 \openout2 = elements/abbreviations.aux
 
 (./elements/abbreviations.tex
@@ -2871,17 +2894,22 @@ Underfull \hbox (badness 10000) in alignment at lines 8--29
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 29--29
+Underfull \hbox (badness 2359) in paragraph at lines 29--29
+[][][][]|\EU2/SourceSerifPro(0)/m/sl/13 Com-mand Line
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 29--30
 [] []
  []
 
-) [63
+) [62
 
 
 
 ]
 chapter C.
-(./document.lof [64
+(./document.lof [63
 
 
 ])
@@ -2894,7 +2922,7 @@ chapter D.
 \tf@lot=\write9
 
 \openout9 = document.lot
- [65]
+ [64]
 chapter E.
 
 LaTeX Font Warning: Font shape `EU2/SourceSerifPro(0)/m/it' undefined
@@ -2935,7 +2963,7 @@ eindl (2015). Sensor-tech-nik: Hand-buch für Praxis
 Package caption Warning: Unused \captionsetup[subfigure] on input line 52.
 See the caption package documentation for explanation.
 
-[66
+[65
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
@@ -2968,14 +2996,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
 
 Here is how much of LuaTeX's memory you used:
  67416 strings out of 495004
- 931392,14696376 words of node,token memory allocated
- 1147 words of node memory still in use:
+ 931395,14696376 words of node,token memory allocated
+ 1138 words of node memory still in use:
    15 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 1 glyph, 60 attribute, 50 glue_sp
 ec, 60 attribute_list, 11 action, 4 write, 16 pdf_literal, 8 pdf_refxform, 3 pdf
 _save_pos, 16 pdf_colorstack nodes
-   avail lists: 1:14,2:239333,3:119746,4:4192,5:1363,6:2578,7:1187,8:31,9:2892,1
+   avail lists: 1:16,2:239347,3:119757,4:4192,5:1363,6:2534,7:1187,8:31,9:2892,1
 0:254,12:1
- 67966 multiletter control sequences out of 65536+600000
+ 67967 multiletter control sequences out of 65536+600000
  98 fonts using 6673503 bytes
  73i,35n,108p,1771b,2579s stack positions out of 5000i,500n,10000p,2053073b,100000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/opentype/
@@ -2992,10 +3020,10 @@ onts/type1/public/lm/lmmi9.pfb><</usr/share/texmf/fonts/type1/public/lm/lmr10.pf
 b><</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb><</usr/share/texmf/fonts/ty
 pe1/public/lm/lmr9.pfb><</usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><</us
 r/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on document.pdf (66 pages, 9181684 bytes).
+Output written on document.pdf (65 pages, 9182407 bytes).
 
-PDF statistics: 1087 PDF objects out of 1200 (max. 8388607)
- 876 compressed objects within 9 object streams
- 227 named destinations out of 1000 (max. 131072)
+PDF statistics: 1085 PDF objects out of 1200 (max. 8388607)
+ 875 compressed objects within 9 object streams
+ 226 named destinations out of 1000 (max. 131072)
  424 words of extra memory for PDF output out of 10000 (max. 10000000)
 
