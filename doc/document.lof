@@ -6,79 +6,81 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The inlet basin.}}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The photobioreactor for which the conductivity meter is developed}}{10}{figure.caption.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The inlet basin}}{12}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The equivalent circuit diagram.}}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The equivalent circuit diagram}}{16}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Two electrodes submerged in the solution.}}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Two electrodes submerged in the solution}}{16}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Fisher Scientific™ Traceable™ Salinity Meter Pen \parencite {cheapcm}\relax }}{17}{figure.caption.25}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The developed sensor system}}{19}{figure.caption.28}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces System Design}}{20}{figure.caption.30}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Two rectangular electrodes form an electrode pair.\relax }}{21}{figure.caption.32}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces A handmade sensor strip.}}{22}{figure.caption.33}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The sensor strip design to be implemented as flex-PCB}}{23}{figure.caption.34}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces A finished sensor strip assembled with cables and waterproofing on the left.\relax }}{23}{figure.caption.35}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The functional block diagram of the ADG738 matrix switch.}}{24}{figure.caption.37}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Example Timing Diagram}}{25}{figure.caption.38}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces The opamp (OA) modulates the input signals (SIG) amplitude.}}{26}{figure.caption.40}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces The scatter plot shows the measured voltage with a resistance of 0.}}{27}{figure.caption.41}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0.}}{28}{figure.caption.42}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces The assembled carrier board with all parts directly soldered on.\relax }}{29}{figure.caption.45}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces OpenSalinityGUI}}{31}{figure.caption.47}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Embedded Software Flow Diagram}}{34}{figure.caption.53}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Fixing the integer wrap of the time variable.\relax }}{35}{figure.caption.55}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Fisher Scientific™ Traceable™ Salinity Meter Pen \parencite {cheapcm}\relax }}{18}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid.}}{39}{figure.caption.63}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The developed sensor system}}{20}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The two control volumes in light and dark blue have the same size as the sensor shown as black rectangle.}}{40}{figure.caption.65}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces System Design}}{21}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Measured voltages over the increasing salinity show the saturation of the sensor.\relax }}{42}{figure.caption.76}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Two rectangular electrodes form an electrode pair\relax }}{22}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape.}}{44}{figure.caption.79}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A handmade sensor strip}}{23}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces A laptop is used as host PC.}}{44}{figure.caption.80}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The sensor strip design to be implemented as flex-PCB}}{24}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Position of the sensors in the inlet basin [by Timm Severin].\relax }}{46}{figure.caption.83}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A finished sensor strip assembled with cables and waterproofing on the left\relax }}{24}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Step change of the salinity of the feed and the expected response [by Timm Severin}}{46}{figure.caption.84}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The functional block diagram of the ADG738 matrix switch.}}{25}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Filter design}}{47}{figure.caption.87}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Example Timing Diagram}}{26}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Sensor calibration}}{48}{figure.caption.88}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces The opamp (OA) modulates the input signals (SIG) amplitude.}}{27}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Test No. 2}}{49}{figure.caption.89}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The scatter plot shows the measured voltage with a resistance of 0}}{28}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Measurements of sensors four and eight during the start phase of the water flow.}}{49}{figure.caption.90}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0}}{29}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces The graphs show the data of the sensors compared to the scatter plots of the respective simulation results.}}{51}{figure.caption.91}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The assembled carrier board with all parts directly soldered on\relax }}{30}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Test No.3}}{52}{figure.caption.92}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces OpenSalinityGUI}}{32}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Test No. 4}}{53}{figure.caption.93}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Embedded Software Flow Diagram}}{34}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Test No. 6}}{54}{figure.caption.94}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Fixing the integer wrap of the time variable\relax }}{35}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A dimensioned drawing of the sensor grid}}{39}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The two control volumes in light and dark blue have the same size as the sensor shown as black rectangle}}{40}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Measured voltages over the increasing salinity show the saturation of the sensor\relax }}{42}{figure.caption.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces The sensor strips are mounted to the bioreactor with electrical tape}}{44}{figure.caption.80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces A laptop is used as host PC}}{44}{figure.caption.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Position of the sensors in the inlet basin (by Timm Severin)\relax }}{46}{figure.caption.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Step change of the salinity of the feed and the expected response (by Timm Severin)}}{46}{figure.caption.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Filter design}}{47}{figure.caption.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Sensor calibration}}{48}{figure.caption.89}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Test No. 2}}{49}{figure.caption.90}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Measurements of sensors four and eight during the start phase of the water flow}}{49}{figure.caption.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces The graphs show the data of the sensors compared to the scatter plots of the respective simulation results}}{51}{figure.caption.92}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Test No.3}}{52}{figure.caption.93}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Test No. 4}}{53}{figure.caption.94}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Test No. 6}}{54}{figure.caption.95}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -86,11 +88,15 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Important parts of the system.}}{57}{figure.caption.100}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Important parts of the system}}{57}{figure.caption.101}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces The connectors for the sensor strips.\relax }}{58}{figure.caption.101}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces The connectors for the sensor strips\relax }}{58}{figure.caption.102}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces The correct USB orientation.\relax }}{58}{figure.caption.102}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces The correct USB orientation\relax }}{58}{figure.caption.103}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Schematic of the MinieC by \textcite {uec}\relax }}{62}{figure.caption.152}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Schematic of the carrier board\relax }}{63}{figure.caption.154}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

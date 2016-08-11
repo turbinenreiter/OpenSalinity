@@ -101,7 +101,7 @@ Figure \ref{fig:sensor} shows the geometry of the sensor. To achieve a cell cons
 			\draw [darrow] (-1.15,-1.3) -- (1.15,-1.3) node[below, pos=0.5] {$d$};
 
 		\end{tikzpicture}
-		\caption{Two rectangular electrodes form an electrode pair.}
+		\caption{Two rectangular electrodes form an electrode pair}
 		\label{fig:sensor}
 	\end{center}
 \end{figure}
@@ -113,7 +113,7 @@ First tests with this sensor array showed the viability of the concept, however 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/v2.jpg} 
-		\caption[A handmade sensor strip.]{A handmade sensor strip. The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.}
+		\caption[A handmade sensor strip]{A handmade sensor strip - The short, vertical silver lines are the platinum electrodes, the darker horizontal lines are the copper wires, running to the cables attached on the left.}
 		\label{fig:v2}
 	\end{center}
 \end{figure}
@@ -135,7 +135,7 @@ The final design for the sensor strip, as shown in Figure \ref{fig:fpcbd}, imple
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/fpcbp.jpg} 
-		\caption{A finished sensor strip assembled with cables and waterproofing on the left.}
+		\caption{A finished sensor strip assembled with cables and waterproofing on the left}
 		\label{fig:fpcbp}
 	\end{center}
 \end{figure}
@@ -149,7 +149,7 @@ Figure \ref{fig:ms} shows the functional block diagram. The switch has one drain
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.3\textwidth]{images/ms.pdf} 
-		\caption[The functional block diagram of the ADG738 matrix switch.]{The functional block diagram of the ADG738 matrix switch. Pin (D) is connected to the outputs (S1 - S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is driven by the clock, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining.}
+		\caption[The functional block diagram of the ADG738 matrix switch.]{The functional block diagram of the ADG738 matrix switch - Pin (D) is connected to the outputs (S1 - S2) via switches, that are controlled by SPI-input on (DIN). (SCLK) is driven by the clock, (SYNC) is the chip select pin and (RESET) breaks the connection of all switches. (DOUT) provides the signal of (DIN) to enable daisy-chaining \parencite{ms}.}
 		\label{fig:ms}
 	\end{center}
 \end{figure}
@@ -197,7 +197,7 @@ The AC signal provided by the first stage is then fed into an operational amplif
 			   (out) node[right] {OUT}
 				;
 		\end{circuitikz}
-		\caption[The opamp (OA) modulates the input signals (SIG) amplitude.]{The opamp (OA) modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT).}
+		\caption[The opamp (OA) modulates the input signals (SIG) amplitude.]{The opamp (OA) modulates the input signals (SIG) amplitude proportional to the variable resistance $R$ in the voltage divider to generate the output (OUT)}
 		\label{fig:opamp}
 	\end{center}
 \end{figure}
@@ -210,7 +210,7 @@ First tests of the interface surfaced an interesting problem. The graph displaye
 	\begin{center}
 		\input{images/log_12052016_1}
 		%\includegraphics[width=0.8\textwidth]{images/switch_cap.pdf} 
-		\caption[The scatter plot shows the measured voltage with a resistance of 0.]{The scatter plot shows the measured voltage with a resistance of 0. At the first red line, a switch discontinuous the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit[0.04]{s}, marked by the second red line.}
+		\caption[The scatter plot shows the measured voltage with a resistance of 0]{The scatter plot shows the measured voltage with a resistance of 0. At the first red line, a switch discontinuous the connection, making the resistance infinite. The voltage drops slowly towards zero and reaches the new value after \unit[0.04]{s}, marked by the second red line.}
 		\label{fig:swcap}
 	\end{center}
 \end{figure}
@@ -221,7 +221,7 @@ Figure \ref{fig:swnocap} shows the response to the same switching as before, but
 	\begin{center}
 		\input{images/log_12052016_2}
 		%\includegraphics[width=0.8\textwidth]{images/switch_nocap.pdf} 
-		\caption[The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0.]{The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0. The red line marks the disconnection. The signal follows without delay.}
+		\caption[The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0]{The scatter plot shows the signal oscillating between 0 and the voltage at a resistance of 0. The red line marks the disconnection. The signal follows without delay.}
 		\label{fig:swnocap}
 	\end{center}
 \end{figure}
@@ -240,7 +240,7 @@ The carrier board is a simple printed circuit board (PCB) implementing all parts
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/cb.jpg} 
-		\caption{The assembled carrier board with all parts directly soldered on.}
+		\caption{The assembled carrier board with all parts directly soldered on}
 		\label{fig:cb}
 	\end{center}
 \end{figure}
@@ -263,17 +263,17 @@ The OpenSalinityGUI is a Graphical User Interface (GUI) designed during this the
 \end{itemize}
 
 The "Save" button allows to create the file to be written to and offers a default file name containing the date and time of creation, helping to keep the data logs in order. Once a file to save to is chosen, the data capturing can be started by clicking the "Start" button.
-The live visualization is a bar graph showing each sensor's current measurement, allowing to monitor the ongoing experiment. In addition to size, the bars are also color coded, shifting from red to blue with increasing salinity. Figure \ref{fig:gui} demonstrates the GUI in use. \\
+The live visualization is a bar graph showing each sensor's current measurement, allowing to monitor the ongoing experiment. In addition to size, the bars are also color coded, shifting from red to blue with increasing salinity. Figure \ref{fig:gui} demonstrates the GUI in use.
 
-\begin{figure}
+The software again is written in Python, using Gtk+ as GUI toolkit and pySerial to communicate with the microcontroller. It was developed and tested on a Linux-based operating system. Furthermore, due to the nature of the used programming language and toolkits, it is cross-platform and can be run on Windows and OSX also.\\
+
+\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/UI.png}
-		\caption[OpenSalinityGUI]{OpenSalinityGUI - in this example sensor $\#4$ measures a resistance of zero (shorted with a wire), all others a infinite resistance (air gap). The "Start/Stop" button is on the top left, the "Save" button on the top right. The path to the chosen file is displayed in the header bar.}
+		\caption[OpenSalinityGUI]{OpenSalinityGUI - In this example, sensor $\#4$ measures a resistance of zero (shorted with a wire), all others an infinite resistance (air gap). The "Start/Stop" button is on the top left, the "Save" button on the top right. The path to the chosen file is displayed in the header bar.}
 		\label{fig:gui}
 	\end{center}
 \end{figure}
-
-The software again is written in Python, using Gtk+ as GUI toolkit and pySerial to communicate with the microcontroller. It was developed and tested on a Linux-based operating system. Furthermore, due to the nature of the used programming language and toolkits, it is cross-platform and can be run on Windows and OSX also.\\
 
 In addition to or as replacement of the GUI, a set of standard command line interface (CLI) tools can be used. These tools allow for a redundant capturing of the sensor data and for an alternative visualization. Usage of the CLI tools is less intuitive, but they are more robust and faster than the GUI. A detailed manual on how to use those tools as well as the GUI is provided in the Appendix \ref{aman}.
 
@@ -363,7 +363,7 @@ The microcontroller measures time since start-up by counting clock cycles. These
      \draw (7,0) -- (9.5,3.33);   
      
 \end{tikzpicture}
-		\caption{Fixing the integer wrap of the time variable.}
+		\caption{Fixing the integer wrap of the time variable}
 		\label{fig:wrap}
 	\end{center}
 \end{figure}

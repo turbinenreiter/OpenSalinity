@@ -64,7 +64,7 @@ This grid size is the physical limitation of the spacial resolution and by being
 		\end{scope}
 		\end{scope}
 		\end{tikzpicture}
-		\caption[A dimensioned drawing of the sensor grid.]{A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. The sensor has a size of \unit[10x11]{mm}, the horizontal distance between the sensors is \unit[50]{mm} and the vertical distance \unit[25]{mm}.}
+		\caption[A dimensioned drawing of the sensor grid]{A dimensioned drawing of the sensor grid made up by two strips placed next to each other, not drawn to scale and cut on the right side. The sensor has a size of \unit[10x11]{mm}, the horizontal distance between the sensors is \unit[50]{mm} and the vertical distance \unit[25]{mm}.}
 		\label{fig:sensarray}
 	\end{center}
 \end{figure}
@@ -111,7 +111,7 @@ A spacial resolution of \unit[10]{mm} would require a time resolution of \unit[0
 		\node [] at (4,-6) {$t>\tau$};
 		\end{tikzpicture}
 		%\includegraphics[width=0.45\textwidth]{images/resolution.pdf} 
-		\caption[The two control volumes in light and dark blue have the same size as the sensor shown as black rectangle.]{The two control volumes in light and dark blue have the same size as the sensor shown as black rectangle. At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau$, the control volumes have moved. The sensor is covered by a mix of the two volumes.}
+		\caption[The two control volumes in light and dark blue have the same size as the sensor shown as black rectangle]{The two control volumes in light and dark blue have the same size as the sensor shown as black rectangle. At $t=0$ the measurement starts and the first control volume is directly over the sensor. When the measurement ends at $t=\tau$, the control volumes have moved. The sensor is covered by a mix of the two volumes.}
 		\label{fig:cv}
 	\end{center}
 \end{figure}
@@ -186,7 +186,7 @@ Table \ref{tab:rns} and Figure \ref{fig:rns} show the results of measurements of
 	\begin{center}
 		\input{images/sal_sens_range}
 		%\includegraphics[width=0.8\textwidth]{images/switch_cap.pdf} 
-		\caption{Measured voltages over the increasing salinity show the saturation of the sensor.}
+		\caption{Measured voltages over the increasing salinity show the saturation of the sensor}
 		\label{fig:rns}
 	\end{center}
 \end{figure}
@@ -217,7 +217,7 @@ The deployability was demonstrated during two test campaigns on the reactor. Fig
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/stripsinreactor.jpg} 
-		\caption[The sensor strips are mounted to the bioreactor with electrical tape.]{The sensor strips are mounted to the bioreactor with electrical tape. The cables run towards the carrier board.}
+		\caption[The sensor strips are mounted to the bioreactor with electrical tape]{The sensor strips are mounted to the bioreactor with electrical tape. The cables run towards the carrier board.}
 	\label{fig:stripsr}
 	\end{center}
 \end{figure}
@@ -225,7 +225,7 @@ The deployability was demonstrated during two test campaigns on the reactor. Fig
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/pconreactor.jpg} 
-		\caption[A laptop is used as host PC.]{A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.}
+		\caption[A laptop is used as host PC]{A laptop is used as host PC. A USB cable connects to the microcontroller on the carrier board, which is mounted on the side of the inlet basin.}
 	\label{fig:pcr}
 	\end{center}
 \end{figure}
@@ -339,7 +339,7 @@ All experiments where done on August 8, 2016 on the same bioreactor. The schemat
             node[black, below, xshift=-4pt, yshift=-1pt] (weir-1) {5};
     \end{scope}
 \end{tikzpicture}    
-		\caption{Position of the sensors in the inlet basin [by Timm Severin].}
+		\caption{Position of the sensors in the inlet basin (by Timm Severin)}
 		\label{fig:senspos}
 	\end{center}
 \end{figure}
@@ -349,7 +349,7 @@ With this configuration, two types of experiments were run: the first method use
 \begin{figure}
 	\begin{center}
 		\input{images/residenceTime}
-		\caption[Step change of the salinity of the feed and the expected response [by Timm Severin].{Step change of the salinity of the feed (\drawline[red!80!white]) and the expected response (\drawline[blue!80!white, dashed]) [by Timm Severin].}
+		\caption[Step change of the salinity of the feed and the expected response (by Timm Severin)]{Step change of the salinity of the feed (\drawline[red!80!white]) and the expected response (\drawline[blue!80!white, dashed]) [by Timm Severin]}
 		\label{fig:rest}
 	\end{center}
 \end{figure}
@@ -406,16 +406,18 @@ Figure \ref{fig:test2} shows a comparison of the resulting data for sensor four 
 	\end{center}
 \end{figure}
 
-Another interesting data point is the the behavior when the water flow is first switched on. Figure \ref{fig:test2_on} shows the signals during this phase. Signal four in the inlet basin rises first, signal eight rises about $\diff t =  \unit[4]{s}$ later. This is the time it takes the empty basin to fill up completely, only after which the water flows over the weir. At a flow rate of \unitfrac[1.6]{l}{s}, this suggests a volume of the inlet basin of around \unit[6.4]{l}. The real volume calculated according to the schematic is about \unit[5.8]{l}.
+Another interesting data point is the the behavior when the water flow is first switched on. Figure \ref{fig:test2_on} shows the signals during this phase.
 
-\begin{figure}
+\begin{figure}[H]
 	\begin{center}
 		\input{images/log080716_2_on}
 		%\includegraphics[width=0.8\textwidth]{images/log080716_2_on.pdf} 
-		\caption[Measurements of sensors four and eight during the start phase of the water flow.]{Measurements of sensors four (\drawline[cyan]) and eight (\drawline[red]) during the start phase of the water flow. Signal eight rises only after the inlet basin is completely filled which takes about $\diff t =  \unit[4]{s}$.}
+		\caption[Measurements of sensors four and eight during the start phase of the water flow]{Measurements of sensors four (\drawline[cyan]) and eight (\drawline[red]) during the start phase of the water flow. Signal eight rises only after the inlet basin is completely filled which takes about $\diff t =  \unit[4]{s}$.}
 		\label{fig:test2_on}
 	\end{center}
 \end{figure}
+
+ Signal four in the inlet basin rises first, signal eight rises about $\diff t =  \unit[4]{s}$ later. This is the time it takes the empty basin to fill up completely, only after which the water flows over the weir. At a flow rate of \unitfrac[1.6]{l}{s}, this suggests a volume of the inlet basin of around \unit[6.4]{l}. The real volume calculated according to the schematic is about \unit[5.8]{l}.\\
 
 A comparison of six different sensor outputs with data from the simulation done by Timm Severin is shown in Figure \ref{fig:test2_sim}. The time segment shows the salinity increase happening directly after the feed is switched to the salt water tank. Generally, the behavior of both correspond well, with the big exception of the position one. Here, the simulation and experimental data are offset by around \unit[2]{s}. The reason for that is not yet perfectly clear but it is suspected that adverse effects in the simulation are at fault.\\
 
@@ -423,7 +425,7 @@ A comparison of six different sensor outputs with data from the simulation done 
 	\begin{center}
 		\input{images/log080716_2_sim}
 		%\includegraphics[width=0.8\textwidth]{images/log080716_2_sim.pdf} 
-		\caption[The graphs show the data of the sensors compared to the scatter plots of the respective simulation results.]{The graphs show the data of sensor one (\drawline[blue]), two (\drawline[yellow!80!black]), four (\drawline[cyan]), five (\drawline[magenta!80!blue]), six (\drawline[green!70!black]) and eight (\drawline[red]), compared to the scatter plots of the respective simulation results. The chosen time segment shows the upwards slope of the first rise in salinity after the switching of the feed.}
+		\caption[The graphs show the data of the sensors compared to the scatter plots of the respective simulation results]{The graphs show the data of sensor one (\drawline[blue]), two (\drawline[yellow!80!black]), four (\drawline[cyan]), five (\drawline[magenta!80!blue]), six (\drawline[green!70!black]) and eight (\drawline[red]), compared to the scatter plots of the respective simulation results. The chosen time segment shows the upwards slope of the first rise in salinity after the switching of the feed.}
 		\label{fig:test2_sim}
 	\end{center}
 \end{figure}
@@ -456,9 +458,9 @@ While maintaining the previous volume and flow rate, this test used the impulse 
 
 \textbf{Test No. 6}\\
 
-Again the impulse method was used but with an increased flow rate of \unitfrac[2]{l}{s} and a lower salinity of \unit[6.7]{\%}. The time $t_{cycle}$ from first to second peak is now about \unit[41]{s}, as expected due to the higher flow rate. The voltages are also a little lower because of the lower salinity.
+Again the impulse method was used but with an increased flow rate of \unitfrac[2]{l}{s} and a lower salinity of \unit[6.7]{\%}. The time $t_{cycle}$ from first to second peak is now about \unit[41]{s}, as expected due to the higher flow rate. The voltages are also a little lower because of the lower salinity.\\
 
-\begin{figure}[H]
+\begin{figure}
 	\begin{center}
 		\input{images/log080716_6}
 		%\includegraphics[width=0.8\textwidth]{images/log080716_6.pdf} 
