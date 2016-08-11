@@ -1,9 +1,9 @@
 # OpenSalinity
 
-The folder doc holds the Latex files for the semester thesis.  
-The folder src holds all developed source code.  
-The folder data holds all data gathered during experiments.  
-The folder data holds the hardware design files.  
+doc - Latex files for the semester thesis  
+src - source code  
+data -- all data gathered during experiments  
+hardware - hardware design files  
 
 ## Software
 
@@ -24,3 +24,5 @@ Design files for the [MinieC](sparkyswidgets.com) and carrier board files are pr
 
 Gerbers for the electrode design are offerd as well.  
 All hardware is licensed as CC-BY-SA.4.0
+
+![Hardware](https://gitlab.lrz.de/turbinenreiter/OpenSalinity/blob/master/compsys.jpg)
