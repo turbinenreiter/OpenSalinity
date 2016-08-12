@@ -1,5 +1,5 @@
 import pyb
-from SalSense8 import SalSense8
+from SalSense8 import SalSens8
 
 if __name__ == "__main__":
 
