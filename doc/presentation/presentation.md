@@ -56,6 +56,18 @@ enable experiments to validate simulation
 
 # Design
 
+## Conductivity
+
+* ability of liquid to conduct electricity
+* inverse of resistance
+
+    * liquid is resistance
+    * measure voltage drop over resistance
+
+---------------
+
+## System Design
+
 \begin{figure}
 	\begin{center}
 \begin{tikzpicture}[scale=0.65]
@@ -63,12 +75,12 @@ enable experiments to validate simulation
 	\fill [fill=green, opacity=0.25] (-5.5,-3.5) rectangle (5.2,4);
 	\fill [fill=blue, opacity=0.25] (5.2,-3.5) rectangle (10,2);
 	\begin{pgfonlayer}{nodelayer}
-		\node [rounded corners=8pt, inner sep=8pt, style=rect] (0) at (8, -1) {8 Electrodes};
-		\node [rounded corners=8pt, inner sep=8pt, style=rect] (1) at (0, 3) {Microcontroller};
-		\node [rounded corners=8pt, inner sep=8pt, style=rect] (2) at (-3, -1) {MinieC Interface};
-		\node [rounded corners=8pt, inner sep=8pt, style=rect] (3) at (3, 0.25) {Matrix Switch};
-		\node [rounded corners=8pt, inner sep=8pt, style=rect] (4) at (0, 6) {PC};
-		\node [style=rect, inner sep=8pt, rounded corners=8pt] (5) at (3, -2.25) {Matrix Switch};
+		\node [rounded corners=8pt, inner sep=4pt, style=rect] (0) at (8, -1) {8 Electrodes};
+		\node [rounded corners=8pt, inner sep=4pt, style=rect] (1) at (0, 3) {Microcontroller};
+		\node [rounded corners=8pt, inner sep=4pt, style=rect] (2) at (-3, -1) {MinieC Interface};
+		\node [rounded corners=8pt, inner sep=4pt, style=rect] (3) at (3, 0.25) {Matrix Switch};
+		\node [rounded corners=8pt, inner sep=4pt, style=rect] (4) at (0, 6) {PC};
+		\node [style=rect, inner sep=4pt, rounded corners=8pt] (5) at (3, -2.25) {Matrix Switch};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=darrow] (4) to node[left]{USB} (1);
@@ -118,19 +130,60 @@ enable experiments to validate simulation
 	\end{center}
 \end{figure}
 
-<!--```python-->
-<!--import main-->
+---------------
 
-<!--print('test')-->
-<!--```-->
+## data processing
+
+\begin{figure}
+	\begin{center}
+		\input{../thesis/images/log_12052016_1}
+		\label{fig:swcap}
+	\end{center}
+\end{figure}
+
+---------------
+
+\begin{figure}
+	\begin{center}
+		\input{../thesis/images/log_12052016_2}
+		\label{fig:swnocap}
+	\end{center}
+\end{figure}
+
+---------------
+
+\begin{figure}
+	\begin{center}
+		\input{../thesis/images/log080716_2_7_scatter}
+		\label{fig:swnocap}
+	\end{center}
+\end{figure}
 
 # Results
+
+\begin{figure}
+	\begin{center}
+		\input{../thesis/images/log080716_2_sim}
+		\label{fig:swnocap}
+	\end{center}
+\end{figure}
 
 ---------------
 
 ## Demo
 
 # Outlook
+
+## Problems
+
+* half-wave due to removal of filter cap makes data ugly
+* only real part of imaginary resistance is measured
+
+## Solution
+
+* move to real impedance measuring
+
+---------------
 
 \begin{figure}
     \begin{center}

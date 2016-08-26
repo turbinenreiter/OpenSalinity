@@ -1,6 +1,9 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(handout)$handout,$endif$$if(beamer)$ignorenonframetext,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
 \usepackage{tikz}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
 \pgfdeclarelayer{edgelayer}
 \pgfdeclarelayer{nodelayer}
 \pgfsetlayers{edgelayer,nodelayer,main}
