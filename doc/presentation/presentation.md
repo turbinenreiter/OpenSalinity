@@ -40,6 +40,7 @@ enable experiments to validate simulation
 
 * add saltwater impulse to freshwater stream
 * measure changes in salinity over time
+
     * at multiple points
     * fast
 
